@@ -1,0 +1,41 @@
+{
+  "schema_id": "NEWSROOM_SOURCE_INDEX_001",
+  "status": "INTERNAL_CASE_INDEX / NOT_PUBLIC / NOT_CANONICAL",
+  "updated": "2026-08-28",
+  "cases": [
+    {
+      "case_id": "ARGENTINA_EDUCATION_CAPACITY_001",
+      "country": "Argentina",
+      "topic": "fiscal stabilization, education and long-term societal capacity",
+      "source_classes": [
+        "government_organization_and_authority",
+        "appointment_and_structure_decrees",
+        "budget_and_execution",
+        "education_policy_and_programmes",
+        "university_system_finance",
+        "knowledge_economy_and_labour",
+        "audit_and_evaluation",
+        "independent_academic_and_journalistic_context"
+      ],
+      "accountability_questions": [
+        "Who has formal mandate?",
+        "Who designed or proposed the policy?",
+        "Who approved funding and implementation?",
+        "What professional and educational backgrounds do accountable leaders publicly document?",
+        "What expertise is present at institutional rather than individual level?",
+        "Which internal technical bodies, advisers, evaluators and budget offices participated?",
+        "What evidence and models were used?",
+        "What dissent, warnings or alternative options were documented?",
+        "What outcomes are measured after implementation?",
+        "Which future options or capabilities may be lost or strengthened?"
+      ],
+      "boundaries": [
+        "public professional background is relevant only when connected to role, decision process or institutional competence",
+        "individual credentials do not prove policy quality",
+        "absence of a degree does not prove lack of competence",
+        "leadership credentials must not be used as a proxy for the education level of a whole ministry",
+        "distinguish formal authority, analytic expertise, decision ownership and implementation responsibility"
+      ]
+    }
+  ]
+}

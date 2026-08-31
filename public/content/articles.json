@@ -1,5 +1,17 @@
 [
   {
+    "id": "before-then-if-25-public-experiments-2026",
+    "section": "World",
+    "region": "Global",
+    "country": "25 public initiatives",
+    "type": "Field Lab 001",
+    "title": "Before, then, if: 25 public experiments worth watching",
+    "summary": "Governments are putting concrete mechanisms into motion across water, care, farming, climate, materials and industry. This test edition follows what happens before anyone knows whether they will work.",
+    "published": "2026-08-31",
+    "priority": 1,
+    "url": "articles/before-then-if-25-public-experiments-2026.html"
+  },
+  {
     "id": "taiwan-community-transition-2026",
     "section": "World",
     "region": "Asia",
@@ -8,7 +20,7 @@
     "title": "Taiwan is inviting communities to help design the transition",
     "summary": "New public calls link local participation, circular materials and technology in everyday life. The pattern is real; its social effects are still an open question.",
     "published": "2026-08-31",
-    "priority": 1,
+    "priority": 2,
     "url": "articles/taiwan-community-transition-2026.html"
   }
 ]

@@ -20,6 +20,7 @@ fetch('content/articles.json')
           <p class="article-meta">${article.region} · ${article.country} · ${article.type}</p>
           <h3>${article.title}</h3>
           <p>${article.summary}</p>
+          ${article.url ? `<p><a class="text-link" href="${article.url}">Read the report →</a></p>` : ''}
         `;
         articleGrid.appendChild(card);
       });

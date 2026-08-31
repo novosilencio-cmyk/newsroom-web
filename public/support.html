@@ -3,25 +3,109 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Support Atriet, independent journalism, or the wider public-interest work of the experimental newsroom.">
+  <meta name="description" content="Support Experimental Newsroom, Atriet, or the work where support is most useful.">
   <title>Support the work — Experimental Newsroom</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <script src="analytics-config.js"></script>
   <script src="analytics.js"></script>
+  <script src="support-config.js"></script>
+  <script src="support.js" defer></script>
 </head>
 <body>
-  <header class="masthead compact-masthead"><div class="edition-line"><span>Support</span><span><a href="how-we-work.html">How we work</a> · <a href="index.html">Front page</a></span></div><h1>Support the work</h1><p class="strapline">Choose what you want your contribution to help carry forward.</p></header>
+  <header class="masthead compact-masthead">
+    <div class="edition-line">
+      <span data-i18n="supportLabel">Support</span>
+      <span><a href="transparency.html" data-i18n="transparencyLink">Transparency</a> · <a href="how-we-work.html" data-i18n="howWeWork">How we work</a> · <a href="index.html" data-i18n="frontPage">Front page</a></span>
+    </div>
+    <h1 data-i18n="title">Support the work</h1>
+    <p class="strapline" data-i18n="strapline">One-time support, directed by you.</p>
+    <div class="support-toolbar">
+      <label for="language-select" data-i18n="language">Language</label>
+      <select id="language-select" aria-label="Language">
+        <option value="no">Norsk</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="it">Italiano</option><option value="de">Deutsch</option>
+      </select>
+    </div>
+  </header>
+
   <main>
-    <section class="lead support-intro"><p class="kicker">Three purposes</p><h2>Support what matters to you</h2><p class="lead-deck">The first version keeps support simple and transparent. Contributions can be directed to Atriet, independent journalism, or the work as a whole.</p></section>
-    <section class="support-grid section-block" aria-label="Support options">
-      <article class="support-card"><p class="kicker">Atriet</p><h2>Help realise Atriet</h2><p>Support the development and future realisation of Atriet: its architectural, artistic and human work, selected visualisations and the practical path toward a physical place.</p><p class="support-note">Contribution code: <strong>ATRIET</strong></p><a class="support-button" href="#payment-placeholder" aria-disabled="true">Support Atriet</a></article>
-      <article class="support-card"><p class="kicker">Journalism</p><h2>Support independent reporting</h2><p>Contribute to research, source work, field reporting, documentation and journalism that can remain publicly accessible whenever the economics allow it.</p><p class="support-note">Contribution code: <strong>JOURNALISM</strong></p><a class="support-button" href="#payment-placeholder" aria-disabled="true">Support journalism</a></article>
-      <article class="support-card"><p class="kicker">General</p><h2>Support where it is most useful</h2><p>Give the wider project room to work: website operation, research, public-interest analysis, art, development and other work that strengthens the whole.</p><p class="support-note">Contribution code: <strong>GENERAL</strong></p><a class="support-button" href="#payment-placeholder" aria-disabled="true">Support the whole</a></article>
+    <section class="lead support-intro">
+      <p class="kicker" data-i18n="oneTime">One-time support</p>
+      <h2 data-i18n="leadTitle">Choose what you want to help carry forward.</h2>
+      <p class="lead-deck" data-i18n="leadDeck">Support can be directed to Experimental Newsroom, Atriet, or used where the need is greatest. No purchase or other consideration is attached to a contribution.</p>
     </section>
-    <section class="section-block text-columns"><article><p class="kicker">Transparency</p><h2>Purpose stays visible</h2><p>Directed support should be recorded separately by purpose. A future public summary can show what has been received for Atriet, journalism and general work, together with plain-language notes on what the support enabled.</p></article><article><p class="kicker">Editorial independence</p><h2>Support does not buy coverage</h2><p>Contributions do not purchase editorial influence, favourable reporting or inclusion in guides, recommendations or investigations.</p></article></section>
-    <section id="payment-placeholder" class="section-block payment-placeholder"><p class="kicker">Payment connection</p><h2>Payment buttons are not active yet</h2><p class="measure">The page is ready for a simple first payment layer. Norwegian support can later connect to Vipps donation links or equivalent payment links; international support can use a separate card/payment provider.</p><p class="measure">Before activation, the organisation, accounting treatment, public wording and any claims about tax deductibility must be checked and stated correctly.</p></section>
+
+    <form id="support-form" class="support-form section-block" novalidate>
+      <fieldset>
+        <legend data-i18n="purposeLegend">1. Choose a purpose</legend>
+        <div class="purpose-grid">
+          <label class="choice-card"><input type="radio" name="purpose" value="newsroom" checked><span><strong data-i18n="purposeNewsroom">Experimental Newsroom</strong><small data-i18n="purposeNewsroomText">Reporting, research, field work, equipment and newsroom development.</small></span></label>
+          <label class="choice-card"><input type="radio" name="purpose" value="atriet"><span><strong>Atriet</strong><small data-i18n="purposeAtrietText">Artistic, architectural and practical work toward Atriet.</small></span></label>
+          <label class="choice-card"><input type="radio" name="purpose" value="general"><span><strong data-i18n="purposeGeneral">General support</strong><small data-i18n="purposeGeneralText">Used where the need is greatest across the work.</small></span></label>
+        </div>
+      </fieldset>
+
+      <fieldset id="earmark-fieldset">
+        <legend data-i18n="earmarkLegend">2. Earmarking</legend>
+        <p class="field-help" data-i18n="earmarkHelp">For Experimental Newsroom and Atriet, binding earmarking is the default.</p>
+        <label class="inline-choice"><input type="radio" name="earmark" value="binding" checked> <span data-i18n="earmarkBinding">Binding earmarking — use only for the selected purpose</span></label>
+        <label class="inline-choice"><input type="radio" name="earmark" value="preference"> <span data-i18n="earmarkPreference">Preference only — follow the purpose where practical, with flexibility if needed</span></label>
+      </fieldset>
+
+      <fieldset>
+        <legend data-i18n="amountLegend">3. Choose an amount</legend>
+        <div class="currency-row">
+          <label for="currency-select" data-i18n="currency">Currency</label>
+          <select id="currency-select" name="currency"><option>NOK</option><option>EUR</option><option>USD</option></select>
+        </div>
+        <div id="amount-options" class="amount-options" aria-label="Suggested amounts"></div>
+        <label class="custom-amount"><span data-i18n="otherAmount">Other amount</span><input id="custom-amount" name="customAmount" type="number" inputmode="decimal" step="0.01" placeholder="0"></label>
+        <label class="inline-choice"><input type="checkbox" name="coverFee" value="yes"> <span data-i18n="coverFee">Add the payment fee to my support if the provider can calculate it</span></label>
+      </fieldset>
+
+      <fieldset>
+        <legend data-i18n="paymentLegend">4. Payment method</legend>
+        <div class="provider-grid">
+          <label class="choice-card"><input type="radio" name="provider" value="vipps" checked><span><strong>Vipps</strong><small data-i18n="vippsText">For NOK payments in Norway.</small></span></label>
+          <label class="choice-card"><input type="radio" name="provider" value="stripe"><span><strong>Stripe</strong><small data-i18n="stripeText">Card payment for NOK, EUR or USD.</small></span></label>
+        </div>
+        <p id="provider-note" class="field-help" aria-live="polite"></p>
+      </fieldset>
+
+      <fieldset>
+        <legend data-i18n="detailsLegend">5. Optional details</legend>
+        <div class="form-grid">
+          <label><span data-i18n="nameOptional">Name (optional)</span><input type="text" name="name" autocomplete="name"></label>
+          <label><span data-i18n="emailOptional">Email for receipt/contact (optional here)</span><input type="email" name="email" autocomplete="email"></label>
+        </div>
+        <label><span data-i18n="messageOptional">Message (optional)</span><textarea name="message" rows="4"></textarea></label>
+        <label class="inline-choice"><input type="checkbox" name="publicRecognition" value="yes"> <span data-i18n="publicRecognition">You may show my name publicly as a supporter</span></label>
+        <p class="field-help" data-i18n="privateDefault">Public recognition is off by default. Payment providers may still process identifying information required to complete a payment.</p>
+      </fieldset>
+
+      <fieldset>
+        <legend data-i18n="updatesLegend">6. Optional updates</legend>
+        <p class="field-help" data-i18n="updatesHelp">These choices are separate from the payment and are never preselected.</p>
+        <label class="inline-choice"><input type="checkbox" name="newsroomUpdates" value="yes"> <span data-i18n="newsroomUpdates">Experimental Newsroom updates</span></label>
+        <label class="inline-choice"><input type="checkbox" name="atrietUpdates" value="yes"> <span data-i18n="atrietUpdates">Atriet updates</span></label>
+      </fieldset>
+
+      <section class="support-summary" aria-labelledby="summary-heading">
+        <p class="kicker" data-i18n="summaryKicker">Summary</p>
+        <h2 id="summary-heading" data-i18n="summaryTitle">Your support</h2>
+        <dl><div><dt data-i18n="summaryPurpose">Purpose</dt><dd id="summary-purpose"></dd></div><div><dt data-i18n="summaryAmount">Amount</dt><dd id="summary-amount"></dd></div><div><dt data-i18n="summaryEarmark">Earmarking</dt><dd id="summary-earmark"></dd></div></dl>
+        <p class="measure" data-i18n="noConsideration">Support is voluntary and gives no right to content, influence, special access, financial return or any other consideration.</p>
+        <p class="legal-note" data-i18n="recipientNote">Payments will be received through the founder/editor’s registered sole proprietorship. Experimental Newsroom is used as the public-facing name where payment providers allow it. This page makes no claim that support is tax-deductible.</p>
+        <button id="support-submit" class="support-button primary-support-button" type="submit" disabled data-i18n="notActive">Payments are not active yet</button>
+        <p id="payment-status" class="field-help" role="status" data-i18n="activationPending">The page is prepared, but no payment destination is connected yet.</p>
+      </section>
+    </form>
+
+    <section class="section-block text-columns">
+      <article><p class="kicker" data-i18n="transparencyKicker">Transparency</p><h2 data-i18n="transparencyTitle">Quarterly, by purpose</h2><p data-i18n="transparencyText">Public reporting will show total support received, amounts per purpose, payment fees and direct costs, spending, and funds carried forward. No private donor information will be published.</p><p><a class="text-link" href="transparency.html" data-i18n="viewTransparency">View the transparency page →</a></p></article>
+      <article><p class="kicker" data-i18n="useKicker">What support can carry</p><h2 data-i18n="useTitle">Practical capacity</h2><p data-i18n="useText">Depending on the chosen purpose, support may fund journalism, research, travel, equipment, operations and continued development.</p></article>
+    </section>
   </main>
-  <footer><p>Experimental newsroom · payment links not active</p></footer>
+  <footer><p data-i18n="footerStatus">Experimental Newsroom · one-time support setup prepared · payments not active</p></footer>
 </body>
 </html>

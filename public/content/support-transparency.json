@@ -1,0 +1,9 @@
+{
+  "status": "NOT_ACTIVE",
+  "reporting_frequency": "QUARTERLY",
+  "base_currency": "NOK",
+  "privacy": "NO_PRIVATE_DONOR_DATA",
+  "purposes": ["EXPERIMENTAL_NEWSROOM", "ATRIET", "GENERAL_SUPPORT"],
+  "fields": ["received", "payment_fees_and_direct_costs", "used", "carried_forward"],
+  "quarters": []
+}

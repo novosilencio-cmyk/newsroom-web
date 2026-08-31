@@ -10,38 +10,5 @@
     "published": "2026-08-31",
     "priority": 1,
     "url": "articles/taiwan-community-transition-2026.html"
-  },
-  {
-    "id": "prototype-world-001",
-    "section": "World",
-    "region": "Nordic",
-    "country": "Denmark",
-    "type": "Analysis",
-    "title": "A future Danish public-affairs analysis will appear here",
-    "summary": "The front page is already data-driven: published article records can later be selected and ranked automatically by editorial rules.",
-    "published": "2026-08-27",
-    "priority": 2
-  },
-  {
-    "id": "prototype-world-002",
-    "section": "World",
-    "region": "Asia",
-    "country": "Taiwan",
-    "type": "Constructive criticism",
-    "title": "Local context should change the analysis, not merely the label",
-    "summary": "National newsroom agents can accumulate language, institutional and cultural experience while remaining transparently identified as AI.",
-    "published": "2026-08-27",
-    "priority": 3
-  },
-  {
-    "id": "prototype-world-003",
-    "section": "World",
-    "region": "Europe",
-    "country": "Norway",
-    "type": "Public institutions",
-    "title": "Public documents can be treated as starting points rather than conclusions",
-    "summary": "The newsroom is intended to compare claims, evidence, implementation and neglected alternatives before reaching a conclusion.",
-    "published": "2026-08-27",
-    "priority": 4
   }
 ]

@@ -28,9 +28,18 @@
   };
 
   const findCase = id => [...document.querySelectorAll('.case')].find(card => {
-    const label = card.querySelector('.case-label')?.textContent || '';
+    const label = card.dataset.caseId || card.querySelector('.case-label')?.textContent || '';
     return label.split('·')[0].trim() === id;
   });
+
+  const cleanSequenceScaffolding = card => {
+    const paragraphs = [...card.querySelectorAll('.sequence')];
+    paragraphs.forEach((paragraph, index) => {
+      if (index === 0) return;
+      const text = paragraph.textContent.replace(/^(Then|When|If)\.\s*/i, '').trim();
+      paragraph.textContent = text;
+    });
+  };
 
   const apply = () => {
     const story = document.querySelector('.story');
@@ -64,26 +73,37 @@
     }
 
     document.querySelectorAll('.case').forEach(card => {
-      const label = card.querySelector('.case-label')?.textContent || '';
-      const id = label.split('·')[0].trim();
+      const labelNode = card.querySelector('.case-label');
+      const originalLabel = labelNode?.textContent || '';
+      const [rawId, ...labelParts] = originalLabel.split('·');
+      const id = rawId.trim();
+      card.dataset.caseId = id;
+
+      if (labelNode && labelParts.length) {
+        labelNode.textContent = labelParts.join('·').trim();
+      }
+
       const opening = card.querySelector('.sequence');
       const sentence = beforeRewrites[id];
-      if (!opening || !sentence) return;
-      opening.innerHTML = `<strong class="before-marker"><span class="before-initial">B</span>efore</strong>, ${sentence}`;
+      if (opening && sentence) {
+        opening.innerHTML = `<span class="before-marker"><span class="before-initial">B</span>efore</span>, ${sentence}`;
+      }
+
+      cleanSequenceScaffolding(card);
     });
 
     const tw02 = findCase('TW-02');
     if (tw02) {
       const sequences = tw02.querySelectorAll('.sequence');
       if (sequences[2]) {
-        sequences[2].innerHTML = '<strong>When.</strong> The test begins when a funded idea has to move a real material from collection through processing to a manufacturer, buyer or community that will actually use it.';
+        sequences[2].textContent = 'The test begins when a funded idea has to move a real material from collection through processing to a manufacturer, buyer or community that will actually use it.';
       }
     }
 
     if (!document.getElementById('field-lab-text-refinement-style')) {
       const style = document.createElement('style');
       style.id = 'field-lab-text-refinement-style';
-      style.textContent = '.scope-note{max-width:780px;margin:-10px 0 26px;font-size:1.08rem;line-height:1.55}.before-marker{font-family:Arial,sans-serif;font-size:.8rem;letter-spacing:.05em;text-transform:uppercase}.before-initial{font-family:Georgia,\"Times New Roman\",serif;font-size:1.18rem;line-height:0;letter-spacing:0;text-transform:uppercase}';
+      style.textContent = '.scope-note{max-width:780px;margin:-10px 0 26px;font-size:1.08rem;line-height:1.55}.before-marker{font:inherit}.before-initial{font-family:Georgia,"Times New Roman",serif;font-size:1.45em;line-height:0;letter-spacing:-.02em}.case-label{letter-spacing:.05em}';
       document.head.appendChild(style);
     }
   };

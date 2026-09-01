@@ -1,5 +1,5 @@
 (() => {
-  const rewrites = {
+  const beforeRewrites = {
     'TW-01': 'net-zero policy could remain remote from the places where energy, transport, consumption and trust were lived.',
     'TW-02': 'plastic, packaging, biomass, buildings and electronics often moved through separate waste and industrial systems.',
     'TW-03': 'semiconductor policy was usually narrated through capacity, performance and strategic supply.',
@@ -27,15 +27,65 @@
     'IN-01': 'rural drinking-water access was not only a construction problem: sources, water quality, maintenance and local management determined whether infrastructure lasted.'
   };
 
+  const findCase = id => [...document.querySelectorAll('.case')].find(card => {
+    const label = card.querySelector('.case-label')?.textContent || '';
+    return label.split('·')[0].trim() === id;
+  });
+
   const apply = () => {
+    const story = document.querySelector('.story');
+    if (!story) return;
+
+    const deck = story.querySelector('.deck');
+    if (deck && !story.querySelector('.scope-note')) {
+      const scope = document.createElement('p');
+      scope.className = 'scope-note';
+      scope.textContent = 'Across 13 countries — including Taiwan, Japan, Denmark, Sweden, Brazil and Argentina — governments are trying practical ways to make everyday life and public systems work better, from childcare and water to farming, materials and industry.';
+      deck.insertAdjacentElement('afterend', scope);
+    }
+
+    const byline = story.querySelector('.byline');
+    if (byline) {
+      byline.textContent = 'Experimental Newsroom Field Lab · human–AI editorial collaboration · Artistic frame: Bjørn M. Benlolo';
+    }
+
+    const method = story.querySelector('.method-note');
+    if (method) {
+      method.textContent = 'Official sources establish what has been launched, funded or implemented. They do not establish that the measures will work.';
+    }
+
+    const labNote = story.querySelector('.lab-note');
+    if (labNote) {
+      labNote.innerHTML = '<strong>The experiment:</strong> policy time, event time and discovery time do not always line up. Some sections follow what happened; others follow the point when a result can actually be checked. The interval before an outcome is part of the story.';
+      const selection = labNote.nextElementSibling;
+      if (selection && selection.tagName === 'P') {
+        selection.textContent = 'The publishing desk selected all 25 cases because each has a current official source, a concrete public action and a next observation that could strengthen or weaken the story. Selection is not a verdict on whether the policy is good, sufficient or durable.';
+      }
+    }
+
     document.querySelectorAll('.case').forEach(card => {
       const label = card.querySelector('.case-label')?.textContent || '';
       const id = label.split('·')[0].trim();
       const opening = card.querySelector('.sequence');
-      const sentence = rewrites[id];
+      const sentence = beforeRewrites[id];
       if (!opening || !sentence) return;
       opening.innerHTML = `<strong class="before-marker"><span class="before-initial">B</span>efore</strong>, ${sentence}`;
     });
+
+    const tw02 = findCase('TW-02');
+    if (tw02) {
+      const sequences = tw02.querySelectorAll('.sequence');
+      if (sequences[2]) {
+        sequences[2].innerHTML = '<strong>When.</strong> The test begins when a funded idea has to move a real material from collection through processing to a manufacturer, buyer or community that will actually use it.';
+      }
+    }
+
+    if (!document.getElementById('field-lab-text-refinement-style')) {
+      const style = document.createElement('style');
+      style.id = 'field-lab-text-refinement-style';
+      style.textContent = '.scope-note{max-width:780px;margin:-10px 0 26px;font-size:1.08rem;line-height:1.55}.before-marker{font-family:Arial,sans-serif;font-size:.8rem;letter-spacing:.05em;text-transform:uppercase}.before-initial{font-family:Georgia,\"Times New Roman\",serif;font-size:1.18rem;line-height:0;letter-spacing:0;text-transform:uppercase}';
+      document.head.appendChild(style);
+    }
   };
 
   if (document.readyState === 'loading') {

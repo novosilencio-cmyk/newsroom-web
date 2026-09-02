@@ -55,7 +55,7 @@
 
     const byline = story.querySelector('.byline');
     if (byline) {
-      byline.textContent = 'Experimental Newsroom Field Lab · human–AI editorial collaboration · Artistic frame: Bjørn M. Benlolo';
+      byline.textContent = 'Originator & idea-maker: Mr.BM.Benlolo · Writing and editorial development: Experimental Newsroom human–AI collaboration · AI editorial roles: Verana, Ariadne, Ingrid, Nova, Karl and Eva · Published 31 August 2026 · Updated 2 September 2026';
     }
 
     const method = story.querySelector('.method-note');

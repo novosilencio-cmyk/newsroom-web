@@ -22,6 +22,17 @@
     .role-grid h2{font-size:1.7rem;margin:0 0 10px}
     .apply-link{display:inline-block;border:1px solid #171717;padding:12px 16px;font:700 12px/1.2 Arial,sans-serif;text-transform:uppercase;letter-spacing:.06em}
     .apply-link:hover{text-decoration:none;background:#171717;color:#f4f0e8}
+    .interest-form{border-top:3px solid #171717;margin-top:22px;padding-top:18px}
+    .interest-form fieldset{border:0;padding:0;margin:0 0 22px}
+    .interest-form legend,.interest-form label{font-family:Arial,sans-serif}
+    .interest-form legend{font-weight:700;margin-bottom:10px}
+    .interest-form .field{margin:0 0 16px}
+    .interest-form .field>label{display:block;font-weight:700;margin-bottom:6px}
+    .interest-form select,.interest-form textarea{width:100%;padding:10px;border:1px solid #171717;border-radius:0;background:#fffdf8;color:#171717;font:1rem/1.4 Arial,sans-serif}
+    .interest-form textarea{min-height:110px;resize:vertical}
+    .interest-form .check{display:flex;gap:9px;align-items:flex-start;margin:9px 0}
+    .interest-form .check input{margin-top:.35rem}
+    .form-note{font:600 12px/1.45 Arial,sans-serif}
     @media(max-width:800px){.story{padding:32px 0 56px}.story p,.story li{font-size:1.02rem}.role-grid{grid-template-columns:1fr}}
   </style>
 </head>
@@ -66,12 +77,59 @@
       <p>This first pilot is voluntary and unpaid. Expressing interest is not enrolment. Selected volunteers receive the full information and a separate consent step before anything begins. You may withdraw before or during the pilot.</p>
       <p>Participation does not grant permission to publish your text, feedback, identity or contact details. Internal preservation of anonymised material is a separate choice. Any later public use requires a new request.</p>
 
-      <h2>Express interest</h2>
-      <p>The public interest thread asks only which role you prefer and confirmation that you are an adult, can work in Norwegian and did not help develop the course. Do not post your name, email address, phone number, CV or other personal information.</p>
-      <p><a class="apply-link" href="https://github.com/novosilencio-cmyk/newsroom-web/issues/15">Open the interest thread →</a></p>
-      <p class="method-note">The call remains open until suitable volunteers have been identified for both roles. Commenting does not guarantee selection. Practical details will be arranged separately through an agreed private channel.</p>
+      <h2>Express interest privately</h2>
+      <p>Use the form below. It prepares an email to <a class="text-link" href="mailto:ai@daena.no?subject=Writing%20course%20pilot">ai@daena.no</a> in your own email app. The website does not receive, transmit or store the form fields.</p>
+
+      <form id="pilot-interest-form" class="interest-form">
+        <div class="field">
+          <label for="role">Which role interests you?</label>
+          <select id="role" name="role" required>
+            <option value="">Choose one</option>
+            <option value="Participant">Participant</option>
+            <option value="Evaluator">Evaluator</option>
+          </select>
+        </div>
+        <fieldset>
+          <legend>Please confirm</legend>
+          <label class="check"><input id="adult" type="checkbox" required> <span>I am 18 or older.</span></label>
+          <label class="check"><input id="norwegian" type="checkbox" required> <span>I can complete the work in Norwegian.</span></label>
+          <label class="check"><input id="independent" type="checkbox" required> <span>I have not helped develop this course.</span></label>
+          <label class="check"><input id="conditions" type="checkbox" required> <span>I understand that this first pilot is voluntary and unpaid, and that expressing interest is not enrolment.</span></label>
+        </fieldset>
+        <div class="field">
+          <label for="note">Optional short note</label>
+          <textarea id="note" name="note" maxlength="600" placeholder="You may briefly describe relevant writing, editing or source-evaluation experience. Do not include sensitive personal information."></textarea>
+        </div>
+        <button class="apply-link" type="submit">Prepare private email →</button>
+        <p id="form-status" class="form-note" aria-live="polite">Your email app will open with a prepared message. You can review it before sending.</p>
+      </form>
+
+      <p class="method-note">The call remains open until suitable volunteers have been identified for both roles. Sending an expression of interest does not guarantee selection. Selected volunteers receive full information and a separate consent step.</p>
     </article>
   </main>
   <footer><p>Experimental Newsroom · open call · voluntary pilot</p></footer>
+  <script>
+    (function () {
+      const form = document.getElementById('pilot-interest-form');
+      const status = document.getElementById('form-status');
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        if (!form.reportValidity()) return;
+        const role = document.getElementById('role').value;
+        const note = document.getElementById('note').value.trim();
+        const subject = 'Writing course pilot — ' + role + ' expression of interest';
+        const lines = [
+          'Role: ' + role,
+          'I confirm that I am 18 or older.',
+          'I confirm that I can complete the work in Norwegian.',
+          'I confirm that I have not helped develop this course.',
+          'I understand that the first pilot is voluntary and unpaid, and that this message is not enrolment or consent.'
+        ];
+        if (note) lines.push('', 'Optional note:', note);
+        status.textContent = 'Opening your email app. Review the message before sending.';
+        window.location.href = 'mailto:ai@daena.no?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
+      });
+    }());
+  </script>
 </body>
 </html>

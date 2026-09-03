@@ -1,5 +1,29 @@
 [
   {
+    "id": "ai-boom-financial-fragility-2026",
+    "section": "World",
+    "region": "Global",
+    "country": "Global economy",
+    "type": "Document reporting",
+    "title": "The AI boom can be real. Its financing can still be fragile",
+    "summary": "AI can deliver useful technology while debt, purchase commitments and opaque financing create risk elsewhere. The question is not whether the boom is real, but whether outsiders can see who carries the risk.",
+    "published": "2026-09-03",
+    "priority": 1,
+    "url": "articles/ai-boom-financial-fragility-2026.html"
+  },
+  {
+    "id": "denmark-green-tripartite-2026",
+    "section": "World",
+    "region": "Europe",
+    "country": "Denmark",
+    "type": "Implementation watch",
+    "title": "Denmark has drawn a greener map. Now every field becomes a negotiation",
+    "summary": "Twenty-three local groups have mapped thousands of possible wetlands, forests and land-retirement projects. The harder test is turning those plans into voluntary agreements, changed land and measured results.",
+    "published": "2026-09-02",
+    "priority": 2,
+    "url": "articles/denmark-green-tripartite-2026.html"
+  },
+  {
     "id": "before-then-if-25-public-experiments-2026",
     "section": "World",
     "region": "Global",
@@ -8,7 +32,7 @@
     "title": "Before, then, if: 25 public experiments worth watching",
     "summary": "Across 13 countries — including Taiwan, Japan, Denmark, Sweden, Brazil and Argentina — governments are trying practical ways to make everyday life and public systems work better, from childcare and water to farming, materials and industry. We follow the mechanisms before anyone knows whether they will work.",
     "published": "2026-08-31",
-    "priority": 1,
+    "priority": 3,
     "url": "articles/before-then-if-25-public-experiments-2026.html"
   },
   {
@@ -20,7 +44,7 @@
     "title": "Taiwan is inviting communities to help design the transition",
     "summary": "New public calls link local participation, circular materials and technology in everyday life. The pattern is real; its social effects are still an open question.",
     "published": "2026-08-31",
-    "priority": 2,
+    "priority": 4,
     "url": "articles/taiwan-community-transition-2026.html"
   }
 ]

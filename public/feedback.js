@@ -53,7 +53,7 @@
     heading.textContent = 'Add what we may have missed';
     host.appendChild(heading);
     const introduction = document.createElement('p');
-    introduction.textContent = 'Send a correction, source, new angle, possible connection, limitation or course improvement. Required fields are marked. The website does not store your answers; it prepares an email for you to review and send.';
+    introduction.textContent = 'Send a correction, source, new angle, possible connection, limitation or course improvement. Required fields are marked. When you choose “Open email draft”, your browser opens your usual email app with a draft containing the information below. You can review, change or discard it before anything is sent.';
     host.appendChild(introduction);
 
     const form = document.createElement('form');
@@ -109,12 +109,12 @@
     const button = document.createElement('button');
     button.type = 'submit';
     button.className = 'course-action feedback-submit';
-    button.textContent = 'Prepare email →';
+    button.textContent = 'Open email draft →';
     form.appendChild(button);
     const status = document.createElement('p');
     status.className = 'feedback-status';
     status.setAttribute('aria-live', 'polite');
-    status.textContent = 'Your email app will open. You can inspect and change the message before sending.';
+    status.textContent = 'Nothing is sent automatically, and the website does not store your answers.';
     form.appendChild(status);
     host.appendChild(form);
 
@@ -150,7 +150,7 @@
         '',
         'I understand that this is an editorial submission and that review is required before any use.'
       ];
-      status.textContent = 'Opening your email app. Review the message before sending.';
+      status.textContent = 'Opening your email app with a draft. Review it before you choose to send.';
       window.location.href = 'mailto:' + destination + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
     });
   });

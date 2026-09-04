@@ -1,5 +1,17 @@
 [
   {
+    "id": "tromso-discharge-chain-2026",
+    "section": "World",
+    "region": "Europe",
+    "country": "Norway",
+    "type": "Implementation watch",
+    "title": "Ready to leave hospital. Still waiting for the next service",
+    "summary": "Tromsø lists 34 ordinary short-term beds at Helsehuset. Its own reports show why a room, a budget and a staffing plan do not always become a suitable service when a patient is ready to leave hospital.",
+    "published": "2026-09-04",
+    "priority": 1,
+    "url": "articles/tromso-discharge-chain-2026.html"
+  },
+  {
     "id": "brazil-cariacica-family-farm-school-food-2026",
     "section": "World",
     "region": "Latin America",
@@ -9,7 +21,7 @@
     "summary": "Cariacica’s public records connect family-farm school-food contracts to liquidation and payment. The trail is unusually visible — and so are the questions that remain after the money moves.",
     "published": "2026-09-03",
     "updated": "2026-09-04",
-    "priority": 1,
+    "priority": 2,
     "url": "articles/brazil-cariacica-family-farm-school-food-2026.html"
   },
   {
@@ -21,7 +33,7 @@
     "title": "Japan has promised flexible daycare. The calendar is the real test",
     "summary": "Ten hours a month sounds simple. In Osaka, certification, an account, an interview and an available booking can still stand between eligibility and care.",
     "published": "2026-09-03",
-    "priority": 2,
+    "priority": 3,
     "url": "articles/japan-flexible-daycare-2026.html"
   },
   {
@@ -33,7 +45,7 @@
     "title": "The AI boom can be real. Its financing can still be fragile",
     "summary": "AI can deliver useful technology while debt, purchase commitments and opaque financing create risk elsewhere. The question is not whether the boom is real, but whether outsiders can see who carries the risk.",
     "published": "2026-09-03",
-    "priority": 3,
+    "priority": 4,
     "url": "articles/ai-boom-financial-fragility-2026.html"
   },
   {
@@ -45,7 +57,7 @@
     "title": "Denmark has drawn a greener map. Now every field becomes a negotiation",
     "summary": "Twenty-three local groups have mapped thousands of possible wetlands, forests and land-retirement projects. The harder test is turning those plans into voluntary agreements, changed land and measured results.",
     "published": "2026-09-02",
-    "priority": 4,
+    "priority": 5,
     "url": "articles/denmark-green-tripartite-2026.html"
   },
   {
@@ -57,7 +69,7 @@
     "title": "Before, then, if: 25 public experiments worth watching",
     "summary": "Across 13 countries — including Taiwan, Japan, Denmark, Sweden, Brazil and Argentina — governments are trying practical ways to make everyday life and public systems work better, from childcare and water to farming, materials and industry. We follow the mechanisms before anyone knows whether they will work.",
     "published": "2026-08-31",
-    "priority": 5,
+    "priority": 6,
     "url": "articles/before-then-if-25-public-experiments-2026.html"
   },
   {
@@ -69,7 +81,7 @@
     "title": "Taiwan is inviting communities to help design the transition",
     "summary": "New public calls link local participation, circular materials and technology in everyday life. The pattern is real; its social effects are still an open question.",
     "published": "2026-08-31",
-    "priority": 6,
+    "priority": 7,
     "url": "articles/taiwan-community-transition-2026.html"
   }
 ]

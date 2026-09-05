@@ -55,7 +55,7 @@
 
     const byline = story.querySelector('.byline');
     if (byline) {
-      byline.textContent = 'Originator & idea-maker: Mr.BM.Benlolo · Writing and editorial development: Experimental Newsroom human–AI collaboration · AI editorial roles: Verana, Ariadne, Ingrid, Nova, Karl and Eva · Published 31 August 2026 · Updated 2 September 2026';
+      byline.textContent = 'Originator, editorial direction & final publication responsibility: Bjørn Moe Aldema · Writing and editorial development: Experimental Newsroom human–AI collaboration · AI editorial roles: Verana, Ariadne, Ingrid, Nova, Karl and Eva · Published by Experimental Newsroom, 31 August 2026 · Updated 2 September 2026';
     }
 
     const method = story.querySelector('.method-note');

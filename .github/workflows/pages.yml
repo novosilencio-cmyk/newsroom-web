@@ -2,21 +2,37 @@ name: Deploy static newsroom to GitHub Pages
 
 on:
   workflow_dispatch:
+  pull_request:
   push:
     branches:
       - main
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
+  publication-safety:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Block unresolved editorial markers
+        run: |
+          python3 scripts/check_publication_markers.py
+          python3 -m unittest discover -s tests -p 'test_*.py'
+
   deploy:
+    if: github.event_name != 'pull_request'
+    needs: publication-safety
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

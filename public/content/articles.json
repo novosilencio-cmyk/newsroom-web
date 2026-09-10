@@ -1,5 +1,18 @@
 [
   {
+    "id": "fincen-healthcare-fraud-signals-2026",
+    "section": "World",
+    "region": "North America",
+    "country": "United States",
+    "type": "Document reporting",
+    "title": "What can a bank know about whether care happened?",
+    "summary": "FinCEN analysed 5,702 reports covering $17.5 billion in suspicious activity potentially linked to healthcare fraud. The figure describes financial signals—not proven fraud, verified losses or recovered money.",
+    "published": "2026-09-10",
+    "published_time": "13:30 CEST",
+    "priority": 0,
+    "url": "articles/fincen-healthcare-fraud-signals-2026.html"
+  },
+  {
     "id": "ask-before-you-buy-2026",
     "section": "World",
     "region": "Asia · Europe",
@@ -8,7 +21,7 @@
     "title": "Ask before you buy",
     "summary": "Hsinchu asked for knowledge before four care procurements were fully designed. The deeper question is how public authorities can learn before a specification hardens — without weakening fairness or responsibility.",
     "published": "2026-09-09",
-    "priority": 0,
+    "priority": 1,
     "url": "articles/ask-before-you-buy-2026.html?lang=en"
   },
   {
@@ -20,7 +33,7 @@
     "title": "Before the System Is Locked In",
     "summary": "Norwegian workers were helping to shape computer systems before most workplaces had one. AI revives the decisive question: who gets a seat at the design table while the system can still change?",
     "published": "2026-09-06",
-    "priority": 1,
+    "priority": 2,
     "url": "articles/before-the-system-is-locked-in-2026.html?lang=en"
   },
   {
@@ -32,7 +45,7 @@
     "title": "A plan is not care delivered",
     "summary": "Norwegian law does not promise every preferred form of care. It does require municipalities to ensure necessary, professionally sound and dignified services — and to rectify conditions that do not meet statutory requirements.",
     "published": "2026-09-06",
-    "priority": 2,
+    "priority": 3,
     "url": "articles/norway-elder-care-duty-to-rectify-2026.html?lang=en"
   },
   {
@@ -45,7 +58,7 @@
     "summary": "Cariacica’s public records connect family-farm school-food contracts to liquidation and payment. The trail is unusually visible — and so are the questions that remain after the money moves.",
     "published": "2026-09-03",
     "updated": "2026-09-04",
-    "priority": 3,
+    "priority": 4,
     "url": "articles/brazil-cariacica-family-farm-school-food-2026.html"
   },
   {
@@ -57,7 +70,7 @@
     "title": "Japan has promised flexible daycare. The calendar is the real test",
     "summary": "Ten hours a month sounds simple. In Osaka, certification, an account, an interview and an available booking can still stand between eligibility and care.",
     "published": "2026-09-03",
-    "priority": 4,
+    "priority": 5,
     "url": "articles/japan-flexible-daycare-2026.html"
   },
   {
@@ -69,7 +82,7 @@
     "title": "The AI boom can be real. Its financing can still be fragile",
     "summary": "AI can deliver useful technology while debt, purchase commitments and opaque financing create risk elsewhere. The question is not whether the boom is real, but whether outsiders can see who carries the risk.",
     "published": "2026-09-03",
-    "priority": 5,
+    "priority": 6,
     "url": "articles/ai-boom-financial-fragility-2026.html"
   },
   {
@@ -81,7 +94,7 @@
     "title": "Denmark has drawn a greener map. Now every field becomes a negotiation",
     "summary": "Twenty-three local groups have mapped thousands of possible wetlands, forests and land-retirement projects. The harder test is turning those plans into voluntary agreements, changed land and measured results.",
     "published": "2026-09-02",
-    "priority": 6,
+    "priority": 7,
     "url": "articles/denmark-green-tripartite-2026.html"
   },
   {
@@ -93,7 +106,7 @@
     "title": "Before, then, if: 25 public experiments worth watching",
     "summary": "Across 13 countries — including Taiwan, Japan, Denmark, Sweden, Brazil and Argentina — governments are trying practical ways to make everyday life and public systems work better, from childcare and water to farming, materials and industry. We follow the mechanisms before anyone knows whether they will work.",
     "published": "2026-08-31",
-    "priority": 7,
+    "priority": 8,
     "url": "articles/before-then-if-25-public-experiments-2026.html"
   },
   {
@@ -105,7 +118,7 @@
     "title": "Taiwan is inviting communities to help design the transition",
     "summary": "New public calls link local participation, circular materials and technology in everyday life. The pattern is real; its social effects are still an open question.",
     "published": "2026-08-31",
-    "priority": 8,
+    "priority": 9,
     "url": "articles/taiwan-community-transition-2026.html"
   }
 ]

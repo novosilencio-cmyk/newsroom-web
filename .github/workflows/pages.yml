@@ -25,6 +25,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Block unresolved editorial markers
+        run: |
+          python3 scripts/check_publication_markers.py
+          python3 -m unittest discover -s tests -p 'test_*.py'
+
       - name: Configure and enable Pages
         uses: actions/configure-pages@v5
         with:

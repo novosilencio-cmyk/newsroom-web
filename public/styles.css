@@ -23,3 +23,23 @@
 @media(max-width:480px){.language-switch{flex-wrap:wrap}.language-switch__label{width:100%;border-bottom:1px solid #171717;padding-right:0}.language-switch a{flex:1}.language-switch a:first-of-type{border-left:0}}
 
 .design-loop{margin:36px 0;padding:clamp(20px,4vw,34px);border:1px solid #171717;background:#e8eee8}.design-loop figcaption{margin-bottom:20px}.design-loop figcaption h2{margin:0 0 6px}.design-loop figcaption p{margin:0;font-style:italic}.design-loop ol{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0;padding:0;list-style:none}.design-loop li{position:relative;min-height:164px;padding:18px 16px;border:1px solid #87958b;background:#f7f4ed}.design-loop li span{display:block;width:28px;height:28px;margin-bottom:18px;border-radius:50%;background:#234b3d;color:#fff;font:700 14px/28px Arial,sans-serif;text-align:center}.design-loop li strong,.design-loop li small{display:block}.design-loop li strong{font-size:1rem;line-height:1.25}.design-loop li small{margin-top:8px;font:400 13px/1.45 Arial,sans-serif;color:#3f4943}.design-loop__return{margin:16px 0 0;padding-top:14px;border-top:1px solid #87958b;font:400 14px/1.5 Arial,sans-serif}@media(max-width:760px){.design-loop ol{grid-template-columns:1fr 1fr}.design-loop li{min-height:0}}@media(max-width:480px){.design-loop ol{grid-template-columns:1fr}}
+
+/* Atriet: a quiet visual threshold within the editorial front page. */
+.atriet-block{padding-top:clamp(42px,6vw,72px);padding-bottom:clamp(44px,7vw,84px)}
+.atriet-opening{display:grid;grid-template-columns:minmax(0,.82fr) minmax(360px,1.18fr);gap:clamp(34px,6vw,82px);align-items:start}
+.atriet-copy>h2{font-size:clamp(2.35rem,4.7vw,4.8rem);line-height:.96;margin:0 0 26px;letter-spacing:-.04em}
+.atriet-copy>div>p,.atriet-translation p{font-size:clamp(1.03rem,1.5vw,1.17rem);line-height:1.62}
+.atriet-closing{font-style:italic}
+.atriet-translation{margin-top:30px;border-top:1px solid #171717;padding-top:2px}
+.atriet-translation summary{display:flex;align-items:center;justify-content:space-between;min-height:46px;cursor:pointer;font:700 12px/1.35 Arial,sans-serif;letter-spacing:.075em;text-transform:uppercase;list-style:none}
+.atriet-translation summary::-webkit-details-marker{display:none}
+.atriet-translation summary::after{content:'+';font:400 22px/1 Georgia,'Times New Roman',serif}
+.atriet-translation[open] summary::after{content:'−'}
+.atriet-translation summary:focus-visible{outline:3px solid #b45309;outline-offset:4px}
+.atriet-translation h3{font-size:clamp(1.65rem,2.6vw,2.4rem);line-height:1.05;margin:14px 0 18px;letter-spacing:-.025em}
+.atriet-visual{margin:0}
+.atriet-visual img{display:block;width:100%;aspect-ratio:2/3;object-fit:cover;object-position:center;border:1px solid #171717;background:#e8eee8}
+.atriet-visual figcaption{margin-top:11px;font:500 12px/1.55 Arial,sans-serif;letter-spacing:.01em}
+.atriet-visual figcaption span{display:block}
+.atriet-visual figcaption span+span{margin-top:6px;color:#3f4943}
+@media(max-width:800px){.atriet-opening{grid-template-columns:1fr;gap:30px}.atriet-copy>h2{font-size:clamp(2.4rem,12vw,4.2rem)}.atriet-visual{max-width:620px}.atriet-visual img{aspect-ratio:auto}}

@@ -24,6 +24,7 @@ jobs:
       - name: Block unresolved editorial markers
         run: |
           python3 scripts/check_publication_markers.py
+          python3 scripts/check_norwegian_editorial_style.py
           python3 -m unittest discover -s tests -p 'test_*.py'
 
   deploy:

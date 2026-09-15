@@ -6,10 +6,11 @@
     "country": "England",
     "type": "Document-based analysis",
     "title": "England revisits motorway charging after a pilot awarded no grants",
-    "summary": "A proposed replacement would change how motorway electricity upgrades are funded. The opportunity is to follow that change through to charging people can reach, use and afford.",
+    "summary": "After every applicant withdrew from a grid-upgrade pilot, England proposed a different funding arrangement. Its value will depend on whether the new connections help drivers find charging they can use and afford.",
     "published": "2026-09-15",
     "priority": 0,
-    "url": "articles/england-motorway-charging-2026.html"
+    "url": "articles/england-motorway-charging-2026.html",
+    "language_updated": "2026-09-15"
   },
   {
     "id": "fincen-healthcare-fraud-signals-2026",
@@ -18,11 +19,12 @@
     "country": "United States",
     "type": "Document reporting",
     "title": "What can a bank know about whether care happened?",
-    "summary": "FinCEN analysed 5,702 reports covering $17.5 billion in suspicious activity potentially linked to healthcare fraud. The figure describes financial signals—not proven fraud, verified losses or recovered money.",
+    "summary": "A federal analysis follows $17.5 billion in activity that financial institutions considered suspicious. Understanding what happened to the money still requires evidence about the care behind the payments.",
     "published": "2026-09-10",
     "published_time": "13:37 CEST",
     "priority": 1,
-    "url": "articles/fincen-healthcare-fraud-signals-2026.html"
+    "url": "articles/fincen-healthcare-fraud-signals-2026.html",
+    "language_updated": "2026-09-15"
   },
   {
     "id": "ask-before-you-buy-2026",
@@ -31,10 +33,11 @@
     "country": "Taiwan · Norway · United Kingdom",
     "type": "Document reporting",
     "title": "Ask before you buy",
-    "summary": "Hsinchu asked for knowledge before four care procurements were fully designed. The deeper question is how public authorities can learn before a specification hardens — without weakening fairness or responsibility.",
+    "summary": "Before deciding what to buy for its care services, Hsinchu County asked for knowledge. Its notices show how early questions can give more people a part in shaping the eventual service.",
     "published": "2026-09-09",
     "priority": 2,
-    "url": "articles/ask-before-you-buy-2026.html?lang=en"
+    "url": "articles/ask-before-you-buy-2026.html?lang=en",
+    "language_updated": "2026-09-15"
   },
   {
     "id": "before-the-system-is-locked-in-2026",
@@ -43,10 +46,11 @@
     "country": "Norway",
     "type": "Technology and working-life analysis",
     "title": "Before the System Is Locked In",
-    "summary": "Norwegian workers were helping to shape computer systems before most workplaces had one. AI revives the decisive question: who gets a seat at the design table while the system can still change?",
+    "summary": "In the 1970s, Norwegian unions and researchers explored how workers could help shape computer systems. Their experience speaks to today's AI decisions: knowledge of the work needs a place while the important choices are still open.",
     "published": "2026-09-06",
     "priority": 3,
-    "url": "articles/before-the-system-is-locked-in-2026.html?lang=en"
+    "url": "articles/before-the-system-is-locked-in-2026.html?lang=en",
+    "language_updated": "2026-09-15"
   },
   {
     "id": "norway-elder-care-duty-to-rectify-2026",
@@ -54,11 +58,12 @@
     "region": "Europe",
     "country": "Norway",
     "type": "Rights and implementation analysis",
-    "title": "A plan is not care delivered",
-    "summary": "Norwegian law does not promise every preferred form of care. It does require municipalities to ensure necessary, professionally sound and dignified services — and to rectify conditions that do not meet statutory requirements.",
+    "title": "When plans must become care",
+    "summary": "For an older person who needs care, municipal plans matter through the help received each day. Norway's audit findings call for closer scrutiny of that connection, alongside the legal duty to provide adequate care and correct shortcomings.",
     "published": "2026-09-06",
     "priority": 4,
-    "url": "articles/norway-elder-care-duty-to-rectify-2026.html?lang=en"
+    "url": "articles/norway-elder-care-duty-to-rectify-2026.html?lang=en",
+    "language_updated": "2026-09-15"
   },
   {
     "id": "brazil-cariacica-family-farm-school-food-2026",
@@ -67,11 +72,12 @@
     "country": "Brazil",
     "type": "Implementation watch",
     "title": "A contract is not a school lunch. Cariacica lets us follow what happens next",
-    "summary": "Cariacica’s public records connect family-farm school-food contracts to liquidation and payment. The trail is unusually visible — and so are the questions that remain after the money moves.",
+    "summary": "School-food records in Cariacica, Brazil, let us follow purchases from family-farm associations through invoices and payments. They reveal part of the journey from farm to school, and point to the people whose experience still needs to be heard.",
     "published": "2026-09-03",
     "updated": "2026-09-04",
     "priority": 5,
-    "url": "articles/brazil-cariacica-family-farm-school-food-2026.html"
+    "url": "articles/brazil-cariacica-family-farm-school-food-2026.html",
+    "language_updated": "2026-09-15"
   },
   {
     "id": "japan-flexible-daycare-2026",
@@ -80,10 +86,11 @@
     "country": "Japan",
     "type": "Implementation watch",
     "title": "Japan has promised flexible daycare. The calendar is the real test",
-    "summary": "Ten hours a month sounds simple. In Osaka, certification, an account, an interview and an available booking can still stand between eligibility and care.",
+    "summary": "Japan's new benefit gives eligible young children access to limited-hours daycare regardless of whether a parent works. Osaka's application process shows what a family must do before those hours can become part of its week.",
     "published": "2026-09-03",
     "priority": 6,
-    "url": "articles/japan-flexible-daycare-2026.html"
+    "url": "articles/japan-flexible-daycare-2026.html",
+    "language_updated": "2026-09-15"
   },
   {
     "id": "ai-boom-financial-fragility-2026",
@@ -92,10 +99,11 @@
     "country": "Global economy",
     "type": "Document reporting",
     "title": "The AI boom can be real. Its financing can still be fragile",
-    "summary": "AI can deliver useful technology while debt, purchase commitments and opaque financing create risk elsewhere. The question is not whether the boom is real, but whether outsiders can see who carries the risk.",
+    "summary": "AI may save time at work long before its investors recover the cost of building it. The Bank for International Settlements examines how useful technology and vulnerable financing can grow together.",
     "published": "2026-09-03",
     "priority": 7,
-    "url": "articles/ai-boom-financial-fragility-2026.html"
+    "url": "articles/ai-boom-financial-fragility-2026.html",
+    "language_updated": "2026-09-15"
   },
   {
     "id": "denmark-green-tripartite-2026",
@@ -104,10 +112,11 @@
     "country": "Denmark",
     "type": "Implementation watch",
     "title": "Denmark has drawn a greener map. Now every field becomes a negotiation",
-    "summary": "Twenty-three local groups have mapped thousands of possible wetlands, forests and land-retirement projects. The harder test is turning those plans into voluntary agreements, changed land and measured results.",
+    "summary": "Across Denmark, local groups have mapped possible wetlands, forests and changes to farmland. Making those plans work now means reaching agreements with owners, finding skilled staff and following what happens to the land and water.",
     "published": "2026-09-02",
     "priority": 8,
-    "url": "articles/denmark-green-tripartite-2026.html"
+    "url": "articles/denmark-green-tripartite-2026.html",
+    "language_updated": "2026-09-15"
   },
   {
     "id": "before-then-if-25-public-experiments-2026",
@@ -116,10 +125,11 @@
     "country": "13 countries · 25 public initiatives",
     "type": "Field Lab 001",
     "title": "Before, then, if: 25 public experiments worth watching",
-    "summary": "Across 13 countries — including Taiwan, Japan, Denmark, Sweden, Brazil and Argentina — governments are trying practical ways to make everyday life and public systems work better, from childcare and water to farming, materials and industry. We follow the mechanisms before anyone knows whether they will work.",
+    "summary": "A few hours of childcare, a restored wetland, a reliable water supply: public initiatives become interesting when we can see what they might change in daily life. These 25 cases offer concrete starting points for following that work.",
     "published": "2026-08-31",
     "priority": 9,
-    "url": "articles/before-then-if-25-public-experiments-2026.html"
+    "url": "articles/before-then-if-25-public-experiments-2026.html",
+    "language_updated": "2026-09-15"
   },
   {
     "id": "taiwan-community-transition-2026",
@@ -128,9 +138,10 @@
     "country": "Taiwan",
     "type": "Document reporting",
     "title": "Taiwan is inviting communities to help design the transition",
-    "summary": "New public calls link local participation, circular materials and technology in everyday life. The pattern is real; its social effects are still an open question.",
+    "summary": "Local energy, materials that can be used again, and technology shaped around daily life: separate Taiwanese calls invite communities and researchers to help decide what comes next. The opportunities are concrete; the benefits remain to be demonstrated.",
     "published": "2026-08-31",
     "priority": 10,
-    "url": "articles/taiwan-community-transition-2026.html"
+    "url": "articles/taiwan-community-transition-2026.html",
+    "language_updated": "2026-09-15"
   }
 ]

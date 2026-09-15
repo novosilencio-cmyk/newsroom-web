@@ -1391,10 +1391,63 @@ function texturePaint(){
 }
 texturePaint();
 function flatFallback(message){const c=document.createElement(&#x27;canvas&#x27;);c.className=&#x27;relief-canvas&#x27;;c.width=data.w;c.height=data.h;c.style.objectFit=&#x27;contain&#x27;;canvas.replaceWith(c);c.getContext(&#x27;2d&#x27;).drawImage(sampleCanvas,0,0);depth.disabled=true;turn.disabled=true;status.textContent=message;status.style.inset=&#x27;auto 16px 0&#x27;;}
-if(typeof THREE===&#x27;undefined&#x27;){flatFallback(&#x27;Flat view · 3D unavailable.&#x27;);return;}
+function softwareRelief(){
+ const c=document.createElement(&#x27;canvas&#x27;);c.className=&#x27;relief-canvas&#x27;;canvas.replaceWith(c);
+ const paint=c.getContext(&#x27;2d&#x27;);
+ let angle=-20*Math.PI/180,tilt=.11,hold=null,frame=0;
+ const nx=40,ny=58,verts=[];
+ for(let j=0;j&lt;=ny;j++)for(let i=0;i&lt;=nx;i++){
+  const u=i/nx,v=j/ny,ix=Math.round(u*(data.gw-1)),iy=Math.round(v*(data.gh-1));
+  verts.push({x:(u-.5)*3.1,y:(.5-v)*4.46,z:heights[iy*data.gw+ix],u:u*data.w,v:v*data.h});
+ }
+ const faces=[];
+ for(let j=0;j&lt;ny;j++)for(let i=0;i&lt;nx;i++){const k=j*(nx+1)+i;faces.push([k,k+nx+1,k+1],[k+1,k+nx+1,k+nx+2]);}
+ function draw(){
+  frame=0;const w=stage.clientWidth,h=stage.clientHeight,ratio=Math.min(devicePixelRatio||1,1.5);
+  if(c.width!==Math.round(w*ratio)||c.height!==Math.round(h*ratio)){c.width=Math.round(w*ratio);c.height=Math.round(h*ratio);}
+  paint.setTransform(ratio,0,0,ratio,0,0);paint.clearRect(0,0,w,h);
+  const scale=Math.min(w/4.05,h/5.2),depthScale=Number(depth.value)/100*1.4;
+  const cy=Math.cos(angle),sy=Math.sin(angle),cx=Math.cos(tilt),sx=Math.sin(tilt);
+  const p=verts.map(a=&gt;{
+   const z=a.z*depthScale,xx=a.x*cy+z*sy,zz=-a.x*sy+z*cy,yy=a.y*cx-zz*sx,zz2=a.y*sx+zz*cx;
+   const perspective=8.5/(8.5-zz2);
+   return {x:w/2+xx*scale*perspective,y:h/2-yy*scale*perspective,z:zz2,u:a.u,v:a.v,wx:xx,wy:yy};
+  });
+  const ordered=faces.map(f=&gt;({f,z:(p[f[0]].z+p[f[1]].z+p[f[2]].z)/3})).sort((a,b)=&gt;a.z-b.z);
+  for(const item of ordered){
+   const [a,b,d]=item.f.map(k=&gt;p[k]);
+   const ux=b.u-a.u,uy=b.v-a.v,vx=d.u-a.u,vy=d.v-a.v,det=ux*vy-vx*uy;
+   const ax=((b.x-a.x)*vy-(d.x-a.x)*uy)/det,bx=((b.y-a.y)*vy-(d.y-a.y)*uy)/det;
+   const ay=((d.x-a.x)*ux-(b.x-a.x)*vx)/det,by=((d.y-a.y)*ux-(b.y-a.y)*vx)/det;
+   const ex=b.wx-a.wx,ey=b.wy-a.wy,ez=b.z-a.z,fx=d.wx-a.wx,fy=d.wy-a.wy,fz=d.z-a.z;
+   let nnx=ey*fz-ez*fy,nny=ez*fx-ex*fz,nnz=ex*fy-ey*fx;
+   if(nnz&lt;0){nnx=-nnx;nny=-nny;nnz=-nnz;}
+   const norm=Math.hypot(nnx,nny,nnz)||1;
+   const light=Math.max(0,(-.35*nnx+.55*nny+.76*nnz)/norm);
+   paint.save();paint.beginPath();paint.moveTo(a.x,a.y);paint.lineTo(b.x,b.y);paint.lineTo(d.x,d.y);paint.closePath();paint.clip();
+   paint.transform(ax,bx,ay,by,a.x-ax*a.u-ay*a.v,a.y-bx*a.u-by*a.v);paint.drawImage(sampleCanvas,0,0);paint.restore();
+   paint.beginPath();paint.moveTo(a.x,a.y);paint.lineTo(b.x,b.y);paint.lineTo(d.x,d.y);paint.closePath();
+   paint.fillStyle=&#x27;rgba(&#x27;+inkRGB.map(Math.round).join(&#x27;,&#x27;)+&#x27;,&#x27;+((1-light)*.17)+&#x27;)&#x27;;paint.fill();
+  }
+  depthValue.textContent=depth.value+&#x27; %&#x27;;turnValue.textContent=turn.value+&#x27;°&#x27;;
+  c.dataset.renderMode=&#x27;software-3d&#x27;;c.dataset.depth=depth.value;c.dataset.rotation=turn.value;
+ }
+ function schedule(){if(!frame)frame=requestAnimationFrame(draw);}
+ depth.addEventListener(&#x27;input&#x27;,schedule);
+ turn.addEventListener(&#x27;input&#x27;,()=&gt;{angle=Number(turn.value)*Math.PI/180;schedule();});
+ c.addEventListener(&#x27;pointerdown&#x27;,e=&gt;{hold={id:e.pointerId,x:e.clientX,y:e.clientY,angle,tilt};c.setPointerCapture(e.pointerId);});
+ c.addEventListener(&#x27;pointermove&#x27;,e=&gt;{if(!hold||hold.id!==e.pointerId)return;angle=Math.max(-1.13,Math.min(1.13,hold.angle+(e.clientX-hold.x)*.007));tilt=Math.max(-.5,Math.min(.5,hold.tilt+(e.clientY-hold.y)*.005));turn.value=Math.round(angle*180/Math.PI);schedule();});
+ c.addEventListener(&#x27;pointerup&#x27;,()=&gt;{hold=null;});c.addEventListener(&#x27;pointercancel&#x27;,()=&gt;{hold=null;});
+ new ResizeObserver(schedule).observe(stage);
+ new MutationObserver(()=&gt;{texturePaint();schedule();}).observe(document.documentElement,{attributes:true,attributeFilter:[&#x27;class&#x27;,&#x27;style&#x27;,&#x27;data-theme&#x27;]});
+ window.matchMedia(&#x27;(prefers-color-scheme: dark)&#x27;).addEventListener(&#x27;change&#x27;,()=&gt;{texturePaint();schedule();});
+ depth.disabled=false;turn.disabled=false;status.hidden=true;draw();
+}
+
+if(typeof THREE===&#x27;undefined&#x27;){softwareRelief();return;}
 let renderer;
 try{renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true,powerPreference:&#x27;low-power&#x27;});}catch(error){
- flatFallback(&#x27;Flat view · WebGL unavailable.&#x27;);return;
+ softwareRelief();return;
 }
 renderer.setPixelRatio(Math.min(devicePixelRatio||1,2));
 renderer.setClearColor(0,0);renderer.outputColorSpace=THREE.SRGBColorSpace;

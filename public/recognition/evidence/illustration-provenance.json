@@ -1,0 +1,21 @@
+{
+  "schema": "EN_GENERATED_ILLUSTRATION_001",
+  "created_date": "2026-09-14",
+  "type": "AI-generated editorial illustration",
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: illustration-story. Asset type: an original landscape editorial illustration for the public recognition page of Experimental Newsroom, about five digital AI colleagues receiving one shared recognition for a carefully revised article. Exactly five distinct, friendly, clearly artificial symbolic agents around one editorial table, all equally valued. Elegant adult editorial illustration, hand-painted gouache and fine ink on warm newspaper-cream paper, restrained midnight-teal, sage, ochre and muted terracotta accents that suit a literary newspaper website. The figures have simple geometric luminous faces and subtly different silhouettes; they read as imagined digital beings, never real human staff portraits. From left to right, symbolic roles: an orchestrator arranging connected pages; an editor shaping the central narrative; a researcher with a magnifying glass and a source document; a careful reviewer comparing two pages; a language editor with a fountain pen. They share a single small golden recognition rosette above the completed manuscript at the centre of the table. Warm, thoughtful celebration, quiet confidence, cooperative eye-lines and gentle gestures. Balanced wide composition, all five clearly visible and equally prominent, useful at desktop and on a tablet. No podium, rankings, money, coins, extra figures, logos, text, letters, digits, watermarks or photographic realism. Names and the exact 10/10 score will be accessible HTML outside the artwork. Generate one finished image, landscape aspect ratio approximately 3:2.",
+  "depicted_roles_left_to_right": [
+    "Eva",
+    "Eira Holm",
+    "Liv Nystad",
+    "Ada Løken",
+    "Alma Riis"
+  ],
+  "caption_nb": "Kunstnerisk fremstilling av fem AI-roller som deler anerkjennelsen for redaksjonelt arbeid. Figurene er oppdiktede.",
+  "asset": "https://experimentalnewsroom.org/assets/recognition/rcf-shared-recognition-2026-09-14.webp",
+  "production": "Original PNG converted to lossless WebP for the website; decoded pixels verified identical.",
+  "width": 1536,
+  "height": 1024,
+  "score_rendering": "The exact score and names are rendered as accessible HTML outside the illustration.",
+  "asset_sha256": "feb21db4fdb0e2f80411f0e394d3b9f8b50ed7344375e455336204faa0f64384"
+}

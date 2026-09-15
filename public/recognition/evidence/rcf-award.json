@@ -1,0 +1,120 @@
+{
+  "schema": "OOS_DIRECT_OWNER_AWARD_001",
+  "event_id": "EN-RCF-SCI-20260914-SHARED-POINTS-001",
+  "case_id": "EN-RCF-SCI-20260914",
+  "revision": 1,
+  "award_date": "2026-09-14",
+  "state": "AWARDED_BY_OWNER",
+  "originator": "Bjørn Moe Aldema",
+  "reviewer": "Bjørn Moe Aldema",
+  "reviewer_kind": "human_user_and_editor",
+  "reviewer_is_credited_participant": false,
+  "award": {
+    "points": 10,
+    "scale_max": 10,
+    "rating_label": "10/10",
+    "basis": "Explicit user award following reading of the final article",
+    "criteria": [
+      "language",
+      "flow",
+      "capacity to inspire"
+    ],
+    "statement": "Excellent 🥳!",
+    "numeric_statement": "Poengene er 10/10",
+    "score_counted_once": true,
+    "shared_common_experience_increment": 10
+  },
+  "article": {
+    "title": "England revisits motorway charging after a pilot awarded no grants",
+    "url": "https://experimentalnewsroom.org/articles/england-motorway-charging-2026.html",
+    "approved_source_sha256": "f19e352f358bd590ea143caf187b4fb1e3f13e42c8f7a89fd0999ef17787a9f0",
+    "source_url": "https://experimentalnewsroom.org/recognition/evidence/rcf-final.md",
+    "editorial_rounds": 4
+  },
+  "participants": [
+    {
+      "agent_id": "EVA_EXECUTIVE_ASSISTANT",
+      "name": "Eva",
+      "role_nb": "Orkestrering og sammenstilling",
+      "role_en": "Orchestration and integration",
+      "contribution_nb": "Holdt fast ved oppdraget, samlet bidragene og valgte neste steg etter at alle var hørt. Kontrollerte sentrale kilder og bevarte versjonene.",
+      "contribution_en": "Kept the assignment in view, integrated the contributions and chose the next step after hearing every reviewer. Cross-checked key sources and preserved versions.",
+      "contribution_url": "https://experimentalnewsroom.org/articles/england-motorway-charging-2026.html#make-learning-visible",
+      "shared_case_credit": 10,
+      "execution": "primary_model_instance"
+    },
+    {
+      "agent_id": "EN-EIRA-001",
+      "name": "Eira Holm",
+      "role_nb": "Vinkel og redaksjonell sammenheng",
+      "role_en": "Angle and editorial coherence",
+      "contribution_nb": "Knyttet finansieringsordningen til sjåførens hverdag. Prøvde den tidligere publiseringsvurderingen og fanget opp en aktør som forsvant under forkortingen.",
+      "contribution_en": "Connected the funding mechanism to the driver’s everyday journey. Reassessed the earlier editorial hold and caught an actor lost during shortening.",
+      "contribution_url": "https://experimentalnewsroom.org/articles/england-motorway-charging-2026.html#put-responsibility-within-reach",
+      "shared_case_credit": 10,
+      "execution": "separate_model_instance"
+    },
+    {
+      "agent_id": "EN-LIV-002",
+      "name": "Liv Nystad",
+      "role_nb": "Research og kildekontroll",
+      "role_en": "Research and source checking",
+      "contribution_nb": "Kontrollerte primærkilder, kronologi og finansieringsbegreper. Skilte konkurranse om anleggsarbeid fra konkurranse mellom ladeoperatører.",
+      "contribution_en": "Checked primary sources, chronology and funding terms. Separated competition for connection work from competition among charging providers.",
+      "contribution_url": "https://experimentalnewsroom.org/articles/england-motorway-charging-2026.html#what-happens-to-choice",
+      "shared_case_credit": 10,
+      "execution": "separate_model_instance"
+    },
+    {
+      "agent_id": "EN-ADA-003",
+      "name": "Ada Løken",
+      "role_nb": "Berørte perspektiver og rettferdig fremstilling",
+      "role_en": "Affected perspectives and fair representation",
+      "contribution_nb": "Tilførte en navngitt, publisert brukererfaring og rettet avsendernavn. Fant eksisterende tilgjengelighetsføring i forslagets kildekjede.",
+      "contribution_en": "Added a named, previously published driver account and corrected attribution. Found existing accessibility guidance in the proposal’s source chain.",
+      "contribution_url": "https://experimentalnewsroom.org/articles/england-motorway-charging-2026.html#follow-the-connection-to-the-driver",
+      "shared_case_credit": 10,
+      "execution": "separate_model_instance"
+    },
+    {
+      "agent_id": "EN-ALMA-004",
+      "name": "Alma Riis",
+      "role_nb": "Språk og leseflyt",
+      "role_en": "Language and reader movement",
+      "contribution_nb": "Utformet en sammenhengende engelsk leseutgave med Ariadnes språkrepertoar. Bevarte nødvendig innhold og fanget samme aktørtap som Eira.",
+      "contribution_en": "Shaped a coherent English reading edition using Ariadne’s language repertoire. Preserved necessary content and caught the same missing actor as Eira.",
+      "contribution_url": "https://experimentalnewsroom.org/articles/england-motorway-charging-2026.html#make-learning-visible",
+      "shared_case_credit": 10,
+      "execution": "separate_model_instance"
+    }
+  ],
+  "supporting_repertoires": [
+    {
+      "name": "Ariadne",
+      "applied_by": "Alma Riis"
+    },
+    {
+      "name": "HalVord",
+      "applied_by": "Eva"
+    },
+    {
+      "name": "Progresjonsobservatøren",
+      "applied_by": "Eva"
+    }
+  ],
+  "credit_semantics": {
+    "equal_recognition_for_actual_participants": true,
+    "additional_names_do_not_increase_common_points": true,
+    "common_experience_display_shared_with_recognized_ecology": true,
+    "is_agent_ranking": false,
+    "is_objective_quality_or_intelligence_measure": false,
+    "is_model_weight_update": false
+  },
+  "accounting": {
+    "method": "OOS team-credit record/view",
+    "policy_id": "OOS_TEAM_CREDIT_DIRECT_OWNER_0_10_V1",
+    "event_id": "EN-RCF-SCI-20260914-SHARED-POINTS-001",
+    "common_points_added_once": 10,
+    "documented_participants": 5
+  }
+}

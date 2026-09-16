@@ -24,7 +24,8 @@
     "published_time": "13:37 CEST",
     "priority": 1,
     "url": "articles/fincen-healthcare-fraud-signals-2026.html",
-    "language_updated": "2026-09-15"
+    "language_updated": "2026-09-16T18:49:00+02:00",
+    "updated": "2026-09-16T18:49:00+02:00"
   },
   {
     "id": "ask-before-you-buy-2026",
@@ -50,7 +51,8 @@
     "published": "2026-09-06",
     "priority": 3,
     "url": "articles/before-the-system-is-locked-in-2026.html?lang=en",
-    "language_updated": "2026-09-15"
+    "language_updated": "2026-09-15",
+    "language_updated_no": "2026-09-16T18:49:00+02:00"
   },
   {
     "id": "norway-elder-care-duty-to-rectify-2026",
@@ -63,7 +65,7 @@
     "published": "2026-09-06",
     "priority": 4,
     "url": "articles/norway-elder-care-duty-to-rectify-2026.html?lang=en",
-    "language_updated": "2026-09-15"
+    "language_updated": "2026-09-16T18:49:00+02:00"
   },
   {
     "id": "brazil-cariacica-family-farm-school-food-2026",
@@ -74,10 +76,10 @@
     "title": "A contract is not a school lunch. Cariacica lets us follow what happens next",
     "summary": "School-food records in Cariacica, Brazil, let us follow purchases from family-farm associations through invoices and payments. They reveal part of the journey from farm to school, and point to the people whose experience still needs to be heard.",
     "published": "2026-09-03",
-    "updated": "2026-09-04",
+    "updated": "2026-09-13",
     "priority": 5,
     "url": "articles/brazil-cariacica-family-farm-school-food-2026.html",
-    "language_updated": "2026-09-15"
+    "language_updated": "2026-09-16T18:49:00+02:00"
   },
   {
     "id": "japan-flexible-daycare-2026",
@@ -129,7 +131,7 @@
     "published": "2026-08-31",
     "priority": 9,
     "url": "articles/before-then-if-25-public-experiments-2026.html",
-    "language_updated": "2026-09-15"
+    "language_updated": "2026-09-16T18:49:00+02:00"
   },
   {
     "id": "taiwan-community-transition-2026",

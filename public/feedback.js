@@ -87,7 +87,7 @@
       placeholder: 'State the point, why it matters, and what could test or improve it.'
     }));
     form.appendChild(field(formId + '-source', 'Source link or reference — optional', {
-      type: 'url', maxLength: 600, placeholder: 'https://…',
+      type: 'text', maxLength: 600, placeholder: 'URL, or title, author and page',
       help: 'For personal observations, say when and where in the contribution instead. Do not include private or sensitive information.'
     }));
     form.appendChild(field(formId + '-credit', 'How may we credit you? — optional', {

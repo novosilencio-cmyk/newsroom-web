@@ -1,0 +1,21 @@
+{
+  "id": "institusjon-makt-kunnskap-staten",
+  "slug": "institusjon",
+  "status": "ongoing",
+  "cadence": "Friday when source-ready",
+  "title": {
+    "nb": "Institusjon — makt, kunnskap og staten",
+    "en": "Institution — power, knowledge and the state"
+  },
+  "summary": {
+    "nb": "En løpende serie om hvordan institusjoner blir opprettet, hvilke samfunnsfunksjoner de skal bære, hvem som kan instruere dem, og hvordan deres egen makt kan kontrolleres.",
+    "en": "An ongoing series about how institutions are established, which social functions they carry, who may instruct them, and how their own power can be held accountable."
+  },
+  "language_urls": {
+    "nb": "https://experimentalnewsroom.org/series/institusjon/nb/",
+    "en": "https://experimentalnewsroom.org/series/institusjon/en/",
+    "x-default": "https://experimentalnewsroom.org/series/institusjon/"
+  },
+  "first_part_status": "in development",
+  "originator_editorial_direction": "Bjørn Moe Aldema"
+}

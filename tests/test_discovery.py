@@ -39,6 +39,15 @@ class DiscoveryTests(unittest.TestCase):
         self.assertIn("Sitemap: https://experimentalnewsroom.org/sitemap.xml",robots)
         self.assertTrue((PUBLIC/"llms.txt").exists())
 
+    def test_language_and_series_urls(self):
+        sitemap=(PUBLIC/"sitemap.xml").read_text(encoding="utf-8")
+        for rel in ["nb/","en/","series/institusjon/","series/institusjon/nb/","series/institusjon/en/"]:
+            self.assertIn(BASE+rel,sitemap)
+        nb=(PUBLIC/"series"/"institusjon"/"nb"/"index.html").read_text(encoding="utf-8")
+        en=(PUBLIC/"series"/"institusjon"/"en"/"index.html").read_text(encoding="utf-8")
+        self.assertIn('hreflang="en"',nb)
+        self.assertIn('hreflang="nb"',en)
+
     def test_norway_view(self):
         text=(PUBLIC/"norway"/"index.html").read_text(encoding="utf-8")
         self.assertIn("<h2>Norge</h2>",text)

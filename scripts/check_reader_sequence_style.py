@@ -28,7 +28,7 @@ class ArrowParser(HTMLParser):
     def handle_data(self, data):
         if "→" not in data:
             return
-        if any(tag in {"a","script","style","code","pre"} for tag in self.stack):
+        if any(tag in {"a","button","script","style","code","pre"} for tag in self.stack):
             return
         compact = " ".join(data.split())
         self.violations.append(f"{self.path.relative_to(ROOT)}: {compact}")

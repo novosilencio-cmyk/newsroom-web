@@ -17,5 +17,9 @@
     "x-default": "https://experimentalnewsroom.org/series/institusjon/"
   },
   "first_part_status": "in development",
-  "originator_editorial_direction": "Bjørn Moe Aldema"
+  "originator_editorial_direction": "Bjørn Moe Aldema",
+  "presentation_updated": "2026-09-18",
+  "presentation_mode": "reader_questions_transition",
+  "form_lead": "Alma Riis",
+  "transition_state": "TRANSITION_ACTIVE"
 }

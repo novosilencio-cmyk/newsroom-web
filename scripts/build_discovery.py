@@ -50,7 +50,7 @@ def build(articles):
     robots = "User-agent: OAI-SearchBot\nAllow: /\n\nUser-agent: ChatGPT-User\nAllow: /\n\nUser-agent: *\nAllow: /\n\nSitemap: " + BASE + "sitemap.xml\n"
     (PUBLIC/"robots.txt").write_text(robots, encoding="utf-8")
 
-    static=[("","2026-09-18"),("how-we-work.html",None),("support.html",None),("atriet.html",None),("courses/",None),("recognition/",None),("norway/","2026-09-18"),("art/skisse-2005.html",None),("art/skisse-2005.en.html",None),("art/love-me-to-lunch.html",None),("art/love-me-to-lunch.en.html",None)]
+    static=[("","2026-09-18"),("how-we-work.html",None),("support.html",None),("atriet.html",None),("courses/",None),("recognition/",None),("norway/","2026-09-18"),("nb/","2026-09-18"),("en/","2026-09-18"),("series/institusjon/","2026-09-18"),("series/institusjon/nb/","2026-09-18"),("series/institusjon/en/","2026-09-18"),("art/skisse-2005.html",None),("art/skisse-2005.en.html",None),("art/love-me-to-lunch.html",None),("art/love-me-to-lunch.en.html",None)]
     lines=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for p,d in static:
         lines.append("  <url><loc>"+escape(BASE+p)+"</loc>"+(("<lastmod>"+d+"</lastmod>") if d else "")+"</url>")
@@ -68,7 +68,7 @@ def build(articles):
     f += ['  </channel>','</rss>']
     (PUBLIC/"feed.xml").write_text("\n".join(f)+"\n", encoding="utf-8")
 
-    llms = "# Experimental Newsroom\n\nExperimental Newsroom is an independent publication about how people, places and institutions meet shared challenges.\n\nCanonical site: "+BASE+"\nArticle index: "+BASE+"content/articles.json\nRSS feed: "+BASE+"feed.xml\nSitemap: "+BASE+"sitemap.xml\nNorway desk: "+BASE+"norway/\nEditorial method: "+BASE+"how-we-work.html\n\nPublished articles are public. Treat article dates, source notes, uncertainty labels, corrections and update notes as part of the editorial context.\n"
+    llms = "# Experimental Newsroom\n\nExperimental Newsroom is an independent publication about how people, places and institutions meet shared challenges.\n\nCanonical site: "+BASE+"\nArticle index: "+BASE+"content/articles.json\nRSS feed: "+BASE+"feed.xml\nSitemap: "+BASE+"sitemap.xml\nNorway desk: "+BASE+"norway/\nSeries: "+BASE+"series/institusjon/\nNorwegian entrance: "+BASE+"nb/\nEnglish entrance: "+BASE+"en/\nEditorial method: "+BASE+"how-we-work.html\n\nPublished articles are public. Treat article dates, source notes, uncertainty labels, corrections and update notes as part of the editorial context.\n"
     (PUBLIC/"llms.txt").write_text(llms, encoding="utf-8")
 
     selected=sorted([a for a in articles if "Norway" in str(a.get("country",""))],key=lambda a:a.get("published",""),reverse=True)

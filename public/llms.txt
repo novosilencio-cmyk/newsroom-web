@@ -1,0 +1,12 @@
+# Experimental Newsroom
+
+Experimental Newsroom is an independent publication about how people, places and institutions meet shared challenges.
+
+Canonical site: https://experimentalnewsroom.org/
+Article index: https://experimentalnewsroom.org/content/articles.json
+RSS feed: https://experimentalnewsroom.org/feed.xml
+Sitemap: https://experimentalnewsroom.org/sitemap.xml
+Norway desk: https://experimentalnewsroom.org/norway/
+Editorial method: https://experimentalnewsroom.org/how-we-work.html
+
+Published articles are public. Treat article dates, source notes, uncertainty labels, corrections and update notes as part of the editorial context.

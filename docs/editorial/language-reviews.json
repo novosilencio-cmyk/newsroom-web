@@ -118,5 +118,45 @@
       "reference": "docs/editorial/language-release-2026-09-19.md#roles-and-authority",
       "sha256": "94dd80a9ae399226bac10ddd78dacc0747e12a482773e824140984be3f0ccdb9"
     }
+  },
+  "public/support.html": {
+    "case_id": "support-legal-navigation-2026-09-19",
+    "sha256": "d1af69f5074b71d9a95a76f391575668cd40be1d17ecd205ee7cb10edb21d550",
+    "reviewer": "Ariadne trained-agent language pass; Nova bounded integration; no human independence claimed",
+    "execution_context": "Version-bound internal six-stage review of one navigation sentence on an unmerged branch",
+    "reviewed_at": "2026-09-19",
+    "comparison_ref": "docs/editorial/support-navigation-review-2026-09-19.md#review-sequence",
+    "reader_journey_ref": "docs/editorial/support-navigation-review-2026-09-19.md#semantic-and-reader-journey-control",
+    "semantic_control_ref": "docs/editorial/support-navigation-review-2026-09-19.md#semantic-and-reader-journey-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/support-navigation-review-2026-09-19.md"
+      },
+      {
+        "source": "OOS-Core/ARIADNE_EXPERIMENTAL_NEWSROOM_LANGUAGE_MENTOR_001/CORE.md",
+        "revision": "6794f0bc8414ab8de842ae59ff2bd1c0f366116",
+        "application_ref": "docs/editorial/support-navigation-review-2026-09-19.md"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/support-navigation-review-2026-09-19.md#review-sequence",
+      "styrker": "docs/editorial/support-navigation-review-2026-09-19.md#review-sequence",
+      "stilprofil": "docs/editorial/support-navigation-review-2026-09-19.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/support-navigation-review-2026-09-19.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/support-navigation-review-2026-09-19.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/support-navigation-review-2026-09-19.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation-only change; underlying support offer, payment state and legal texts unchanged",
+    "publication_approval": {
+      "approved": false,
+      "by": "NOT_GRANTED_IN_THIS_TASK",
+      "reference": "docs/editorial/support-navigation-review-2026-09-19.md#authority",
+      "sha256": "d1af69f5074b71d9a95a76f391575668cd40be1d17ecd205ee7cb10edb21d550"
+    }
   }
 }

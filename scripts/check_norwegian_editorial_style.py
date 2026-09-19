@@ -9,12 +9,15 @@ from __future__ import annotations
 
 from html.parser import HTMLParser
 from pathlib import Path
+import json
 import re
 import sys
 
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / "public"
+# Exact wording approved by the editor, scoped to its article.
+APPROVED_PHRASES = json.loads((ROOT / "scripts" / "approved_norwegian_phrases.json").read_text(encoding="utf-8"))
 FORBIDDEN = re.compile(r"\bikke\b", re.IGNORECASE)
 VERBATIM_EXEMPTIONS = (
     "Eldrebølgen kom ikke overraskende",
@@ -61,6 +64,10 @@ class NorwegianProseParser(HTMLParser):
         return self.lang_stack[-1] in {"nb", "nn", "no"}
 
     def _check(self, text: str, location: str) -> None:
+        compact = " ".join(text.split())
+        relative_path = self.path.relative_to(ROOT).as_posix()
+        if compact in APPROVED_PHRASES.get(relative_path, []):
+            return
         editorial_text = text
         for source_title in VERBATIM_EXEMPTIONS:
             editorial_text = editorial_text.replace(source_title, "")
@@ -91,3 +98,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+

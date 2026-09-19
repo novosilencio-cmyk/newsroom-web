@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import html
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -17,9 +18,28 @@ def modified(a): return date_only(a.get("updated") or a.get("language_updated") 
 def rss_date(d):
     return datetime.fromisoformat(d + "T12:00:00+00:00").astimezone(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
 
+def article_versions(article):
+    """One registry story can have separately addressable language versions."""
+    translations = article.get("translations")
+    if not translations:
+        return [article]
+    versions = []
+    for lang, translation in translations.items():
+        if not re.fullmatch(r"[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*", lang):
+            raise ValueError("Invalid article language")
+        url = urlsplit(translation["url"])
+        if url.scheme or url.netloc or url.query or url.fragment or url.path.startswith("/") or ".." in url.path.split("/"):
+            raise ValueError("Article translations require local relative URLs")
+        if not translation.get("title") or not translation.get("summary"):
+            raise ValueError("Each translation requires its own title and summary")
+        versions.append({**article, **translation, "language": lang})
+    if article["url"] not in [version["url"] for version in versions]:
+        raise ValueError("The primary article URL must be a translation URL")
+    return versions
+
 def article_block(a, source):
     bilingual = 'data-language-panel="no"' in source and 'data-language-panel="en"' in source
-    langs = ["nb","en"] if bilingual else (["nb"] if '<html lang="nb"' in source else ["en"])
+    langs = [a["language"]] if a.get("language") else (["nb","en"] if bilingual else (["nb"] if '<html lang="nb"' in source else ["en"]))
     data = {
         "@context":"https://schema.org","@type":"NewsArticle",
         "headline":a["title"],"description":a["summary"],
@@ -32,7 +52,7 @@ def article_block(a, source):
     return '<!-- discovery-metadata:start -->\n<link href="../feed.xml" rel="alternate" type="application/rss+xml" title="Experimental Newsroom RSS"/>\n<script type="application/ld+json">\n' + json.dumps(data, ensure_ascii=False, separators=(",",":")) + '\n</script>\n<!-- discovery-metadata:end -->'
 
 def update_articles(articles):
-    for a in articles:
+    for a in [version for article in articles for version in article_versions(article)]:
         path = PUBLIC / urlsplit(a["url"]).path
         if not path.exists(): continue
         source = path.read_text(encoding="utf-8")
@@ -54,7 +74,7 @@ def build(articles):
     lines=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for p,d in static:
         lines.append("  <url><loc>"+escape(BASE+p)+"</loc>"+(("<lastmod>"+d+"</lastmod>") if d else "")+"</url>")
-    for a in articles:
+    for a in [version for article in articles for version in article_versions(article)]:
         lines.append("  <url><loc>"+escape(canonical(a))+"</loc><lastmod>"+escape(modified(a))+"</lastmod></url>")
     lines.append("</urlset>")
     (PUBLIC/"sitemap.xml").write_text("\n".join(lines)+"\n", encoding="utf-8")

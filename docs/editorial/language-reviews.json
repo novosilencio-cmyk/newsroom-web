@@ -118,5 +118,245 @@
       "reference": "docs/editorial/language-release-2026-09-19.md#roles-and-authority",
       "sha256": "94dd80a9ae399226bac10ddd78dacc0747e12a482773e824140984be3f0ccdb9"
     }
+  },
+  "public/articles/sierra-leone-school-meals-2026.html": {
+    "case_id": "sierra-leone-school-meals-2026",
+    "sha256": "342d18050ea08f6bc58104e8454ede0458c9695499f6de0cdc7990ae4bc776ef",
+    "reviewer": "Ariadne and Alma language/reader-journey pass; separate French specialist AI evaluator; Liv/Ada source and standards; Eira integration",
+    "execution_context": "Separate AI review executions with root integration; no external human expert or general transfer validation claimed",
+    "reviewed_at": "2026-09-19",
+    "comparison_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control",
+    "semantic_control_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#editorial-scope-and-source-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_editorial_transfer.md",
+        "revision": "sha256:aced74ca292ae33a5e6c3427da3d08fcda5e21e800bea0def509fcb27a26138d",
+        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "styrker": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+    },
+    "decision": "COMBINE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Source-attributed constructive explanation; source reopened 2026-09-19; no independent contracts/payment/outcome verification. Entrance review limited to new card/UI delta.",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/sierra-leone-language-release-2026-09-19.md#roles-and-authority",
+      "sha256": "342d18050ea08f6bc58104e8454ede0458c9695499f6de0cdc7990ae4bc776ef"
+    }
+  },
+  "public/articles/sierra-leone-school-meals-2026.en.html": {
+    "case_id": "sierra-leone-school-meals-2026",
+    "sha256": "ad46c63e9c823d384f3b7b68c7f55003e7bcdc55a92167e992deeddabef4becf",
+    "reviewer": "Ariadne and Alma language/reader-journey pass; separate French specialist AI evaluator; Liv/Ada source and standards; Eira integration",
+    "execution_context": "Separate AI review executions with root integration; no external human expert or general transfer validation claimed",
+    "reviewed_at": "2026-09-19",
+    "comparison_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control",
+    "semantic_control_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#editorial-scope-and-source-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_editorial_transfer.md",
+        "revision": "sha256:aced74ca292ae33a5e6c3427da3d08fcda5e21e800bea0def509fcb27a26138d",
+        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "styrker": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+    },
+    "decision": "COMBINE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Source-attributed constructive explanation; source reopened 2026-09-19; no independent contracts/payment/outcome verification. Entrance review limited to new card/UI delta.",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/sierra-leone-language-release-2026-09-19.md#roles-and-authority",
+      "sha256": "ad46c63e9c823d384f3b7b68c7f55003e7bcdc55a92167e992deeddabef4becf"
+    }
+  },
+  "public/articles/sierra-leone-school-meals-2026.fr.html": {
+    "case_id": "sierra-leone-school-meals-2026",
+    "sha256": "53554c6201a300ea29bf4144a520d086724c93fcc9e4128b6a9ce392c2e9fd27",
+    "reviewer": "Ariadne and Alma language/reader-journey pass; separate French specialist AI evaluator; Liv/Ada source and standards; Eira integration",
+    "execution_context": "Separate AI review executions with root integration; no external human expert or general transfer validation claimed",
+    "reviewed_at": "2026-09-19",
+    "comparison_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control",
+    "semantic_control_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#editorial-scope-and-source-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_editorial_transfer.md",
+        "revision": "sha256:aced74ca292ae33a5e6c3427da3d08fcda5e21e800bea0def509fcb27a26138d",
+        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "styrker": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+    },
+    "decision": "COMBINE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Source-attributed constructive explanation; source reopened 2026-09-19; no independent contracts/payment/outcome verification. Entrance review limited to new card/UI delta.",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/sierra-leone-language-release-2026-09-19.md#roles-and-authority",
+      "sha256": "53554c6201a300ea29bf4144a520d086724c93fcc9e4128b6a9ce392c2e9fd27"
+    }
+  },
+  "public/index.html": {
+    "case_id": "sierra-leone-school-meals-2026",
+    "sha256": "6a08e2a6cecde4aba96b9f100a070d115619b70b2a6803c5422b443b1b4c4a21",
+    "reviewer": "Ariadne and Alma language/reader-journey pass; separate French specialist AI evaluator; Liv/Ada source and standards; Eira integration",
+    "execution_context": "Separate AI review executions with root integration; no external human expert or general transfer validation claimed",
+    "reviewed_at": "2026-09-19",
+    "comparison_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control",
+    "semantic_control_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#editorial-scope-and-source-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_editorial_transfer.md",
+        "revision": "sha256:aced74ca292ae33a5e6c3427da3d08fcda5e21e800bea0def509fcb27a26138d",
+        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "styrker": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Source-attributed constructive explanation; source reopened 2026-09-19; no independent contracts/payment/outcome verification. Entrance review limited to new card/UI delta.",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/sierra-leone-language-release-2026-09-19.md#roles-and-authority",
+      "sha256": "6a08e2a6cecde4aba96b9f100a070d115619b70b2a6803c5422b443b1b4c4a21"
+    }
+  },
+  "public/nb/index.html": {
+    "case_id": "sierra-leone-school-meals-2026",
+    "sha256": "14b0751234e9285a1b5283c46ad5c937fb51b54601bcc6f9bfa3628173bc7f6b",
+    "reviewer": "Ariadne and Alma language/reader-journey pass; separate French specialist AI evaluator; Liv/Ada source and standards; Eira integration",
+    "execution_context": "Separate AI review executions with root integration; no external human expert or general transfer validation claimed",
+    "reviewed_at": "2026-09-19",
+    "comparison_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control",
+    "semantic_control_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#editorial-scope-and-source-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_editorial_transfer.md",
+        "revision": "sha256:aced74ca292ae33a5e6c3427da3d08fcda5e21e800bea0def509fcb27a26138d",
+        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "styrker": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Source-attributed constructive explanation; source reopened 2026-09-19; no independent contracts/payment/outcome verification. Entrance review limited to new card/UI delta.",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/sierra-leone-language-release-2026-09-19.md#roles-and-authority",
+      "sha256": "14b0751234e9285a1b5283c46ad5c937fb51b54601bcc6f9bfa3628173bc7f6b"
+    }
+  },
+  "public/en/index.html": {
+    "case_id": "sierra-leone-school-meals-2026",
+    "sha256": "045ac87bb101374fa8cf52564f50aa474e7140d8deed1069ab3fc8b1306821fe",
+    "reviewer": "Ariadne and Alma language/reader-journey pass; separate French specialist AI evaluator; Liv/Ada source and standards; Eira integration",
+    "execution_context": "Separate AI review executions with root integration; no external human expert or general transfer validation claimed",
+    "reviewed_at": "2026-09-19",
+    "comparison_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control",
+    "semantic_control_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#editorial-scope-and-source-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_editorial_transfer.md",
+        "revision": "sha256:aced74ca292ae33a5e6c3427da3d08fcda5e21e800bea0def509fcb27a26138d",
+        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "styrker": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Source-attributed constructive explanation; source reopened 2026-09-19; no independent contracts/payment/outcome verification. Entrance review limited to new card/UI delta.",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/sierra-leone-language-release-2026-09-19.md#roles-and-authority",
+      "sha256": "045ac87bb101374fa8cf52564f50aa474e7140d8deed1069ab3fc8b1306821fe"
+    }
   }
 }

@@ -14,6 +14,9 @@ fetch('content/articles.json')
     articles
       .sort((a, b) => a.priority - b.priority)
       .forEach(article => {
+        // A featured story has a static card so it remains available without JS.
+        if (Array.from(articleGrid.querySelectorAll('[data-article-id]'))
+          .some(card => card.dataset.articleId === article.id)) return;
         const card = document.createElement('article');
         card.className = 'article-card';
         card.innerHTML = `
@@ -26,6 +29,8 @@ fetch('content/articles.json')
       });
   })
   .catch(error => {
-    articleGrid.innerHTML = '<p>Article index is temporarily unavailable in this prototype.</p>';
+    const notice = document.createElement('p');
+    notice.textContent = 'The article index could not be loaded. Please try again later.';
+    articleGrid.appendChild(notice);
     console.error(error);
   });

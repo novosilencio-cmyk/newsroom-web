@@ -1,5 +1,34 @@
 [
   {
+    "id": "sierra-leone-school-meals-2026",
+    "section": "World",
+    "region": "Africa",
+    "country": "Sierra Leone",
+    "type": "Perspective",
+    "title": "Sierra Leone: School meals can give farmers a market",
+    "summary": "School meals can connect children's need for food with farmers' need for buyers. A WFP account from Sierra Leone opens questions about local purchasing and cooperation.",
+    "published": "2026-09-19",
+    "priority": 0,
+    "url": "articles/sierra-leone-school-meals-2026.en.html",
+    "translations": {
+      "nb": {
+        "url": "articles/sierra-leone-school-meals-2026.html",
+        "title": "Sierra Leone: Skolemat kan gi bøndene et marked",
+        "summary": "Skolemat kan knytte barns måltider og bønders behov for kjøpere sammen. En WFP-reportasje fra Sierra Leone åpner spørsmål om lokale innkjøp og samarbeid."
+      },
+      "en": {
+        "url": "articles/sierra-leone-school-meals-2026.en.html",
+        "title": "Sierra Leone: School meals can give farmers a market",
+        "summary": "School meals can connect children's need for food with farmers' need for buyers. A WFP account from Sierra Leone opens questions about local purchasing and cooperation."
+      },
+      "fr": {
+        "url": "articles/sierra-leone-school-meals-2026.fr.html",
+        "title": "Sierra Leone : les repas scolaires peuvent offrir des débouchés aux agriculteurs",
+        "summary": "En Sierra Leone, un récit du PAM montre comment les repas scolaires peuvent relier les besoins des enfants aux débouchés des agriculteurs."
+      }
+    }
+  },
+  {
     "id": "amediastiftelsen-aschehoug-2026",
     "section": "Analysis",
     "region": "Europe",

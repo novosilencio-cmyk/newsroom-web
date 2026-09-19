@@ -1,1 +1,122 @@
-{}
+{
+  "public/articles/brazil-cariacica-family-farm-school-food-2026.html": {
+    "case_id": "brazil-cariacica-family-farm-school-food-2026",
+    "sha256": "053e176472d635c84e798ea4cd5ac087a19aa34a4897f265b0a47d96c2aa6cf7",
+    "reviewer": "Ariadne delegated language pass; Liv/Ada delegated semantic review; Eira/Alma integration",
+    "execution_context": "Separate AI review executions and integrating assistant; no human independence claimed",
+    "reviewed_at": "2026-09-19",
+    "comparison_ref": "docs/editorial/language-release-2026-09-19.md",
+    "reader_journey_ref": "docs/editorial/language-release-2026-09-19.md",
+    "semantic_control_ref": "docs/editorial/language-release-2026-09-19.md",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/language-release-2026-09-19.md"
+      },
+      {
+        "source": "OOS-Core/ARIADNE_EXPERIMENTAL_NEWSROOM_LANGUAGE_MENTOR_001/CORE.md",
+        "revision": "6794f0bc8414ab8bde842ae59ff2bd1c0f366116",
+        "application_ref": "docs/editorial/language-release-2026-09-19.md"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+      "styrker": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+      "stilprofil": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/language-release-2026-09-19.md#review-sequence"
+    },
+    "decision": "COMBINE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Language delta against historically dated published source record; no new full fact audit",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/language-release-2026-09-19.md#roles-and-authority",
+      "sha256": "053e176472d635c84e798ea4cd5ac087a19aa34a4897f265b0a47d96c2aa6cf7"
+    }
+  },
+  "public/articles/japan-flexible-daycare-2026.html": {
+    "case_id": "japan-flexible-daycare-2026",
+    "sha256": "c2c6b587b8f78f2335307a948b5f11fffe67c513280fadfe160ec1445982d406",
+    "reviewer": "Ariadne delegated language pass; Liv/Ada delegated semantic review; Eira/Alma integration",
+    "execution_context": "Separate AI review executions and integrating assistant; no human independence claimed",
+    "reviewed_at": "2026-09-19",
+    "comparison_ref": "docs/editorial/language-release-2026-09-19.md",
+    "reader_journey_ref": "docs/editorial/language-release-2026-09-19.md",
+    "semantic_control_ref": "docs/editorial/language-release-2026-09-19.md",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/language-release-2026-09-19.md"
+      },
+      {
+        "source": "OOS-Core/ARIADNE_EXPERIMENTAL_NEWSROOM_LANGUAGE_MENTOR_001/CORE.md",
+        "revision": "6794f0bc8414ab8bde842ae59ff2bd1c0f366116",
+        "application_ref": "docs/editorial/language-release-2026-09-19.md"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+      "styrker": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+      "stilprofil": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/language-release-2026-09-19.md#review-sequence"
+    },
+    "decision": "COMBINE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Language delta against historically dated published source record; no new full fact audit",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/language-release-2026-09-19.md#roles-and-authority",
+      "sha256": "c2c6b587b8f78f2335307a948b5f11fffe67c513280fadfe160ec1445982d406"
+    }
+  },
+  "public/articles/denmark-green-tripartite-2026.html": {
+    "case_id": "denmark-green-tripartite-2026",
+    "sha256": "94dd80a9ae399226bac10ddd78dacc0747e12a482773e824140984be3f0ccdb9",
+    "reviewer": "Ariadne delegated language pass; Liv/Ada delegated semantic review; Eira/Alma integration",
+    "execution_context": "Separate AI review executions and integrating assistant; no human independence claimed",
+    "reviewed_at": "2026-09-19",
+    "comparison_ref": "docs/editorial/language-release-2026-09-19.md",
+    "reader_journey_ref": "docs/editorial/language-release-2026-09-19.md",
+    "semantic_control_ref": "docs/editorial/language-release-2026-09-19.md",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/language-release-2026-09-19.md"
+      },
+      {
+        "source": "OOS-Core/ARIADNE_EXPERIMENTAL_NEWSROOM_LANGUAGE_MENTOR_001/CORE.md",
+        "revision": "6794f0bc8414ab8bde842ae59ff2bd1c0f366116",
+        "application_ref": "docs/editorial/language-release-2026-09-19.md"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+      "styrker": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+      "stilprofil": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/language-release-2026-09-19.md#review-sequence"
+    },
+    "decision": "COMBINE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Language delta against historically dated published source record; no new full fact audit",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/language-release-2026-09-19.md#roles-and-authority",
+      "sha256": "94dd80a9ae399226bac10ddd78dacc0747e12a482773e824140984be3f0ccdb9"
+    }
+  }
+}

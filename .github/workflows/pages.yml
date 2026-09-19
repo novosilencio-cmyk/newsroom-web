@@ -20,9 +20,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Block unresolved editorial markers
         run: |
+          python3 scripts/check_language_review.py
           python3 scripts/build_discovery.py
           python3 scripts/check_publication_markers.py
           python3 scripts/check_norwegian_editorial_style.py

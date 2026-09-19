@@ -47,3 +47,37 @@ The removal of an internal marker is not permission to publish. Editorial approv
 The repository check scans public and source-facing text files. It fails when it detects an internal editorial note, an unresolved-work marker, a do-not-publish instruction or metadata stating that publication has not been approved.
 
 The gate is a leakage safeguard, not a fact-check or an editorial approval system. Passing it does not establish that a story is accurate, complete or authorised for publication.
+
+## Version-bound language programme
+
+Run `python3 scripts/check_language_review.py` in the existing publication-safety job.
+New or changed public HTML requires an exact SHA-256 receipt in
+`docs/editorial/language-reviews.json`. All language versions are separate targets.
+Unchanged pages from commit 0399388a9f0ec49d79df9af714ef62ff75a0e6a6 are a
+migration exception, not evidence of completed historical review. Do not advance
+that baseline to bypass reviews. Missing git history fails closed.
+
+Use Ariadne's existing six stages, sentence-whole and reader-journey controls:
+https://github.com/novosilencio-cmyk/OOS-Core/blob/main/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md
+
+Eira owns editorial purpose, Liv source claims, Ada standards and Alma reader
+presentation. Ariadne provides standing language mentorship using loaded skills;
+Nansen contributes only where relational or cultural risks warrant it. Eva
+coordinates the correct object and receipt. Record same-assistant role passes
+honestly; do not label them independent review.
+
+The receipt records module source/revision/application, evidence references for
+all six stages, comparison, reader journey and semantic control. KEEP is valid.
+Source clearance, language completion and Bjørn's explicit publication approval
+remain separate; approval must cite the exact page hash. Any changed bytes
+require a refreshed receipt. For formatting-only changes, record a bounded
+confirmation reusing the earlier analysis rather than rerunning the whole course.
+
+Keep private drafts, source correspondence and analysis outside this repository.
+Only safe evidence identifiers belong in receipts. The validator checks presence
+and content binding, not the truth of an attestation or the quality of language.
+A human/editorial review must inspect the referenced evidence. No receipt is
+created automatically and CI cannot grant approval. Internal drafts with source
+holds stay in the private workspace. This gate applies to all public HTML,
+including headlines/decks/captions embedded there; JS/JSON-only prose changes
+still require the same editorial procedure but are outside this initial byte gate.

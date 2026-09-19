@@ -50,12 +50,12 @@ The gate is a leakage safeguard, not a fact-check or an editorial approval syste
 
 ## Version-bound language programme
 
-Run `python3 scripts/check_language_review.py` in the existing publication-safety job.
+Run the discovery build, then `python3 scripts/check_language_review.py` in the existing publication-safety job. Receipts bind the final generated HTML. The job uploads the checked public artifact; deployment consumes that artifact without rebuilding.
 New or changed public HTML requires an exact SHA-256 receipt in
 `docs/editorial/language-reviews.json`. All language versions are separate targets.
-Unchanged pages from commit 0399388a9f0ec49d79df9af714ef62ff75a0e6a6 are a
+Unchanged generated pages from commit 0399388a9f0ec49d79df9af714ef62ff75a0e6a6 are a
 migration exception, not evidence of completed historical review. Do not advance
-that baseline to bypass reviews. Missing git history fails closed.
+that baseline to bypass reviews. The checker builds this frozen commit with its own generator in a temporary directory and compares output bytes. Missing history or a failed baseline build fails closed.
 
 Use Ariadne's existing six stages, sentence-whole and reader-journey controls:
 https://github.com/novosilencio-cmyk/OOS-Core/blob/main/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md
@@ -80,4 +80,4 @@ A human/editorial review must inspect the referenced evidence. No receipt is
 created automatically and CI cannot grant approval. Internal drafts with source
 holds stay in the private workspace. This gate applies to all public HTML,
 including headlines/decks/captions embedded there; JS/JSON-only prose changes
-still require the same editorial procedure but are outside this initial byte gate.
+still require the same editorial procedure but are outside this initial byte gate unless they change generated HTML. Generator and registry changes that affect generated HTML require receipts for the resulting pages.

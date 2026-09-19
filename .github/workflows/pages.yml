@@ -25,12 +25,18 @@ jobs:
 
       - name: Block unresolved editorial markers
         run: |
-          python3 scripts/check_language_review.py
           python3 scripts/build_discovery.py
+          python3 scripts/check_language_review.py
           python3 scripts/check_publication_markers.py
           python3 scripts/check_norwegian_editorial_style.py
           python3 scripts/check_reader_sequence_style.py
           python3 -m unittest discover -s tests -p 'test_*.py'
+
+      - name: Upload verified public surface
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
 
   deploy:
     if: github.event_name != 'pull_request'
@@ -44,21 +50,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Build discovery surfaces
-        run: python3 scripts/build_discovery.py
-
       - name: Configure and enable Pages
         uses: actions/configure-pages@v5
         with:
           enablement: true
-
-      - name: Upload public surface only
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: public
 
       - name: Deploy to GitHub Pages
         id: deployment

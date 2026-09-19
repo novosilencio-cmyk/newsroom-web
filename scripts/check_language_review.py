@@ -5,6 +5,9 @@ import json
 from pathlib import Path
 import subprocess
 import sys
+import tempfile
+import tarfile
+import io
 
 ROOT = Path(__file__).resolve().parents[1]
 # Migration baseline only: unchanged legacy pages are NOT retroactively reviewed.
@@ -65,15 +68,30 @@ def check(root=ROOT):
             raise ValueError('receipt registry must be an object')
     except (OSError, ValueError, subprocess.CalledProcessError) as exc:
         return ['cannot establish baseline or receipt registry: ' + str(exc)]
+    # Build the frozen migration version using its own generator. Compare output
+    # to output, so legacy metadata is exempt but new generated prose is not.
+    try:
+        archive = subprocess.run(['git', 'archive', BASELINE], cwd=root,
+                                 check=True, capture_output=True).stdout
+        with tempfile.TemporaryDirectory() as directory:
+            baseline_root = Path(directory)
+            with tarfile.open(fileobj=io.BytesIO(archive)) as bundle:
+                bundle.extractall(baseline_root, filter='data')
+            subprocess.run([sys.executable, 'scripts/build_discovery.py'],
+                           cwd=baseline_root, check=True, capture_output=True)
+            baseline_pages = {
+                p.relative_to(baseline_root).as_posix(): p.read_bytes()
+                for p in (baseline_root / 'public').rglob('*.html')
+            }
+    except (OSError, ValueError, tarfile.TarError, subprocess.CalledProcessError) as exc:
+        return ['cannot build migration baseline: ' + str(exc)]
     paths = sorted((root / 'public').rglob('*.html'))
     active = set()
     for path in paths:
         rel = path.relative_to(root).as_posix()
         active.add(rel)
         data = path.read_bytes()
-        previous = subprocess.run(['git', 'show', BASELINE + ':' + rel], cwd=root,
-                                  capture_output=True)
-        if rel not in rows and previous.returncode == 0 and previous.stdout == data:
+        if rel not in rows and baseline_pages.get(rel) == data:
             continue  # Explicit migration exception, not a language PASS.
         errors.extend(rel + ': ' + e for e in receipt_errors(rows.get(rel), data))
     for rel in rows:

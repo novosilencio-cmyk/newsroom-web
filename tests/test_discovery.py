@@ -53,4 +53,12 @@ class DiscoveryTests(unittest.TestCase):
         self.assertIn("<h2>Norge</h2>",text)
         self.assertIn("Norway",text)
 
+
+    def test_support_page_links_terms_and_privacy(self):
+        support=(PUBLIC/"support.html").read_text(encoding="utf-8")
+        self.assertTrue((PUBLIC/"support-terms.html").is_file())
+        self.assertTrue((PUBLIC/"privacy.html").is_file())
+        self.assertIn('href="support-terms.html"',support)
+        self.assertIn('href="privacy.html"',support)
+
 if __name__=="__main__": unittest.main()

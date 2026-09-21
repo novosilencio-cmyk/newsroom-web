@@ -1,362 +1,1962 @@
 {
   "public/articles/brazil-cariacica-family-farm-school-food-2026.html": {
-    "case_id": "brazil-cariacica-family-farm-school-food-2026",
-    "sha256": "053e176472d635c84e798ea4cd5ac087a19aa34a4897f265b0a47d96c2aa6cf7",
-    "reviewer": "Ariadne delegated language pass; Liv/Ada delegated semantic review; Eira/Alma integration",
-    "execution_context": "Separate AI review executions and integrating assistant; no human independence claimed",
-    "reviewed_at": "2026-09-19",
-    "comparison_ref": "docs/editorial/language-release-2026-09-19.md",
-    "reader_journey_ref": "docs/editorial/language-release-2026-09-19.md",
-    "semantic_control_ref": "docs/editorial/language-release-2026-09-19.md",
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "72a1790ecb06c82da1c5e8e4443883fd8cf00fbc269735656215201afef4842c",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
     "loaded_modules": [
       {
         "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
-        "revision": "713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/language-release-2026-09-19.md"
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
       },
       {
-        "source": "OOS-Core/ARIADNE_EXPERIMENTAL_NEWSROOM_LANGUAGE_MENTOR_001/CORE.md",
-        "revision": "6794f0bc8414ab8bde842ae59ff2bd1c0f366116",
-        "application_ref": "docs/editorial/language-release-2026-09-19.md"
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/language-release-2026-09-19.md#review-sequence",
-      "styrker": "docs/editorial/language-release-2026-09-19.md#review-sequence",
-      "stilprofil": "docs/editorial/language-release-2026-09-19.md#review-sequence",
-      "konkrete_svakheter": "docs/editorial/language-release-2026-09-19.md#review-sequence",
-      "forbedringsgrep": "docs/editorial/language-release-2026-09-19.md#review-sequence",
-      "revidert_eksempelversjon": "docs/editorial/language-release-2026-09-19.md#review-sequence"
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
     },
-    "decision": "COMBINE",
+    "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Language delta against historically dated published source record; no new full fact audit",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "docs/editorial/language-release-2026-09-19.md#roles-and-authority",
-      "sha256": "053e176472d635c84e798ea4cd5ac087a19aa34a4897f265b0a47d96c2aa6cf7"
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "72a1790ecb06c82da1c5e8e4443883fd8cf00fbc269735656215201afef4842c"
+    },
+    "previous_review": {
+      "case_id": "brazil-cariacica-family-farm-school-food-2026",
+      "sha256": "053e176472d635c84e798ea4cd5ac087a19aa34a4897f265b0a47d96c2aa6cf7",
+      "reviewer": "Ariadne delegated language pass; Liv/Ada delegated semantic review; Eira/Alma integration",
+      "execution_context": "Separate AI review executions and integrating assistant; no human independence claimed",
+      "reviewed_at": "2026-09-19",
+      "comparison_ref": "docs/editorial/language-release-2026-09-19.md",
+      "reader_journey_ref": "docs/editorial/language-release-2026-09-19.md",
+      "semantic_control_ref": "docs/editorial/language-release-2026-09-19.md",
+      "loaded_modules": [
+        {
+          "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+          "revision": "713f6796610652407037c7a0d69385e29d30f727",
+          "application_ref": "docs/editorial/language-release-2026-09-19.md"
+        },
+        {
+          "source": "OOS-Core/ARIADNE_EXPERIMENTAL_NEWSROOM_LANGUAGE_MENTOR_001/CORE.md",
+          "revision": "6794f0bc8414ab8bde842ae59ff2bd1c0f366116",
+          "application_ref": "docs/editorial/language-release-2026-09-19.md"
+        }
+      ],
+      "stages": {
+        "helhetsinntrykk": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+        "styrker": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+        "stilprofil": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+        "konkrete_svakheter": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+        "forbedringsgrep": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+        "revidert_eksempelversjon": "docs/editorial/language-release-2026-09-19.md#review-sequence"
+      },
+      "decision": "COMBINE",
+      "ariadne_style_readiness": "pass_complete",
+      "source_status": "READY_FOR_EDITORIAL_REVIEW",
+      "source_scope": "Language delta against historically dated published source record; no new full fact audit",
+      "publication_approval": {
+        "approved": true,
+        "by": "Bjørn Moe Aldema",
+        "reference": "docs/editorial/language-release-2026-09-19.md#roles-and-authority",
+        "sha256": "053e176472d635c84e798ea4cd5ac087a19aa34a4897f265b0a47d96c2aa6cf7"
+      }
     }
   },
   "public/articles/japan-flexible-daycare-2026.html": {
-    "case_id": "japan-flexible-daycare-2026",
-    "sha256": "c2c6b587b8f78f2335307a948b5f11fffe67c513280fadfe160ec1445982d406",
-    "reviewer": "Ariadne delegated language pass; Liv/Ada delegated semantic review; Eira/Alma integration",
-    "execution_context": "Separate AI review executions and integrating assistant; no human independence claimed",
-    "reviewed_at": "2026-09-19",
-    "comparison_ref": "docs/editorial/language-release-2026-09-19.md",
-    "reader_journey_ref": "docs/editorial/language-release-2026-09-19.md",
-    "semantic_control_ref": "docs/editorial/language-release-2026-09-19.md",
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "fd4b9730886a1114619a77b417bd3a1e4cd6de612581111a669e69bba7058fc1",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
     "loaded_modules": [
       {
         "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
-        "revision": "713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/language-release-2026-09-19.md"
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
       },
       {
-        "source": "OOS-Core/ARIADNE_EXPERIMENTAL_NEWSROOM_LANGUAGE_MENTOR_001/CORE.md",
-        "revision": "6794f0bc8414ab8bde842ae59ff2bd1c0f366116",
-        "application_ref": "docs/editorial/language-release-2026-09-19.md"
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/language-release-2026-09-19.md#review-sequence",
-      "styrker": "docs/editorial/language-release-2026-09-19.md#review-sequence",
-      "stilprofil": "docs/editorial/language-release-2026-09-19.md#review-sequence",
-      "konkrete_svakheter": "docs/editorial/language-release-2026-09-19.md#review-sequence",
-      "forbedringsgrep": "docs/editorial/language-release-2026-09-19.md#review-sequence",
-      "revidert_eksempelversjon": "docs/editorial/language-release-2026-09-19.md#review-sequence"
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
     },
-    "decision": "COMBINE",
+    "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Language delta against historically dated published source record; no new full fact audit",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "docs/editorial/language-release-2026-09-19.md#roles-and-authority",
-      "sha256": "c2c6b587b8f78f2335307a948b5f11fffe67c513280fadfe160ec1445982d406"
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "fd4b9730886a1114619a77b417bd3a1e4cd6de612581111a669e69bba7058fc1"
+    },
+    "previous_review": {
+      "case_id": "japan-flexible-daycare-2026",
+      "sha256": "c2c6b587b8f78f2335307a948b5f11fffe67c513280fadfe160ec1445982d406",
+      "reviewer": "Ariadne delegated language pass; Liv/Ada delegated semantic review; Eira/Alma integration",
+      "execution_context": "Separate AI review executions and integrating assistant; no human independence claimed",
+      "reviewed_at": "2026-09-19",
+      "comparison_ref": "docs/editorial/language-release-2026-09-19.md",
+      "reader_journey_ref": "docs/editorial/language-release-2026-09-19.md",
+      "semantic_control_ref": "docs/editorial/language-release-2026-09-19.md",
+      "loaded_modules": [
+        {
+          "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+          "revision": "713f6796610652407037c7a0d69385e29d30f727",
+          "application_ref": "docs/editorial/language-release-2026-09-19.md"
+        },
+        {
+          "source": "OOS-Core/ARIADNE_EXPERIMENTAL_NEWSROOM_LANGUAGE_MENTOR_001/CORE.md",
+          "revision": "6794f0bc8414ab8bde842ae59ff2bd1c0f366116",
+          "application_ref": "docs/editorial/language-release-2026-09-19.md"
+        }
+      ],
+      "stages": {
+        "helhetsinntrykk": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+        "styrker": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+        "stilprofil": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+        "konkrete_svakheter": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+        "forbedringsgrep": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+        "revidert_eksempelversjon": "docs/editorial/language-release-2026-09-19.md#review-sequence"
+      },
+      "decision": "COMBINE",
+      "ariadne_style_readiness": "pass_complete",
+      "source_status": "READY_FOR_EDITORIAL_REVIEW",
+      "source_scope": "Language delta against historically dated published source record; no new full fact audit",
+      "publication_approval": {
+        "approved": true,
+        "by": "Bjørn Moe Aldema",
+        "reference": "docs/editorial/language-release-2026-09-19.md#roles-and-authority",
+        "sha256": "c2c6b587b8f78f2335307a948b5f11fffe67c513280fadfe160ec1445982d406"
+      }
     }
   },
   "public/articles/denmark-green-tripartite-2026.html": {
-    "case_id": "denmark-green-tripartite-2026",
-    "sha256": "94dd80a9ae399226bac10ddd78dacc0747e12a482773e824140984be3f0ccdb9",
-    "reviewer": "Ariadne delegated language pass; Liv/Ada delegated semantic review; Eira/Alma integration",
-    "execution_context": "Separate AI review executions and integrating assistant; no human independence claimed",
-    "reviewed_at": "2026-09-19",
-    "comparison_ref": "docs/editorial/language-release-2026-09-19.md",
-    "reader_journey_ref": "docs/editorial/language-release-2026-09-19.md",
-    "semantic_control_ref": "docs/editorial/language-release-2026-09-19.md",
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "eb97cdcf35733829dcdf6fef76b2908e95449e4c63afb153fb0bb40995ec84bc",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
     "loaded_modules": [
       {
         "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
-        "revision": "713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/language-release-2026-09-19.md"
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
       },
       {
-        "source": "OOS-Core/ARIADNE_EXPERIMENTAL_NEWSROOM_LANGUAGE_MENTOR_001/CORE.md",
-        "revision": "6794f0bc8414ab8bde842ae59ff2bd1c0f366116",
-        "application_ref": "docs/editorial/language-release-2026-09-19.md"
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/language-release-2026-09-19.md#review-sequence",
-      "styrker": "docs/editorial/language-release-2026-09-19.md#review-sequence",
-      "stilprofil": "docs/editorial/language-release-2026-09-19.md#review-sequence",
-      "konkrete_svakheter": "docs/editorial/language-release-2026-09-19.md#review-sequence",
-      "forbedringsgrep": "docs/editorial/language-release-2026-09-19.md#review-sequence",
-      "revidert_eksempelversjon": "docs/editorial/language-release-2026-09-19.md#review-sequence"
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
     },
-    "decision": "COMBINE",
+    "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Language delta against historically dated published source record; no new full fact audit",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "docs/editorial/language-release-2026-09-19.md#roles-and-authority",
-      "sha256": "94dd80a9ae399226bac10ddd78dacc0747e12a482773e824140984be3f0ccdb9"
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "eb97cdcf35733829dcdf6fef76b2908e95449e4c63afb153fb0bb40995ec84bc"
+    },
+    "previous_review": {
+      "case_id": "denmark-green-tripartite-2026",
+      "sha256": "94dd80a9ae399226bac10ddd78dacc0747e12a482773e824140984be3f0ccdb9",
+      "reviewer": "Ariadne delegated language pass; Liv/Ada delegated semantic review; Eira/Alma integration",
+      "execution_context": "Separate AI review executions and integrating assistant; no human independence claimed",
+      "reviewed_at": "2026-09-19",
+      "comparison_ref": "docs/editorial/language-release-2026-09-19.md",
+      "reader_journey_ref": "docs/editorial/language-release-2026-09-19.md",
+      "semantic_control_ref": "docs/editorial/language-release-2026-09-19.md",
+      "loaded_modules": [
+        {
+          "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+          "revision": "713f6796610652407037c7a0d69385e29d30f727",
+          "application_ref": "docs/editorial/language-release-2026-09-19.md"
+        },
+        {
+          "source": "OOS-Core/ARIADNE_EXPERIMENTAL_NEWSROOM_LANGUAGE_MENTOR_001/CORE.md",
+          "revision": "6794f0bc8414ab8bde842ae59ff2bd1c0f366116",
+          "application_ref": "docs/editorial/language-release-2026-09-19.md"
+        }
+      ],
+      "stages": {
+        "helhetsinntrykk": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+        "styrker": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+        "stilprofil": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+        "konkrete_svakheter": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+        "forbedringsgrep": "docs/editorial/language-release-2026-09-19.md#review-sequence",
+        "revidert_eksempelversjon": "docs/editorial/language-release-2026-09-19.md#review-sequence"
+      },
+      "decision": "COMBINE",
+      "ariadne_style_readiness": "pass_complete",
+      "source_status": "READY_FOR_EDITORIAL_REVIEW",
+      "source_scope": "Language delta against historically dated published source record; no new full fact audit",
+      "publication_approval": {
+        "approved": true,
+        "by": "Bjørn Moe Aldema",
+        "reference": "docs/editorial/language-release-2026-09-19.md#roles-and-authority",
+        "sha256": "94dd80a9ae399226bac10ddd78dacc0747e12a482773e824140984be3f0ccdb9"
+      }
     }
   },
   "public/articles/sierra-leone-school-meals-2026.html": {
-    "case_id": "sierra-leone-school-meals-2026",
-    "sha256": "342d18050ea08f6bc58104e8454ede0458c9695499f6de0cdc7990ae4bc776ef",
-    "reviewer": "Ariadne and Alma language/reader-journey pass; separate French specialist AI evaluator; Liv/Ada source and standards; Eira integration",
-    "execution_context": "Separate AI review executions with root integration; no external human expert or general transfer validation claimed",
-    "reviewed_at": "2026-09-19",
-    "comparison_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-    "reader_journey_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control",
-    "semantic_control_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#editorial-scope-and-source-control",
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "f1ce7634821985bf62d334867ccf55fd8069cc1bacbc764f33c460d4ccf40b6f",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
       },
       {
-        "source": "oos-trained-agent-runtime/references/ariadne_editorial_transfer.md",
-        "revision": "sha256:aced74ca292ae33a5e6c3427da3d08fcda5e21e800bea0def509fcb27a26138d",
-        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control"
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "styrker": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
     },
-    "decision": "COMBINE",
+    "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Source-attributed constructive explanation; source reopened 2026-09-19; no independent contracts/payment/outcome verification. Entrance review limited to new card/UI delta.",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "docs/editorial/sierra-leone-language-release-2026-09-19.md#roles-and-authority",
-      "sha256": "342d18050ea08f6bc58104e8454ede0458c9695499f6de0cdc7990ae4bc776ef"
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "f1ce7634821985bf62d334867ccf55fd8069cc1bacbc764f33c460d4ccf40b6f"
+    },
+    "previous_review": {
+      "case_id": "sierra-leone-school-meals-2026",
+      "sha256": "342d18050ea08f6bc58104e8454ede0458c9695499f6de0cdc7990ae4bc776ef",
+      "reviewer": "Ariadne and Alma language/reader-journey pass; separate French specialist AI evaluator; Liv/Ada source and standards; Eira integration",
+      "execution_context": "Separate AI review executions with root integration; no external human expert or general transfer validation claimed",
+      "reviewed_at": "2026-09-19",
+      "comparison_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "reader_journey_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control",
+      "semantic_control_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#editorial-scope-and-source-control",
+      "loaded_modules": [
+        {
+          "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+          "revision": "713f6796610652407037c7a0d69385e29d30f727",
+          "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+        },
+        {
+          "source": "oos-trained-agent-runtime/references/ariadne_editorial_transfer.md",
+          "revision": "sha256:aced74ca292ae33a5e6c3427da3d08fcda5e21e800bea0def509fcb27a26138d",
+          "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control"
+        }
+      ],
+      "stages": {
+        "helhetsinntrykk": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "styrker": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "stilprofil": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "konkrete_svakheter": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "forbedringsgrep": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "revidert_eksempelversjon": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+      },
+      "decision": "COMBINE",
+      "ariadne_style_readiness": "pass_complete",
+      "source_status": "READY_FOR_EDITORIAL_REVIEW",
+      "source_scope": "Source-attributed constructive explanation; source reopened 2026-09-19; no independent contracts/payment/outcome verification. Entrance review limited to new card/UI delta.",
+      "publication_approval": {
+        "approved": true,
+        "by": "Bjørn Moe Aldema",
+        "reference": "docs/editorial/sierra-leone-language-release-2026-09-19.md#roles-and-authority",
+        "sha256": "342d18050ea08f6bc58104e8454ede0458c9695499f6de0cdc7990ae4bc776ef"
+      }
     }
   },
   "public/articles/sierra-leone-school-meals-2026.en.html": {
-    "case_id": "sierra-leone-school-meals-2026",
-    "sha256": "ad46c63e9c823d384f3b7b68c7f55003e7bcdc55a92167e992deeddabef4becf",
-    "reviewer": "Ariadne and Alma language/reader-journey pass; separate French specialist AI evaluator; Liv/Ada source and standards; Eira integration",
-    "execution_context": "Separate AI review executions with root integration; no external human expert or general transfer validation claimed",
-    "reviewed_at": "2026-09-19",
-    "comparison_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-    "reader_journey_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control",
-    "semantic_control_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#editorial-scope-and-source-control",
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "972d5f0ff77c77a71ea0c46c631e8af8536f000325a02745df63d6f1765b52c8",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
       },
       {
-        "source": "oos-trained-agent-runtime/references/ariadne_editorial_transfer.md",
-        "revision": "sha256:aced74ca292ae33a5e6c3427da3d08fcda5e21e800bea0def509fcb27a26138d",
-        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control"
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "styrker": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
     },
-    "decision": "COMBINE",
+    "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Source-attributed constructive explanation; source reopened 2026-09-19; no independent contracts/payment/outcome verification. Entrance review limited to new card/UI delta.",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "docs/editorial/sierra-leone-language-release-2026-09-19.md#roles-and-authority",
-      "sha256": "ad46c63e9c823d384f3b7b68c7f55003e7bcdc55a92167e992deeddabef4becf"
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "972d5f0ff77c77a71ea0c46c631e8af8536f000325a02745df63d6f1765b52c8"
+    },
+    "previous_review": {
+      "case_id": "sierra-leone-school-meals-2026",
+      "sha256": "ad46c63e9c823d384f3b7b68c7f55003e7bcdc55a92167e992deeddabef4becf",
+      "reviewer": "Ariadne and Alma language/reader-journey pass; separate French specialist AI evaluator; Liv/Ada source and standards; Eira integration",
+      "execution_context": "Separate AI review executions with root integration; no external human expert or general transfer validation claimed",
+      "reviewed_at": "2026-09-19",
+      "comparison_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "reader_journey_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control",
+      "semantic_control_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#editorial-scope-and-source-control",
+      "loaded_modules": [
+        {
+          "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+          "revision": "713f6796610652407037c7a0d69385e29d30f727",
+          "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+        },
+        {
+          "source": "oos-trained-agent-runtime/references/ariadne_editorial_transfer.md",
+          "revision": "sha256:aced74ca292ae33a5e6c3427da3d08fcda5e21e800bea0def509fcb27a26138d",
+          "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control"
+        }
+      ],
+      "stages": {
+        "helhetsinntrykk": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "styrker": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "stilprofil": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "konkrete_svakheter": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "forbedringsgrep": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "revidert_eksempelversjon": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+      },
+      "decision": "COMBINE",
+      "ariadne_style_readiness": "pass_complete",
+      "source_status": "READY_FOR_EDITORIAL_REVIEW",
+      "source_scope": "Source-attributed constructive explanation; source reopened 2026-09-19; no independent contracts/payment/outcome verification. Entrance review limited to new card/UI delta.",
+      "publication_approval": {
+        "approved": true,
+        "by": "Bjørn Moe Aldema",
+        "reference": "docs/editorial/sierra-leone-language-release-2026-09-19.md#roles-and-authority",
+        "sha256": "ad46c63e9c823d384f3b7b68c7f55003e7bcdc55a92167e992deeddabef4becf"
+      }
     }
   },
   "public/articles/sierra-leone-school-meals-2026.fr.html": {
-    "case_id": "sierra-leone-school-meals-2026",
-    "sha256": "53554c6201a300ea29bf4144a520d086724c93fcc9e4128b6a9ce392c2e9fd27",
-    "reviewer": "Ariadne and Alma language/reader-journey pass; separate French specialist AI evaluator; Liv/Ada source and standards; Eira integration",
-    "execution_context": "Separate AI review executions with root integration; no external human expert or general transfer validation claimed",
-    "reviewed_at": "2026-09-19",
-    "comparison_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-    "reader_journey_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control",
-    "semantic_control_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#editorial-scope-and-source-control",
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "abadac3032ac68393b0e71a9be5934b63a7260502d0bfcbf5cf6ea20c5c7919e",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
       },
       {
-        "source": "oos-trained-agent-runtime/references/ariadne_editorial_transfer.md",
-        "revision": "sha256:aced74ca292ae33a5e6c3427da3d08fcda5e21e800bea0def509fcb27a26138d",
-        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control"
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "styrker": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
     },
-    "decision": "COMBINE",
+    "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Source-attributed constructive explanation; source reopened 2026-09-19; no independent contracts/payment/outcome verification. Entrance review limited to new card/UI delta.",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "docs/editorial/sierra-leone-language-release-2026-09-19.md#roles-and-authority",
-      "sha256": "53554c6201a300ea29bf4144a520d086724c93fcc9e4128b6a9ce392c2e9fd27"
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "abadac3032ac68393b0e71a9be5934b63a7260502d0bfcbf5cf6ea20c5c7919e"
+    },
+    "previous_review": {
+      "case_id": "sierra-leone-school-meals-2026",
+      "sha256": "53554c6201a300ea29bf4144a520d086724c93fcc9e4128b6a9ce392c2e9fd27",
+      "reviewer": "Ariadne and Alma language/reader-journey pass; separate French specialist AI evaluator; Liv/Ada source and standards; Eira integration",
+      "execution_context": "Separate AI review executions with root integration; no external human expert or general transfer validation claimed",
+      "reviewed_at": "2026-09-19",
+      "comparison_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "reader_journey_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control",
+      "semantic_control_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#editorial-scope-and-source-control",
+      "loaded_modules": [
+        {
+          "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+          "revision": "713f6796610652407037c7a0d69385e29d30f727",
+          "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+        },
+        {
+          "source": "oos-trained-agent-runtime/references/ariadne_editorial_transfer.md",
+          "revision": "sha256:aced74ca292ae33a5e6c3427da3d08fcda5e21e800bea0def509fcb27a26138d",
+          "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control"
+        }
+      ],
+      "stages": {
+        "helhetsinntrykk": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "styrker": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "stilprofil": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "konkrete_svakheter": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "forbedringsgrep": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "revidert_eksempelversjon": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+      },
+      "decision": "COMBINE",
+      "ariadne_style_readiness": "pass_complete",
+      "source_status": "READY_FOR_EDITORIAL_REVIEW",
+      "source_scope": "Source-attributed constructive explanation; source reopened 2026-09-19; no independent contracts/payment/outcome verification. Entrance review limited to new card/UI delta.",
+      "publication_approval": {
+        "approved": true,
+        "by": "Bjørn Moe Aldema",
+        "reference": "docs/editorial/sierra-leone-language-release-2026-09-19.md#roles-and-authority",
+        "sha256": "53554c6201a300ea29bf4144a520d086724c93fcc9e4128b6a9ce392c2e9fd27"
+      }
     }
   },
   "public/index.html": {
-    "case_id": "sierra-leone-school-meals-2026",
-    "sha256": "6a08e2a6cecde4aba96b9f100a070d115619b70b2a6803c5422b443b1b4c4a21",
-    "reviewer": "Ariadne and Alma language/reader-journey pass; separate French specialist AI evaluator; Liv/Ada source and standards; Eira integration",
-    "execution_context": "Separate AI review executions with root integration; no external human expert or general transfer validation claimed",
-    "reviewed_at": "2026-09-19",
-    "comparison_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-    "reader_journey_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control",
-    "semantic_control_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#editorial-scope-and-source-control",
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "d57aa6be81fd25c182890c0675fcd1151231604f90a8b086d6133d95a82603b9",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
       },
       {
-        "source": "oos-trained-agent-runtime/references/ariadne_editorial_transfer.md",
-        "revision": "sha256:aced74ca292ae33a5e6c3427da3d08fcda5e21e800bea0def509fcb27a26138d",
-        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control"
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "styrker": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
     },
     "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Source-attributed constructive explanation; source reopened 2026-09-19; no independent contracts/payment/outcome verification. Entrance review limited to new card/UI delta.",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "docs/editorial/sierra-leone-language-release-2026-09-19.md#roles-and-authority",
-      "sha256": "6a08e2a6cecde4aba96b9f100a070d115619b70b2a6803c5422b443b1b4c4a21"
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "d57aa6be81fd25c182890c0675fcd1151231604f90a8b086d6133d95a82603b9"
+    },
+    "previous_review": {
+      "case_id": "sierra-leone-school-meals-2026",
+      "sha256": "6a08e2a6cecde4aba96b9f100a070d115619b70b2a6803c5422b443b1b4c4a21",
+      "reviewer": "Ariadne and Alma language/reader-journey pass; separate French specialist AI evaluator; Liv/Ada source and standards; Eira integration",
+      "execution_context": "Separate AI review executions with root integration; no external human expert or general transfer validation claimed",
+      "reviewed_at": "2026-09-19",
+      "comparison_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "reader_journey_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control",
+      "semantic_control_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#editorial-scope-and-source-control",
+      "loaded_modules": [
+        {
+          "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+          "revision": "713f6796610652407037c7a0d69385e29d30f727",
+          "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+        },
+        {
+          "source": "oos-trained-agent-runtime/references/ariadne_editorial_transfer.md",
+          "revision": "sha256:aced74ca292ae33a5e6c3427da3d08fcda5e21e800bea0def509fcb27a26138d",
+          "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control"
+        }
+      ],
+      "stages": {
+        "helhetsinntrykk": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "styrker": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "stilprofil": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "konkrete_svakheter": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "forbedringsgrep": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "revidert_eksempelversjon": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+      },
+      "decision": "KEEP",
+      "ariadne_style_readiness": "pass_complete",
+      "source_status": "READY_FOR_EDITORIAL_REVIEW",
+      "source_scope": "Source-attributed constructive explanation; source reopened 2026-09-19; no independent contracts/payment/outcome verification. Entrance review limited to new card/UI delta.",
+      "publication_approval": {
+        "approved": true,
+        "by": "Bjørn Moe Aldema",
+        "reference": "docs/editorial/sierra-leone-language-release-2026-09-19.md#roles-and-authority",
+        "sha256": "6a08e2a6cecde4aba96b9f100a070d115619b70b2a6803c5422b443b1b4c4a21"
+      }
     }
   },
   "public/nb/index.html": {
-    "case_id": "sierra-leone-school-meals-2026",
-    "sha256": "14b0751234e9285a1b5283c46ad5c937fb51b54601bcc6f9bfa3628173bc7f6b",
-    "reviewer": "Ariadne and Alma language/reader-journey pass; separate French specialist AI evaluator; Liv/Ada source and standards; Eira integration",
-    "execution_context": "Separate AI review executions with root integration; no external human expert or general transfer validation claimed",
-    "reviewed_at": "2026-09-19",
-    "comparison_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-    "reader_journey_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control",
-    "semantic_control_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#editorial-scope-and-source-control",
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "c719ec0b5917d2d9402bfab457f83d6c6a951919a383e26ba31c3e8a40dd890c",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
       },
       {
-        "source": "oos-trained-agent-runtime/references/ariadne_editorial_transfer.md",
-        "revision": "sha256:aced74ca292ae33a5e6c3427da3d08fcda5e21e800bea0def509fcb27a26138d",
-        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control"
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "styrker": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
     },
     "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Source-attributed constructive explanation; source reopened 2026-09-19; no independent contracts/payment/outcome verification. Entrance review limited to new card/UI delta.",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "docs/editorial/sierra-leone-language-release-2026-09-19.md#roles-and-authority",
-      "sha256": "14b0751234e9285a1b5283c46ad5c937fb51b54601bcc6f9bfa3628173bc7f6b"
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "c719ec0b5917d2d9402bfab457f83d6c6a951919a383e26ba31c3e8a40dd890c"
+    },
+    "previous_review": {
+      "case_id": "sierra-leone-school-meals-2026",
+      "sha256": "14b0751234e9285a1b5283c46ad5c937fb51b54601bcc6f9bfa3628173bc7f6b",
+      "reviewer": "Ariadne and Alma language/reader-journey pass; separate French specialist AI evaluator; Liv/Ada source and standards; Eira integration",
+      "execution_context": "Separate AI review executions with root integration; no external human expert or general transfer validation claimed",
+      "reviewed_at": "2026-09-19",
+      "comparison_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "reader_journey_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control",
+      "semantic_control_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#editorial-scope-and-source-control",
+      "loaded_modules": [
+        {
+          "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+          "revision": "713f6796610652407037c7a0d69385e29d30f727",
+          "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+        },
+        {
+          "source": "oos-trained-agent-runtime/references/ariadne_editorial_transfer.md",
+          "revision": "sha256:aced74ca292ae33a5e6c3427da3d08fcda5e21e800bea0def509fcb27a26138d",
+          "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control"
+        }
+      ],
+      "stages": {
+        "helhetsinntrykk": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "styrker": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "stilprofil": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "konkrete_svakheter": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "forbedringsgrep": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "revidert_eksempelversjon": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+      },
+      "decision": "KEEP",
+      "ariadne_style_readiness": "pass_complete",
+      "source_status": "READY_FOR_EDITORIAL_REVIEW",
+      "source_scope": "Source-attributed constructive explanation; source reopened 2026-09-19; no independent contracts/payment/outcome verification. Entrance review limited to new card/UI delta.",
+      "publication_approval": {
+        "approved": true,
+        "by": "Bjørn Moe Aldema",
+        "reference": "docs/editorial/sierra-leone-language-release-2026-09-19.md#roles-and-authority",
+        "sha256": "14b0751234e9285a1b5283c46ad5c937fb51b54601bcc6f9bfa3628173bc7f6b"
+      }
     }
   },
   "public/en/index.html": {
-    "case_id": "sierra-leone-school-meals-2026",
-    "sha256": "045ac87bb101374fa8cf52564f50aa474e7140d8deed1069ab3fc8b1306821fe",
-    "reviewer": "Ariadne and Alma language/reader-journey pass; separate French specialist AI evaluator; Liv/Ada source and standards; Eira integration",
-    "execution_context": "Separate AI review executions with root integration; no external human expert or general transfer validation claimed",
-    "reviewed_at": "2026-09-19",
-    "comparison_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-    "reader_journey_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control",
-    "semantic_control_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#editorial-scope-and-source-control",
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "b341ddda9dcd539dee2fe6ed6c7345805bc0d765db70dbbdf8c51424a362d484",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
       },
       {
-        "source": "oos-trained-agent-runtime/references/ariadne_editorial_transfer.md",
-        "revision": "sha256:aced74ca292ae33a5e6c3427da3d08fcda5e21e800bea0def509fcb27a26138d",
-        "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control"
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "styrker": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
     },
     "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Source-attributed constructive explanation; source reopened 2026-09-19; no independent contracts/payment/outcome verification. Entrance review limited to new card/UI delta.",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "docs/editorial/sierra-leone-language-release-2026-09-19.md#roles-and-authority",
-      "sha256": "045ac87bb101374fa8cf52564f50aa474e7140d8deed1069ab3fc8b1306821fe"
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "b341ddda9dcd539dee2fe6ed6c7345805bc0d765db70dbbdf8c51424a362d484"
+    },
+    "previous_review": {
+      "case_id": "sierra-leone-school-meals-2026",
+      "sha256": "045ac87bb101374fa8cf52564f50aa474e7140d8deed1069ab3fc8b1306821fe",
+      "reviewer": "Ariadne and Alma language/reader-journey pass; separate French specialist AI evaluator; Liv/Ada source and standards; Eira integration",
+      "execution_context": "Separate AI review executions with root integration; no external human expert or general transfer validation claimed",
+      "reviewed_at": "2026-09-19",
+      "comparison_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+      "reader_journey_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control",
+      "semantic_control_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#editorial-scope-and-source-control",
+      "loaded_modules": [
+        {
+          "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+          "revision": "713f6796610652407037c7a0d69385e29d30f727",
+          "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+        },
+        {
+          "source": "oos-trained-agent-runtime/references/ariadne_editorial_transfer.md",
+          "revision": "sha256:aced74ca292ae33a5e6c3427da3d08fcda5e21e800bea0def509fcb27a26138d",
+          "application_ref": "docs/editorial/sierra-leone-language-release-2026-09-19.md#reader-journey-and-semantic-control"
+        }
+      ],
+      "stages": {
+        "helhetsinntrykk": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "styrker": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "stilprofil": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "konkrete_svakheter": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "forbedringsgrep": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review",
+        "revidert_eksempelversjon": "docs/editorial/sierra-leone-language-release-2026-09-19.md#six-stage-language-review"
+      },
+      "decision": "KEEP",
+      "ariadne_style_readiness": "pass_complete",
+      "source_status": "READY_FOR_EDITORIAL_REVIEW",
+      "source_scope": "Source-attributed constructive explanation; source reopened 2026-09-19; no independent contracts/payment/outcome verification. Entrance review limited to new card/UI delta.",
+      "publication_approval": {
+        "approved": true,
+        "by": "Bjørn Moe Aldema",
+        "reference": "docs/editorial/sierra-leone-language-release-2026-09-19.md#roles-and-authority",
+        "sha256": "045ac87bb101374fa8cf52564f50aa474e7140d8deed1069ab3fc8b1306821fe"
+      }
+    }
+  },
+  "public/art/love-me-to-lunch.en.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "7efbaf568e538167398796923e3e6735b12c1c922b5ec868ae4ce2be3694ab50",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "7efbaf568e538167398796923e3e6735b12c1c922b5ec868ae4ce2be3694ab50"
+    }
+  },
+  "public/art/love-me-to-lunch.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "9deae74f7fed93842f37cc849d47f478e7845268f1edd19f1b0883a1766be94a",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "9deae74f7fed93842f37cc849d47f478e7845268f1edd19f1b0883a1766be94a"
+    }
+  },
+  "public/art/skisse-2005.en.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "95e1149684a591968f832322fcdc11a46a3fbcc08695909949b3e59ab228c48f",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "95e1149684a591968f832322fcdc11a46a3fbcc08695909949b3e59ab228c48f"
+    }
+  },
+  "public/art/skisse-2005.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "dfecab6c36212b0aaecfdb186eaff5b8a0f51bacbb77741fcc67a08124368d7e",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "dfecab6c36212b0aaecfdb186eaff5b8a0f51bacbb77741fcc67a08124368d7e"
+    }
+  },
+  "public/articles/ai-boom-financial-fragility-2026.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "0a195df3a65091cff9b233f91eb5f3129ad29c6b0d3f6498d294cb1bdf1baef8",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "0a195df3a65091cff9b233f91eb5f3129ad29c6b0d3f6498d294cb1bdf1baef8"
+    }
+  },
+  "public/articles/amediastiftelsen-aschehoug-2026.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "05e545b0ea2fbb9aa15249aff17df67814f66040ff0d8b3e5b056e77fb4c35d3",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "05e545b0ea2fbb9aa15249aff17df67814f66040ff0d8b3e5b056e77fb4c35d3"
+    }
+  },
+  "public/articles/ask-before-you-buy-2026.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "3402ffa6c4a4e6c1583ebeb3dd9398bd36bd3d9df3560d93f62cb88841c94607",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "3402ffa6c4a4e6c1583ebeb3dd9398bd36bd3d9df3560d93f62cb88841c94607"
+    }
+  },
+  "public/articles/before-the-system-is-locked-in-2026.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "09c4eeeafd19e48b35b4fcf7062545e6c6a53a3d4d04b6ddc1d3185a58516f67",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "09c4eeeafd19e48b35b4fcf7062545e6c6a53a3d4d04b6ddc1d3185a58516f67"
+    }
+  },
+  "public/articles/before-then-if-25-public-experiments-2026.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "57ae3ac32eb58e36caad8ff0355a5f7c09faec6142cc039650994bd342e8cb1c",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "57ae3ac32eb58e36caad8ff0355a5f7c09faec6142cc039650994bd342e8cb1c"
+    }
+  },
+  "public/articles/england-motorway-charging-2026.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "b918978b491db9d075053f979372dc8620f7665c56b04c91b4d174d3791eadf0",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "b918978b491db9d075053f979372dc8620f7665c56b04c91b4d174d3791eadf0"
+    }
+  },
+  "public/articles/fincen-healthcare-fraud-signals-2026.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "4a382fba8d74d10df025389dfdadfc8991166d2d0300439c19927d4581691205",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "4a382fba8d74d10df025389dfdadfc8991166d2d0300439c19927d4581691205"
+    }
+  },
+  "public/articles/norway-elder-care-duty-to-rectify-2026.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "fc99442b9c1e3594745fb188037ca28493f0748f973702591af64a4f395ad6aa",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "fc99442b9c1e3594745fb188037ca28493f0748f973702591af64a4f395ad6aa"
+    }
+  },
+  "public/articles/taiwan-community-transition-2026.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "f2757a61fb7f16cefd6a0309ae420f465dcba980b0442383cfbe680a5aeabb4d",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "f2757a61fb7f16cefd6a0309ae420f465dcba980b0442383cfbe680a5aeabb4d"
+    }
+  },
+  "public/atriet.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "64bd855ca7c355116efec09df9918d215ab2fdeb74a2f993d524827ba4d4122a",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "64bd855ca7c355116efec09df9918d215ab2fdeb74a2f993d524827ba4d4122a"
+    }
+  },
+  "public/courses/course-of-the-day.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "ca2c3c153a4505dbf175fadef29e43f256dbe3bfbf6ae41cdeddeea531637ff3",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "ca2c3c153a4505dbf175fadef29e43f256dbe3bfbf6ae41cdeddeea531637ff3"
+    }
+  },
+  "public/courses/index.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "392900b9e1d3911df966cf258531fc6cb7bc6f0733e7e8a0f5fca69e70cbb42c",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "392900b9e1d3911df966cf258531fc6cb7bc6f0733e7e8a0f5fca69e70cbb42c"
+    }
+  },
+  "public/courses/news-entry-public-facts.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "29909f0ef2fce5c163323111287cdaccb76ce51b4920bd129dc84030a2b30be4",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "29909f0ef2fce5c163323111287cdaccb76ce51b4920bd129dc84030a2b30be4"
+    }
+  },
+  "public/courses/write-vividly-without-inventing.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "7e88a4cc04fd78d5012255b37b2235f6e19c5c8bffd4a80ce1c3494f5030d9aa",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "7e88a4cc04fd78d5012255b37b2235f6e19c5c8bffd4a80ce1c3494f5030d9aa"
+    }
+  },
+  "public/how-we-work.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "eb864a179a4af671c9ad3f30850c4af3941daff2cfb063bb0ac78a42e5ad4227",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "eb864a179a4af671c9ad3f30850c4af3941daff2cfb063bb0ac78a42e5ad4227"
+    }
+  },
+  "public/norway/index.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "6e6cd4f281c968d28e1dc86c87dfed38166621abcdf1a569fc22b921c5d4b4ec",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "6e6cd4f281c968d28e1dc86c87dfed38166621abcdf1a569fc22b921c5d4b4ec"
+    }
+  },
+  "public/opportunities/writing-course-pilot.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "0846e130c61daead8975b01d72e3c1c21541dc31703a37bac91c6448a72efd52",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "0846e130c61daead8975b01d72e3c1c21541dc31703a37bac91c6448a72efd52"
+    }
+  },
+  "public/privacy.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "81169bf85fc0dbcc768b3a5cc23190dbfadf4ef6eac7189a3848adf69adc63a0",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "81169bf85fc0dbcc768b3a5cc23190dbfadf4ef6eac7189a3848adf69adc63a0"
+    }
+  },
+  "public/recognition/index.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "a8c0717f3041e9d22996bfa030368f1aed25d5536415aba55872243e5b52d455",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "a8c0717f3041e9d22996bfa030368f1aed25d5536415aba55872243e5b52d455"
+    }
+  },
+  "public/recognition/rcf-sci-2026-09-14.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "411fe79ec28e12eccd954c1bd821c685c3e3d50cf74b87c45aa5b8a2c2ca561b",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "411fe79ec28e12eccd954c1bd821c685c3e3d50cf74b87c45aa5b8a2c2ca561b"
+    }
+  },
+  "public/series/institusjon/en/index.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "851e4bd40d80589e567c414765784cf5cb4e1ebdf9977f192c6715abad006f95",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "851e4bd40d80589e567c414765784cf5cb4e1ebdf9977f192c6715abad006f95"
+    }
+  },
+  "public/series/institusjon/index.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "ca1799d2d4bd0d471da8366f2cde71732312c42f00e810657651001d56ee8118",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "ca1799d2d4bd0d471da8366f2cde71732312c42f00e810657651001d56ee8118"
+    }
+  },
+  "public/series/institusjon/nb/index.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "de1af0b94ab73b409c15b6c754addd7ec50b527d44ff41a784bef4f45e0cff91",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "de1af0b94ab73b409c15b6c754addd7ec50b527d44ff41a784bef4f45e0cff91"
+    }
+  },
+  "public/support-terms.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "7bfa66172b9a4830d807d385ea3ec7bdc05a9278e9a513a1172e09b68b733cbf",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "7bfa66172b9a4830d807d385ea3ec7bdc05a9278e9a513a1172e09b68b733cbf"
+    }
+  },
+  "public/support.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "c53f8274dca7937e54a255a8403c4348d89c0e610cd2afd6e491bbc88fc58a29",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "c53f8274dca7937e54a255a8403c4348d89c0e610cd2afd6e491bbc88fc58a29"
+    }
+  },
+  "public/sitemap.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "b2b31163f25802b4779b54aaa1f28cca0a7b4e873bb734c1ff751356e7fabb36",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "REVISE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "New directory copy and actual existing publication links",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "b2b31163f25802b4779b54aaa1f28cca0a7b4e873bb734c1ff751356e7fabb36"
+    }
+  },
+  "public/sitemap.en.html": {
+    "case_id": "reader-navigation-2026-09-21",
+    "sha256": "e06b94549e9f52a62f804f246a2a3b72812a5436781fdd222d4011dba38fc908",
+    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+    "reviewed_at": "2026-09-21",
+    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+    },
+    "decision": "REVISE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "New directory copy and actual existing publication links",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+      "sha256": "e06b94549e9f52a62f804f246a2a3b72812a5436781fdd222d4011dba38fc908"
     }
   }
 }

@@ -7,6 +7,9 @@ Article index: https://experimentalnewsroom.org/content/articles.json
 RSS feed: https://experimentalnewsroom.org/feed.xml
 Sitemap: https://experimentalnewsroom.org/sitemap.xml
 Norway desk: https://experimentalnewsroom.org/norway/
+Series: https://experimentalnewsroom.org/series/institusjon/
+Norwegian entrance: https://experimentalnewsroom.org/nb/
+English entrance: https://experimentalnewsroom.org/en/
 Editorial method: https://experimentalnewsroom.org/how-we-work.html
 
 Published articles are public. Treat article dates, source notes, uncertainty labels, corrections and update notes as part of the editorial context.

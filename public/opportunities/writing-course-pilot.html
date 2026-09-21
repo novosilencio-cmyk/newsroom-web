@@ -36,15 +36,17 @@
     .form-note{font:600 12px/1.45 Arial,sans-serif}
     @media(max-width:800px){.story{padding:32px 0 56px}.story p,.story li{font-size:1.02rem}.role-grid{grid-template-columns:1fr}}
   </style>
+<link href="../reader-navigation.css" rel="stylesheet"/>
 </head>
 <body>
+<a class="reader-skip" href="#reader-main">Skip to content</a>
 <header class="masthead compact-masthead">
 <div class="edition-line"><span>2 September 2026</span><span>Open call · pilot</span></div>
 <h1>Experimental Newsroom</h1>
 <p class="strapline">Careful observation · evidence · constructive criticism</p>
 <nav aria-label="Primary"><a href="../index.html">Front page</a><a href="../how-we-work.html">How we work</a><a href="../support.html">Support</a></nav>
 </header>
-<main>
+<main id="reader-main" tabindex="-1">
 <article class="story">
 <p class="kicker">Open call · Norwegian-language pilot</p>
 <h1>Help us test a writing course that refuses to invent</h1>
@@ -100,7 +102,7 @@
 <p class="method-note">The call remains open until both roles are filled. Expressions of interest are considered before selection; volunteers receive full information and a separate consent step before taking part.</p>
 </article>
 </main>
-<footer><p>Experimental Newsroom · open call · voluntary pilot</p></footer>
+<footer><p>Experimental Newsroom · open call · voluntary pilot</p><p class="reader-map-link"><a href="../sitemap.en.html">Find your way</a></p></footer>
 <script>
     (function () {
       const form = document.getElementById('pilot-interest-form');

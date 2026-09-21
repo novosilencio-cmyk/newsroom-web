@@ -4,6 +4,9 @@ import json
 import re
 from datetime import datetime, timezone
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from build_reader_navigation import build_reader_navigation
 from urllib.parse import urlsplit
 from xml.sax.saxutils import escape
 
@@ -70,7 +73,7 @@ def build(articles):
     robots = "User-agent: OAI-SearchBot\nAllow: /\n\nUser-agent: ChatGPT-User\nAllow: /\n\nUser-agent: *\nAllow: /\n\nSitemap: " + BASE + "sitemap.xml\n"
     (PUBLIC/"robots.txt").write_text(robots, encoding="utf-8")
 
-    static=[("","2026-09-18"),("how-we-work.html",None),("support.html",None),("atriet.html",None),("courses/",None),("recognition/",None),("norway/","2026-09-18"),("nb/","2026-09-18"),("en/","2026-09-18"),("series/institusjon/","2026-09-18"),("series/institusjon/nb/","2026-09-18"),("series/institusjon/en/","2026-09-18"),("art/skisse-2005.html",None),("art/skisse-2005.en.html",None),("art/love-me-to-lunch.html",None),("art/love-me-to-lunch.en.html",None)]
+    static=[("sitemap.html",None),("sitemap.en.html",None),("","2026-09-18"),("how-we-work.html",None),("support.html",None),("atriet.html",None),("courses/",None),("recognition/",None),("norway/","2026-09-18"),("nb/","2026-09-18"),("en/","2026-09-18"),("series/institusjon/","2026-09-18"),("series/institusjon/nb/","2026-09-18"),("series/institusjon/en/","2026-09-18"),("art/skisse-2005.html",None),("art/skisse-2005.en.html",None),("art/love-me-to-lunch.html",None),("art/love-me-to-lunch.en.html",None)]
     lines=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for p,d in static:
         lines.append("  <url><loc>"+escape(BASE+p)+"</loc>"+(("<lastmod>"+d+"</lastmod>") if d else "")+"</url>")
@@ -100,6 +103,7 @@ def build(articles):
 <body><header class="masthead compact-masthead"><div class="edition-line"><span>Norge</span><span>Experimental Newsroom</span></div><h1>Experimental Newsroom</h1><p class="strapline">Careful observation · evidence · constructive criticism</p><nav aria-label="Hovedmeny"><a href="../">Forside / Front page</a><a href="../#world">Verden / World</a><a href="../how-we-work.html">Arbeidsmåte / How we work</a><a href="../feed.xml">RSS</a></nav></header><main><section class="lead"><p class="kicker">Norge · geografisk inngang</p><h2>Norge</h2><p class="lead-deck">Denne siden samler saker fra Norge og saker der Norge inngår i en reell sammenligning. Språk og geografi er to forskjellige ting: en norsk sak kan være publisert på norsk, engelsk eller begge språk.</p><p class="method-note"><time datetime="2026-09-18">Oppdatert 18. september 2026</time> · Leserstrukturen er revidert for tydeligere forklaring og mindre komprimert metodepresentasjon.</p></section><section class="section-block"><div class="section-heading"><h2>Saker</h2><span>Finn saker fra Norge og sammenligninger der Norge inngår</span></div><div class="article-grid">'''+"\n".join(cards)+'''</div></section></main><footer><p>Experimental Newsroom · <a href="../feed.xml">RSS</a> · <a href="../sitemap.xml">Sitemap</a></p></footer></body></html>'''
     p=PUBLIC/"norway"/"index.html"; p.parent.mkdir(parents=True,exist_ok=True); p.write_text(norway,encoding="utf-8")
     update_articles(articles)
+    build_reader_navigation(PUBLIC, articles)
 
 if __name__=="__main__":
     build(json.loads(REGISTRY.read_text(encoding="utf-8")))

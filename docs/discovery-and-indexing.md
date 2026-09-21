@@ -21,3 +21,9 @@ The public robots policy explicitly allows OpenAI search discovery and user-requ
 
 ## Maintenance
 The Pages workflow runs `python3 scripts/build_discovery.py` before tests and again before the public artifact is uploaded. New or updated registry entries therefore regenerate sitemap, feed, Norway view and article discovery metadata automatically.
+
+## Reader guide
+
+`/sitemap.html` (Norwegian) and `/sitemap.en.html` (English) provide a static reader-facing directory. `scripts/build_reader_navigation.py`, called by the existing discovery build, combines the publication registry with an explicit list of published service pages. Story language links use registered translations or the existing bilingual panels. Missing destinations fail the build.
+
+The optional local filter matches titles, short descriptions and country names; it is not full-text article search. Norwegian country aliases are index-only additions. All entries remain usable when JavaScript is unavailable. The build also adds idempotent skip links and guide access to public page shells, excluding the embedded artwork viewer. Changes to generated HTML still require the normal final-content review receipts.

@@ -1,0 +1,44 @@
+/* Shared navigation affordances and a calm, text-first reader guide. */
+[hidden]{display:none!important}
+h1,h2,h3{overflow-wrap:anywhere}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #235c48;outline-offset:4px}
+.reader-skip{position:absolute;left:16px;top:8px;transform:translateY(-180%);z-index:100;background:#171717;color:#fff;padding:12px 18px;font:700 1rem/1.4 Arial,sans-serif}
+.reader-skip:focus{transform:none;outline:3px solid #fff;outline-offset:2px}
+.reader-map-link a,footer a{display:inline-block;padding:6px 0;text-decoration:underline;text-underline-offset:.2em}
+.masthead nav a{padding-block:5px}
+.masthead.compact-masthead h1{font-size:clamp(2.1rem,5vw,4rem)}
+.story-aside .aside-note{display:block}
+.map-masthead{max-width:1180px;margin:auto;padding:25px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:4px double #171717}
+.map-brand{font-size:clamp(1.25rem,3vw,1.8rem);font-weight:bold;letter-spacing:-.025em}
+.map-masthead nav{display:flex;gap:18px;font:600 .9rem/1.4 Arial,sans-serif}
+.map-masthead nav a{padding:8px 0}
+.map-masthead [aria-current=page]{text-decoration:underline;text-underline-offset:.4em}
+.map-intro{padding:48px 0 24px}
+.map-intro h1{font-size:clamp(3rem,8vw,6rem);line-height:1;letter-spacing:-.045em;margin:8px 0 18px}
+.map-deck{max-width:680px;font-size:clamp(1.15rem,2vw,1.4rem);line-height:1.5;margin:0}
+.map-search{padding:24px;background:#e5e9e0;display:grid;grid-template-columns:minmax(0,1fr) 190px auto;gap:12px 20px;align-items:end;border-top:2px solid #235c48}
+.map-search label{display:block;font:700 .9rem/1.4 Arial,sans-serif;margin-bottom:7px}
+.map-search input,.map-search select,.map-search button{min-height:48px;width:100%;border:1px solid #555d52;border-radius:0;padding:10px 12px;font:1rem/1.4 Arial,sans-serif;background:#fffdf8;color:#171717}
+.map-search button{width:auto;cursor:pointer;background:#235c48;color:white;border-color:#235c48;font-weight:700}
+.map-search button:hover{background:#183f31}
+#map-help,#map-results{grid-column:1/-1;margin:0;font:.85rem/1.5 Arial,sans-serif;max-width:75ch}
+#map-results{font-weight:700;min-height:1.5em}
+.map-jumps{display:flex;flex-wrap:wrap;gap:4px 24px;padding:20px 0;border-bottom:1px solid #171717;font:700 .92rem/1.4 Arial,sans-serif}
+.map-jumps a{padding:10px 0;text-decoration:underline;text-underline-offset:.25em}
+.map-section{padding:36px 0;border-bottom:1px solid #171717;scroll-margin-top:24px}
+.map-section h2{font-size:clamp(1.9rem,4vw,2.7rem);line-height:1.15;letter-spacing:-.025em;margin:0 0 22px}
+.map-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:0 44px}
+.map-entry{min-width:0;padding:20px 0;border-top:1px solid #b5b8ae;overflow-wrap:anywhere}
+.map-entry h3{font-size:1.45rem;line-height:1.22;letter-spacing:-.015em;margin:8px 0 10px}
+.map-entry h3 a,.map-page>a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.17em}
+.map-meta{font:.78rem/1.5 Arial,sans-serif;margin:0;color:#444b42}
+.map-summary{font-size:1rem;line-height:1.55;margin:0 0 12px;max-width:65ch}
+.map-languages{display:flex;align-items:center;flex-wrap:wrap;gap:6px 14px;font:.83rem/1.4 Arial,sans-serif;margin:0}
+.map-languages a{display:inline-block;padding:8px 0;font-weight:700;text-decoration:underline;text-underline-offset:.2em}
+.map-page{display:flex;align-items:baseline;justify-content:space-between;gap:16px;font-size:1.08rem}
+.map-page>a{padding:6px 0}
+.map-page-language{font:.78rem/1.5 Arial,sans-serif;color:#444b42}
+#map-empty{padding:24px;border-left:3px solid #235c48;background:#e5e9e0}
+@media(max-width:650px){.map-masthead{align-items:flex-start;flex-direction:column;gap:8px}.map-intro{padding-top:32px}.map-search{grid-template-columns:1fr;padding:18px}.map-search button{width:100%}.map-list{grid-template-columns:1fr}.map-jumps{gap:0 18px}.map-section{padding-top:30px}.map-page{flex-wrap:wrap;gap:4px 12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{.reader-skip,.map-search,.map-jumps{display:none!important}.map-entry[hidden],.map-section[hidden]{display:block!important}.map-list{display:block}.map-entry{break-inside:avoid}}

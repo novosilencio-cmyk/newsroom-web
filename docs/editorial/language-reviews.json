@@ -2065,38 +2065,73 @@
     }
   },
   "public/articles/nar-ansvaret-kommer-hjem-2026.html": {
-    "case_id": "unge-hverdag-ansvar-2026-v1.5",
-    "sha256": "186a0b78bfe7f4ec879e5e79116b417c7ea26c85960a45db219f7f4847c59cfd",
-    "reviewer": "Integrating assistant with separate AI content review and delta confirmation",
-    "execution_context": "Same-assistant Ariadne editing; separate AI review PASS_BOUNDED; no human peer-review claim. Overview pages reviewed for article listing delta only.",
-    "reviewed_at": "2026-09-22",
-    "comparison_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#vesentlige-rettelser",
-    "reader_journey_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
-    "semantic_control_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#den-separate-kontrollens-omfang",
+    "case_id": "unge-hverdag-ansvar-2026-reader-opening-v2",
+    "sha256": "e274aeb4e09d902edd99335617fc51d7ca4966e835c53666e90a2dd7ad00ce3c",
+    "reviewer": "Integrating assistant applying Ariadne language workflow; Bjørn Moe Aldema final human publication approval",
+    "execution_context": "Reader-opening delta review against published v1.5; same-assistant language/editorial control, not independent human peer review. Bjørn explicitly approved exact newest version and two bounded Norwegian 'ikke' phrases.",
+    "reviewed_at": "2026-09-25",
+    "comparison_ref": "docs/editorial/ansvaret-reader-opening-review-2026-09-25.md#review-sequence",
+    "reader_journey_ref": "docs/editorial/ansvaret-reader-opening-review-2026-09-25.md#styrker",
+    "semantic_control_ref": "docs/editorial/ansvaret-reader-opening-review-2026-09-25.md#semantic-control-and-preservation",
     "loaded_modules": [
       {
         "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
         "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass"
+        "application_ref": "docs/editorial/ansvaret-reader-opening-review-2026-09-25.md#review-sequence"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
-      "styrker": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
-      "stilprofil": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
-      "konkrete_svakheter": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
-      "forbedringsgrep": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
-      "revidert_eksempelversjon": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass"
+      "helhetsinntrykk": "docs/editorial/ansvaret-reader-opening-review-2026-09-25.md#helhetsinntrykk",
+      "styrker": "docs/editorial/ansvaret-reader-opening-review-2026-09-25.md#styrker",
+      "stilprofil": "docs/editorial/ansvaret-reader-opening-review-2026-09-25.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/ansvaret-reader-opening-review-2026-09-25.md#konkrete-svakheter-kontrollert",
+      "forbedringsgrep": "docs/editorial/ansvaret-reader-opening-review-2026-09-25.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/ansvaret-reader-opening-review-2026-09-25.md#revidert-eksempelversjon"
     },
     "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Document-based analysis with explicit limitations and 29 numbered references; bounded independent AI checks, not all sources freshly reverified by separate reviewer.",
+    "source_scope": "Published v1.5 evidence preserved; reader entry, orientation, bounded fact/evidence boxes and lifecycle table refined.",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "DIANA-UNGE-20260922-21: explicit approval of delivered v1.5, overview entries and article-scoped language exceptions",
-      "sha256": "186a0b78bfe7f4ec879e5e79116b417c7ea26c85960a45db219f7f4847c59cfd"
+      "reference": "Current conversation 2026-09-25: approved newest version for publication; two bounded 'ikke' occurrences approved",
+      "sha256": "e274aeb4e09d902edd99335617fc51d7ca4966e835c53666e90a2dd7ad00ce3c"
+    },
+    "previous_review": {
+      "case_id": "unge-hverdag-ansvar-2026-v1.5",
+      "sha256": "186a0b78bfe7f4ec879e5e79116b417c7ea26c85960a45db219f7f4847c59cfd",
+      "reviewer": "Integrating assistant with separate AI content review and delta confirmation",
+      "execution_context": "Same-assistant Ariadne editing; separate AI review PASS_BOUNDED; no human peer-review claim. Overview pages reviewed for article listing delta only.",
+      "reviewed_at": "2026-09-22",
+      "comparison_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#vesentlige-rettelser",
+      "reader_journey_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
+      "semantic_control_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#den-separate-kontrollens-omfang",
+      "loaded_modules": [
+        {
+          "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+          "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+          "application_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass"
+        }
+      ],
+      "stages": {
+        "helhetsinntrykk": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
+        "styrker": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
+        "stilprofil": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
+        "konkrete_svakheter": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
+        "forbedringsgrep": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
+        "revidert_eksempelversjon": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass"
+      },
+      "decision": "KEEP",
+      "ariadne_style_readiness": "pass_complete",
+      "source_status": "READY_FOR_EDITORIAL_REVIEW",
+      "source_scope": "Document-based analysis with explicit limitations and 29 numbered references; bounded independent AI checks, not all sources freshly reverified by separate reviewer.",
+      "publication_approval": {
+        "approved": true,
+        "by": "Bjørn Moe Aldema",
+        "reference": "DIANA-UNGE-20260922-21: explicit approval of delivered v1.5, overview entries and article-scoped language exceptions",
+        "sha256": "186a0b78bfe7f4ec879e5e79116b417c7ea26c85960a45db219f7f4847c59cfd"
+      }
     }
   }
 }

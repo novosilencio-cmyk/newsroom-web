@@ -1,5 +1,17 @@
 [
   {
+    "id": "institusjon-hva-var-bestillingen-2026",
+    "section": "Analysis",
+    "region": "Europe",
+    "country": "Norway",
+    "type": "Institusjon · Series opener",
+    "title": "Hva var egentlig bestillingen?",
+    "summary": "Før vi undersøker om samfunnets institusjoner gjør jobben sin, må vi finne ut hvilken jobb de er satt til å gjøre.",
+    "published": "2026-09-26",
+    "priority": 0,
+    "url": "articles/institusjon-hva-var-bestillingen-2026.html"
+  },
+  {
     "id": "england-motorway-charging-2026",
     "section": "Analysis",
     "region": "Europe",
@@ -8,7 +20,7 @@
     "title": "England revisits motorway charging after a pilot awarded no grants",
     "summary": "After every applicant withdrew from a grid-upgrade pilot, England proposed a different funding arrangement. Its value will depend on whether the new connections help drivers find charging they can use and afford.",
     "published": "2026-09-15",
-    "priority": 0,
+    "priority": 1,
     "url": "articles/england-motorway-charging-2026.html",
     "language_updated": "2026-09-15"
   },
@@ -22,7 +34,7 @@
     "summary": "A federal analysis follows $17.5 billion in activity that financial institutions considered suspicious. Understanding what happened to the money still requires evidence about the care behind the payments.",
     "published": "2026-09-10",
     "published_time": "13:37 CEST",
-    "priority": 1,
+    "priority": 2,
     "url": "articles/fincen-healthcare-fraud-signals-2026.html",
     "language_updated": "2026-09-15"
   },
@@ -35,7 +47,7 @@
     "title": "Ask before you buy",
     "summary": "Before deciding what to buy for its care services, Hsinchu County asked for knowledge. Its notices show how early questions can give more people a part in shaping the eventual service.",
     "published": "2026-09-09",
-    "priority": 2,
+    "priority": 3,
     "url": "articles/ask-before-you-buy-2026.html?lang=en",
     "language_updated": "2026-09-15"
   },
@@ -48,7 +60,7 @@
     "title": "Before the System Is Locked In",
     "summary": "In the 1970s, Norwegian unions and researchers explored how workers could help shape computer systems. Their experience speaks to today's AI decisions: knowledge of the work needs a place while the important choices are still open.",
     "published": "2026-09-06",
-    "priority": 3,
+    "priority": 4,
     "url": "articles/before-the-system-is-locked-in-2026.html?lang=en",
     "language_updated": "2026-09-15"
   },
@@ -61,7 +73,7 @@
     "title": "When plans must become care",
     "summary": "For an older person who needs care, municipal plans matter through the help received each day. Norway's audit findings call for closer scrutiny of that connection, alongside the legal duty to provide adequate care and correct shortcomings.",
     "published": "2026-09-06",
-    "priority": 4,
+    "priority": 5,
     "url": "articles/norway-elder-care-duty-to-rectify-2026.html?lang=en",
     "language_updated": "2026-09-15"
   },
@@ -75,7 +87,7 @@
     "summary": "School-food records in Cariacica, Brazil, let us follow purchases from family-farm associations through invoices and payments. They reveal part of the journey from farm to school, and point to the people whose experience still needs to be heard.",
     "published": "2026-09-03",
     "updated": "2026-09-04",
-    "priority": 5,
+    "priority": 6,
     "url": "articles/brazil-cariacica-family-farm-school-food-2026.html",
     "language_updated": "2026-09-15"
   },
@@ -88,7 +100,7 @@
     "title": "Japan has promised flexible daycare. The calendar is the real test",
     "summary": "Japan's new benefit gives eligible young children access to limited-hours daycare regardless of whether a parent works. Osaka's application process shows what a family must do before those hours can become part of its week.",
     "published": "2026-09-03",
-    "priority": 6,
+    "priority": 7,
     "url": "articles/japan-flexible-daycare-2026.html",
     "language_updated": "2026-09-15"
   },
@@ -101,7 +113,7 @@
     "title": "The AI boom can be real. Its financing can still be fragile",
     "summary": "AI may save time at work long before its investors recover the cost of building it. The Bank for International Settlements examines how useful technology and vulnerable financing can grow together.",
     "published": "2026-09-03",
-    "priority": 7,
+    "priority": 8,
     "url": "articles/ai-boom-financial-fragility-2026.html",
     "language_updated": "2026-09-15"
   },
@@ -114,7 +126,7 @@
     "title": "Denmark has drawn a greener map. Now every field becomes a negotiation",
     "summary": "Across Denmark, local groups have mapped possible wetlands, forests and changes to farmland. Making those plans work now means reaching agreements with owners, finding skilled staff and following what happens to the land and water.",
     "published": "2026-09-02",
-    "priority": 8,
+    "priority": 9,
     "url": "articles/denmark-green-tripartite-2026.html",
     "language_updated": "2026-09-15"
   },
@@ -127,7 +139,7 @@
     "title": "Before, then, if: 25 public experiments worth watching",
     "summary": "A few hours of childcare, a restored wetland, a reliable water supply: public initiatives become interesting when we can see what they might change in daily life. These 25 cases offer concrete starting points for following that work.",
     "published": "2026-08-31",
-    "priority": 9,
+    "priority": 10,
     "url": "articles/before-then-if-25-public-experiments-2026.html",
     "language_updated": "2026-09-15"
   },
@@ -140,7 +152,7 @@
     "title": "Taiwan is inviting communities to help design the transition",
     "summary": "Local energy, materials that can be used again, and technology shaped around daily life: separate Taiwanese calls invite communities and researchers to help decide what comes next. The opportunities are concrete; the benefits remain to be demonstrated.",
     "published": "2026-08-31",
-    "priority": 10,
+    "priority": 11,
     "url": "articles/taiwan-community-transition-2026.html",
     "language_updated": "2026-09-15"
   }

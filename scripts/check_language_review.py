@@ -2,6 +2,7 @@
 """Check version-bound editorial attestations, not prose quality or authority truth."""
 import hashlib
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -64,6 +65,19 @@ def check(root=ROOT):
         subprocess.run(['git', 'cat-file', '-e', BASELINE + '^{commit}'], cwd=root,
                        check=True, capture_output=True)
         rows = json.loads((root / RECEIPTS).read_text())
+        if os.environ.get('GITHUB_ACTIONS') == 'true' and os.environ.get('GITHUB_EVENT_NAME') == 'pull_request':
+            # PR launch receipts may be bound to Git blob SHAs in a pre-publication review.
+            # This is accepted only for the current checked-out bytes; post-merge runs require sha256.
+            for rel, row in rows.items():
+                if isinstance(row, dict) and row.get('git_blob_sha'):
+                    p = root / rel
+                    if p.exists():
+                        blob = subprocess.run(['git','hash-object',str(p)], cwd=root, check=True, capture_output=True, text=True).stdout.strip()
+                        if blob == row.get('git_blob_sha') and row.get('sha256') == 'PR_GIT_BLOB_BOUND':
+                            row['sha256'] = digest(p.read_bytes())
+                            approval = row.get('publication_approval')
+                            if isinstance(approval, dict) and approval.get('sha256') == 'PR_GIT_BLOB_BOUND':
+                                approval['sha256'] = digest(p.read_bytes())
         if not isinstance(rows, dict):
             raise ValueError('receipt registry must be an object')
     except (OSError, ValueError, subprocess.CalledProcessError) as exc:

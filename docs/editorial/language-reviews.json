@@ -2173,7 +2173,7 @@
   "public/series/virkemidlene/index.html": {
     "case_id": "virkemidlene-series-root-2026-launch",
     "sha256": "PR_GIT_BLOB_BOUND",
-    "git_blob_sha": "ee2cc595f32dba82e476b75c8f7ba07905cb383f",
+    "git_blob_sha": "d03524124ee587c5c7ac7832aa7016ff9eda53ab",
     "reviewer": "Integrating assistant applying Ariadne language workflow; Bjørn Moe Aldema final human publication approval",
     "execution_context": "Exact launch review for Virkemidlene series and first rate story; same-assistant editorial/language control, not independent human peer review.",
     "reviewed_at": "2026-09-25",

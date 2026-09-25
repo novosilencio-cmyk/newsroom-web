@@ -2137,7 +2137,7 @@
   "public/articles/nar-renten-flyttes-flyttes-belastningen-2026.html": {
     "case_id": "virkemidlene-rate-2026-launch",
     "sha256": "PR_GIT_BLOB_BOUND",
-    "git_blob_sha": "f5cb79794f489789be451147f066450e2f00c839",
+    "git_blob_sha": "b7af29b1817a3bc1c621f765846f370b224d287a",
     "reviewer": "Integrating assistant applying Ariadne language workflow; Bjørn Moe Aldema final human publication approval",
     "execution_context": "Exact launch review for Virkemidlene series and first rate story; same-assistant editorial/language control, not independent human peer review.",
     "reviewed_at": "2026-09-25",
@@ -2209,7 +2209,7 @@
   "public/series/virkemidlene/nb/index.html": {
     "case_id": "virkemidlene-series-nb-2026-launch",
     "sha256": "PR_GIT_BLOB_BOUND",
-    "git_blob_sha": "6f03d98f8d30581e1cf713d93c5629254a84afd1",
+    "git_blob_sha": "acac3f7c22171327bc25b64f0962fa8ba6acb2cc",
     "reviewer": "Integrating assistant applying Ariadne language workflow; Bjørn Moe Aldema final human publication approval",
     "execution_context": "Exact launch review for Virkemidlene series and first rate story; same-assistant editorial/language control, not independent human peer review.",
     "reviewed_at": "2026-09-25",

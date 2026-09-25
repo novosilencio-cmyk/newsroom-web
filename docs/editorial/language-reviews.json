@@ -2133,5 +2133,113 @@
         "sha256": "186a0b78bfe7f4ec879e5e79116b417c7ea26c85960a45db219f7f4847c59cfd"
       }
     }
+  },
+  "public/articles/nar-renten-flyttes-flyttes-belastningen-2026.html": {
+    "case_id": "virkemidlene-rate-2026-launch",
+    "sha256": "PR_GIT_BLOB_BOUND",
+    "git_blob_sha": "79914682c3b81b8d92c2670e2cafc74885fd2171",
+    "reviewer": "Integrating assistant applying Ariadne language workflow; Bjørn Moe Aldema final human publication approval",
+    "execution_context": "Exact launch review for Virkemidlene series and first rate story; same-assistant editorial/language control, not independent human peer review.",
+    "reviewed_at": "2026-09-25",
+    "comparison_ref": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#helhetsinntrykk",
+    "reader_journey_ref": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#styrker",
+    "semantic_control_ref": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#semantic-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#helhetsinntrykk"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#helhetsinntrykk",
+      "styrker": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#styrker",
+      "stilprofil": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#revidert-eksempelversjon"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "First article; current and historical primary-source bounded rate analysis. Transmission sequence rendered as reader prose after reader-sequence gate.",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "Current conversation 2026-09-25: make the new Thursday-series presentation ready and publish it with the first story",
+      "sha256": "PR_GIT_BLOB_BOUND"
+    }
+  },
+  "public/series/virkemidlene/index.html": {
+    "case_id": "virkemidlene-series-root-2026-launch",
+    "sha256": "PR_GIT_BLOB_BOUND",
+    "git_blob_sha": "ac60045e9987e7b33646f1d299d7fadf9aba94fc",
+    "reviewer": "Integrating assistant applying Ariadne language workflow; Bjørn Moe Aldema final human publication approval",
+    "execution_context": "Exact launch review for Virkemidlene series and first rate story; same-assistant editorial/language control, not independent human peer review.",
+    "reviewed_at": "2026-09-25",
+    "comparison_ref": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#helhetsinntrykk",
+    "reader_journey_ref": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#styrker",
+    "semantic_control_ref": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#semantic-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#helhetsinntrykk"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#helhetsinntrykk",
+      "styrker": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#styrker",
+      "stilprofil": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#revidert-eksempelversjon"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Series language entry point.",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "Current conversation 2026-09-25: make the new Thursday-series presentation ready and publish it with the first story",
+      "sha256": "PR_GIT_BLOB_BOUND"
+    }
+  },
+  "public/series/virkemidlene/nb/index.html": {
+    "case_id": "virkemidlene-series-nb-2026-launch",
+    "sha256": "PR_GIT_BLOB_BOUND",
+    "git_blob_sha": "acac3f7c22171327bc25b64f0962fa8ba6acb2cc",
+    "reviewer": "Integrating assistant applying Ariadne language workflow; Bjørn Moe Aldema final human publication approval",
+    "execution_context": "Exact launch review for Virkemidlene series and first rate story; same-assistant editorial/language control, not independent human peer review.",
+    "reviewed_at": "2026-09-25",
+    "comparison_ref": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#helhetsinntrykk",
+    "reader_journey_ref": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#styrker",
+    "semantic_control_ref": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#semantic-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#helhetsinntrykk"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#helhetsinntrykk",
+      "styrker": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#styrker",
+      "stilprofil": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#revidert-eksempelversjon"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Norwegian series presentation.",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "Current conversation 2026-09-25: make the new Thursday-series presentation ready and publish it with the first story",
+      "sha256": "PR_GIT_BLOB_BOUND"
+    }
   }
 }

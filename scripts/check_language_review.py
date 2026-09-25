@@ -72,7 +72,7 @@ def check(root=ROOT):
                 if isinstance(row, dict) and row.get('git_blob_sha'):
                     p = root / rel
                     if p.exists():
-                        blob = subprocess.run(['git','hash-object',str(p)], cwd=root, check=True, capture_output=True, text=True).stdout.strip()
+                        blob = subprocess.run(['git','hash-object',p.relative_to(root).as_posix()], cwd=root, check=True, capture_output=True, text=True).stdout.strip()
                         if blob == row.get('git_blob_sha') and row.get('sha256') == 'PR_GIT_BLOB_BOUND':
                             row['sha256'] = digest(p.read_bytes())
                             approval = row.get('publication_approval')

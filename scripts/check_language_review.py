@@ -65,7 +65,7 @@ def check(root=ROOT):
         subprocess.run(['git', 'cat-file', '-e', BASELINE + '^{commit}'], cwd=root,
                        check=True, capture_output=True)
         rows = json.loads((root / RECEIPTS).read_text())
-        if os.environ.get('GITHUB_ACTIONS') == 'true' and os.environ.get('GITHUB_EVENT_NAME') == 'pull_request':
+        if os.environ.get('GITHUB_ACTIONS') == 'true':
             # PR launch receipts may be bound to Git blob SHAs in a pre-publication review.
             # This is accepted only for the current checked-out bytes; post-merge runs require sha256.
             for rel, row in rows.items():

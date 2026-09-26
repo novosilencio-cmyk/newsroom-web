@@ -1,5 +1,19 @@
 [
   {
+    "id": "nar-minnet-blir-natid-2026",
+    "section": "Analysis",
+    "region": "Global",
+    "country": "Nevrovitenskap · KI",
+    "type": "Dokumentbasert analyse",
+    "language": "nb",
+    "title": "Når minnet blir en del av nåtiden",
+    "summary": "Hjernen gjenaktiverer tidligere erfaringer. KI-agenter kan la lagrede erfaringer styre nye valg. I begge tilfeller oppstår et kontrollspørsmål: Hvor kommer denne representasjonen fra – og gjelder den fortsatt?",
+    "published": "2026-09-26",
+    "updated": "2026-09-26",
+    "priority": 0,
+    "url": "articles/nar-minnet-blir-natid-2026.html"
+  },
+  {
     "id": "nar-ansvaret-kommer-hjem-2026",
     "section": "Analysis",
     "region": "Europe",

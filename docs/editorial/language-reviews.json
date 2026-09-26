@@ -2206,7 +2206,7 @@
   },
   "public/articles/nar-renten-flyttes-flyttes-belastningen-2026.html": {
     "case_id": "virkemidlene-rate-2026-launch",
-    "sha256": "ceac8964653543ff2f390e097bd6829a5dbded118b25b0652dfb8de0354a420f",
+    "sha256": "7b84c1686f5240c8f5f39f1e73d25fc2b869474a5d7378785791c707166cbf69",
     "reviewer": "Integrating assistant applying Ariadne language workflow; Bjørn Moe Aldema final human publication approval",
     "execution_context": "Exact launch review for Virkemidlene series and first rate story; same-assistant editorial/language control, not independent human peer review.",
     "reviewed_at": "2026-09-25",
@@ -2236,13 +2236,12 @@
       "approved": true,
       "by": "Bjørn Moe Aldema",
       "reference": "Current conversation 2026-09-25: make the new Thursday-series presentation ready and publish it with the first story",
-      "sha256": "ceac8964653543ff2f390e097bd6829a5dbded118b25b0652dfb8de0354a420f"
+      "sha256": "7b84c1686f5240c8f5f39f1e73d25fc2b869474a5d7378785791c707166cbf69"
     }
   },
   "public/series/virkemidlene/index.html": {
     "case_id": "virkemidlene-series-root-2026-launch",
-    "sha256": "PR_GIT_BLOB_BOUND",
-    "git_blob_sha": "ac60045e9987e7b33646f1d299d7fadf9aba94fc",
+    "sha256": "404e72981d2e44374974bd37bdcba747447d8967715a3e94044806ac64eb7c5a",
     "reviewer": "Integrating assistant applying Ariadne language workflow; Bjørn Moe Aldema final human publication approval",
     "execution_context": "Exact launch review for Virkemidlene series and first rate story; same-assistant editorial/language control, not independent human peer review.",
     "reviewed_at": "2026-09-25",
@@ -2272,13 +2271,12 @@
       "approved": true,
       "by": "Bjørn Moe Aldema",
       "reference": "Current conversation 2026-09-25: make the new Thursday-series presentation ready and publish it with the first story",
-      "sha256": "PR_GIT_BLOB_BOUND"
+      "sha256": "404e72981d2e44374974bd37bdcba747447d8967715a3e94044806ac64eb7c5a"
     }
   },
   "public/series/virkemidlene/nb/index.html": {
     "case_id": "virkemidlene-series-nb-2026-launch",
-    "sha256": "PR_GIT_BLOB_BOUND",
-    "git_blob_sha": "acac3f7c22171327bc25b64f0962fa8ba6acb2cc",
+    "sha256": "5c8d4e307c047576d01a2f3df1614342ebbc671b22008f6be375ba6b3b7b4367",
     "reviewer": "Integrating assistant applying Ariadne language workflow; Bjørn Moe Aldema final human publication approval",
     "execution_context": "Exact launch review for Virkemidlene series and first rate story; same-assistant editorial/language control, not independent human peer review.",
     "reviewed_at": "2026-09-25",
@@ -2308,7 +2306,7 @@
       "approved": true,
       "by": "Bjørn Moe Aldema",
       "reference": "Current conversation 2026-09-25: make the new Thursday-series presentation ready and publish it with the first story",
-      "sha256": "PR_GIT_BLOB_BOUND"
+      "sha256": "5c8d4e307c047576d01a2f3df1614342ebbc671b22008f6be375ba6b3b7b4367"
     }
   },
   "public/articles/nar-minnet-blir-natid-2026.html": {

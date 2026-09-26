@@ -2206,8 +2206,7 @@
   },
   "public/articles/nar-renten-flyttes-flyttes-belastningen-2026.html": {
     "case_id": "virkemidlene-rate-2026-launch",
-    "sha256": "PR_GIT_BLOB_BOUND",
-    "git_blob_sha": "79914682c3b81b8d92c2670e2cafc74885fd2171",
+    "sha256": "ceac8964653543ff2f390e097bd6829a5dbded118b25b0652dfb8de0354a420f",
     "reviewer": "Integrating assistant applying Ariadne language workflow; Bjørn Moe Aldema final human publication approval",
     "execution_context": "Exact launch review for Virkemidlene series and first rate story; same-assistant editorial/language control, not independent human peer review.",
     "reviewed_at": "2026-09-25",
@@ -2237,7 +2236,7 @@
       "approved": true,
       "by": "Bjørn Moe Aldema",
       "reference": "Current conversation 2026-09-25: make the new Thursday-series presentation ready and publish it with the first story",
-      "sha256": "PR_GIT_BLOB_BOUND"
+      "sha256": "ceac8964653543ff2f390e097bd6829a5dbded118b25b0652dfb8de0354a420f"
     }
   },
   "public/series/virkemidlene/index.html": {

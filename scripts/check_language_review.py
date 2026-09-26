@@ -66,10 +66,6 @@ def check(root=ROOT):
                        check=True, capture_output=True)
         rows = json.loads((root / RECEIPTS).read_text())
         if os.environ.get('GITHUB_ACTIONS') == 'true':
-            for rel in ('public/articles/nar-renten-flyttes-flyttes-belastningen-2026.html', 'public/series/virkemidlene/index.html', 'public/series/virkemidlene/nb/index.html'):
-                p = root / rel
-                if p.exists():
-                    print('DEBUG_CURRENT_DIGEST', rel, digest(p.read_bytes()), subprocess.run(['git','hash-object',p.relative_to(root).as_posix()], cwd=root, check=True, capture_output=True, text=True).stdout.strip(), file=sys.stderr)
             # PR launch receipts may be bound to Git blob SHAs in a pre-publication review.
             # This is accepted only for the current checked-out bytes; post-merge runs require sha256.
             for rel, row in rows.items():

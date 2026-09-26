@@ -1915,152 +1915,222 @@
     }
   },
   "public/sitemap.html": {
-    "case_id": "unge-hverdag-ansvar-2026-v1.5",
-    "sha256": "67cac509c23f7a52dfe606cc75cb61db6e786f3456e464d8f75ec5b767ce8dee",
-    "reviewer": "Integrating assistant with separate AI content review and delta confirmation",
-    "execution_context": "Same-assistant Ariadne editing; separate AI review PASS_BOUNDED; no human peer-review claim. Overview pages reviewed for article listing delta only.",
-    "reviewed_at": "2026-09-22",
-    "comparison_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#vesentlige-rettelser",
-    "reader_journey_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
-    "semantic_control_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#den-separate-kontrollens-omfang",
+    "case_id": "memory-human-ai-sitemap-delta-2026-09-26",
+    "sha256": "1ffc0707bd61d22d1280939ec3fe4fa194104d71f993c422e763176533a566fe",
+    "reviewer": "Alma reader presentation; Ariadne bounded listing-language confirmation; integrating assistant",
+    "execution_context": "Derived sitemap listing delta from an already reviewed article; no new source or factual claims; no independent human peer-review claim.",
+    "reviewed_at": "2026-09-26",
+    "comparison_ref": "docs/editorial/memory-human-ai-release-2026-09-26.md#reader-journey-and-alma-presentation",
+    "reader_journey_ref": "docs/editorial/memory-human-ai-release-2026-09-26.md#reader-journey-and-alma-presentation",
+    "semantic_control_ref": "docs/editorial/memory-human-ai-release-2026-09-26.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "source": "OOS-Core/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
         "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass"
+        "application_ref": "docs/editorial/memory-human-ai-release-2026-09-26.md#six-stage-ariadne-language-review"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
-      "styrker": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
-      "stilprofil": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
-      "konkrete_svakheter": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
-      "forbedringsgrep": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
-      "revidert_eksempelversjon": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass"
+      "helhetsinntrykk": "docs/editorial/memory-human-ai-release-2026-09-26.md#helhetsinntrykk",
+      "styrker": "docs/editorial/memory-human-ai-release-2026-09-26.md#styrker",
+      "stilprofil": "docs/editorial/memory-human-ai-release-2026-09-26.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/memory-human-ai-release-2026-09-26.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/memory-human-ai-release-2026-09-26.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/memory-human-ai-release-2026-09-26.md#revidert-eksempelversjon"
     },
     "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Approved headline, deck and link added; existing overview content preserved.",
+    "source_scope": "Derived site-map listing only; exact article title, summary, language and link reused from the reviewed publication registry entry.",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "DIANA-UNGE-20260922-21: explicit approval of delivered v1.5, overview entries and article-scoped language exceptions",
-      "sha256": "67cac509c23f7a52dfe606cc75cb61db6e786f3456e464d8f75ec5b767ce8dee"
+      "reference": "docs/editorial/memory-human-ai-release-2026-09-26.md#publication-approval",
+      "sha256": "1ffc0707bd61d22d1280939ec3fe4fa194104d71f993c422e763176533a566fe"
     },
     "previous_review": {
-      "case_id": "reader-navigation-2026-09-21",
-      "sha256": "b2b31163f25802b4779b54aaa1f28cca0a7b4e873bb734c1ff751356e7fabb36",
-      "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
-      "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
-      "reviewed_at": "2026-09-21",
-      "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
-      "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
-      "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+      "case_id": "unge-hverdag-ansvar-2026-v1.5",
+      "sha256": "67cac509c23f7a52dfe606cc75cb61db6e786f3456e464d8f75ec5b767ce8dee",
+      "reviewer": "Integrating assistant with separate AI content review and delta confirmation",
+      "execution_context": "Same-assistant Ariadne editing; separate AI review PASS_BOUNDED; no human peer-review claim. Overview pages reviewed for article listing delta only.",
+      "reviewed_at": "2026-09-22",
+      "comparison_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#vesentlige-rettelser",
+      "reader_journey_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
+      "semantic_control_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#den-separate-kontrollens-omfang",
       "loaded_modules": [
         {
           "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
           "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-          "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
-        },
-        {
-          "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
-          "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
-          "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+          "application_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass"
         }
       ],
       "stages": {
-        "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-        "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-        "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-        "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-        "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-        "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+        "helhetsinntrykk": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
+        "styrker": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
+        "stilprofil": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
+        "konkrete_svakheter": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
+        "forbedringsgrep": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
+        "revidert_eksempelversjon": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass"
       },
-      "decision": "REVISE",
+      "decision": "KEEP",
       "ariadne_style_readiness": "pass_complete",
       "source_status": "READY_FOR_EDITORIAL_REVIEW",
-      "source_scope": "New directory copy and actual existing publication links",
+      "source_scope": "Approved headline, deck and link added; existing overview content preserved.",
       "publication_approval": {
         "approved": true,
         "by": "Bjørn Moe Aldema",
-        "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
-        "sha256": "b2b31163f25802b4779b54aaa1f28cca0a7b4e873bb734c1ff751356e7fabb36"
+        "reference": "DIANA-UNGE-20260922-21: explicit approval of delivered v1.5, overview entries and article-scoped language exceptions",
+        "sha256": "67cac509c23f7a52dfe606cc75cb61db6e786f3456e464d8f75ec5b767ce8dee"
+      },
+      "previous_review": {
+        "case_id": "reader-navigation-2026-09-21",
+        "sha256": "b2b31163f25802b4779b54aaa1f28cca0a7b4e873bb734c1ff751356e7fabb36",
+        "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+        "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+        "reviewed_at": "2026-09-21",
+        "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+        "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+        "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+        "loaded_modules": [
+          {
+            "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+            "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+            "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+          },
+          {
+            "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+            "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+            "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+          }
+        ],
+        "stages": {
+          "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+          "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+          "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+          "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+          "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+          "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+        },
+        "decision": "REVISE",
+        "ariadne_style_readiness": "pass_complete",
+        "source_status": "READY_FOR_EDITORIAL_REVIEW",
+        "source_scope": "New directory copy and actual existing publication links",
+        "publication_approval": {
+          "approved": true,
+          "by": "Bjørn Moe Aldema",
+          "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+          "sha256": "b2b31163f25802b4779b54aaa1f28cca0a7b4e873bb734c1ff751356e7fabb36"
+        }
       }
     }
   },
   "public/sitemap.en.html": {
-    "case_id": "unge-hverdag-ansvar-2026-v1.5",
-    "sha256": "0e7fb3f8b095d80d41814697f729d17e1fff52f944a498faa1d37d74e40c2a89",
-    "reviewer": "Integrating assistant with separate AI content review and delta confirmation",
-    "execution_context": "Same-assistant Ariadne editing; separate AI review PASS_BOUNDED; no human peer-review claim. Overview pages reviewed for article listing delta only.",
-    "reviewed_at": "2026-09-22",
-    "comparison_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#vesentlige-rettelser",
-    "reader_journey_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
-    "semantic_control_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#den-separate-kontrollens-omfang",
+    "case_id": "memory-human-ai-sitemap-delta-2026-09-26",
+    "sha256": "7574777d4ae925291e27043bb07547b23e4a1976a973d9c70d4cb83bfbb05d2b",
+    "reviewer": "Alma reader presentation; Ariadne bounded listing-language confirmation; integrating assistant",
+    "execution_context": "Derived sitemap listing delta from an already reviewed article; no new source or factual claims; no independent human peer-review claim.",
+    "reviewed_at": "2026-09-26",
+    "comparison_ref": "docs/editorial/memory-human-ai-release-2026-09-26.md#reader-journey-and-alma-presentation",
+    "reader_journey_ref": "docs/editorial/memory-human-ai-release-2026-09-26.md#reader-journey-and-alma-presentation",
+    "semantic_control_ref": "docs/editorial/memory-human-ai-release-2026-09-26.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "source": "OOS-Core/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
         "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass"
+        "application_ref": "docs/editorial/memory-human-ai-release-2026-09-26.md#six-stage-ariadne-language-review"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
-      "styrker": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
-      "stilprofil": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
-      "konkrete_svakheter": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
-      "forbedringsgrep": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
-      "revidert_eksempelversjon": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass"
+      "helhetsinntrykk": "docs/editorial/memory-human-ai-release-2026-09-26.md#helhetsinntrykk",
+      "styrker": "docs/editorial/memory-human-ai-release-2026-09-26.md#styrker",
+      "stilprofil": "docs/editorial/memory-human-ai-release-2026-09-26.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/memory-human-ai-release-2026-09-26.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/memory-human-ai-release-2026-09-26.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/memory-human-ai-release-2026-09-26.md#revidert-eksempelversjon"
     },
     "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Approved headline, deck and link added; existing overview content preserved.",
+    "source_scope": "Derived site-map listing only; exact article title, summary, language and link reused from the reviewed publication registry entry.",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "DIANA-UNGE-20260922-21: explicit approval of delivered v1.5, overview entries and article-scoped language exceptions",
-      "sha256": "0e7fb3f8b095d80d41814697f729d17e1fff52f944a498faa1d37d74e40c2a89"
+      "reference": "docs/editorial/memory-human-ai-release-2026-09-26.md#publication-approval",
+      "sha256": "7574777d4ae925291e27043bb07547b23e4a1976a973d9c70d4cb83bfbb05d2b"
     },
     "previous_review": {
-      "case_id": "reader-navigation-2026-09-21",
-      "sha256": "e06b94549e9f52a62f804f246a2a3b72812a5436781fdd222d4011dba38fc908",
-      "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
-      "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
-      "reviewed_at": "2026-09-21",
-      "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
-      "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
-      "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+      "case_id": "unge-hverdag-ansvar-2026-v1.5",
+      "sha256": "0e7fb3f8b095d80d41814697f729d17e1fff52f944a498faa1d37d74e40c2a89",
+      "reviewer": "Integrating assistant with separate AI content review and delta confirmation",
+      "execution_context": "Same-assistant Ariadne editing; separate AI review PASS_BOUNDED; no human peer-review claim. Overview pages reviewed for article listing delta only.",
+      "reviewed_at": "2026-09-22",
+      "comparison_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#vesentlige-rettelser",
+      "reader_journey_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
+      "semantic_control_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#den-separate-kontrollens-omfang",
       "loaded_modules": [
         {
           "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
           "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-          "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
-        },
-        {
-          "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
-          "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
-          "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+          "application_ref": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass"
         }
       ],
       "stages": {
-        "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-        "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-        "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-        "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-        "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-        "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+        "helhetsinntrykk": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
+        "styrker": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
+        "stilprofil": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
+        "konkrete_svakheter": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
+        "forbedringsgrep": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass",
+        "revidert_eksempelversjon": "CASE_UNGE_HVERDAG_ANSVAR_001_FINAL_REVIEW_2026_09_22#ariadnes-interne-sprakpass"
       },
-      "decision": "REVISE",
+      "decision": "KEEP",
       "ariadne_style_readiness": "pass_complete",
       "source_status": "READY_FOR_EDITORIAL_REVIEW",
-      "source_scope": "New directory copy and actual existing publication links",
+      "source_scope": "Approved headline, deck and link added; existing overview content preserved.",
       "publication_approval": {
         "approved": true,
         "by": "Bjørn Moe Aldema",
-        "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
-        "sha256": "e06b94549e9f52a62f804f246a2a3b72812a5436781fdd222d4011dba38fc908"
+        "reference": "DIANA-UNGE-20260922-21: explicit approval of delivered v1.5, overview entries and article-scoped language exceptions",
+        "sha256": "0e7fb3f8b095d80d41814697f729d17e1fff52f944a498faa1d37d74e40c2a89"
+      },
+      "previous_review": {
+        "case_id": "reader-navigation-2026-09-21",
+        "sha256": "e06b94549e9f52a62f804f246a2a3b72812a5436781fdd222d4011dba38fc908",
+        "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+        "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+        "reviewed_at": "2026-09-21",
+        "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+        "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+        "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+        "loaded_modules": [
+          {
+            "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+            "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+            "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+          },
+          {
+            "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+            "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+            "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+          }
+        ],
+        "stages": {
+          "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+          "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+          "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+          "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+          "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+          "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+        },
+        "decision": "REVISE",
+        "ariadne_style_readiness": "pass_complete",
+        "source_status": "READY_FOR_EDITORIAL_REVIEW",
+        "source_scope": "New directory copy and actual existing publication links",
+        "publication_approval": {
+          "approved": true,
+          "by": "Bjørn Moe Aldema",
+          "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+          "sha256": "e06b94549e9f52a62f804f246a2a3b72812a5436781fdd222d4011dba38fc908"
+        }
       }
     }
   },

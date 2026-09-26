@@ -2241,5 +2241,40 @@
       "reference": "Current conversation 2026-09-25: make the new Thursday-series presentation ready and publish it with the first story",
       "sha256": "PR_GIT_BLOB_BOUND"
     }
+  },
+  "public/articles/nar-minnet-blir-natid-2026.html": {
+    "case_id": "memory-human-ai-source-monitoring-2026-09-26",
+    "sha256": "5554986245d07750aeb95c761c11c3dd4c3f33ed31404c0c42d24aa6dcb81568",
+    "reviewer": "Ariadne language pass; Liv/Ada source-claim and boundary pass; Alma reader presentation; Eira editorial integration; integrating assistant",
+    "execution_context": "Same-assistant role passes integrated under the standing Experimental Newsroom workflow; no independent human expert review claimed",
+    "reviewed_at": "2026-09-26",
+    "comparison_ref": "docs/editorial/memory-human-ai-release-2026-09-26.md#six-stage-ariadne-language-review",
+    "reader_journey_ref": "docs/editorial/memory-human-ai-release-2026-09-26.md#reader-journey-and-alma-presentation",
+    "semantic_control_ref": "docs/editorial/memory-human-ai-release-2026-09-26.md#semantic-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/memory-human-ai-release-2026-09-26.md#six-stage-ariadne-language-review"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/memory-human-ai-release-2026-09-26.md#helhetsinntrykk",
+      "styrker": "docs/editorial/memory-human-ai-release-2026-09-26.md#styrker",
+      "stilprofil": "docs/editorial/memory-human-ai-release-2026-09-26.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/memory-human-ai-release-2026-09-26.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/memory-human-ai-release-2026-09-26.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/memory-human-ai-release-2026-09-26.md#revidert-eksempelversjon"
+    },
+    "decision": "COMBINE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Document-based neuroscience and AI-agent analysis; public research sources checked 2026-09-26; analogy bounded explicitly; no interviews",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/memory-human-ai-release-2026-09-26.md#publication-approval",
+      "sha256": "5554986245d07750aeb95c761c11c3dd4c3f33ed31404c0c42d24aa6dcb81568"
+    }
   }
 }

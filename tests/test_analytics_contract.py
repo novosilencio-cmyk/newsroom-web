@@ -30,7 +30,7 @@ class AnalyticsContractTests(unittest.TestCase):
         source = (PUBLIC / 'privacy.html').read_text()
         self.assertIn('frivillig valg', source)
         self.assertIn('data-analytics-consent-reopen', source)
-        self.assertIn('lokale lagring', source)
+        self.assertIn('lagres lokalt i nettleseren', source)
 
 
 if __name__ == '__main__':

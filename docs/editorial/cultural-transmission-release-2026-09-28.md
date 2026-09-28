@@ -140,3 +140,28 @@ Authority is applied to exact final SHA-256:
 ## Review independence boundary
 
 Eira, Liv, Ada, Alma and Ariadne were applied as role-based AI review functions in the same overall assistant workflow. This is procedural separation, not independent human peer review. Bjørn Moe Aldema retains human editorial responsibility.
+
+## Bounded dependent navigation confirmation
+
+The new registry row changes three generated reader surfaces and no other reviewed HTML surface:
+
+- `public/norway/index.html` — generated SHA-256 `19d3e0237074b649dbe6544b3c748cf3341855c29214c91694519848f91bbde1`;
+- `public/sitemap.html` — generated SHA-256 `64ae6896d97d8c63a1cfe871dd71499dc407551a7a6d08d252b387d07a243342`;
+- `public/sitemap.en.html` — generated SHA-256 `13039e3456c6d6e79fde27c6753ebbe166c261605a7bf302438c2b5b7896d53f`.
+
+These are deterministic navigation consequences of adding the approved story to `public/content/articles.json`.
+
+### Navigation comparison
+
+The only new reader-facing story content on these generated pages is the existing registry title, summary, date, geography/type metadata and story link. No new factual claim is introduced beyond the reviewed registry representation.
+
+### Navigation reader journey
+
+The story becomes discoverable through the Norway collection and both site maps. Existing navigation sections, prior story ordering logic and other article content remain governed by the generator.
+
+### Navigation semantic control
+
+The generated surfaces inherit the approved story title/summary only. They do not add national-character claims, editorial conclusions, source claims or unpublished working material.
+
+Publication authority for these three exact generated versions is included as a necessary dependent surface of Bjørn Moe Aldema's 2026-09-28 instruction to publish this story. Prior navigation receipts remain preserved in the receipt registry as `previous_review`.
+

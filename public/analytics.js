@@ -24,9 +24,9 @@
     return navigator.doNotTrack === '1' || window.doNotTrack === '1';
   }
 
-  function startTracking() {
+  function startTracking(explicitGrant = false) {
     if (!config || config.provider !== 'umami' || !config.enabled ||
-        savedChoice() !== 'granted' || doNotTrack() ||
+        (!explicitGrant && savedChoice() !== 'granted') || doNotTrack() ||
         !config.scriptUrl || !config.websiteId ||
         document.getElementById('en-umami-script')) return;
 
@@ -68,7 +68,7 @@
       #${bannerId} a{color:inherit}
       #${bannerId} .en-consent-actions{display:flex;flex-wrap:wrap;gap:.6rem}
       #${bannerId} button{font:600 1rem system-ui,sans-serif;padding:.55rem .85rem;border:2px solid #171717;background:#fff;color:#171717;cursor:pointer}
-      #${bannerId} button:first-child{background:#171717;color:#fff}
+      
       @media(prefers-reduced-motion:reduce){#${bannerId}{scroll-behavior:auto}}
     `;
     const title = document.createElement('h2');
@@ -90,7 +90,7 @@
       remember(value);
       banner.remove();
       style.remove();
-      if (value === 'granted') startTracking();
+      if (value === 'granted') startTracking(true);
     }
 
     const accept = document.createElement('button');

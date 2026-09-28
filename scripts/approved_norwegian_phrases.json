@@ -48,5 +48,11 @@
     "Dette er illustrasjoner, ikke en aldersfasit.",
     "Rammer og frihet trenger ikke stå på hver sin side. Rundt et måltid kan den voksne for eksempel holde fast ved tid, budsjett og sikkerhet, mens den unge får mer innflytelse over meny, arbeidsdeling og fremgangsmåte.",
     "Dette er illustrasjoner, ikke en aldersfasit. Oppgaven må passe ferdigheter, interesse, funksjon og belastning."
+  ],
+  "public/privacy.html": [
+    "Når oppsettet er publisert, lastes Umami-sporeren bare etter at du har valgt «Tillat besøksstatistikk». Ingen sporing skjer hvis du avslår eller ikke velger. Nettstedseierens egne besøk kan inngå dersom eieren samtykker på samme måte. Det sendes én sidevisning, uten klikkhendelser, ytelsesmåling, egne bruker-ID-er, egendefinerte hendelser, sesjonsopptak eller varmekart.",
+    "Etter samtykke sender nettstedet bare sidesti uten søkestreng, sidetittel og nettsted-ID for sidevisningen. Vi sender ikke henviser, skjermstørrelse, klikk eller egendefinerte hendelsesdata. Umami opplyser at IP-adressen brukes til å beregne enkelte måltall, men ikke lagres i analysedata. Umami beskriver en sesjonsidentifikator som en hash av blant annet IP-adresse, nettleserens user-agent og nettsted-ID, med salt som skiftes månedlig. Leverandøren beskriver besøksmålingen som uten informasjonskapsler. Valget lagres i nettleserens lokale lagring slik at det huskes ved neste besøk.",
+    "Ved samtykke sendes sidevisningen til Umami Cloud. Umami opplyser generelt at Cloud-servere finnes i USA og EU. Kontoens valgte region, plan, konkrete lagringstid, databehandleravtale og overføringsgrunnlag er ikke bekreftet.",
+    ". Sporeren lastes ikke hvis du avslår eller lar være å velge."
   ]
 }

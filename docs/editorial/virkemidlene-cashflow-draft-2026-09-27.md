@@ -3,7 +3,7 @@
 **Status:** `INTERNAL_EDITORIAL_DRAFT / NOT_PUBLICATION_APPROVED / NOT_PUBLISHED`  
 **Mottaker:** Eira Holm / Experimental Newsroom  
 **Serie:** Virkemidlene  
-**Kildegrunnlag låst:** 27. september 2026  
+**Kildegrunnlag kontrollert:** 28. september 2026  
 **Formål:** Smal oppfølger til «Når renten flyttes, flyttes belastningen». Teksten skiller dokumentert mekanisme og forskningsresultat fra det som fortsatt må måles i september 2026.
 
 ---
@@ -13,6 +13,16 @@ Når renten settes opp, er beskjeden til økonomien at noen må holde igjen. Men
 En familie med stort boliglån kan få mindre igjen på konto samme måned som banken endrer lånerenten. En gjeldfri husholdning med penger i banken kan samtidig få høyere renteinntekter. Begge møter den samme styringsrenten. Virkningen går likevel i hver sin retning.
 
 Det er derfor spørsmålet om renten virker, ikke er helt det samme som spørsmålet om hvem den virker gjennom.
+
+## Beslutningen er fersk. Fordelingen er ikke målt ennå
+
+Norges Bank hevet styringsrenten fra 4,25 til 4,50 prosent på møtet 23. september, med virkning fra 25. september. Det gjør fordelingsspørsmålet mer aktuelt. Det gir ikke svaret på hvem som allerede har kuttet.
+
+SSBs nyeste månedlige rentestatistikk ble oppdatert 25. september, men går foreløpig bare til august 2026. Kredittindikatoren som ble oppdatert dagen før, går også til august. Vi kan derfor ikke bruke disse aggregatene som om de målte fordelingen etter rentehevingen.
+
+Også Norges Banks septembergrunnlag peker i ulike retninger: Nasjonalregnskapet viste svakere husholdningskonsum i første halvår enn ventet, mens bedriftene i Regionalt nettverk meldte om god etterspørsel fra husholdningene. Banken la samtidig til grunn at konsumet skulle ta seg opp igjen i høst. Slike samlede signaler kan beskrive utviklingen, men ikke avgjøre hvilke husholdninger som først mister handlingsrom.
+
+Et tidligere stabilitetsbilde gir samme grunn til varsomhet: Høy gjeld kombinert med lav likviditet kan øke risikoen for brå forbrukskutt, samtidig som Norges Bank vurderte at de fleste husholdninger fortsatt kunne betjene gjeld og normale levekostnader med god margin. Begge funn må stå samtidig.
 
 ## Den raske veien fra rente til handlekonto
 
@@ -68,11 +78,22 @@ Det er der virkemiddelet møter hverdagen.
 3. **Ida Wolden Bache, _Research-based models in monetary policy decision-making_.** Norges Bank, 21. mai 2026. Offisiell tale som omtaler studiens kontantstrømresultat og setter det inn i pengepolitisk modellbruk.  
    https://www.norges-bank.no/en/news-events/news/Speeches/2026/2026-05-21-bache/
 
+4. **Norges Bank, _Rentebeslutning september 2026_.** Publisert 24. september 2026. Komiteen hevet styringsrenten fra 4,25 til 4,50 prosent; beslutningen trådte i kraft 25. september. Samme beslutningsgrunnlag viser at nasjonalregnskapet og Regionalt nettverk ga ulike signaler om husholdningskonsumet.  
+   https://www.norges-bank.no/tema/pengepolitikk/Rentemoter/2026/september-2026/
+
+5. **Statistisk sentralbyrå, _Renter i banker og kredittforetak_, tabell 10748.** Oppdatert 25. september 2026; tilgjengelige månedstall går til august 2026. Kilden dokumenterer aktuelle aggregater, ikke husholdningsfordelingen etter rentehevingen.  
+   https://www.ssb.no/statbank/table/10748
+
+6. **Norges Bank, _Finansiell stabilitet 1/2026_.** Institusjonens systemvurdering: høy gjeld og lav likviditet kan forsterke forbrukskutt, mens de fleste husholdninger ble vurdert å kunne betjene gjeld og normale levekostnader med god margin.  
+   https://www.norges-bank.no/aktuelt/publikasjoner/Finansiell-stabilitet---rapport/2026-1-finansiell-stabilitet/nettrapport-2026-1-finansiell-stabilitet/
+
 **Bevarte motfunn og grenser**
 
 - Dokumentert ulik renteeksponering viser ikke alene at et bestemt rentevedtak var feil.
 - Forskningsresultatet må ikke omtales som en måling av den faktiske fordelingen i september 2026.
+- Rentebeslutningen 23. september er dokumentert, men de nyeste månedlige rente- og gjeldsaggregatene går bare til august; aktualisering er derfor ikke det samme som en observert septemberfordeling.
 - Forbrukskutt er ikke det samme som samlet velferdstap; sparing, avdrag, kreditt, vedlikehold og ubetalt omsorg kan flytte eller skjule belastningen.
 - Ingen påstand om publisering, mottakerbruk eller observert nytte følger av dette utkastet.
 
-**Før eventuell publisering:** separat kilde- og språklesning, fersk datakontroll for alle aktualitetspåstander, Eiras integrasjonsbeslutning og Bjørns redaksjonelle publiseringsgodkjenning.
+**Fersk datakontroll 28. september 2026:** `PARTIAL / DATA_LAG`. Rentebeslutningen og de nyeste tilgjengelige aggregatene er kontrollert; den faktiske septemberfordelingen er fortsatt ikke målt.  
+**Før eventuell publisering:** separat kilde- og språklesning av oppdatert exact head, Eiras integrasjonsbeslutning og Bjørns redaksjonelle publiseringsgodkjenning.

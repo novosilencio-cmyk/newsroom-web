@@ -2287,5 +2287,46 @@
       "reference": "Explicit instruction 2026-09-27 01:38 CEST: publish this Atriet story if sufficient; necessary newsroom merge included. 01:41 and 01:42 additions incorporated. Authority applied to this exact final version after editorial checks.",
       "sha256": "9cb047a2732927f5e885751c0348b56a2a218308ec5e91be51736bf06bf39c16"
     }
+  },
+  "public/articles/what-we-learn-without-being-taught-2026.html": {
+    "case_id": "cultural-transmission-home-school-work-2026",
+    "sha256": "c33e47cf2a67ca2eb3ba2ddfa8c4499e28d082ad12e7ecbee9a67cc0b6c6c121",
+    "git_blob_sha": "d128e3ca186b3fa6709639cf84b9d9e80984beac",
+    "reviewer": "Ariadne language review; Liv/Ada source-claim and boundary pass; Alma reader presentation; Eira editorial integration; integrating assistant",
+    "execution_context": "Same-assistant role passes under the Experimental Newsroom workflow; no independent human peer review claimed",
+    "reviewed_at": "2026-09-28",
+    "comparison_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#ariadne--six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#reader-journey-and-semantic-control",
+    "semantic_control_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#reader-journey-and-semantic-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#ariadne--six-stage-language-review"
+      },
+      {
+        "source": "OOS-Core/OOS_MASTER/ATRIET/WRITING_STYLE/ARIADNE/COURSES/ARIADNE_EXPERIMENTAL_NEWSROOM_LANGUAGE_MENTOR_001/CORE.md",
+        "revision": "git-blob:6794f0bc8414ab8bde842ae59ff2bd1c0f366116",
+        "application_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#ariadne--six-stage-language-review"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/cultural-transmission-release-2026-09-28.md#helhetsinntrykk",
+      "styrker": "docs/editorial/cultural-transmission-release-2026-09-28.md#styrker",
+      "stilprofil": "docs/editorial/cultural-transmission-release-2026-09-28.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/cultural-transmission-release-2026-09-28.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/cultural-transmission-release-2026-09-28.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/cultural-transmission-release-2026-09-28.md#revidert-eksempelversjon"
+    },
+    "decision": "COMBINE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Document/research-based cultural transmission analysis with Bergen sociolinguistics, socialization and organizational-culture sources; travel observation used only as question seed; no interviews",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "Current conversation 2026-09-28: send all relevant material from this source line to Experimental Newsroom, apply the full newsroom procedure and publish; authority applied after editorial controls to this exact final page hash.",
+      "sha256": "c33e47cf2a67ca2eb3ba2ddfa8c4499e28d082ad12e7ecbee9a67cc0b6c6c121"
+    }
   }
 }

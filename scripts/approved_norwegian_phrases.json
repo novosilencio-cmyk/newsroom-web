@@ -48,5 +48,9 @@
     "Dette er illustrasjoner, ikke en aldersfasit.",
     "Rammer og frihet trenger ikke stå på hver sin side. Rundt et måltid kan den voksne for eksempel holde fast ved tid, budsjett og sikkerhet, mens den unge får mer innflytelse over meny, arbeidsdeling og fremgangsmåte.",
     "Dette er illustrasjoner, ikke en aldersfasit. Oppgaven må passe ferdigheter, interesse, funksjon og belastning."
+  ],
+  "public/privacy.html": [
+    "Umami opplyser at IP-adressen brukes til beregning av enkelte måltall, men ikke lagres i analysedata.",
+    "For å beregne statistikk mottar Umami også tekniske opplysninger fra nettleseren, blant annet IP-adresse og nettleserdata. Umami opplyser at IP-adressen brukes til beregning av enkelte måltall, men ikke lagres i analysedata. Umami beskriver besøksmålingen som uten informasjonskapsler. Samtykkevalget lagres lokalt i nettleseren."
   ]
 }

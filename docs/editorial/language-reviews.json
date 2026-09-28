@@ -1502,43 +1502,195 @@
     }
   },
   "public/privacy.html": {
-    "case_id": "reader-navigation-2026-09-21",
-    "sha256": "81169bf85fc0dbcc768b3a5cc23190dbfadf4ef6eac7189a3848adf69adc63a0",
-    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
-    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
-    "reviewed_at": "2026-09-21",
-    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
-    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
-    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "case_id": "umami-privacy-review-2026-09-28-v2",
+    "sha256": "478d7dac3d41920836b8945fe5381592aa9d7919423f3aeedfa62bebc4c0fcd0",
+    "reviewer": "Ariadne language review; Laozi proportion review; human text approval by Bjørn Moe Aldema",
+    "execution_context": "Six-stage internal language/reader-orientation review of the current Laozi-reduced section. Account-specific facts are tied to the signed-in Umami account UI; this is not legal review or independent legal verification.",
+    "reviewed_at": "2026-09-28",
+    "comparison_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/81",
+    "reader_journey_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/81",
+    "semantic_control_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/81",
     "loaded_modules": [
       {
-        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
-        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+        "source": "OOS-Core/OOS_MASTER/CORE/AGENT_MEMORY/LAOZI/INDEX_001.json",
+        "revision": "git-blob:47335b887fad3a7f12171b55ca0d298d4f354384",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/81"
       },
       {
-        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
-        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
-        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+        "source": "OOS-Core/POLARIS/AI_RAMMEVERK_BYGD_AV_MODER_JORD/CURATORIAL/LAOZI_MINIMAL_TEXT_CURATORIAL_PRINCIPLE_V0_1_2026_08_11.md",
+        "revision": "git-blob:856ecea8a30203799dd2d1f7ea02dd6f4933a97b",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/81"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_standard_repertoire.md",
+        "revision": "read-2026-09-28",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/81"
+      },
+      {
+        "source": "oos-trained-agent-runtime/references/ariadne_language_harvest_module.md",
+        "revision": "read-2026-09-28",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/81"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      "helhetsinntrykk": "The notice gives the reader a clear choice and the practical consequences of accepting.",
+      "styrker": "It names the opt-in trigger, pageview fields, technical data, region, retention and a way to change the choice.",
+      "stilprofil": "Plain, restrained service language; account-specific facts are separated from general Umami Cloud information.",
+      "konkrete_svakheter": "Technical wording remains compact and the general US/EU infrastructure statement must not be read as proof of exclusive processing in Frankfurt.",
+      "forbedringsgrep": "Keep the concise structure; retain the clear distinction between event fields, request metadata, account region and general service locations.",
+      "revidert_eksempelversjon": "KEEP; the Laozi-reduced version is coherent and preserves the essential disclosures. No further textual change recommended."
     },
     "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "source_scope": "Editorial and reader-orientation clearance of the Umami section; account region, plan and retention were observed in the signed-in UI, general US/EU server locations are attributed to Umami, no legal or DPA conclusion. A missing closing section tag was corrected after the approved text; visible wording is unchanged.",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
-      "sha256": "81169bf85fc0dbcc768b3a5cc23190dbfadf4ef6eac7189a3848adf69adc63a0"
+      "reference": "Current chat correction, 2026-09-28: “Jeg har tidligere i chatten bedt om publisering og at det skal føres til faktisk fungerende tilstand.” This explicitly reaffirms publication and activation for the Umami task; the Laozi-approved visible text remains unchanged.",
+      "sha256": "478d7dac3d41920836b8945fe5381592aa9d7919423f3aeedfa62bebc4c0fcd0"
+    },
+    "previous_review": {
+      "case_id": "reader-navigation-2026-09-21",
+      "sha256": "81169bf85fc0dbcc768b3a5cc23190dbfadf4ef6eac7189a3848adf69adc63a0",
+      "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+      "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+      "reviewed_at": "2026-09-21",
+      "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+      "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+      "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+      "loaded_modules": [
+        {
+          "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+          "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+          "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+        },
+        {
+          "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+          "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+          "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+        }
+      ],
+      "stages": {
+        "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+        "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+        "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+        "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+        "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+        "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      "decision": "KEEP",
+      "ariadne_style_readiness": "pass_complete",
+      "source_status": "READY_FOR_EDITORIAL_REVIEW",
+      "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+      "publication_approval": {
+        "approved": true,
+        "by": "Bjørn Moe Aldema",
+        "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+        "sha256": "81169bf85fc0dbcc768b3a5cc23190dbfadf4ef6eac7189a3848adf69adc63a0"
+      }
+    },
+    "prior_approved_text_version": {
+      "sha256": "8299c9f0604711836f4cf202267a689441433b3eca40b30c827f64fd3a6f27a5",
+      "approval_reference": "Earlier explicit Umami launch GK in private issue #32 plus exact-text approval recorded at https://github.com/novosilencio-cmyk/newsroom-web/pull/81#pullrequestreview-5341569951",
+      "reviewer": "Ariadne language function; integrating assistant; human text approval by Bjørn Moe Aldema",
+      "decision": "KEEP"
+    },
+    "text_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "Chat instruction 2026-09-28: “Godkjent etter rens fra laozi”; scoped to current Laozi-reduced Umami text.",
+      "sha256": "478d7dac3d41920836b8945fe5381592aa9d7919423f3aeedfa62bebc4c0fcd0"
+    },
+    "prior_language_review": {
+      "case_id": "umami-privacy-review-2026-09-28",
+      "sha256": "8299c9f0604711836f4cf202267a689441433b3eca40b30c827f64fd3a6f27a5",
+      "reviewer": "Ariadne language function; integrating assistant; human text approval by Bjørn Moe Aldema",
+      "execution_context": "Six-stage internal language/semantic review of the exact Umami privacy section; role-based AI review, not independent human or legal review.",
+      "reviewed_at": "2026-09-28",
+      "comparison_ref": "https://github.com/novosilencio-cmyk/pmh-oos-master/issues/32#issuecomment-5874158363",
+      "reader_journey_ref": "https://github.com/novosilencio-cmyk/pmh-oos-master/issues/32#issuecomment-5874158363",
+      "semantic_control_ref": "https://github.com/novosilencio-cmyk/pmh-oos-master/issues/32#issuecomment-5874158363",
+      "loaded_modules": [
+        {
+          "source": "skill://flora-skills/root/.codex/skills/remote-skills/skill-6a8d5f3650dc8191aa0afec83d1dbb90/references/standard_repertoire.md",
+          "revision": "read-2026-09-28",
+          "application_ref": "https://github.com/novosilencio-cmyk/pmh-oos-master/issues/32#issuecomment-5874158363"
+        },
+        {
+          "source": "skill://flora-skills/root/.codex/skills/remote-skills/skill-6a8d5f3650dc8191aa0afec83d1dbb90/references/ariadne_standard_repertoire.md",
+          "revision": "read-2026-09-28",
+          "application_ref": "https://github.com/novosilencio-cmyk/pmh-oos-master/issues/32#issuecomment-5874158363"
+        },
+        {
+          "source": "skill://flora-skills/root/.codex/skills/remote-skills/skill-6a8d5f3650dc8191aa0afec83d1dbb90/references/ariadne_norwegian_english_module.md",
+          "revision": "read-2026-09-28",
+          "application_ref": "https://github.com/novosilencio-cmyk/pmh-oos-master/issues/32#issuecomment-5874158363"
+        },
+        {
+          "source": "skill://flora-skills/root/.codex/skills/remote-skills/skill-6a8d5f3650dc8191aa0afec83d1dbb90/references/ariadne_language_harvest_module.md",
+          "revision": "read-2026-09-28",
+          "application_ref": "https://github.com/novosilencio-cmyk/pmh-oos-master/issues/32#issuecomment-5874158363"
+        }
+      ],
+      "stages": {
+        "helhetsinntrykk": "https://github.com/novosilencio-cmyk/pmh-oos-master/issues/32#issuecomment-5874158363#stage-1",
+        "styrker": "https://github.com/novosilencio-cmyk/pmh-oos-master/issues/32#issuecomment-5874158363#stage-2",
+        "stilprofil": "https://github.com/novosilencio-cmyk/pmh-oos-master/issues/32#issuecomment-5874158363#stage-3",
+        "konkrete_svakheter": "https://github.com/novosilencio-cmyk/pmh-oos-master/issues/32#issuecomment-5874158363#stage-4",
+        "forbedringsgrep": "https://github.com/novosilencio-cmyk/pmh-oos-master/issues/32#issuecomment-5874158363#stage-5",
+        "revidert_eksempelversjon": "KEEP; no edited example because Bjørn approved this exact wording."
+      },
+      "decision": "KEEP",
+      "ariadne_style_readiness": "pass_complete",
+      "source_status": "READY_FOR_EDITORIAL_REVIEW",
+      "source_scope": "Language and reader-orientation review only. Account-specific assertions remain explicitly qualified; no legal conclusion or independent factual verification is claimed.",
+      "publication_approval": {
+        "approved": true,
+        "by": "Bjørn Moe Aldema",
+        "reference": "Earlier explicit Umami launch GK in private issue #32 plus exact-text approval recorded at https://github.com/novosilencio-cmyk/newsroom-web/pull/81#pullrequestreview-5341569951",
+        "sha256": "8299c9f0604711836f4cf202267a689441433b3eca40b30c827f64fd3a6f27a5"
+      },
+      "previous_review": {
+        "case_id": "reader-navigation-2026-09-21",
+        "sha256": "81169bf85fc0dbcc768b3a5cc23190dbfadf4ef6eac7189a3848adf69adc63a0",
+        "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+        "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+        "reviewed_at": "2026-09-21",
+        "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+        "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+        "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+        "loaded_modules": [
+          {
+            "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+            "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+            "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+          },
+          {
+            "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+            "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+            "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+          }
+        ],
+        "stages": {
+          "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+          "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+          "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+          "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+          "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+          "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+        },
+        "decision": "KEEP",
+        "ariadne_style_readiness": "pass_complete",
+        "source_status": "READY_FOR_EDITORIAL_REVIEW",
+        "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+        "publication_approval": {
+          "approved": true,
+          "by": "Bjørn Moe Aldema",
+          "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+          "sha256": "81169bf85fc0dbcc768b3a5cc23190dbfadf4ef6eac7189a3848adf69adc63a0"
+        }
+      }
     }
   },
   "public/recognition/index.html": {

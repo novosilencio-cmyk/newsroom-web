@@ -31,7 +31,7 @@ def receipt_errors(row, data):
     if not isinstance(row, dict):
         return ['missing receipt']
     if row.get('sha256') != digest(data):
-        errors.append('review belongs to another content version; actual_sha256=' + digest(data) + '; recorded_sha256=' + str(row.get('sha256')))
+        errors.append('review belongs to another content version')
     for field in ('case_id', 'reviewer', 'execution_context', 'reviewed_at',
                   'comparison_ref', 'reader_journey_ref', 'semantic_control_ref'):
         if not populated(row.get(field)):

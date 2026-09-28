@@ -30,13 +30,14 @@ jobs:
           python3 scripts/check_publication_markers.py
           python3 scripts/check_norwegian_editorial_style.py
           python3 scripts/check_reader_sequence_style.py
+          python3 scripts/build_static_site.py
           python3 -m unittest discover -s tests -p 'test_*.py'
 
       - name: Upload verified public surface
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public
+          path: _site
 
   deploy:
     if: github.event_name != 'pull_request'

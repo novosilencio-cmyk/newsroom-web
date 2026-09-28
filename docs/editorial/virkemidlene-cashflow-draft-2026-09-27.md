@@ -82,10 +82,10 @@ Det er der virkemiddelet møter hverdagen.
    https://www.norges-bank.no/tema/pengepolitikk/Rentemoter/2026/september-2026/
 
 5. **Statistisk sentralbyrå, _Renter i banker og kredittforetak_, tabell 10748.** Oppdatert 25. september 2026; tilgjengelige månedstall går til august 2026. Kilden dokumenterer aktuelle aggregater, ikke husholdningsfordelingen etter rentehevingen.  
-   https://www.ssb.no/statbank/table/10748
+   https://www.ssb.no/en/statbank1/table/10748
 
 6. **Norges Bank, _Finansiell stabilitet 1/2026_.** Institusjonens systemvurdering: høy gjeld og lav likviditet kan forsterke forbrukskutt, mens de fleste husholdninger ble vurdert å kunne betjene gjeld og normale levekostnader med god margin.  
-   https://www.norges-bank.no/aktuelt/publikasjoner/Finansiell-stabilitet---rapport/2026-1-finansiell-stabilitet/nettrapport-2026-1-finansiell-stabilitet/
+   https://www.norges-bank.no/en/news-events/publications/Financial-Stability-report/2026-1-fsr/web-report-2026-1-financial-stability-report/
 
 **Bevarte motfunn og grenser**
 

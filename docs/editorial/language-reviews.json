@@ -1545,9 +1545,9 @@
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
     "source_scope": "Editorial and reader-orientation clearance of the Umami section; account region, plan and retention were observed in the signed-in UI, general US/EU server locations are attributed to Umami, no legal or DPA conclusion. A missing closing section tag was corrected after the approved text; visible wording is unchanged.",
     "publication_approval": {
-      "approved": false,
-      "by": null,
-      "reference": "Separate publication approval for this exact version has not been recorded. Bjørn's current approval is bound to the text after Laozi reduction and does not by itself release this PR for merge/deploy.",
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "Current chat correction, 2026-09-28: “Jeg har tidligere i chatten bedt om publisering og at det skal føres til faktisk fungerende tilstand.” This explicitly reaffirms publication and activation for the Umami task; the Laozi-approved visible text remains unchanged.",
       "sha256": "478d7dac3d41920836b8945fe5381592aa9d7919423f3aeedfa62bebc4c0fcd0"
     },
     "previous_review": {

@@ -41,7 +41,7 @@ def build() -> int:
         if not additions:
             continue
 
-        injection = "\\n" + "\\n".join(additions) + "\\n"
+        injection = "\n" + "\n".join(additions) + "\n"
         body_close = source.lower().rfind("</body>")
         if body_close >= 0:
             source = source[:body_close] + injection + source[body_close:]

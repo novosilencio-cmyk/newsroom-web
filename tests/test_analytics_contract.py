@@ -1,3 +1,4 @@
+import os
 import re
 import unittest
 from pathlib import Path
@@ -5,6 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / 'public'
+SITE = ROOT / '_site'
 
 
 class AnalyticsContractTests(unittest.TestCase):
@@ -33,5 +35,18 @@ class AnalyticsContractTests(unittest.TestCase):
         self.assertIn('lagres lokalt i nettleseren', source)
 
 
+    def test_generated_site_loads_consent_gated_analytics_on_every_page(self):
+        pages = sorted(SITE.rglob('*.html'))
+        self.assertGreater(len(pages), 0, 'static site build must create HTML pages')
+        self.assertTrue((SITE / 'analytics-config.js').is_file())
+        self.assertTrue((SITE / 'analytics.js').is_file())
+        for page in pages:
+            source = page.read_text()
+            relative = Path(os.path.relpath(SITE, page.parent)).as_posix()
+            prefix = '' if relative == '.' else f'{relative}/'
+            for asset in ('analytics-config.js', 'analytics.js'):
+                src = f'src="{prefix}{asset}"'
+                self.assertIn(src, source, f'{page.relative_to(SITE)} must load {asset}')
+                self.assertEqual((page.parent / f'{prefix}{asset}').resolve(), (SITE / asset).resolve())
 if __name__ == '__main__':
     unittest.main()

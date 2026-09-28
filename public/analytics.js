@@ -73,7 +73,7 @@
     `;
     const title = document.createElement('h2');
     title.id = 'en-analytics-consent-title';
-    title.textContent = isNorwegian ? 'Vil du bidra til anonymisert besøksstatistikk?' : 'Would you like to contribute to audience statistics?';
+    title.textContent = isNorwegian ? 'Vil du bidra til besøksstatistikk?' : 'Would you like to contribute to audience statistics?';
     const description = document.createElement('p');
     description.textContent = isNorwegian
       ? 'Hvis du tillater det, sender vi én sidevisning til Umami Cloud. Vi sender sidesti uten søkestreng og sidetittel. Umami mottar tekniske opplysninger som IP-adresse og nettleserdata for å beregne statistikk. Avslag stopper sporeren. Du kan endre valget på personvernsiden.'

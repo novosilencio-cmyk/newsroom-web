@@ -6,7 +6,6 @@ from __future__ import annotations
 import os
 import shutil
 from pathlib import Path
-import re
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / "public"
@@ -35,17 +34,17 @@ def build() -> int:
         config_path = _relative_asset_path(page, "analytics-config.js")
         adapter_path = _relative_asset_path(page, "analytics.js")
         additions: list[str] = []
-        if not re.search(r"<script\\b[^>]*\\bsrc=[\"'][^\\"']*analytics-config\\.js[\"']", source, re.I):
+        if f'src="{config_path}"' not in source:
             additions.append(f'<script src="{config_path}"></script>')
-        if not re.search(r"<script\\b[^>]*\\bsrc=[\"'][^\\"']*analytics\\.js[\"']", source, re.I):
+        if f'src="{adapter_path}"' not in source:
             additions.append(f'<script src="{adapter_path}"></script>')
         if not additions:
             continue
 
         injection = "\\n" + "\\n".join(additions) + "\\n"
-        body_close = re.search(r"</body\\s*>", source, re.I)
-        if body_close:
-            source = source[:body_close.start()] + injection + source[body_close.start():]
+        body_close = source.lower().rfind("</body>")
+        if body_close >= 0:
+            source = source[:body_close] + injection + source[body_close:]
         else:
             source += injection
         page.write_text(source, encoding="utf-8")

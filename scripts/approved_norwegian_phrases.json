@@ -49,5 +49,7 @@
     "Rammer og frihet trenger ikke stå på hver sin side. Rundt et måltid kan den voksne for eksempel holde fast ved tid, budsjett og sikkerhet, mens den unge får mer innflytelse over meny, arbeidsdeling og fremgangsmåte.",
     "Dette er illustrasjoner, ikke en aldersfasit. Oppgaven må passe ferdigheter, interesse, funksjon og belastning."
   ],
-  "public/privacy.html": []
+  "public/privacy.html": [
+    "Umami opplyser at IP-adressen brukes til beregning av enkelte måltall, men ikke lagres i analysedata."
+  ]
 }

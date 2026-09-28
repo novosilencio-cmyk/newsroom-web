@@ -1502,50 +1502,52 @@
     }
   },
   "public/privacy.html": {
-    "case_id": "umami-privacy-review-2026-09-28",
+    "case_id": "umami-privacy-review-2026-09-28-v2",
     "sha256": "f223fcb4506a88f00f777af4f4ae4c555247298ff226b9218655787c94b03843",
-    "reviewer": "Laozi editorial reduction; integrating assistant; text approval by Bjørn Moe Aldema",
-    "execution_context": "Bounded reduction of the Umami privacy section following Laozi’s restraint review. The previous Ariadne review is preserved in the prior-version record. This is not legal review or independent verification of vendor claims.",
+    "reviewer": "Ariadne language review; Laozi proportion review; human text approval by Bjørn Moe Aldema",
+    "execution_context": "Six-stage internal language/reader-orientation review of the current Laozi-reduced section. Account-specific facts are tied to the signed-in Umami account UI; this is not legal review or independent legal verification.",
     "reviewed_at": "2026-09-28",
-    "comparison_ref": "https://github.com/novosilencio-cmyk/pmh-oos-master/issues/32#issuecomment-5874158363",
-    "reader_journey_ref": "https://github.com/novosilencio-cmyk/pmh-oos-master/issues/32#issuecomment-5874158363",
-    "semantic_control_ref": "https://github.com/novosilencio-cmyk/pmh-oos-master/issues/32#issuecomment-5874158363",
+    "comparison_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/81",
+    "reader_journey_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/81",
+    "semantic_control_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/81",
     "loaded_modules": [
       {
-        "source": "skill://flora-skills/root/.codex/skills/remote-skills/skill-6a8d5f3650dc8191aa0afec83d1dbb90/references/standard_repertoire.md",
-        "revision": "read-2026-09-28",
-        "application_ref": "https://github.com/novosilencio-cmyk/pmh-oos-master/issues/32#issuecomment-5874158363"
+        "source": "OOS-Core/OOS_MASTER/CORE/AGENT_MEMORY/LAOZI/INDEX_001.json",
+        "revision": "git-blob:47335b887fad3a7f12171b55ca0d298d4f354384",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/81"
       },
       {
-        "source": "skill://flora-skills/root/.codex/skills/remote-skills/skill-6a8d5f3650dc8191aa0afec83d1dbb90/references/ariadne_standard_repertoire.md",
-        "revision": "read-2026-09-28",
-        "application_ref": "https://github.com/novosilencio-cmyk/pmh-oos-master/issues/32#issuecomment-5874158363"
+        "source": "OOS-Core/POLARIS/AI_RAMMEVERK_BYGD_AV_MODER_JORD/CURATORIAL/LAOZI_MINIMAL_TEXT_CURATORIAL_PRINCIPLE_V0_1_2026_08_11.md",
+        "revision": "git-blob:856ecea8a30203799dd2d1f7ea02dd6f4933a97b",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/81"
       },
       {
-        "source": "skill://flora-skills/root/.codex/skills/remote-skills/skill-6a8d5f3650dc8191aa0afec83d1dbb90/references/ariadne_norwegian_english_module.md",
+        "source": "oos-trained-agent-runtime/references/ariadne_standard_repertoire.md",
         "revision": "read-2026-09-28",
-        "application_ref": "https://github.com/novosilencio-cmyk/pmh-oos-master/issues/32#issuecomment-5874158363"
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/81"
       },
       {
-        "source": "skill://flora-skills/root/.codex/skills/remote-skills/skill-6a8d5f3650dc8191aa0afec83d1dbb90/references/ariadne_language_harvest_module.md",
+        "source": "oos-trained-agent-runtime/references/ariadne_language_harvest_module.md",
         "revision": "read-2026-09-28",
-        "application_ref": "https://github.com/novosilencio-cmyk/pmh-oos-master/issues/32#issuecomment-5874158363"
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/81"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "Preserve the visitor's choice and the data consequences.",
-      "konkrete_svakheter": "Remove owner-specific detail, repeated refusal text and implementation internals; distinguish pageview fields from technical request data.",
-      "forbedringsgrep": "Reduce to the choice, pageview fields, technical data, retention, region and choice control.",
-      "revidert_eksempelversjon": "Applied to the exact file SHA recorded here after Bjørn's approval message: “Godkjent etter rens fra laozi”."
+      "helhetsinntrykk": "The notice gives the reader a clear choice and the practical consequences of accepting.",
+      "styrker": "It names the opt-in trigger, pageview fields, technical data, region, retention and a way to change the choice.",
+      "stilprofil": "Plain, restrained service language; account-specific facts are separated from general Umami Cloud information.",
+      "konkrete_svakheter": "Technical wording remains compact and the general US/EU infrastructure statement must not be read as proof of exclusive processing in Frankfurt.",
+      "forbedringsgrep": "Keep the concise structure; retain the clear distinction between event fields, request metadata, account region and general service locations.",
+      "revidert_eksempelversjon": "KEEP; the Laozi-reduced version is coherent and preserves the essential disclosures. No further textual change recommended."
     },
-    "decision": "REDUCE_PRESERVE_CORE",
-    "ariadne_style_readiness": "NOT_RERUN_AFTER_REDUCTION; prior approved text was pass_complete",
-    "source_status": "HUMAN_APPROVED_TEXT / LEGAL_AND_CONTRACT_GATES_OPEN",
-    "source_scope": "Reader-facing Umami disclosure reduced and account region/plan/retention updated from the signed-in account UI; no legal conclusion, DPA confirmation or transfer-basis verification.",
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Editorial and reader-orientation clearance of the Umami section; account region, plan and retention were observed in the signed-in UI, general US/EU server locations are attributed to Umami, no legal or DPA conclusion.",
     "publication_approval": {
       "approved": false,
       "by": null,
-      "reference": "No separate publication approval recorded for this revision. Text approval does not by itself authorize merge or deployment.",
+      "reference": "Separate publication approval for this exact version has not been recorded. Bjørn's current approval is bound to the text after Laozi reduction and does not by itself release this PR for merge/deploy.",
       "sha256": "f223fcb4506a88f00f777af4f4ae4c555247298ff226b9218655787c94b03843"
     },
     "previous_review": {
@@ -1597,7 +1599,7 @@
     "text_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Chat instruction 2026-09-28: “Godkjent etter rens fra laozi”; scoped to the Laozi-reduced Umami text.",
+      "reference": "Chat instruction 2026-09-28: “Godkjent etter rens fra laozi”; scoped to current Laozi-reduced Umami text.",
       "sha256": "f223fcb4506a88f00f777af4f4ae4c555247298ff226b9218655787c94b03843"
     },
     "prior_language_review": {

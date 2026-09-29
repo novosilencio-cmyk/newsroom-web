@@ -2433,5 +2433,245 @@
       "reference": "Current conversation 2026-09-28: send all relevant material from this source line to Experimental Newsroom, apply the full newsroom procedure and publish; authority applied after editorial controls to this exact final page hash.",
       "sha256": "c33e47cf2a67ca2eb3ba2ddfa8c4499e28d082ad12e7ecbee9a67cc0b6c6c121"
     }
+  },
+  "public/articles/ecotun-design-relations-2026.html": {
+    "case_id": "ecotun-design-relations-2026",
+    "sha256": "a5641e9619bf4908d7240e4131b5fa27f6d6472d5506694e389a5acbe821fc9d",
+    "reviewer": "Ariadne multilingual comparison; Liv/Ada source and counterevidence control; Alma reader surface; integrating assistant",
+    "execution_context": "AI-assisted multilingual editorial executions integrated against one source-locked story; no independent native-human proofreading claimed",
+    "reviewed_at": "2026-09-29",
+    "comparison_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#ariadne-six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#reader-journey-and-semantic-control",
+    "semantic_control_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#claim-boundary-and-counter-read",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#ariadne-six-stage-language-review"
+      },
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/METHODS/EXPERIMENTAL_NEWSROOM_STANDING_PUBLICATION_METHOD_001.md",
+        "revision": "git-blob:49605d5189a4b7ca84f91abde9fc82c9c986698c",
+        "application_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#scope-and-authority"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#1-helhetsinntrykk",
+      "styrker": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#2-styrker",
+      "stilprofil": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#3-stilprofil",
+      "konkrete_svakheter": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#4-konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#5-forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#6-revidert-eksempelversjon"
+    },
+    "decision": "COMBINE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Source-locked open-project analysis; multilingual design lenses and counterevidence; no site feasibility, market, health, regulatory or performance validation",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#scope-and-authority",
+      "sha256": "a5641e9619bf4908d7240e4131b5fa27f6d6472d5506694e389a5acbe821fc9d"
+    }
+  },
+  "public/articles/ecotun-design-relations-2026.en.html": {
+    "case_id": "ecotun-design-relations-2026",
+    "sha256": "80657ea96f810c8131f756bb60ed86168088d707dca6cc89c81d9e34fd16f6fd",
+    "reviewer": "Ariadne multilingual comparison; Liv/Ada source and counterevidence control; Alma reader surface; integrating assistant",
+    "execution_context": "AI-assisted multilingual editorial executions integrated against one source-locked story; no independent native-human proofreading claimed",
+    "reviewed_at": "2026-09-29",
+    "comparison_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#ariadne-six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#reader-journey-and-semantic-control",
+    "semantic_control_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#claim-boundary-and-counter-read",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#ariadne-six-stage-language-review"
+      },
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/METHODS/EXPERIMENTAL_NEWSROOM_STANDING_PUBLICATION_METHOD_001.md",
+        "revision": "git-blob:49605d5189a4b7ca84f91abde9fc82c9c986698c",
+        "application_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#scope-and-authority"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#1-helhetsinntrykk",
+      "styrker": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#2-styrker",
+      "stilprofil": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#3-stilprofil",
+      "konkrete_svakheter": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#4-konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#5-forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#6-revidert-eksempelversjon"
+    },
+    "decision": "COMBINE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Source-locked open-project analysis; multilingual design lenses and counterevidence; no site feasibility, market, health, regulatory or performance validation",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#scope-and-authority",
+      "sha256": "80657ea96f810c8131f756bb60ed86168088d707dca6cc89c81d9e34fd16f6fd"
+    }
+  },
+  "public/articles/ecotun-design-relations-2026.fr.html": {
+    "case_id": "ecotun-design-relations-2026",
+    "sha256": "17d272d3809999c99a4d21a06091c93c863ee17180aa33369293284931cda9c2",
+    "reviewer": "Ariadne multilingual comparison; Liv/Ada source and counterevidence control; Alma reader surface; integrating assistant",
+    "execution_context": "AI-assisted multilingual editorial executions integrated against one source-locked story; no independent native-human proofreading claimed",
+    "reviewed_at": "2026-09-29",
+    "comparison_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#ariadne-six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#reader-journey-and-semantic-control",
+    "semantic_control_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#claim-boundary-and-counter-read",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#ariadne-six-stage-language-review"
+      },
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/METHODS/EXPERIMENTAL_NEWSROOM_STANDING_PUBLICATION_METHOD_001.md",
+        "revision": "git-blob:49605d5189a4b7ca84f91abde9fc82c9c986698c",
+        "application_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#scope-and-authority"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#1-helhetsinntrykk",
+      "styrker": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#2-styrker",
+      "stilprofil": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#3-stilprofil",
+      "konkrete_svakheter": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#4-konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#5-forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#6-revidert-eksempelversjon"
+    },
+    "decision": "COMBINE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Source-locked open-project analysis; multilingual design lenses and counterevidence; no site feasibility, market, health, regulatory or performance validation",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#scope-and-authority",
+      "sha256": "17d272d3809999c99a4d21a06091c93c863ee17180aa33369293284931cda9c2"
+    }
+  },
+  "public/articles/ecotun-design-relations-2026.de.html": {
+    "case_id": "ecotun-design-relations-2026",
+    "sha256": "129a8b7e86b09c0c22b05d0c47932377630af5dc7bbde62c5ebb6bc47e7953ba",
+    "reviewer": "Ariadne multilingual comparison; Liv/Ada source and counterevidence control; Alma reader surface; integrating assistant",
+    "execution_context": "AI-assisted multilingual editorial executions integrated against one source-locked story; no independent native-human proofreading claimed",
+    "reviewed_at": "2026-09-29",
+    "comparison_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#ariadne-six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#reader-journey-and-semantic-control",
+    "semantic_control_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#claim-boundary-and-counter-read",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#ariadne-six-stage-language-review"
+      },
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/METHODS/EXPERIMENTAL_NEWSROOM_STANDING_PUBLICATION_METHOD_001.md",
+        "revision": "git-blob:49605d5189a4b7ca84f91abde9fc82c9c986698c",
+        "application_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#scope-and-authority"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#1-helhetsinntrykk",
+      "styrker": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#2-styrker",
+      "stilprofil": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#3-stilprofil",
+      "konkrete_svakheter": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#4-konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#5-forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#6-revidert-eksempelversjon"
+    },
+    "decision": "COMBINE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Source-locked open-project analysis; multilingual design lenses and counterevidence; no site feasibility, market, health, regulatory or performance validation",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#scope-and-authority",
+      "sha256": "129a8b7e86b09c0c22b05d0c47932377630af5dc7bbde62c5ebb6bc47e7953ba"
+    }
+  },
+  "public/articles/ecotun-design-relations-2026.ja.html": {
+    "case_id": "ecotun-design-relations-2026",
+    "sha256": "9bfb34812bd5e0e4084c52822b034db0b5b3f20463cde79de1f94f4a5d2aaab0",
+    "reviewer": "Ariadne multilingual comparison; Liv/Ada source and counterevidence control; Alma reader surface; integrating assistant",
+    "execution_context": "AI-assisted multilingual editorial executions integrated against one source-locked story; no independent native-human proofreading claimed",
+    "reviewed_at": "2026-09-29",
+    "comparison_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#ariadne-six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#reader-journey-and-semantic-control",
+    "semantic_control_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#claim-boundary-and-counter-read",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#ariadne-six-stage-language-review"
+      },
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/METHODS/EXPERIMENTAL_NEWSROOM_STANDING_PUBLICATION_METHOD_001.md",
+        "revision": "git-blob:49605d5189a4b7ca84f91abde9fc82c9c986698c",
+        "application_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#scope-and-authority"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#1-helhetsinntrykk",
+      "styrker": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#2-styrker",
+      "stilprofil": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#3-stilprofil",
+      "konkrete_svakheter": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#4-konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#5-forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#6-revidert-eksempelversjon"
+    },
+    "decision": "COMBINE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Source-locked open-project analysis; multilingual design lenses and counterevidence; no site feasibility, market, health, regulatory or performance validation",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#scope-and-authority",
+      "sha256": "9bfb34812bd5e0e4084c52822b034db0b5b3f20463cde79de1f94f4a5d2aaab0"
+    }
+  },
+  "public/articles/ecotun-design-relations-2026.ko.html": {
+    "case_id": "ecotun-design-relations-2026",
+    "sha256": "03256414f2fccefcebcea01de7ee4ab0638ca31da5957fc3d748b8d75ae9c6f2",
+    "reviewer": "Ariadne multilingual comparison; Liv/Ada source and counterevidence control; Alma reader surface; integrating assistant",
+    "execution_context": "AI-assisted multilingual editorial executions integrated against one source-locked story; no independent native-human proofreading claimed",
+    "reviewed_at": "2026-09-29",
+    "comparison_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#ariadne-six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#reader-journey-and-semantic-control",
+    "semantic_control_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#claim-boundary-and-counter-read",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#ariadne-six-stage-language-review"
+      },
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/METHODS/EXPERIMENTAL_NEWSROOM_STANDING_PUBLICATION_METHOD_001.md",
+        "revision": "git-blob:49605d5189a4b7ca84f91abde9fc82c9c986698c",
+        "application_ref": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#scope-and-authority"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#1-helhetsinntrykk",
+      "styrker": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#2-styrker",
+      "stilprofil": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#3-stilprofil",
+      "konkrete_svakheter": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#4-konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#5-forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#6-revidert-eksempelversjon"
+    },
+    "decision": "COMBINE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Source-locked open-project analysis; multilingual design lenses and counterevidence; no site feasibility, market, health, regulatory or performance validation",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#scope-and-authority",
+      "sha256": "03256414f2fccefcebcea01de7ee4ab0638ca31da5957fc3d748b8d75ae9c6f2"
+    }
   }
 }

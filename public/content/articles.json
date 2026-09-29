@@ -1,5 +1,49 @@
 [
   {
+    "id": "ecotun-design-relations-2026",
+    "section": "Analysis",
+    "region": "Europe",
+    "country": "Norway",
+    "type": "Open project analysis",
+    "title": "Kan et boligområde designes som et levende system?",
+    "summary": "Økotun er et ubebygd norsk boligkonsept. Et flerspråklig søk i permakultur, cohousing, satoyama og landskapsforvaltning flyttet spørsmålet fra grønne enkelttiltak til relasjoner, arbeid og ansvar over tid.",
+    "published": "2026-09-29",
+    "priority": 0,
+    "url": "articles/ecotun-design-relations-2026.html",
+    "translations": {
+      "nb": {
+        "url": "articles/ecotun-design-relations-2026.html",
+        "title": "Kan et boligområde designes som et levende system?",
+        "summary": "Økotun er et ubebygd norsk boligkonsept. Et flerspråklig søk i permakultur, cohousing, satoyama og landskapsforvaltning flyttet spørsmålet fra grønne enkelttiltak til relasjoner, arbeid og ansvar over tid."
+      },
+      "en": {
+        "url": "articles/ecotun-design-relations-2026.en.html",
+        "title": "Can a neighbourhood be designed as a living system?",
+        "summary": "Økotun is an unbuilt Norwegian housing concept. A multilingual search through permaculture, cohousing, satoyama and landscape stewardship shifted the question from green features to relationships, labour and responsibility over time."
+      },
+      "fr": {
+        "url": "articles/ecotun-design-relations-2026.fr.html",
+        "title": "Peut-on concevoir un quartier comme un système vivant ?",
+        "summary": "Økotun est un concept norvégien d’habitat qui n’a pas encore été construit. Une recherche multilingue sur la permaculture, l’habitat participatif, le satoyama et la gestion des paysages a déplacé la question des équipements « verts » vers les relations, le travail et les responsabilités dans le temps."
+      },
+      "de": {
+        "url": "articles/ecotun-design-relations-2026.de.html",
+        "title": "Lässt sich ein Wohnquartier wie ein lebendes System gestalten?",
+        "summary": "Økotun ist ein bislang ungebautes norwegisches Wohnkonzept. Eine mehrsprachige Recherche zu Permakultur, Cohousing, Satoyama und Landschaftspflege verschob die Frage von grünen Einzelmaßnahmen hin zu Beziehungen, Arbeit und Verantwortung über die Zeit."
+      },
+      "ja": {
+        "url": "articles/ecotun-design-relations-2026.ja.html",
+        "title": "住宅地を「生きたシステム」として設計できるか",
+        "summary": "Økotun（エコトゥン）は、まだ建設されていないノルウェーの住宅コンセプトだ。パーマカルチャー、コハウジング、里山、景観管理を多言語で調べると、問いは「緑の設備を増やすこと」から、関係・労働・長期的な責任へと移った。"
+      },
+      "ko": {
+        "url": "articles/ecotun-design-relations-2026.ko.html",
+        "title": "주거단지를 ‘살아 있는 시스템’처럼 설계할 수 있을까",
+        "summary": "Økotun은 아직 지어지지 않은 노르웨이의 주거 개념이다. 퍼머컬처, 코하우징, 일본의 사토야마, 경관 관리에 대한 다언어 검색은 ‘녹색 요소를 얼마나 넣을 것인가’라는 질문을 관계, 노동, 장기적 책임의 문제로 옮겼다."
+      }
+    }
+  },
+  {
     "id": "what-we-learn-without-being-taught-2026",
     "section": "Analysis",
     "region": "Europe · Global",

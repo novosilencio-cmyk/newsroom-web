@@ -18,7 +18,7 @@ Det er derfor spørsmålet om renten virker, ikke er helt det samme som spørsm�
 
 Norges Bank hevet styringsrenten fra 4,25 til 4,50 prosent på møtet 23. september, med virkning fra 25. september. Det gjør fordelingsspørsmålet mer aktuelt. Det gir ikke svaret på hvem som allerede har kuttet.
 
-SSBs nyeste månedlige rentestatistikk ble oppdatert 25. september, men går foreløpig bare til august 2026. Kredittindikatoren som ble oppdatert dagen før, går også til august. Vi kan derfor ikke bruke disse aggregatene som om de målte fordelingen etter rentehevingen.
+SSBs nyeste månedlige rentestatistikk ble oppdatert 25. september, men går foreløpig bare til august 2026. SSBs kredittindikator, oppdatert 24. september, går også til august 2026. Vi kan derfor ikke bruke disse aggregatene som om de målte fordelingen etter rentehevingen.
 
 Også Norges Banks septembergrunnlag peker i ulike retninger: Nasjonalregnskapet viste svakere husholdningskonsum i første halvår enn ventet, mens bedriftene i Regionalt nettverk meldte om god etterspørsel fra husholdningene. Banken la samtidig til grunn at konsumet skulle ta seg opp igjen i høst. Slike samlede signaler kan beskrive utviklingen, men ikke avgjøre hvilke husholdninger som først mister handlingsrom.
 
@@ -84,7 +84,10 @@ Det er der virkemiddelet møter hverdagen.
 5. **Statistisk sentralbyrå, _Renter i banker og kredittforetak_, tabell 10748.** Oppdatert 25. september 2026; tilgjengelige månedstall går til august 2026. Kilden dokumenterer aktuelle aggregater, ikke husholdningsfordelingen etter rentehevingen.  
    https://www.ssb.no/en/statbank1/table/10748
 
-6. **Norges Bank, _Finansiell stabilitet 1/2026_.** Institusjonens systemvurdering: høy gjeld og lav likviditet kan forsterke forbrukskutt, mens de fleste husholdninger ble vurdert å kunne betjene gjeld og normale levekostnader med god margin.  
+6. **Statistisk sentralbyrå, _Kredittindikator_.** Oppdatert 24. september 2026; siste publiserte månedstall går til august 2026. Kilden dokumenterer aktuell samlet gjeldsutvikling, ikke husholdningsfordelingen etter rentehevingen.  
+   https://www.ssb.no/bank-og-finansmarked/finansielle-indikatorer/statistikk/kredittindikator
+
+7. **Norges Bank, _Finansiell stabilitet 1/2026_.** Institusjonens systemvurdering: høy gjeld og lav likviditet kan forsterke forbrukskutt, mens de fleste husholdninger ble vurdert å kunne betjene gjeld og normale levekostnader med god margin.  
    https://www.norges-bank.no/en/news-events/publications/Financial-Stability-report/2026-1-fsr/web-report-2026-1-financial-stability-report/
 
 **Bevarte motfunn og grenser**

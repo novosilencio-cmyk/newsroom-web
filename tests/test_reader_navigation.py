@@ -1,5 +1,6 @@
 import importlib.util
 import json
+import re
 import sys
 import unittest
 from html.parser import HTMLParser
@@ -74,6 +75,21 @@ class ReaderNavigationTests(unittest.TestCase):
             self.assertIn('reader-navigation.css', source, path)
             self.assertTrue('reader-skip' in source or 'skip-link' in source, path)
             self.assertRegex(source, r'<main[^>]+tabindex="-1"')
+
+    def test_reader_map_footer_link_is_unique_and_matches_page_language(self):
+        for path in PUBLIC.rglob('*.html'):
+            source = path.read_text()
+            if 'data-visualize-standalone' in source or path.name in ('sitemap.html', 'sitemap.en.html'):
+                continue
+            lang_match = re.search(r'<html[^>]+lang="([^"]+)"', source)
+            lang = lang_match.group(1).lower() if lang_match else 'en'
+            norwegian = lang in ('nb', 'no')
+            depth = len(path.relative_to(PUBLIC).parents) - 1
+            target = '../' * depth + ('sitemap.html' if norwegian else 'sitemap.en.html')
+            links = re.findall(r'<p class="reader-map-link"><a href="([^"]+)">([^<]+)</a></p>', source)
+            self.assertLessEqual(len(links), 1, path)
+            if links:
+                self.assertEqual(links[0][0], target, path)
 
     def test_render_is_deterministic(self):
         articles = json.loads((PUBLIC / 'content/articles.json').read_text())

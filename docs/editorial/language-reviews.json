@@ -1428,71 +1428,173 @@
     }
   },
   "public/norway/index.html": {
-    "case_id": "cultural-transmission-dependent-navigation-2026-09-28",
-    "sha256": "19d3e0237074b649dbe6544b3c748cf3341855c29214c91694519848f91bbde1",
-    "reviewer": "Ariadne bounded navigation confirmation; Alma reader presentation; integrating assistant",
-    "execution_context": "Deterministic generated navigation update caused only by adding the approved cultural-transmission story to the publication registry; no independent human review claimed",
-    "reviewed_at": "2026-09-28",
-    "comparison_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#bounded-dependent-navigation-confirmation",
-    "reader_journey_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#navigation-reader-journey",
-    "semantic_control_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#navigation-semantic-control",
+    "case_id": "institusjon-banken-2026-exact-repaired-candidate",
+    "sha256": "6be8966fc0350df63d5f28ac651e4110eea645c76a24eace40282ce43eadf111",
+    "git_blob_sha": "50bd3f336ae1f488a3cb42068e1f0d5b319db2c4",
+    "reviewer": "Ariadne six-stage language/reader control with separate read-only AI evaluator; no independent human peer-review claim",
+    "execution_context": "Exact candidate bytes at PR #84 head 70929474a9b3acf98a7aa4458315fa551fbe252f. PASS_BOUNDED after bounded repairs; publication approval intentionally held.",
+    "reviewed_at": "2026-10-02",
+    "comparison_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+    "reader_journey_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+    "semantic_control_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#bounded-dependent-navigation-confirmation"
+        "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+        "revision": "course-manifest-0.2@2026-09-16",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+        "revision": "source-snapshot-d93be446e6e8aa9e14327793bd1ad1408271d041",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
+        "revision": "course-manifest-0.2@2026-09-16",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494"
+      },
+      {
+        "source": "oos-trained-agent-runtime/independent_lab_evaluator_module.md",
+        "revision": "course-manifest-0.2@2026-09-16",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/cultural-transmission-release-2026-09-28.md#helhetsinntrykk",
-      "styrker": "docs/editorial/cultural-transmission-release-2026-09-28.md#styrker",
-      "stilprofil": "docs/editorial/cultural-transmission-release-2026-09-28.md#stilprofil",
-      "konkrete_svakheter": "docs/editorial/cultural-transmission-release-2026-09-28.md#konkrete-svakheter",
-      "forbedringsgrep": "docs/editorial/cultural-transmission-release-2026-09-28.md#forbedringsgrep",
-      "revidert_eksempelversjon": "docs/editorial/cultural-transmission-release-2026-09-28.md#revidert-eksempelversjon"
+      "helhetsinntrykk": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "styrker": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "stilprofil": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "konkrete_svakheter": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "forbedringsgrep": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "revidert_eksempelversjon": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494"
     },
     "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Dependent generated navigation only; title/summary/date/link are inherited from the already reviewed publication registry entry",
+    "source_scope": "Generated Norway discovery page: title, summary, date and destination checked against the exact reviewed article and registry.",
     "publication_approval": {
-      "approved": true,
-      "by": "Bjørn Moe Aldema",
-      "reference": "Current conversation 2026-09-28: publish the cultural-transmission Experimental Newsroom story; authority applied to this exact deterministic dependent navigation version as necessary publication surface.",
-      "sha256": "19d3e0237074b649dbe6544b3c748cf3341855c29214c91694519848f91bbde1"
+      "approved": false,
+      "by": "PENDING — Bjørn Moe Aldema",
+      "reference": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "sha256": "6be8966fc0350df63d5f28ac651e4110eea645c76a24eace40282ce43eadf111"
     },
     "previous_review": {
-      "case_id": "EXPNR_ATRIET_AI_CONCEPTUAL_WORK_001",
-      "sha256": "cf94b054e38d9d598aa5be0e02d61d93a233af2166f9d1008114a8d40743b962",
-      "reviewer": "Codex applying editorial, Ariadne and Alma functions; same-assistant review",
-      "execution_context": "Article or bounded dependent navigation update; no independent review claimed",
-      "reviewed_at": "2026-09-27",
-      "comparison_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#helhetsinntrykk",
-      "reader_journey_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#reader-journey-and-semantic-control",
-      "semantic_control_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#reader-journey-and-semantic-control",
+      "case_id": "institusjon-banken-2026-norway-discovery",
+      "sha256": "d659c0a28b60aed8683b09bcc1bb25d07024e3ff040fe2904ad97bf3d0ddc4c9",
+      "git_blob_sha": "d9351ed2e46cebbb01ec903a6f529b84a94ee6df",
+      "reviewer": "Ariadne six-stage language/reader control with separate read-only AI evaluator; no independent human peer-review claim",
+      "execution_context": "Exact candidate bytes at PR #84 head e2e5d071ce1d88fa8985f7b81edeb2505203806a. PASS_BOUNDED for source/semantics/language/reader journey; publication approval intentionally held.",
+      "reviewed_at": "2026-09-29",
+      "comparison_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+      "reader_journey_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+      "semantic_control_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
       "loaded_modules": [
         {
-          "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-          "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-          "application_ref": "docs/editorial/atriet-ai-release-2026-09-27.md"
+          "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+          "revision": "course-manifest-0.2@2026-09-16",
+          "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007"
+        },
+        {
+          "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+          "revision": "source-snapshot-d93be446e6e8aa9e14327793bd1ad1408271d041",
+          "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007"
+        },
+        {
+          "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
+          "revision": "course-manifest-0.2@2026-09-16",
+          "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007"
+        },
+        {
+          "source": "oos-trained-agent-runtime/independent_lab_evaluator_module.md",
+          "revision": "course-manifest-0.2@2026-09-16",
+          "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007"
         }
       ],
       "stages": {
-        "helhetsinntrykk": "docs/editorial/atriet-ai-release-2026-09-27.md#helhetsinntrykk",
-        "styrker": "docs/editorial/atriet-ai-release-2026-09-27.md#styrker",
-        "stilprofil": "docs/editorial/atriet-ai-release-2026-09-27.md#stilprofil",
-        "konkrete_svakheter": "docs/editorial/atriet-ai-release-2026-09-27.md#konkrete-svakheter",
-        "forbedringsgrep": "docs/editorial/atriet-ai-release-2026-09-27.md#forbedringsgrep",
-        "revidert_eksempelversjon": "docs/editorial/atriet-ai-release-2026-09-27.md#revidert-eksempelversjon"
+        "helhetsinntrykk": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "styrker": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "stilprofil": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "konkrete_svakheter": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "forbedringsgrep": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "revidert_eksempelversjon": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007"
       },
-      "decision": "COMBINE",
+      "decision": "KEEP",
       "ariadne_style_readiness": "pass_complete",
       "source_status": "READY_FOR_EDITORIAL_REVIEW",
+      "source_scope": "Generated Norway discovery page: bank card plus deterministic catch-up of the already-registered cultural-transmission item. Existing English-card selection and 18 September reader-structure note are preserved as non-blocking findings.",
       "publication_approval": {
-        "approved": true,
-        "by": "Bjørn Moe Aldema",
-        "reference": "Explicit instruction 2026-09-27 01:38 CEST: publish this Atriet story if sufficient; necessary newsroom merge included. 01:41 and 01:42 additions incorporated. Authority applied to this exact final version after editorial checks.",
-        "sha256": "cf94b054e38d9d598aa5be0e02d61d93a233af2166f9d1008114a8d40743b962"
+        "approved": false,
+        "by": "PENDING — Bjørn Moe Aldema",
+        "reference": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "sha256": "d659c0a28b60aed8683b09bcc1bb25d07024e3ff040fe2904ad97bf3d0ddc4c9"
+      },
+      "previous_review": {
+        "case_id": "cultural-transmission-dependent-navigation-2026-09-28",
+        "sha256": "19d3e0237074b649dbe6544b3c748cf3341855c29214c91694519848f91bbde1",
+        "reviewer": "Ariadne bounded navigation confirmation; Alma reader presentation; integrating assistant",
+        "execution_context": "Deterministic generated navigation update caused only by adding the approved cultural-transmission story to the publication registry; no independent human review claimed",
+        "reviewed_at": "2026-09-28",
+        "comparison_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#bounded-dependent-navigation-confirmation",
+        "reader_journey_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#navigation-reader-journey",
+        "semantic_control_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#navigation-semantic-control",
+        "loaded_modules": [
+          {
+            "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+            "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+            "application_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#bounded-dependent-navigation-confirmation"
+          }
+        ],
+        "stages": {
+          "helhetsinntrykk": "docs/editorial/cultural-transmission-release-2026-09-28.md#helhetsinntrykk",
+          "styrker": "docs/editorial/cultural-transmission-release-2026-09-28.md#styrker",
+          "stilprofil": "docs/editorial/cultural-transmission-release-2026-09-28.md#stilprofil",
+          "konkrete_svakheter": "docs/editorial/cultural-transmission-release-2026-09-28.md#konkrete-svakheter",
+          "forbedringsgrep": "docs/editorial/cultural-transmission-release-2026-09-28.md#forbedringsgrep",
+          "revidert_eksempelversjon": "docs/editorial/cultural-transmission-release-2026-09-28.md#revidert-eksempelversjon"
+        },
+        "decision": "KEEP",
+        "ariadne_style_readiness": "pass_complete",
+        "source_status": "READY_FOR_EDITORIAL_REVIEW",
+        "source_scope": "Dependent generated navigation only; title/summary/date/link are inherited from the already reviewed publication registry entry",
+        "publication_approval": {
+          "approved": true,
+          "by": "Bjørn Moe Aldema",
+          "reference": "Current conversation 2026-09-28: publish the cultural-transmission Experimental Newsroom story; authority applied to this exact deterministic dependent navigation version as necessary publication surface.",
+          "sha256": "19d3e0237074b649dbe6544b3c748cf3341855c29214c91694519848f91bbde1"
+        },
+        "previous_review": {
+          "case_id": "EXPNR_ATRIET_AI_CONCEPTUAL_WORK_001",
+          "sha256": "cf94b054e38d9d598aa5be0e02d61d93a233af2166f9d1008114a8d40743b962",
+          "reviewer": "Codex applying editorial, Ariadne and Alma functions; same-assistant review",
+          "execution_context": "Article or bounded dependent navigation update; no independent review claimed",
+          "reviewed_at": "2026-09-27",
+          "comparison_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#helhetsinntrykk",
+          "reader_journey_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#reader-journey-and-semantic-control",
+          "semantic_control_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#reader-journey-and-semantic-control",
+          "loaded_modules": [
+            {
+              "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+              "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+              "application_ref": "docs/editorial/atriet-ai-release-2026-09-27.md"
+            }
+          ],
+          "stages": {
+            "helhetsinntrykk": "docs/editorial/atriet-ai-release-2026-09-27.md#helhetsinntrykk",
+            "styrker": "docs/editorial/atriet-ai-release-2026-09-27.md#styrker",
+            "stilprofil": "docs/editorial/atriet-ai-release-2026-09-27.md#stilprofil",
+            "konkrete_svakheter": "docs/editorial/atriet-ai-release-2026-09-27.md#konkrete-svakheter",
+            "forbedringsgrep": "docs/editorial/atriet-ai-release-2026-09-27.md#forbedringsgrep",
+            "revidert_eksempelversjon": "docs/editorial/atriet-ai-release-2026-09-27.md#revidert-eksempelversjon"
+          },
+          "decision": "COMBINE",
+          "ariadne_style_readiness": "pass_complete",
+          "source_status": "READY_FOR_EDITORIAL_REVIEW",
+          "publication_approval": {
+            "approved": true,
+            "by": "Bjørn Moe Aldema",
+            "reference": "Explicit instruction 2026-09-27 01:38 CEST: publish this Atriet story if sufficient; necessary newsroom merge included. 01:41 and 01:42 additions incorporated. Authority applied to this exact final version after editorial checks.",
+            "sha256": "cf94b054e38d9d598aa5be0e02d61d93a233af2166f9d1008114a8d40743b962"
+          }
+        }
       }
     }
   },
@@ -2009,140 +2111,344 @@
     }
   },
   "public/sitemap.html": {
-    "case_id": "cultural-transmission-dependent-navigation-2026-09-28",
-    "sha256": "64ae6896d97d8c63a1cfe871dd71499dc407551a7a6d08d252b387d07a243342",
-    "reviewer": "Ariadne bounded navigation confirmation; Alma reader presentation; integrating assistant",
-    "execution_context": "Deterministic generated navigation update caused only by adding the approved cultural-transmission story to the publication registry; no independent human review claimed",
-    "reviewed_at": "2026-09-28",
-    "comparison_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#bounded-dependent-navigation-confirmation",
-    "reader_journey_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#navigation-reader-journey",
-    "semantic_control_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#navigation-semantic-control",
+    "case_id": "institusjon-banken-2026-exact-repaired-candidate",
+    "sha256": "a2fd36a34ffc50319c2881dcaafbba8a7c7375b7b13188c6588c943ea84c527b",
+    "git_blob_sha": "0e8260ec0f60e0c4f18a00ed014911c6516b9a1f",
+    "reviewer": "Ariadne six-stage language/reader control with separate read-only AI evaluator; no independent human peer-review claim",
+    "execution_context": "Exact candidate bytes at PR #84 head 70929474a9b3acf98a7aa4458315fa551fbe252f. PASS_BOUNDED after bounded repairs; publication approval intentionally held.",
+    "reviewed_at": "2026-10-02",
+    "comparison_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+    "reader_journey_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+    "semantic_control_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#bounded-dependent-navigation-confirmation"
+        "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+        "revision": "course-manifest-0.2@2026-09-16",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+        "revision": "source-snapshot-d93be446e6e8aa9e14327793bd1ad1408271d041",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
+        "revision": "course-manifest-0.2@2026-09-16",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494"
+      },
+      {
+        "source": "oos-trained-agent-runtime/independent_lab_evaluator_module.md",
+        "revision": "course-manifest-0.2@2026-09-16",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/cultural-transmission-release-2026-09-28.md#helhetsinntrykk",
-      "styrker": "docs/editorial/cultural-transmission-release-2026-09-28.md#styrker",
-      "stilprofil": "docs/editorial/cultural-transmission-release-2026-09-28.md#stilprofil",
-      "konkrete_svakheter": "docs/editorial/cultural-transmission-release-2026-09-28.md#konkrete-svakheter",
-      "forbedringsgrep": "docs/editorial/cultural-transmission-release-2026-09-28.md#forbedringsgrep",
-      "revidert_eksempelversjon": "docs/editorial/cultural-transmission-release-2026-09-28.md#revidert-eksempelversjon"
+      "helhetsinntrykk": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "styrker": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "stilprofil": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "konkrete_svakheter": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "forbedringsgrep": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "revidert_eksempelversjon": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494"
     },
     "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Dependent generated navigation only; title/summary/date/link are inherited from the already reviewed publication registry entry",
+    "source_scope": "Generated Norwegian reader map: exact bank entry and destination checked.",
     "publication_approval": {
-      "approved": true,
-      "by": "Bjørn Moe Aldema",
-      "reference": "Current conversation 2026-09-28: publish the cultural-transmission Experimental Newsroom story; authority applied to this exact deterministic dependent navigation version as necessary publication surface.",
-      "sha256": "64ae6896d97d8c63a1cfe871dd71499dc407551a7a6d08d252b387d07a243342"
+      "approved": false,
+      "by": "PENDING — Bjørn Moe Aldema",
+      "reference": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "sha256": "a2fd36a34ffc50319c2881dcaafbba8a7c7375b7b13188c6588c943ea84c527b"
     },
     "previous_review": {
-      "case_id": "EXPNR_ATRIET_AI_CONCEPTUAL_WORK_001",
-      "sha256": "14891fbedd1d73d5cbca58bd98c08cda89877cdec5317fe9c633dbd4af577dac",
-      "reviewer": "Codex applying editorial, Ariadne and Alma functions; same-assistant review",
-      "execution_context": "Article or bounded dependent navigation update; no independent review claimed",
-      "reviewed_at": "2026-09-27",
-      "comparison_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#helhetsinntrykk",
-      "reader_journey_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#reader-journey-and-semantic-control",
-      "semantic_control_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#reader-journey-and-semantic-control",
+      "case_id": "institusjon-banken-2026-nb-sitemap",
+      "sha256": "9b1b08e47b5f44794968cab1822796eb9e12566aec9b2c6c1fba272882af2105",
+      "git_blob_sha": "6337eb6da232f7465f5ec05a33739608d1fce293",
+      "reviewer": "Ariadne six-stage language/reader control with separate read-only AI evaluator; no independent human peer-review claim",
+      "execution_context": "Exact candidate bytes at PR #84 head e2e5d071ce1d88fa8985f7b81edeb2505203806a. PASS_BOUNDED for source/semantics/language/reader journey; publication approval intentionally held.",
+      "reviewed_at": "2026-09-29",
+      "comparison_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+      "reader_journey_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+      "semantic_control_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
       "loaded_modules": [
         {
-          "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-          "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-          "application_ref": "docs/editorial/atriet-ai-release-2026-09-27.md"
+          "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+          "revision": "course-manifest-0.2@2026-09-16",
+          "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007"
+        },
+        {
+          "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+          "revision": "source-snapshot-d93be446e6e8aa9e14327793bd1ad1408271d041",
+          "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007"
+        },
+        {
+          "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
+          "revision": "course-manifest-0.2@2026-09-16",
+          "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007"
+        },
+        {
+          "source": "oos-trained-agent-runtime/independent_lab_evaluator_module.md",
+          "revision": "course-manifest-0.2@2026-09-16",
+          "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007"
         }
       ],
       "stages": {
-        "helhetsinntrykk": "docs/editorial/atriet-ai-release-2026-09-27.md#helhetsinntrykk",
-        "styrker": "docs/editorial/atriet-ai-release-2026-09-27.md#styrker",
-        "stilprofil": "docs/editorial/atriet-ai-release-2026-09-27.md#stilprofil",
-        "konkrete_svakheter": "docs/editorial/atriet-ai-release-2026-09-27.md#konkrete-svakheter",
-        "forbedringsgrep": "docs/editorial/atriet-ai-release-2026-09-27.md#forbedringsgrep",
-        "revidert_eksempelversjon": "docs/editorial/atriet-ai-release-2026-09-27.md#revidert-eksempelversjon"
+        "helhetsinntrykk": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "styrker": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "stilprofil": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "konkrete_svakheter": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "forbedringsgrep": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "revidert_eksempelversjon": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007"
       },
-      "decision": "COMBINE",
+      "decision": "KEEP",
       "ariadne_style_readiness": "pass_complete",
       "source_status": "READY_FOR_EDITORIAL_REVIEW",
+      "source_scope": "Generated Norwegian reader map: bank entry plus deterministic catch-up of the already-registered bilingual cultural-transmission item; language labels and destinations verified.",
       "publication_approval": {
-        "approved": true,
-        "by": "Bjørn Moe Aldema",
-        "reference": "Explicit instruction 2026-09-27 01:38 CEST: publish this Atriet story if sufficient; necessary newsroom merge included. 01:41 and 01:42 additions incorporated. Authority applied to this exact final version after editorial checks.",
-        "sha256": "14891fbedd1d73d5cbca58bd98c08cda89877cdec5317fe9c633dbd4af577dac"
+        "approved": false,
+        "by": "PENDING — Bjørn Moe Aldema",
+        "reference": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "sha256": "9b1b08e47b5f44794968cab1822796eb9e12566aec9b2c6c1fba272882af2105"
+      },
+      "previous_review": {
+        "case_id": "cultural-transmission-dependent-navigation-2026-09-28",
+        "sha256": "64ae6896d97d8c63a1cfe871dd71499dc407551a7a6d08d252b387d07a243342",
+        "reviewer": "Ariadne bounded navigation confirmation; Alma reader presentation; integrating assistant",
+        "execution_context": "Deterministic generated navigation update caused only by adding the approved cultural-transmission story to the publication registry; no independent human review claimed",
+        "reviewed_at": "2026-09-28",
+        "comparison_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#bounded-dependent-navigation-confirmation",
+        "reader_journey_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#navigation-reader-journey",
+        "semantic_control_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#navigation-semantic-control",
+        "loaded_modules": [
+          {
+            "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+            "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+            "application_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#bounded-dependent-navigation-confirmation"
+          }
+        ],
+        "stages": {
+          "helhetsinntrykk": "docs/editorial/cultural-transmission-release-2026-09-28.md#helhetsinntrykk",
+          "styrker": "docs/editorial/cultural-transmission-release-2026-09-28.md#styrker",
+          "stilprofil": "docs/editorial/cultural-transmission-release-2026-09-28.md#stilprofil",
+          "konkrete_svakheter": "docs/editorial/cultural-transmission-release-2026-09-28.md#konkrete-svakheter",
+          "forbedringsgrep": "docs/editorial/cultural-transmission-release-2026-09-28.md#forbedringsgrep",
+          "revidert_eksempelversjon": "docs/editorial/cultural-transmission-release-2026-09-28.md#revidert-eksempelversjon"
+        },
+        "decision": "KEEP",
+        "ariadne_style_readiness": "pass_complete",
+        "source_status": "READY_FOR_EDITORIAL_REVIEW",
+        "source_scope": "Dependent generated navigation only; title/summary/date/link are inherited from the already reviewed publication registry entry",
+        "publication_approval": {
+          "approved": true,
+          "by": "Bjørn Moe Aldema",
+          "reference": "Current conversation 2026-09-28: publish the cultural-transmission Experimental Newsroom story; authority applied to this exact deterministic dependent navigation version as necessary publication surface.",
+          "sha256": "64ae6896d97d8c63a1cfe871dd71499dc407551a7a6d08d252b387d07a243342"
+        },
+        "previous_review": {
+          "case_id": "EXPNR_ATRIET_AI_CONCEPTUAL_WORK_001",
+          "sha256": "14891fbedd1d73d5cbca58bd98c08cda89877cdec5317fe9c633dbd4af577dac",
+          "reviewer": "Codex applying editorial, Ariadne and Alma functions; same-assistant review",
+          "execution_context": "Article or bounded dependent navigation update; no independent review claimed",
+          "reviewed_at": "2026-09-27",
+          "comparison_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#helhetsinntrykk",
+          "reader_journey_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#reader-journey-and-semantic-control",
+          "semantic_control_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#reader-journey-and-semantic-control",
+          "loaded_modules": [
+            {
+              "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+              "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+              "application_ref": "docs/editorial/atriet-ai-release-2026-09-27.md"
+            }
+          ],
+          "stages": {
+            "helhetsinntrykk": "docs/editorial/atriet-ai-release-2026-09-27.md#helhetsinntrykk",
+            "styrker": "docs/editorial/atriet-ai-release-2026-09-27.md#styrker",
+            "stilprofil": "docs/editorial/atriet-ai-release-2026-09-27.md#stilprofil",
+            "konkrete_svakheter": "docs/editorial/atriet-ai-release-2026-09-27.md#konkrete-svakheter",
+            "forbedringsgrep": "docs/editorial/atriet-ai-release-2026-09-27.md#forbedringsgrep",
+            "revidert_eksempelversjon": "docs/editorial/atriet-ai-release-2026-09-27.md#revidert-eksempelversjon"
+          },
+          "decision": "COMBINE",
+          "ariadne_style_readiness": "pass_complete",
+          "source_status": "READY_FOR_EDITORIAL_REVIEW",
+          "publication_approval": {
+            "approved": true,
+            "by": "Bjørn Moe Aldema",
+            "reference": "Explicit instruction 2026-09-27 01:38 CEST: publish this Atriet story if sufficient; necessary newsroom merge included. 01:41 and 01:42 additions incorporated. Authority applied to this exact final version after editorial checks.",
+            "sha256": "14891fbedd1d73d5cbca58bd98c08cda89877cdec5317fe9c633dbd4af577dac"
+          }
+        }
       }
     }
   },
   "public/sitemap.en.html": {
-    "case_id": "cultural-transmission-dependent-navigation-2026-09-28",
-    "sha256": "13039e3456c6d6e79fde27c6753ebbe166c261605a7bf302438c2b5b7896d53f",
-    "reviewer": "Ariadne bounded navigation confirmation; Alma reader presentation; integrating assistant",
-    "execution_context": "Deterministic generated navigation update caused only by adding the approved cultural-transmission story to the publication registry; no independent human review claimed",
-    "reviewed_at": "2026-09-28",
-    "comparison_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#bounded-dependent-navigation-confirmation",
-    "reader_journey_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#navigation-reader-journey",
-    "semantic_control_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#navigation-semantic-control",
+    "case_id": "institusjon-banken-2026-exact-repaired-candidate",
+    "sha256": "855f00e156ca097571db88f758236c09c577c85d9e11c40100b3d51abc7b9a63",
+    "git_blob_sha": "58beff52e24947e08024652752891f20c2e60f8d",
+    "reviewer": "Ariadne six-stage language/reader control with separate read-only AI evaluator; no independent human peer-review claim",
+    "execution_context": "Exact candidate bytes at PR #84 head 70929474a9b3acf98a7aa4458315fa551fbe252f. PASS_BOUNDED after bounded repairs; publication approval intentionally held.",
+    "reviewed_at": "2026-10-02",
+    "comparison_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+    "reader_journey_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+    "semantic_control_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#bounded-dependent-navigation-confirmation"
+        "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+        "revision": "course-manifest-0.2@2026-09-16",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+        "revision": "source-snapshot-d93be446e6e8aa9e14327793bd1ad1408271d041",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
+        "revision": "course-manifest-0.2@2026-09-16",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494"
+      },
+      {
+        "source": "oos-trained-agent-runtime/independent_lab_evaluator_module.md",
+        "revision": "course-manifest-0.2@2026-09-16",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/cultural-transmission-release-2026-09-28.md#helhetsinntrykk",
-      "styrker": "docs/editorial/cultural-transmission-release-2026-09-28.md#styrker",
-      "stilprofil": "docs/editorial/cultural-transmission-release-2026-09-28.md#stilprofil",
-      "konkrete_svakheter": "docs/editorial/cultural-transmission-release-2026-09-28.md#konkrete-svakheter",
-      "forbedringsgrep": "docs/editorial/cultural-transmission-release-2026-09-28.md#forbedringsgrep",
-      "revidert_eksempelversjon": "docs/editorial/cultural-transmission-release-2026-09-28.md#revidert-eksempelversjon"
+      "helhetsinntrykk": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "styrker": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "stilprofil": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "konkrete_svakheter": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "forbedringsgrep": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "revidert_eksempelversjon": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494"
     },
     "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Dependent generated navigation only; title/summary/date/link are inherited from the already reviewed publication registry entry",
+    "source_scope": "Generated English reader map: exact Norwegian bank entry and destination checked.",
     "publication_approval": {
-      "approved": true,
-      "by": "Bjørn Moe Aldema",
-      "reference": "Current conversation 2026-09-28: publish the cultural-transmission Experimental Newsroom story; authority applied to this exact deterministic dependent navigation version as necessary publication surface.",
-      "sha256": "13039e3456c6d6e79fde27c6753ebbe166c261605a7bf302438c2b5b7896d53f"
+      "approved": false,
+      "by": "PENDING — Bjørn Moe Aldema",
+      "reference": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "sha256": "855f00e156ca097571db88f758236c09c577c85d9e11c40100b3d51abc7b9a63"
     },
     "previous_review": {
-      "case_id": "EXPNR_ATRIET_AI_CONCEPTUAL_WORK_001",
-      "sha256": "dc0bdcc5436e498c76d8bf8b4d837019db12123b3d552a7cfd58e51bf03c21bd",
-      "reviewer": "Codex applying editorial, Ariadne and Alma functions; same-assistant review",
-      "execution_context": "Article or bounded dependent navigation update; no independent review claimed",
-      "reviewed_at": "2026-09-27",
-      "comparison_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#helhetsinntrykk",
-      "reader_journey_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#reader-journey-and-semantic-control",
-      "semantic_control_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#reader-journey-and-semantic-control",
+      "case_id": "institusjon-banken-2026-en-sitemap",
+      "sha256": "882f3adbf51d0069a8313d54900ed686e46b0951aa0f6ed7f1a78bf797fb577c",
+      "git_blob_sha": "f3020011e03d0f43b6fff648a8ee51d0f354ffc6",
+      "reviewer": "Ariadne six-stage language/reader control with separate read-only AI evaluator; no independent human peer-review claim",
+      "execution_context": "Exact candidate bytes at PR #84 head e2e5d071ce1d88fa8985f7b81edeb2505203806a. PASS_BOUNDED for source/semantics/language/reader journey; publication approval intentionally held.",
+      "reviewed_at": "2026-09-29",
+      "comparison_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+      "reader_journey_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+      "semantic_control_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
       "loaded_modules": [
         {
-          "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-          "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-          "application_ref": "docs/editorial/atriet-ai-release-2026-09-27.md"
+          "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+          "revision": "course-manifest-0.2@2026-09-16",
+          "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007"
+        },
+        {
+          "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+          "revision": "source-snapshot-d93be446e6e8aa9e14327793bd1ad1408271d041",
+          "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007"
+        },
+        {
+          "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
+          "revision": "course-manifest-0.2@2026-09-16",
+          "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007"
+        },
+        {
+          "source": "oos-trained-agent-runtime/independent_lab_evaluator_module.md",
+          "revision": "course-manifest-0.2@2026-09-16",
+          "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007"
         }
       ],
       "stages": {
-        "helhetsinntrykk": "docs/editorial/atriet-ai-release-2026-09-27.md#helhetsinntrykk",
-        "styrker": "docs/editorial/atriet-ai-release-2026-09-27.md#styrker",
-        "stilprofil": "docs/editorial/atriet-ai-release-2026-09-27.md#stilprofil",
-        "konkrete_svakheter": "docs/editorial/atriet-ai-release-2026-09-27.md#konkrete-svakheter",
-        "forbedringsgrep": "docs/editorial/atriet-ai-release-2026-09-27.md#forbedringsgrep",
-        "revidert_eksempelversjon": "docs/editorial/atriet-ai-release-2026-09-27.md#revidert-eksempelversjon"
+        "helhetsinntrykk": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "styrker": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "stilprofil": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "konkrete_svakheter": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "forbedringsgrep": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "revidert_eksempelversjon": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007"
       },
-      "decision": "COMBINE",
+      "decision": "KEEP",
       "ariadne_style_readiness": "pass_complete",
       "source_status": "READY_FOR_EDITORIAL_REVIEW",
+      "source_scope": "Generated English reader map: Norwegian bank entry plus deterministic catch-up of the already-registered bilingual cultural-transmission item; language labels and destinations verified.",
       "publication_approval": {
-        "approved": true,
-        "by": "Bjørn Moe Aldema",
-        "reference": "Explicit instruction 2026-09-27 01:38 CEST: publish this Atriet story if sufficient; necessary newsroom merge included. 01:41 and 01:42 additions incorporated. Authority applied to this exact final version after editorial checks.",
-        "sha256": "dc0bdcc5436e498c76d8bf8b4d837019db12123b3d552a7cfd58e51bf03c21bd"
+        "approved": false,
+        "by": "PENDING — Bjørn Moe Aldema",
+        "reference": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "sha256": "882f3adbf51d0069a8313d54900ed686e46b0951aa0f6ed7f1a78bf797fb577c"
+      },
+      "previous_review": {
+        "case_id": "cultural-transmission-dependent-navigation-2026-09-28",
+        "sha256": "13039e3456c6d6e79fde27c6753ebbe166c261605a7bf302438c2b5b7896d53f",
+        "reviewer": "Ariadne bounded navigation confirmation; Alma reader presentation; integrating assistant",
+        "execution_context": "Deterministic generated navigation update caused only by adding the approved cultural-transmission story to the publication registry; no independent human review claimed",
+        "reviewed_at": "2026-09-28",
+        "comparison_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#bounded-dependent-navigation-confirmation",
+        "reader_journey_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#navigation-reader-journey",
+        "semantic_control_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#navigation-semantic-control",
+        "loaded_modules": [
+          {
+            "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+            "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+            "application_ref": "docs/editorial/cultural-transmission-release-2026-09-28.md#bounded-dependent-navigation-confirmation"
+          }
+        ],
+        "stages": {
+          "helhetsinntrykk": "docs/editorial/cultural-transmission-release-2026-09-28.md#helhetsinntrykk",
+          "styrker": "docs/editorial/cultural-transmission-release-2026-09-28.md#styrker",
+          "stilprofil": "docs/editorial/cultural-transmission-release-2026-09-28.md#stilprofil",
+          "konkrete_svakheter": "docs/editorial/cultural-transmission-release-2026-09-28.md#konkrete-svakheter",
+          "forbedringsgrep": "docs/editorial/cultural-transmission-release-2026-09-28.md#forbedringsgrep",
+          "revidert_eksempelversjon": "docs/editorial/cultural-transmission-release-2026-09-28.md#revidert-eksempelversjon"
+        },
+        "decision": "KEEP",
+        "ariadne_style_readiness": "pass_complete",
+        "source_status": "READY_FOR_EDITORIAL_REVIEW",
+        "source_scope": "Dependent generated navigation only; title/summary/date/link are inherited from the already reviewed publication registry entry",
+        "publication_approval": {
+          "approved": true,
+          "by": "Bjørn Moe Aldema",
+          "reference": "Current conversation 2026-09-28: publish the cultural-transmission Experimental Newsroom story; authority applied to this exact deterministic dependent navigation version as necessary publication surface.",
+          "sha256": "13039e3456c6d6e79fde27c6753ebbe166c261605a7bf302438c2b5b7896d53f"
+        },
+        "previous_review": {
+          "case_id": "EXPNR_ATRIET_AI_CONCEPTUAL_WORK_001",
+          "sha256": "dc0bdcc5436e498c76d8bf8b4d837019db12123b3d552a7cfd58e51bf03c21bd",
+          "reviewer": "Codex applying editorial, Ariadne and Alma functions; same-assistant review",
+          "execution_context": "Article or bounded dependent navigation update; no independent review claimed",
+          "reviewed_at": "2026-09-27",
+          "comparison_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#helhetsinntrykk",
+          "reader_journey_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#reader-journey-and-semantic-control",
+          "semantic_control_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#reader-journey-and-semantic-control",
+          "loaded_modules": [
+            {
+              "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+              "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+              "application_ref": "docs/editorial/atriet-ai-release-2026-09-27.md"
+            }
+          ],
+          "stages": {
+            "helhetsinntrykk": "docs/editorial/atriet-ai-release-2026-09-27.md#helhetsinntrykk",
+            "styrker": "docs/editorial/atriet-ai-release-2026-09-27.md#styrker",
+            "stilprofil": "docs/editorial/atriet-ai-release-2026-09-27.md#stilprofil",
+            "konkrete_svakheter": "docs/editorial/atriet-ai-release-2026-09-27.md#konkrete-svakheter",
+            "forbedringsgrep": "docs/editorial/atriet-ai-release-2026-09-27.md#forbedringsgrep",
+            "revidert_eksempelversjon": "docs/editorial/atriet-ai-release-2026-09-27.md#revidert-eksempelversjon"
+          },
+          "decision": "COMBINE",
+          "ariadne_style_readiness": "pass_complete",
+          "source_status": "READY_FOR_EDITORIAL_REVIEW",
+          "publication_approval": {
+            "approved": true,
+            "by": "Bjørn Moe Aldema",
+            "reference": "Explicit instruction 2026-09-27 01:38 CEST: publish this Atriet story if sufficient; necessary newsroom merge included. 01:41 and 01:42 additions incorporated. Authority applied to this exact final version after editorial checks.",
+            "sha256": "dc0bdcc5436e498c76d8bf8b4d837019db12123b3d552a7cfd58e51bf03c21bd"
+          }
+        }
       }
     }
   },
@@ -2432,6 +2738,108 @@
       "by": "Bjørn Moe Aldema",
       "reference": "Current conversation 2026-09-28: send all relevant material from this source line to Experimental Newsroom, apply the full newsroom procedure and publish; authority applied after editorial controls to this exact final page hash.",
       "sha256": "c33e47cf2a67ca2eb3ba2ddfa8c4499e28d082ad12e7ecbee9a67cc0b6c6c121"
+    }
+  },
+  "public/articles/banken-er-en-institusjon-2026.html": {
+    "case_id": "institusjon-banken-2026-exact-repaired-candidate",
+    "sha256": "9b6b7dcfb67c6843dce96691aa0d87e4eb4e49a8eab24695897466af9db79ae1",
+    "git_blob_sha": "60844e3ee99739196d94b3f35bbda026be44caa4",
+    "reviewer": "Ariadne six-stage language/reader control with separate read-only AI evaluator; no independent human peer-review claim",
+    "execution_context": "Exact candidate bytes at PR #84 head 70929474a9b3acf98a7aa4458315fa551fbe252f. PASS_BOUNDED after bounded repairs; publication approval intentionally held.",
+    "reviewed_at": "2026-10-02",
+    "comparison_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+    "reader_journey_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+    "semantic_control_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+    "loaded_modules": [
+      {
+        "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+        "revision": "course-manifest-0.2@2026-09-16",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+        "revision": "source-snapshot-d93be446e6e8aa9e14327793bd1ad1408271d041",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
+        "revision": "course-manifest-0.2@2026-09-16",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494"
+      },
+      {
+        "source": "oos-trained-agent-runtime/independent_lab_evaluator_module.md",
+        "revision": "course-manifest-0.2@2026-09-16",
+        "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "styrker": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "stilprofil": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "konkrete_svakheter": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "forbedringsgrep": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "revidert_eksempelversjon": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Exact Norwegian article: source, claim boundaries, reader journey, calculations, source numbering, links and accessible tables checked after bounded repairs.",
+    "publication_approval": {
+      "approved": false,
+      "by": "PENDING — Bjørn Moe Aldema",
+      "reference": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5944666494",
+      "sha256": "9b6b7dcfb67c6843dce96691aa0d87e4eb4e49a8eab24695897466af9db79ae1"
+    },
+    "previous_review": {
+      "case_id": "institusjon-banken-2026-friday-candidate",
+      "sha256": "6b90ae78da8b3bedbf0de119a48b2159fa8139db05b64a6e10d7bd80b20058e2",
+      "git_blob_sha": "6ed3361656cc4b525ff52f8a9986f1df7d4a0fee",
+      "reviewer": "Ariadne six-stage language/reader control with separate read-only AI evaluator; no independent human peer-review claim",
+      "execution_context": "Exact candidate bytes at PR #84 head e2e5d071ce1d88fa8985f7b81edeb2505203806a. PASS_BOUNDED for source/semantics/language/reader journey; publication approval intentionally held.",
+      "reviewed_at": "2026-09-29",
+      "comparison_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+      "reader_journey_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+      "semantic_control_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+      "loaded_modules": [
+        {
+          "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+          "revision": "course-manifest-0.2@2026-09-16",
+          "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007"
+        },
+        {
+          "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+          "revision": "source-snapshot-d93be446e6e8aa9e14327793bd1ad1408271d041",
+          "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007"
+        },
+        {
+          "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
+          "revision": "course-manifest-0.2@2026-09-16",
+          "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007"
+        },
+        {
+          "source": "oos-trained-agent-runtime/independent_lab_evaluator_module.md",
+          "revision": "course-manifest-0.2@2026-09-16",
+          "application_ref": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007"
+        }
+      ],
+      "stages": {
+        "helhetsinntrykk": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "styrker": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "stilprofil": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "konkrete_svakheter": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "forbedringsgrep": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "revidert_eksempelversjon": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007"
+      },
+      "decision": "KEEP",
+      "ariadne_style_readiness": "pass_complete",
+      "source_status": "READY_FOR_EDITORIAL_REVIEW",
+      "source_scope": "Document-based Norwegian bank/institution analysis. Legal status, SSB sector categories, editorial analytic term, household burden and counterfinding remain distinct. No post-September household effect or publication claimed.",
+      "publication_approval": {
+        "approved": false,
+        "by": "PENDING — Bjørn Moe Aldema",
+        "reference": "https://github.com/novosilencio-cmyk/newsroom-web/pull/84#issuecomment-5890841007",
+        "sha256": "6b90ae78da8b3bedbf0de119a48b2159fa8139db05b64a6e10d7bd80b20058e2"
+      }
     }
   }
 }

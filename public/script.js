@@ -11,12 +11,15 @@ fetch('content/articles.json')
     return response.json();
   })
   .then(articles => {
+    const staticCards = new Map(Array.from(articleGrid.querySelectorAll("[data-article-id]")).map(card => [card.dataset.articleId, card]));
+    articleGrid.replaceChildren();
     articles
-      .sort((a, b) => a.priority - b.priority)
+      .sort((a, b) => b.published.localeCompare(a.published) || (a.priority ?? 999) - (b.priority ?? 999))
       .forEach(article => {
-        // A featured story has a static card so it remains available without JS.
-        if (Array.from(articleGrid.querySelectorAll('[data-article-id]'))
-          .some(card => card.dataset.articleId === article.id)) return;
+        if (staticCards.has(article.id)) {
+          articleGrid.appendChild(staticCards.get(article.id));
+          return;
+        }
         const card = document.createElement('article');
         card.className = 'article-card';
         card.innerHTML = `

@@ -7,7 +7,7 @@ from urllib.parse import urlsplit
 
 COUNTRY_ALIASES = {'Norway': 'Norge', 'Brazil': 'Brasil', 'Denmark': 'Danmark', 'United States': 'USA', 'United Kingdom': 'Storbritannia', 'Global economy': 'Verdensøkonomien'}
 
-LANGUAGES = {'nb': 'Norsk', 'en': 'English', 'fr': 'Français'}
+LANGUAGES = {'nb': 'Norsk', 'en': 'English', 'fr': 'Français', 'de': 'Deutsch', 'ja': '日本語', 'ko': '한국어'}
 # Published reader destinations, deliberately excluding embedded viewers and drafts.
 SECTIONS = [
     ('start', 'Start her', 'Start here', [
@@ -16,18 +16,12 @@ SECTIONS = [
     ('series', 'Serier', 'Series', [
         ('series/institusjon/nb/', 'Institusjon — makt, kunnskap og staten', 'nb'),
         ('series/institusjon/en/', 'Institution — power, knowledge and the state', 'en')]),
-    ('art', 'Kunst og Atriet', 'Art and Atriet', [
-        ('atriet.html', 'Atriet — et rom som begynner før bygningen', 'nb'),
-        ('art/skisse-2005.html', 'Fra strek til relieff', 'nb'),
-        ('art/skisse-2005.en.html', 'From line to relief', 'en'),
-        ('art/love-me-to-lunch.html', 'Love me to lunch', 'nb'),
-        ('art/love-me-to-lunch.en.html', 'Love me to lunch', 'en')]),
+    ('atriet', 'Atriet', 'Atriet', [('atriet.html', 'Atriet — et rom som begynner før bygningen', 'nb')]),
     ('learning', 'Kurs og deltakelse', 'Courses and participation', [
         ('courses/', 'Free writing courses', 'en'),
         ('courses/course-of-the-day.html', 'Daily writing practice', 'en'),
         ('courses/write-vividly-without-inventing.html', 'Write vividly without inventing', 'en'),
-        ('courses/news-entry-public-facts.html', 'News entry and public facts', 'en'),
-        ('opportunities/writing-course-pilot.html', 'Writing course pilot', 'en')]),
+        ('courses/news-entry-public-facts.html', 'News entry and public facts', 'en')]),
     ('about', 'Om redaksjonen', 'About the newsroom', [
         ('index.html#about', 'About us', 'en'),
         ('how-we-work.html', 'How we work', 'en'),
@@ -113,8 +107,8 @@ def render(public, articles, lang):
     no = lang == 'nb'
     title = 'Finn frem' if no else 'Find your way'
     filename = 'sitemap.html' if no else 'sitemap.en.html'
-    intro = ('Finn saker, serier, kunst og kurs. Språk er merket ved lenkene.' if no else
-             'Explore stories, series, art and courses. Reading languages are shown beside the links.')
+    intro = ('Finn saker, serier, Atriet og kurs. Språk er merket ved lenkene.' if no else
+             'Explore stories, series, Atriet and courses. Reading languages are shown beside the links.')
     jump = [('stories', 'Alle saker' if no else 'All stories')] + [(s[0], s[1] if no else s[2]) for s in SECTIONS]
     groups = []
     rows = []
@@ -157,8 +151,8 @@ def render(public, articles, lang):
 <main id="main" tabindex="-1">
 <section class="map-intro"><p class="kicker">{'Nettstedskart' if no else 'Site map'}</p><h1>{title}</h1><p class="map-deck">{intro}</p></section>
 <form class="map-search" role="search" hidden>
-<div class="map-search-field"><label for="map-query">{'Søk i oversikten' if no else 'Search this guide'}</label><input id="map-query" type="search" autocomplete="off" aria-describedby="map-help" placeholder="{'Prøv skolemat, Taiwan eller kunst' if no else 'Try school meals, Taiwan or art'}"/></div>
-<div class="map-language-field"><label for="map-language">{'Lesespråk' if no else 'Reading language'}</label><select id="map-language"><option value="">{'Alle språk' if no else 'All languages'}</option><option value="nb">Norsk</option><option value="en">English</option><option value="fr">Français</option></select></div>
+<div class="map-search-field"><label for="map-query">{'Søk i oversikten' if no else 'Search this guide'}</label><input id="map-query" type="search" autocomplete="off" aria-describedby="map-help" placeholder="{'Prøv skolemat, Taiwan eller kurs' if no else 'Try school meals, Taiwan or courses'}"/></div>
+<div class="map-language-field"><label for="map-language">{'Lesespråk' if no else 'Reading language'}</label><select id="map-language"><option value="">{'Alle språk' if no else 'All languages'}</option><option value="nb">Norsk</option><option value="en">English</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="ja">日本語</option><option value="ko">한국어</option></select></div>
 <button type="reset">{'Vis alt' if no else 'Show all'}</button>
 <p id="map-help">{'Søker i titler, korte beskrivelser og landnavn i denne oversikten.' if no else 'Searches titles, short descriptions and country names in this guide.'}</p>
 <p id="map-results" role="status" aria-live="polite" aria-atomic="true"></p>

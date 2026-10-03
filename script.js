@@ -11,8 +11,10 @@ fetch('content/articles.json')
     return response.json();
   })
   .then(articles => {
+    const staticCards = new Map(Array.from(articleGrid.querySelectorAll("[data-article-id]")).map(card => [card.dataset.articleId, card]));
+    articleGrid.replaceChildren();
     articles
-      .sort((a, b) => a.priority - b.priority)
+      .sort((a, b) => b.published.localeCompare(a.published) || (a.priority ?? 999) - (b.priority ?? 999))
       .forEach(article => {
         const card = document.createElement('article');
         card.className = 'article-card';

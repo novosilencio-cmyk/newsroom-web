@@ -87,3 +87,6 @@
 .atriet-provenance p{max-width:780px;margin:0;font:500 12px/1.6 Arial,sans-serif;color:#3f4943}
 @media(max-width:900px){.atriet-page-hero{grid-template-columns:1fr}.atriet-page-hero__visual{max-width:680px}.atriet-page-hero__visual img{max-height:none}.atriet-chapter{grid-template-columns:100px minmax(0,1fr)}.atriet-room-list{grid-column:2}}
 @media(max-width:620px){.atriet-page-hero{padding-top:42px}.atriet-page-hero h1{font-size:clamp(3rem,16vw,5.2rem)}.atriet-chapter{grid-template-columns:1fr;padding-top:60px;padding-bottom:72px}.atriet-chapter__label{display:flex;align-items:baseline;gap:14px}.atriet-chapter__label span{font-size:2.4rem}.atriet-chapter__label p{margin:0}.atriet-room-list{grid-column:1}.atriet-immersion{padding-top:100px;padding-bottom:110px}.atriet-invitation{padding-left:24px;padding-right:24px}}
+
+/* A quiet editorial signature immediately beneath the masthead double rule. */
+.editorial-note{margin:0;padding:13px 0 12px;border-bottom:1px solid #171717;color:#3e3a33;font:italic clamp(.92rem,1.5vw,1.05rem)/1.45 Georgia,serif}.editorial-note strong{font-style:normal;color:#171717}

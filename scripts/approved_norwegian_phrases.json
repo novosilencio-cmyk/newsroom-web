@@ -52,5 +52,24 @@
   "public/privacy.html": [
     "Umami opplyser at IP-adressen brukes til beregning av enkelte måltall, men ikke lagres i analysedata.",
     "For å beregne statistikk mottar Umami også tekniske opplysninger fra nettleseren, blant annet IP-adresse og nettleserdata. Umami opplyser at IP-adressen brukes til beregning av enkelte måltall, men ikke lagres i analysedata. Umami beskriver besøksmålingen som uten informasjonskapsler. Samtykkevalget lagres lokalt i nettleseren."
+  ],
+  "public/articles/hvem-er-det-vi-ber-om-a-bruke-mindre-2026.html": [
+    "Regnestykket sier heller ikke hva noen vil velge bort. Tenk to husholdninger som får samme ekstra renteutgift: Den ene kan dekke den av oppsparte penger, mens den andre må kutte i forbruket. Forskjellen mellom dem er nettopp noe en undersøkelse av virkningen må fange opp.",
+    "Tre banker er ikke hele markedet. Kunngjøringene viser hva disse bankene har besluttet og hvilke datoer de oppgir. De dokumenterer ikke at alle berørte kunder allerede har fått varsel. Nordea og DNB skriver at kundene vil få informasjon; SpareBank 1 Østlandet beskriver hvordan kundene varsles. Vi har ikke kontrollert individuelle kundevarsler eller kontotrekk.",
+    "November er ikke en pauseknapp",
+    "Datoen en ny rente begynner å løpe, er ikke nødvendigvis datoen for første høyere trekk fra kundens konto. Kunngjøringene alene fastslår heller ikke når en husholdning endrer forbruket.",
+    "En låntaker kan for eksempel begynne å spare før den høyere renten trer i kraft. Det er en mulig tilpasning, ikke noe disse kildene viser at husholdningene faktisk gjør nå. Norges Bank beskriver dessuten hvordan forventninger, valutakurs og finansieringsvilkår kan formidle rentevirkninger gjennom økonomien.",
+    "Et forbruksfall tidlig i oktober kan derfor ikke uten videre tilskrives høyere renter som først begynner å løpe på de aktuelle eksisterende lånene i november. Men kalenderen beviser heller ikke at rentehevingen er uten virkning frem til da.",
+    "Forskningsfunnet viser hvorfor ulik renteeksponering er relevant for forbruket. Det er ikke en prognose for denne høsten. Vi kan ikke bare dele resultatet på fire og kalle det virkningen av septemberøkningen på 0,25 prosentpoeng. Funnene og konklusjonene tilhører forskerne, ikke rentekomiteen.",
+    "Tallene beskriver rentenivået før septembervedtaket. De viser ikke virkningen av novemberendringene, og rentestatistikk alene forteller heller ikke hvem som kutter i forbruket.",
+    "Belastningen er en del av vurderingen, ikke hele dommen",
+    "At låntakere får høyere utgifter, avgjør derfor ikke alene om vedtaket var riktig eller galt.",
+    "Høyere innskuddsrente er heller ikke det samme som at en husholdning samlet er en vinner. Renteendringer kan også påvirke arbeidsinntekt, aktivitet og formuesverdier. Den direkte renteregningen er bare én del av bildet.",
+    "Seriens neste spørsmål er konkret: Får kundene de varslede renteendringene, og hvordan tilpasser husholdninger med ulik økonomi seg? Bankenes datoer gir et holdepunkt for oppfølging, ikke en fasit. Også etter november må en undersøkelse skille rentevirkningen fra andre endringer i inntekter, priser og forbruk.",
+    "Rentevedtaket er felles. Handlingsrommet er det ikke. Skal vi forstå innstrammingen, må vi følge både pengene og menneskene som skal få hverdagen til å gå rundt.",
+    "Ingen egne intervjuer er brukt. De tre bankene er eksempler på gjennomføring, ikke en full måling av bankmarkedet."
+  ],
+  "public/series/virkemidlene/nb/index.html": [
+    "Samme rentevedtak gir ulikt handlingsrom. Tre bankers kunngjøringer viser når nye renter skal begynne å løpe på eksisterende lån. Det er ikke det samme som når husholdningene endrer forbruket."
   ]
 }

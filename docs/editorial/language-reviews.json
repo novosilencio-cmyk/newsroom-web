@@ -481,7 +481,7 @@
   },
   "public/index.html": {
     "case_id": "frontpage-ecotun-release-2026-10-03",
-    "sha256": "b528df4b074003e906dbde3d0b454e57a598ca7956c4a1cc7ba54557a328b3c1",
+    "sha256": "b81aa80c2ad79bb715791d5f83a0505b4eb4910549f3beba5fc8ae18d9a8c6d5",
     "reviewer": "Integrating assistant, bounded page and reader-path review; earlier language receipts preserved",
     "execution_context": "Exact post-build bytes reconstructed from current main and the reviewed Økotun PR #85; same-assistant bounded review, no independent or native-language proofreading claimed",
     "reviewed_at": "2026-10-03",
@@ -511,7 +511,7 @@
       "approved": true,
       "by": "Bjørn Moe Aldema",
       "reference": "Current conversation, 2026-10-03: remove pilot story and Art, place latest stories first, publish six-language Økotun; exact page binding recorded by executing editor",
-      "sha256": "b528df4b074003e906dbde3d0b454e57a598ca7956c4a1cc7ba54557a328b3c1"
+      "sha256": "b81aa80c2ad79bb715791d5f83a0505b4eb4910549f3beba5fc8ae18d9a8c6d5"
     },
     "previous_review": {
       "case_id": "EN-LYDLEVETID-20260920",

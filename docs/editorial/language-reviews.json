@@ -2123,40 +2123,38 @@
     "formatting_confirmation_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#validation-scope"
   },
   "public/series/virkemidlene/nb/index.html": {
-    "case_id": "virkemidlene-series-nb-2026-launch",
-    "sha256": "ba77b0b93a7984e497ec2d2e47cc7d53192bc733e321300d4406893f27074d60",
-    "reviewer": "Integrating assistant applying Ariadne language workflow; Bjørn Moe Aldema final human publication approval",
-    "execution_context": "Exact launch review for Virkemidlene series and first rate story; same-assistant editorial/language control, not independent human peer review.",
-    "reviewed_at": "2026-09-25",
-    "comparison_ref": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#helhetsinntrykk",
-    "reader_journey_ref": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#styrker",
-    "semantic_control_ref": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#semantic-control",
+    "case_id": "VIRKEMIDLENE-DEL2-W-R2-20261003",
+    "sha256": "80bcea0865c2eacafcf462ee96470e9608a793d69163a0fbcb8d9307e925f900",
+    "reviewer": "Diana / same-assistant editorial and Ariadne-method review",
+    "execution_context": "Current publication conversation; same assistant, not independent review",
+    "reviewed_at": "2026-10-03",
+    "comparison_ref": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#comparison",
+    "reader_journey_ref": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#semantic-and-source-control",
     "loaded_modules": [
       {
-        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
-        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#helhetsinntrykk"
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#method-application"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#helhetsinntrykk",
-      "styrker": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#styrker",
-      "stilprofil": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#stilprofil",
-      "konkrete_svakheter": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#konkrete-svakheter",
-      "forbedringsgrep": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#forbedringsgrep",
-      "revidert_eksempelversjon": "docs/editorial/virkemidlene-launch-review-2026-09-25.md#revidert-eksempelversjon"
+      "helhetsinntrykk": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#helhetsinntrykk",
+      "styrker": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#styrker",
+      "stilprofil": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#revidert-eksempelversjon"
     },
     "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Norwegian series presentation.",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current conversation 2026-09-25: make the new Thursday-series presentation ready and publish it with the first story",
-      "sha256": "ba77b0b93a7984e497ec2d2e47cc7d53192bc733e321300d4406893f27074d60"
-    },
-    "formatting_confirmation_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#validation-scope"
+      "reference": "https://github.com/novosilencio-cmyk/newsroom-web/pull/80#issuecomment-5973182216",
+      "sha256": "80bcea0865c2eacafcf462ee96470e9608a793d69163a0fbcb8d9307e925f900"
+    }
   },
   "public/articles/nar-minnet-blir-natid-2026.html": {
     "case_id": "memory-human-ai-source-monitoring-2026-09-26",
@@ -2587,6 +2585,40 @@
       "by": "Bjørn Moe Aldema",
       "reference": "docs/editorial/ecotun-multilingual-release-2026-09-29.md#scope-and-authority",
       "sha256": "03256414f2fccefcebcea01de7ee4ab0638ca31da5957fc3d748b8d75ae9c6f2"
+    }
+  },
+  "public/articles/hvem-er-det-vi-ber-om-a-bruke-mindre-2026.html": {
+    "case_id": "VIRKEMIDLENE-DEL2-W-R2-20261003",
+    "sha256": "33460c9a0b1c2833f65242054fbf84970ecf680543ebcf34022f55e10c799ac8",
+    "reviewer": "Diana / same-assistant editorial and Ariadne-method review",
+    "execution_context": "Current publication conversation; same assistant, not independent review",
+    "reviewed_at": "2026-10-03",
+    "comparison_ref": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#comparison",
+    "reader_journey_ref": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#semantic-and-source-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "713f6796610652407037c7a0d69385e29d30f727",
+        "application_ref": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#method-application"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#helhetsinntrykk",
+      "styrker": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#styrker",
+      "stilprofil": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#revidert-eksempelversjon"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "https://github.com/novosilencio-cmyk/newsroom-web/pull/80#issuecomment-5973182216",
+      "sha256": "33460c9a0b1c2833f65242054fbf84970ecf680543ebcf34022f55e10c799ac8"
     }
   }
 }

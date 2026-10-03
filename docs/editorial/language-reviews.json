@@ -1929,43 +1929,78 @@
     }
   },
   "public/support-terms.html": {
-    "case_id": "reader-navigation-2026-09-21",
-    "sha256": "7bfa66172b9a4830d807d385ea3ec7bdc05a9278e9a513a1172e09b68b733cbf",
-    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
-    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
-    "reviewed_at": "2026-09-21",
-    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
-    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
-    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "case_id": "vipps-support-terms-2026-10-03",
+    "sha256": "ad05428677a73a5b8ab065849e23c9f7764f8aa45af37288aa7ac2a5748938a2",
+    "reviewer": "Diana/Eva object control; Ariadne six-stage same-assistant language review; Bjørn Moe Aldema owner approval",
+    "execution_context": "Same-assistant bounded legal-clarity and reader-journey review; official consumer-law sources checked; no independent lawyer or separate human reviewer claimed",
+    "reviewed_at": "2026-10-03",
+    "comparison_ref": "docs/editorial/vipps-support-terms-release-2026-10-03.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/vipps-support-terms-release-2026-10-03.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/vipps-support-terms-release-2026-10-03.md#semantic-control-and-preservation",
     "loaded_modules": [
       {
-        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
         "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
-      },
-      {
-        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
-        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
-        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+        "application_ref": "docs/editorial/vipps-support-terms-release-2026-10-03.md#review-execution"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      "helhetsinntrykk": "docs/editorial/vipps-support-terms-release-2026-10-03.md#helhetsinntrykk",
+      "styrker": "docs/editorial/vipps-support-terms-release-2026-10-03.md#styrker",
+      "stilprofil": "docs/editorial/vipps-support-terms-release-2026-10-03.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/vipps-support-terms-release-2026-10-03.md#konkrete-svakheter-i-baseline",
+      "forbedringsgrep": "docs/editorial/vipps-support-terms-release-2026-10-03.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/vipps-support-terms-release-2026-10-03.md#revidert-eksempelversjon"
     },
-    "decision": "KEEP",
+    "decision": "COMBINE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+    "source_scope": "Support-terms operational clarity; preserves gift-without-counter-performance model; legal classification not overstated",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
-      "sha256": "7bfa66172b9a4830d807d385ea3ec7bdc05a9278e9a513a1172e09b68b733cbf"
+      "reference": "docs/editorial/vipps-support-terms-release-2026-10-03.md#scope-and-authority",
+      "sha256": "ad05428677a73a5b8ab065849e23c9f7764f8aa45af37288aa7ac2a5748938a2"
+    },
+    "previous_review": {
+      "case_id": "reader-navigation-2026-09-21",
+      "sha256": "7bfa66172b9a4830d807d385ea3ec7bdc05a9278e9a513a1172e09b68b733cbf",
+      "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
+      "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
+      "reviewed_at": "2026-09-21",
+      "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+      "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
+      "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+      "loaded_modules": [
+        {
+          "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
+          "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
+          "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+        },
+        {
+          "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
+          "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
+          "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+        }
+      ],
+      "stages": {
+        "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+        "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+        "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+        "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+        "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
+        "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      },
+      "decision": "KEEP",
+      "ariadne_style_readiness": "pass_complete",
+      "source_status": "READY_FOR_EDITORIAL_REVIEW",
+      "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
+      "publication_approval": {
+        "approved": true,
+        "by": "Bjørn Moe Aldema",
+        "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
+        "sha256": "7bfa66172b9a4830d807d385ea3ec7bdc05a9278e9a513a1172e09b68b733cbf"
+      }
     }
   },
   "public/support.html": {

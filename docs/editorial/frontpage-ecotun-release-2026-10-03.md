@@ -2,7 +2,7 @@
 
 ## Scope and authority
 
-Bjørn Moe Aldema instructed the newsroom in the current conversation to remove the writing-course pilot story from reader discovery, put recent stories ahead of course promotion, turn “A newsroom built to look again” into a subtle line beneath the masthead, publish the six-language Økotun article, and remove the Art section for now. This release binds those instructions to the current site and to the existing, separately reviewed Økotun work in PR #85. The old pilot and art files are preserved for reversible editorial withdrawal; they are no longer promoted on the front page or human and XML site maps. Atriet remains a separate project.
+Bjørn Moe Aldema instructed the newsroom in the current conversation to remove the writing-course pilot story from reader discovery, put recent stories ahead of course promotion, turn “A newsroom built to look again” into a subtle line beneath the masthead, publish the six-language Økotun article, and remove the Art section for now. This release binds those instructions to the current site and to the existing, separately reviewed Økotun work in PR #85. The pilot invitation is withdrawn from the public site and remains recoverable in repository history. Art files remain directly addressable, while the Art section is removed from the front page and site maps. Atriet remains a separate project.
 
 ## Six-stage review
 
@@ -19,7 +19,7 @@ On the international front page the double masthead line leads to one subdued se
 
 ## Semantic control
 
-Økotun is an unbuilt concept, not a completed neighbourhood or evidence of feasibility. The six article bodies and existing exact-page reviews from PR #85 are carried over without changes. Summaries state that the project is unbuilt and ask about design and responsibility; none asserts implementation. The pilot invitation and art pages remain directly addressable while the visible section and discovery links are withdrawn. The current user instruction covers the page placement and public release; this receipt records the executing editor's version binding, not a new independent human proofread.
+Økotun is an unbuilt concept, not a completed neighbourhood or evidence of feasibility. The six article bodies and existing exact-page reviews from PR #85 are carried over without changes. Summaries state that the project is unbuilt and ask about design and responsibility; none asserts implementation. The pilot invitation is withdrawn from the public files. Art pages remain directly addressable while their section and discovery links are withdrawn. The current user instruction covers the page placement and public release; this receipt records the executing editor's version binding, not a new independent human proofread.
 
 ## Technical and version checks
 

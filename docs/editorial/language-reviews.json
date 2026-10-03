@@ -1930,7 +1930,7 @@
   },
   "public/support-terms.html": {
     "case_id": "vipps-support-terms-2026-10-03",
-    "sha256": "f744b9f5d952e979246b18b37dbe615ed2837dd7dd477938236f2ecce02a26fb",
+    "sha256": "ad05428677a73a5b8ab065849e23c9f7764f8aa45af37288aa7ac2a5748938a2",
     "reviewer": "Diana/Eva object control; Ariadne six-stage same-assistant language review; Bjørn Moe Aldema owner approval",
     "execution_context": "Same-assistant bounded legal-clarity and reader-journey review; official consumer-law sources checked; no independent lawyer or separate human reviewer claimed",
     "reviewed_at": "2026-10-03",
@@ -1960,7 +1960,7 @@
       "approved": true,
       "by": "Bjørn Moe Aldema",
       "reference": "docs/editorial/vipps-support-terms-release-2026-10-03.md#scope-and-authority",
-      "sha256": "f744b9f5d952e979246b18b37dbe615ed2837dd7dd477938236f2ecce02a26fb"
+      "sha256": "ad05428677a73a5b8ab065849e23c9f7764f8aa45af37288aa7ac2a5748938a2"
     },
     "previous_review": {
       "case_id": "reader-navigation-2026-09-21",

@@ -8,7 +8,7 @@ Bjørn Moe Aldema ordered completion of the Vipps support-terms work and clarifi
 on 3 October 2026 that an implementation order includes merge/publication when
 the requested object is mature and the controls pass, unless merge or publication
 is expressly reserved. This record binds that approval only to the page digest
-`f744b9f5d952e979246b18b37dbe615ed2837dd7dd477938236f2ecce02a26fb`.
+`ad05428677a73a5b8ab065849e23c9f7764f8aa45af37288aa7ac2a5748938a2`.
 
 The change does not activate Vipps, create a payment credential or verify a
 successful payment. Those remain later operational gates after Vipps approval.
@@ -127,7 +127,7 @@ Source status: `READY_FOR_EDITORIAL_REVIEW`.
 Verified on the branch:
 
 - exact page digest:
-  `f744b9f5d952e979246b18b37dbe615ed2837dd7dd477938236f2ecce02a26fb`;
+  `ad05428677a73a5b8ab065849e23c9f7764f8aa45af37288aa7ac2a5748938a2`;
 - recipient and organisation number present;
 - no-counter-performance statement present;
 - 14-day refund route present;

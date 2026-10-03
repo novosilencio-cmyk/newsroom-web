@@ -15,10 +15,11 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
-      - name: Materialize only the two reviewed receipts
+      - name: Materialize only the two reviewed receipts and exact approved phrases
         run: |
+          python3 scripts/wr2-approved-phrases-staging-once.py
           python3 - <<'PY'
-          import copy, hashlib, json, runpy, subprocess
+          import copy, hashlib, json, subprocess
           from pathlib import Path
           registry = Path('docs/editorial/language-reviews.json')
           before = json.loads(registry.read_text(encoding='utf-8'))
@@ -68,7 +69,7 @@ jobs:
           subprocess.run(['python3', '-m', 'unittest', 'discover', '-s', 'tests', '-p', 'test_*.py'], check=True)
           print('W-R2: exact page hashes preserved; existing unrelated receipt objects unchanged; ordinary gates passed.')
           PY
-      - name: Commit only the registry on the fixed release branch
+      - name: Commit only the two registries on the fixed release branch
         env:
           EXPECTED_HEAD: ${{ github.event.pull_request.head.sha }}
         run: |
@@ -76,8 +77,8 @@ jobs:
           test "$(git rev-parse HEAD)" = "$EXPECTED_HEAD"
           remote_head="$(git ls-remote origin refs/heads/release/virkemidlene-wr2-20261003 | cut -f1)"
           test "$remote_head" = "$EXPECTED_HEAD"
-          git add -- docs/editorial/language-reviews.json
+          git add -- docs/editorial/language-reviews.json scripts/approved_norwegian_phrases.json
           if git diff --cached --quiet; then exit 0; fi
-          test "$(git diff --cached --name-only)" = 'docs/editorial/language-reviews.json'
-          git -c user.name='Experimental Newsroom receipt staging' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Bind approved W-R2 pages to reviewed exact-version receipts'
+          test "$(git diff --cached --name-only)" = "$(printf '%s\n' 'docs/editorial/language-reviews.json' 'scripts/approved_norwegian_phrases.json')"
+          git -c user.name='Experimental Newsroom receipt staging' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Bind approved W-R2 pages and exact editorial phrase exceptions'
           git push origin HEAD:refs/heads/release/virkemidlene-wr2-20261003

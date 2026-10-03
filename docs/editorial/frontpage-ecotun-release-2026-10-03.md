@@ -11,7 +11,7 @@ Bjørn Moe Aldema instructed the newsroom in the current conversation to remove 
 3. **Stilprofil:** The masthead carries a restrained editorial signature. Story titles, dates, places and clear links carry the reading path. Norwegian and English entrance pages use their own concise language.
 4. **Konkrete svakheter:** The former JavaScript order relied on manually assigned priority and placed recent pieces below older static cards. The course pilot appeared in three reader entry points. Art was advertised as a full section despite Bjørn's wish to pause it.
 5. **Forbedringsgrep:** Sort registry cards by publication date, preserve static cards as no-JavaScript fallbacks, move the course teaser below the World story grid, remove pilot promotion from the course hub and site guide, and remove Art navigation, feature block and XML entries. Keep the six Økotun article bodies from reviewed PR #85 without editorial expansion.
-6. **Revidert eksempelversjon:** “Look again. Follow what changes, who does the work and what remains uncertain.” / “Se en gang til. Følg det som endres, hvem som gjør arbeidet, og hva vi ennå ikke vet.” These are short editorial signposts, not separate stories.
+6. **Revidert eksempelversjon:** “Look again. Follow what changes, who does the work and what remains uncertain.” / “Se en gang til. Følg det som endres, hvem som gjør arbeidet, og hva som ennå er uavklart.” These are short editorial signposts, not separate stories.
 
 ## Reader journey
 

@@ -1354,44 +1354,49 @@
     }
   },
   "public/norway/index.html": {
-    "case_id": "frontpage-ecotun-release-2026-10-03",
-    "sha256": "6e9a601c40406e9a1da07e9ee0fceaf985e7b51516a74810f011e9e7e48634b3",
-    "reviewer": "Integrating assistant, bounded page and reader-path review; earlier language receipts preserved",
-    "execution_context": "Exact post-build bytes reconstructed from current main and the reviewed Økotun PR #85; same-assistant bounded review, no independent or native-language proofreading claimed",
-    "reviewed_at": "2026-10-03",
-    "comparison_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-    "reader_journey_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#semantic-control",
+    "case_id": "NO07-RELEASE-20261004",
+    "sha256": "a0c031693b152bd326d78d52b9fc34f31019559acc42d4a2a1a7b436363e54a4",
+    "reviewer": "Executing assistant with loaded Ariadne competence; separate AI source review",
+    "execution_context": "Language editing and final integration in primary assistant; independent AI execution context for bounded source review; no licensed medical/legal review or reader-effect claim",
+    "reviewed_at": "2026-10-04",
+    "comparison_ref": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+    "reader_journey_ref": "docs/editorial/no07-release-2026-10-04.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/no07-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review"
+        "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+        "revision": "runtime-read-2026-10-04",
+        "application_ref": "docs/editorial/no07-release-2026-10-04.md#six-stages"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
+        "revision": "runtime-read-2026-10-04",
+        "application_ref": "docs/editorial/no07-release-2026-10-04.md#reader-journey"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+        "revision": "runtime-read-2026-10-04",
+        "application_ref": "docs/editorial/no07-release-2026-10-04.md#semantic-control"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "styrker": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "stilprofil": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "konkrete_svakheter": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "forbedringsgrep": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "revidert_eksempelversjon": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review"
+      "helhetsinntrykk": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+      "styrker": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+      "stilprofil": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+      "konkrete_svakheter": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+      "forbedringsgrep": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+      "revidert_eksempelversjon": "docs/editorial/no07-release-2026-10-04.md#six-stages"
     },
     "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Navigation, placement and short summaries only; Økotun article body retained from reviewed PR #85",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current conversation, 2026-10-03: remove pilot story and Art, place latest stories first, publish six-language Økotun; exact page binding recorded by executing editor",
-      "sha256": "6e9a601c40406e9a1da07e9ee0fceaf985e7b51516a74810f011e9e7e48634b3"
+      "reference": "Current chat 2026-10-04: “DFM, la nå expNR ta neste sak i køen og bearbeid saken frem til og så publiser den.” Explicit delegated authority applied to this exact completed release; not a claim of personal review of final bytes.",
+      "sha256": "a0c031693b152bd326d78d52b9fc34f31019559acc42d4a2a1a7b436363e54a4"
     },
-    "previous_review": {
-      "case_id": "cultural-transmission-dependent-navigation-2026-09-28",
-      "sha256": "19d3e0237074b649dbe6544b3c748cf3341855c29214c91694519848f91bbde1",
-      "reviewed_at": "2026-09-28"
-    }
+    "source_scope": "Bounded report of attributed proposal, dissent and ministry follow-up; dated DMP guidance. Generated discovery change inserts only the reviewed title/deck."
   },
   "public/privacy.html": {
     "case_id": "umami-privacy-review-2026-09-28-v2",
@@ -1901,84 +1906,94 @@
     }
   },
   "public/sitemap.html": {
-    "case_id": "frontpage-ecotun-release-2026-10-03",
-    "sha256": "7090df1f97bec5ac0af3fb8e41a1c46ff95e0bf5b741761669bf0f3d9ddf45ae",
-    "reviewer": "Integrating assistant, bounded page and reader-path review; earlier language receipts preserved",
-    "execution_context": "Exact post-build bytes reconstructed from current main and the reviewed Økotun PR #85; same-assistant bounded review, no independent or native-language proofreading claimed",
-    "reviewed_at": "2026-10-03",
-    "comparison_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-    "reader_journey_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#semantic-control",
+    "case_id": "NO07-RELEASE-20261004",
+    "sha256": "c1cb3f838442b8878f83a8d31703bc06638932580e3c8bc86c4b1744d60c2fcd",
+    "reviewer": "Executing assistant with loaded Ariadne competence; separate AI source review",
+    "execution_context": "Language editing and final integration in primary assistant; independent AI execution context for bounded source review; no licensed medical/legal review or reader-effect claim",
+    "reviewed_at": "2026-10-04",
+    "comparison_ref": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+    "reader_journey_ref": "docs/editorial/no07-release-2026-10-04.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/no07-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review"
+        "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+        "revision": "runtime-read-2026-10-04",
+        "application_ref": "docs/editorial/no07-release-2026-10-04.md#six-stages"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
+        "revision": "runtime-read-2026-10-04",
+        "application_ref": "docs/editorial/no07-release-2026-10-04.md#reader-journey"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+        "revision": "runtime-read-2026-10-04",
+        "application_ref": "docs/editorial/no07-release-2026-10-04.md#semantic-control"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "styrker": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "stilprofil": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "konkrete_svakheter": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "forbedringsgrep": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "revidert_eksempelversjon": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review"
+      "helhetsinntrykk": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+      "styrker": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+      "stilprofil": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+      "konkrete_svakheter": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+      "forbedringsgrep": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+      "revidert_eksempelversjon": "docs/editorial/no07-release-2026-10-04.md#six-stages"
     },
     "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Navigation, placement and short summaries only; Økotun article body retained from reviewed PR #85",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current conversation, 2026-10-03: remove pilot story and Art, place latest stories first, publish six-language Økotun; exact page binding recorded by executing editor",
-      "sha256": "7090df1f97bec5ac0af3fb8e41a1c46ff95e0bf5b741761669bf0f3d9ddf45ae"
+      "reference": "Current chat 2026-10-04: “DFM, la nå expNR ta neste sak i køen og bearbeid saken frem til og så publiser den.” Explicit delegated authority applied to this exact completed release; not a claim of personal review of final bytes.",
+      "sha256": "c1cb3f838442b8878f83a8d31703bc06638932580e3c8bc86c4b1744d60c2fcd"
     },
-    "previous_review": {
-      "case_id": "EN-LYDLEVETID-20260920",
-      "sha256": "7b76cb512156af5fb15637d96adaa7101265f6268871d9a4f25f5ffe9ae67d14",
-      "reviewed_at": "2026-10-03"
-    }
+    "source_scope": "Bounded report of attributed proposal, dissent and ministry follow-up; dated DMP guidance. Generated discovery change inserts only the reviewed title/deck."
   },
   "public/sitemap.en.html": {
-    "case_id": "frontpage-ecotun-release-2026-10-03",
-    "sha256": "4fc114550ef2a505bad0e1b32761581011cd142557304d43ad59effed51f1a6b",
-    "reviewer": "Integrating assistant, bounded page and reader-path review; earlier language receipts preserved",
-    "execution_context": "Exact post-build bytes reconstructed from current main and the reviewed Økotun PR #85; same-assistant bounded review, no independent or native-language proofreading claimed",
-    "reviewed_at": "2026-10-03",
-    "comparison_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-    "reader_journey_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#semantic-control",
+    "case_id": "NO07-RELEASE-20261004",
+    "sha256": "c0f36a88dd0e4c8d50b1955e5f65e9a5e1945778293eef954c792d8458b54992",
+    "reviewer": "Executing assistant with loaded Ariadne competence; separate AI source review",
+    "execution_context": "Language editing and final integration in primary assistant; independent AI execution context for bounded source review; no licensed medical/legal review or reader-effect claim",
+    "reviewed_at": "2026-10-04",
+    "comparison_ref": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+    "reader_journey_ref": "docs/editorial/no07-release-2026-10-04.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/no07-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review"
+        "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+        "revision": "runtime-read-2026-10-04",
+        "application_ref": "docs/editorial/no07-release-2026-10-04.md#six-stages"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
+        "revision": "runtime-read-2026-10-04",
+        "application_ref": "docs/editorial/no07-release-2026-10-04.md#reader-journey"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+        "revision": "runtime-read-2026-10-04",
+        "application_ref": "docs/editorial/no07-release-2026-10-04.md#semantic-control"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "styrker": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "stilprofil": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "konkrete_svakheter": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "forbedringsgrep": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "revidert_eksempelversjon": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review"
+      "helhetsinntrykk": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+      "styrker": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+      "stilprofil": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+      "konkrete_svakheter": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+      "forbedringsgrep": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+      "revidert_eksempelversjon": "docs/editorial/no07-release-2026-10-04.md#six-stages"
     },
     "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Navigation, placement and short summaries only; Økotun article body retained from reviewed PR #85",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current conversation, 2026-10-03: remove pilot story and Art, place latest stories first, publish six-language Økotun; exact page binding recorded by executing editor",
-      "sha256": "4fc114550ef2a505bad0e1b32761581011cd142557304d43ad59effed51f1a6b"
+      "reference": "Current chat 2026-10-04: “DFM, la nå expNR ta neste sak i køen og bearbeid saken frem til og så publiser den.” Explicit delegated authority applied to this exact completed release; not a claim of personal review of final bytes.",
+      "sha256": "c0f36a88dd0e4c8d50b1955e5f65e9a5e1945778293eef954c792d8458b54992"
     },
-    "previous_review": {
-      "case_id": "EN-LYDLEVETID-20260920",
-      "sha256": "f557a3b2bba7e88ce130bdff12c5478752ef2b7e81e1993f0085bc37b6ee0177",
-      "reviewed_at": "2026-10-03"
-    }
+    "source_scope": "Bounded report of attributed proposal, dissent and ministry follow-up; dated DMP guidance. Generated discovery change inserts only the reviewed title/deck."
   },
   "public/articles/nar-ansvaret-kommer-hjem-2026.html": {
     "case_id": "unge-hverdag-ansvar-2026-reader-opening-v2",
@@ -2622,5 +2637,50 @@
       "reference": "https://github.com/novosilencio-cmyk/newsroom-web/pull/80#issuecomment-5973182216",
       "sha256": "33460c9a0b1c2833f65242054fbf84970ecf680543ebcf34022f55e10c799ac8"
     }
+  },
+  "public/articles/tidlig-legemiddeltilgang-ekspertgruppe-2026.html": {
+    "case_id": "NO07-RELEASE-20261004",
+    "sha256": "5e526132867ac48edba86c8f2861f2e6ff105d7756fac9323d017618cb2d03d1",
+    "reviewer": "Executing assistant with loaded Ariadne competence; separate AI source review",
+    "execution_context": "Language editing and final integration in primary assistant; independent AI execution context for bounded source review; no licensed medical/legal review or reader-effect claim",
+    "reviewed_at": "2026-10-04",
+    "comparison_ref": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+    "reader_journey_ref": "docs/editorial/no07-release-2026-10-04.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/no07-release-2026-10-04.md#semantic-control",
+    "loaded_modules": [
+      {
+        "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+        "revision": "runtime-read-2026-10-04",
+        "application_ref": "docs/editorial/no07-release-2026-10-04.md#six-stages"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
+        "revision": "runtime-read-2026-10-04",
+        "application_ref": "docs/editorial/no07-release-2026-10-04.md#reader-journey"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+        "revision": "runtime-read-2026-10-04",
+        "application_ref": "docs/editorial/no07-release-2026-10-04.md#semantic-control"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+      "styrker": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+      "stilprofil": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+      "konkrete_svakheter": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+      "forbedringsgrep": "docs/editorial/no07-release-2026-10-04.md#six-stages",
+      "revidert_eksempelversjon": "docs/editorial/no07-release-2026-10-04.md#six-stages"
+    },
+    "decision": "REVISE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "Current chat 2026-10-04: “DFM, la nå expNR ta neste sak i køen og bearbeid saken frem til og så publiser den.” Explicit delegated authority applied to this exact completed release; not a claim of personal review of final bytes.",
+      "sha256": "5e526132867ac48edba86c8f2861f2e6ff105d7756fac9323d017618cb2d03d1"
+    },
+    "source_scope": "Bounded report of attributed proposal, dissent and ministry follow-up; dated DMP guidance. Generated discovery change inserts only the reviewed title/deck."
   }
 }

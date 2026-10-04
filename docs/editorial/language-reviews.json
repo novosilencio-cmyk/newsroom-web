@@ -2651,7 +2651,7 @@
   },
   "public/articles/not-necessarily-an-order-2026.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "db7d70ee2e325fa694d06064540b3a618c7a9ee52b39ba62e109c660769d1e92",
+    "sha256": "d4527b26823236f7323afe3cd18bf9024e3ebb8fe22e82f9038c128e0e7264ad",
     "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
     "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
     "reviewed_at": "2026-10-04",
@@ -2680,13 +2680,13 @@
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
-      "sha256": "db7d70ee2e325fa694d06064540b3a618c7a9ee52b39ba62e109c660769d1e92"
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes. Exact first-publication time subsequently bound to the observed successful Pages deployment at 2026-10-04T21:03:47+02:00; prose unchanged.",
+      "sha256": "d4527b26823236f7323afe3cd18bf9024e3ebb8fe22e82f9038c128e0e7264ad"
     }
   },
   "public/articles/not-necessarily-an-order-2026.en.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "2a796496e7b70c3d6fc85e1bb915298b9107ad0eeed6e8ab593c9d357fe3c25f",
+    "sha256": "197ef30299f3155d02ca0e79b0e088fc88b613eeaacc5251b1a4705e5f6b34ab",
     "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
     "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
     "reviewed_at": "2026-10-04",
@@ -2715,13 +2715,13 @@
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
-      "sha256": "2a796496e7b70c3d6fc85e1bb915298b9107ad0eeed6e8ab593c9d357fe3c25f"
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes. Exact first-publication time subsequently bound to the observed successful Pages deployment at 2026-10-04T21:03:47+02:00; prose unchanged.",
+      "sha256": "197ef30299f3155d02ca0e79b0e088fc88b613eeaacc5251b1a4705e5f6b34ab"
     }
   },
   "public/articles/not-necessarily-an-order-2026.fr.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "345be836af29e72f2747a1ba61e70d6ce0c84f24932c3b23cf5549eca2733fc6",
+    "sha256": "0aedea72999fd64968d481e7baaa854bcc81134a696202f8e8849a7032eceaf7",
     "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
     "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
     "reviewed_at": "2026-10-04",
@@ -2750,13 +2750,13 @@
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
-      "sha256": "345be836af29e72f2747a1ba61e70d6ce0c84f24932c3b23cf5549eca2733fc6"
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes. Exact first-publication time subsequently bound to the observed successful Pages deployment at 2026-10-04T21:03:47+02:00; prose unchanged.",
+      "sha256": "0aedea72999fd64968d481e7baaa854bcc81134a696202f8e8849a7032eceaf7"
     }
   },
   "public/articles/not-necessarily-an-order-2026.zh-Hans.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "881e59c0af2ed142446546e523074d06972705a42ad47dee2b65437b5db35119",
+    "sha256": "0b3f4b50bcfa95216b9aab55cb35ca3cb5800e371035dae5b962e622c23acf37",
     "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
     "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
     "reviewed_at": "2026-10-04",
@@ -2785,13 +2785,13 @@
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
-      "sha256": "881e59c0af2ed142446546e523074d06972705a42ad47dee2b65437b5db35119"
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes. Exact first-publication time subsequently bound to the observed successful Pages deployment at 2026-10-04T21:03:47+02:00; prose unchanged.",
+      "sha256": "0b3f4b50bcfa95216b9aab55cb35ca3cb5800e371035dae5b962e622c23acf37"
     }
   },
   "public/articles/not-necessarily-an-order-2026.ja.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "4e8013201dd48713f980fc59c0a7d7cab883b5c90ee87790b44e25c44226de7a",
+    "sha256": "47701c6e391e07f54e7bed10ab4d75c0fa88a194618326cfd0994aed13f48d49",
     "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
     "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
     "reviewed_at": "2026-10-04",
@@ -2820,13 +2820,13 @@
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
-      "sha256": "4e8013201dd48713f980fc59c0a7d7cab883b5c90ee87790b44e25c44226de7a"
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes. Exact first-publication time subsequently bound to the observed successful Pages deployment at 2026-10-04T21:03:47+02:00; prose unchanged.",
+      "sha256": "47701c6e391e07f54e7bed10ab4d75c0fa88a194618326cfd0994aed13f48d49"
     }
   },
   "public/articles/not-necessarily-an-order-2026.es.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "18b35fafcb992fe98631f05a741c6310c2e20e6fda47398d15fc1bfd6ce350ab",
+    "sha256": "0578e3b24315b6db76d126f4e0497712c36cdfc6f430796ac10fcd89e9652ef8",
     "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
     "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
     "reviewed_at": "2026-10-04",
@@ -2855,13 +2855,13 @@
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
-      "sha256": "18b35fafcb992fe98631f05a741c6310c2e20e6fda47398d15fc1bfd6ce350ab"
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes. Exact first-publication time subsequently bound to the observed successful Pages deployment at 2026-10-04T21:03:47+02:00; prose unchanged.",
+      "sha256": "0578e3b24315b6db76d126f4e0497712c36cdfc6f430796ac10fcd89e9652ef8"
     }
   },
   "public/articles/not-necessarily-an-order-2026.de.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "7ab0508f77ffb01670f56ed14c3cdfadae64569d391372b1ce9002e2bd9eed02",
+    "sha256": "5f96fe246d396e5153c586ff7ec392d0cfff46b3beb4df7d7c22861029b65476",
     "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
     "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
     "reviewed_at": "2026-10-04",
@@ -2890,13 +2890,13 @@
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
-      "sha256": "7ab0508f77ffb01670f56ed14c3cdfadae64569d391372b1ce9002e2bd9eed02"
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes. Exact first-publication time subsequently bound to the observed successful Pages deployment at 2026-10-04T21:03:47+02:00; prose unchanged.",
+      "sha256": "5f96fe246d396e5153c586ff7ec392d0cfff46b3beb4df7d7c22861029b65476"
     }
   },
   "public/articles/not-necessarily-an-order-2026.pt.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "c51f702f94e17dde51bac59307c5df10a414cec8c63c5329398f5b607169e184",
+    "sha256": "74607d8f70da4cede8f138f5fcd29fec13d070a2d5f73d9e079c5c6a409fcbc9",
     "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
     "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
     "reviewed_at": "2026-10-04",
@@ -2925,13 +2925,13 @@
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
-      "sha256": "c51f702f94e17dde51bac59307c5df10a414cec8c63c5329398f5b607169e184"
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes. Exact first-publication time subsequently bound to the observed successful Pages deployment at 2026-10-04T21:03:47+02:00; prose unchanged.",
+      "sha256": "74607d8f70da4cede8f138f5fcd29fec13d070a2d5f73d9e079c5c6a409fcbc9"
     }
   },
   "public/articles/not-necessarily-an-order-2026.ko.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "fb09291a92a0a6315bb9af4c38ed8fee04afb6ee3340e17bc2d176cdba61d78b",
+    "sha256": "43874311b7644d91a816fcd839ccf61984a52b31f272c7d34a56badfbe6c0ed2",
     "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
     "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
     "reviewed_at": "2026-10-04",
@@ -2960,13 +2960,13 @@
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
-      "sha256": "fb09291a92a0a6315bb9af4c38ed8fee04afb6ee3340e17bc2d176cdba61d78b"
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes. Exact first-publication time subsequently bound to the observed successful Pages deployment at 2026-10-04T21:03:47+02:00; prose unchanged.",
+      "sha256": "43874311b7644d91a816fcd839ccf61984a52b31f272c7d34a56badfbe6c0ed2"
     }
   },
   "public/articles/not-necessarily-an-order-2026.hi.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "ce33ec9d52b5ec6a67e98e39940c71d63cc70a2aa24dddc6f0fdee4b1317801a",
+    "sha256": "183d77421432180173a9fe7a9f560ef64612cc1cd248458090163db3ba5a65ff",
     "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
     "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
     "reviewed_at": "2026-10-04",
@@ -2995,8 +2995,8 @@
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
-      "sha256": "ce33ec9d52b5ec6a67e98e39940c71d63cc70a2aa24dddc6f0fdee4b1317801a"
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes. Exact first-publication time subsequently bound to the observed successful Pages deployment at 2026-10-04T21:03:47+02:00; prose unchanged.",
+      "sha256": "183d77421432180173a9fe7a9f560ef64612cc1cd248458090163db3ba5a65ff"
     }
   }
 }

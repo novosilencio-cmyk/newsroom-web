@@ -90,7 +90,6 @@
   "public/articles/not-necessarily-an-order-2026.html": [
     "Ikke nødvendigvis en ordre | Experimental Newsroom",
     "Ikke nødvendigvis en ordre",
-    "{\"@context\":\"https://schema.org\",\"@type\":\"NewsArticle\",\"headline\":\"Ikke nødvendigvis en ordre\",\"description\":\"KI-lederne diskuterer maskinenes bevissthet. Selskapene får oppmerksomhet. Men hva skjer i oss mens vi følger diskusjonen?\",\"datePublished\":\"2026-10-04\",\"dateModified\":\"2026-10-04\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://experimentalnewsroom.org/articles/not-necessarily-an-order-2026.html\"},\"author\":{\"@type\":\"Person\",\"name\":\"Bjørn Moe Aldema\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Experimental Newsroom\",\"url\":\"https://experimentalnewsroom.org/\"},\"articleSection\":\"World\",\"inLanguage\":[\"nb\"],\"isAccessibleForFree\":true}",
     "Morgenbladets omtale av Microsoft AI-sjef Mustafa Suleymans kritikk av Anthropic er et konkret eksempel på at diskusjonen har nådd fra selskapenes egne tekster til en norsk redaksjonell offentlighet. Saken ble publisert 30. september 2026. Det dokumenterer oppmerksomhet, ikke hvilken kommersiell gevinst noen måtte få av den.",
     "Det gjør ikke argumentene ugyldige. En kommersiell interesse er ingen motbevisning.",
     "Kanskje finnes det ikke alltid en tydelig grense.",
@@ -116,7 +115,8 @@
     "Jeg spør ikke om disse menneskene er våkne, eller om de har et indre liv. Jeg spør om de oppdager når en innlært fortolkning begynner å bestemme hva de kan se. Spørsmålet gjelder også møtet med et annet menneske: Lytter jeg til den andres erfaring, eller først og fremst etter noe jeg allerede kjenner igjen?",
     "Jeg vet ikke hvor godt de enkelte lederne kjenner sine egne mønstre. En slik vurdering kan jeg ikke lese ut av stillingstittelen deres. Et menneske kan dessuten ha rett i et argument uten å ha full innsikt i seg selv.",
     "«KI-er er ikke bevisste. De kan ikke føle, erfare eller lide.»",
-    "Morgenbladets tittel, byline, dato og ingress er kontrollert; hele artikkelen var utilgjengelig i denne gjennomgangen. De tre primærkildene er lest. Selskapsdokumentene viser standpunkter og tilsiktet atferd, ikke bevis på faktisk modellatferd eller subjektiv opplevelse."
+    "Morgenbladets tittel, byline, dato og ingress er kontrollert; hele artikkelen var utilgjengelig i denne gjennomgangen. De tre primærkildene er lest. Selskapsdokumentene viser standpunkter og tilsiktet atferd, ikke bevis på faktisk modellatferd eller subjektiv opplevelse.",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"NewsArticle\",\"headline\":\"Ikke nødvendigvis en ordre\",\"description\":\"KI-lederne diskuterer maskinenes bevissthet. Selskapene får oppmerksomhet. Men hva skjer i oss mens vi følger diskusjonen?\",\"datePublished\":\"2026-10-04T21:03:47+02:00\",\"dateModified\":\"2026-10-04T21:03:47+02:00\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://experimentalnewsroom.org/articles/not-necessarily-an-order-2026.html\"},\"author\":{\"@type\":\"Person\",\"name\":\"Bjørn Moe Aldema\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Experimental Newsroom\",\"url\":\"https://experimentalnewsroom.org/\"},\"articleSection\":\"World\",\"inLanguage\":[\"nb\"],\"isAccessibleForFree\":true}"
   ],
   "public/articles/not-necessarily-an-order-2026.ja.html": [
     "«KI-er er ikke bevisste. De kan ikke føle, erfare eller lide.»"

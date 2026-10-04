@@ -104,3 +104,8 @@ Editorial disposition: **KEEP / PUBLISH** within the stated limits.
 Source status: **READY_FOR_EDITORIAL_PUBLICATION**.
 Language status: **PASS_COMPLETE_WITH_DISCLOSED_NO_NATIVE_HUMAN_PROOFREAD**.
 Publication authority: Bjørn Moe Aldema's explicit 4 October 2026 instruction to complete final editorial review and publish the ten-language release, bound separately in the language-review register to each exact final file hash.
+
+
+## Verified first publication
+
+The first successful GitHub Pages deployment of this release reported success at **2026-10-04 19:03:47 UTC / 21:03:47 Europe/Oslo** for main commit `254c872ec333e5d703b257f80391d4c73d08553e`. That observed deployment time is now used as the exact `First published` timestamp for all ten language versions. The timestamp repair does not change essay prose or translation substance.

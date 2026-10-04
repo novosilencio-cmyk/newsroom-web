@@ -49,7 +49,7 @@ Existing source boundaries remain.
 **First published:** 2026-10-03T18:34:34+02:00.  
 Basis: GitHub merge/publication commit `3aa10fea95001d71f4cbafba8b89a1f4db64a270`, merged 2026-10-03T16:34:34Z.
 
-**Editorial freeze / last edited for this revision:** 2026-10-04T11:01:47+02:00.
+**Editorial freeze / last edited for this revision:** 2026-10-04T11:11:03+02:00.
 
 Visible article timestamps use `<time datetime=...>`. Registry gains `published_at` and `updated_at`; discovery metadata generator now preserves these optional exact timestamps while retaining date-only fallbacks for older articles.
 

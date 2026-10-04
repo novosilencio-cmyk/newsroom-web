@@ -2268,7 +2268,7 @@
   },
   "public/articles/mer-musikk-lengre-liv-2026.html": {
     "case_id": "EN-LYDLEVETID-20260920",
-    "sha256": "46a58479fe0ab460a32e59077d0fef169034d7b1d44d94531dc9d6aa174041e2",
+    "sha256": "f2ac51d70cda93da21e110df8dfc532e5d40baf7dbdbbdd0792dcfff158b533e",
     "reviewer": "Ragna/Eira/Ariadne/Alma truth-preserving craft pass; Ada evidential negative control; integrated by executing assistant",
     "execution_context": "Current-assistant functional role lenses with source-bound exact-version review; no independent human-reader effect claimed",
     "reviewed_at": "2026-10-04",
@@ -2303,7 +2303,7 @@
       "approved": true,
       "by": "Bjørn Moe Aldema",
       "reference": "Explicit instruction in current chat, 2026-10-04: revise a published story, publish the revised version at the same canonical URL, and add first-published + last-edited date/time.",
-      "sha256": "46a58479fe0ab460a32e59077d0fef169034d7b1d44d94531dc9d6aa174041e2"
+      "sha256": "f2ac51d70cda93da21e110df8dfc532e5d40baf7dbdbbdd0792dcfff158b533e"
     },
     "revision_disposition": "PUBLISH_REVISED_VERSION / SOURCE_BASIS_PRESERVED / NO_NEW_TECHNICAL_OR_ENVIRONMENTAL_CLAIMS"
   },

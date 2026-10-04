@@ -17,9 +17,10 @@ REGISTRY = PUBLIC / "content" / "articles.json"
 
 def date_only(v): return (v or "")[:10]
 def canonical(a): return BASE + urlsplit(a["url"]).path
-def modified(a): return date_only(a.get("updated_at") or a.get("updated") or a.get("language_updated_at") or a.get("language_updated") or a.get("published_at") or a.get("published"))
+def modified_value(a): return a.get("updated_at") or a.get("language_updated_at") or date_only(a.get("updated") or a.get("language_updated") or a.get("published"))
+def modified(a): return date_only(modified_value(a))
 def schema_published(a): return a.get("published_at") or date_only(a.get("published"))
-def schema_modified(a): return a.get("updated_at") or a.get("updated") or a.get("language_updated_at") or a.get("language_updated") or a.get("published_at") or date_only(a.get("published"))
+def schema_modified(a): return modified_value(a)
 def rss_date_value(v):
     if not v:
         return ""
@@ -94,8 +95,8 @@ def build(articles):
     (PUBLIC/"sitemap.xml").write_text("\n".join(lines)+"\n", encoding="utf-8")
 
     ordered=sorted(articles,key=lambda a:(a.get("published",""),-(a.get("priority",999))),reverse=True)
-    latest=max((modified(a) for a in articles),default="2026-09-18")
-    f=['<?xml version="1.0" encoding="UTF-8"?>','<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">','  <channel>','    <title>Experimental Newsroom</title>','    <link>'+BASE+'</link>','    <description>Careful observation, evidence and constructive criticism from Experimental Newsroom.</description>','    <language>en</language>','    <lastBuildDate>'+rss_date(latest)+'</lastBuildDate>','    <atom:link href="'+BASE+'feed.xml" rel="self" type="application/rss+xml"/>']
+    latest=max((modified_value(a) for a in articles),default="2026-09-18")
+    f=['<?xml version="1.0" encoding="UTF-8"?>','<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">','  <channel>','    <title>Experimental Newsroom</title>','    <link>'+BASE+'</link>','    <description>Careful observation, evidence and constructive criticism from Experimental Newsroom.</description>','    <language>en</language>','    <lastBuildDate>'+rss_date_value(latest)+'</lastBuildDate>','    <atom:link href="'+BASE+'feed.xml" rel="self" type="application/rss+xml"/>']
     for a in ordered:
         u=canonical(a)
         f += ['    <item>','      <title>'+escape(a["title"])+'</title>','      <link>'+escape(u)+'</link>','      <guid isPermaLink="true">'+escape(u)+'</guid>','      <pubDate>'+rss_date_value(a.get("published_at") or date_only(a["published"]))+'</pubDate>','      <description>'+escape(a["summary"])+'</description>','    </item>']

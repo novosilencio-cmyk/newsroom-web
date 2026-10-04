@@ -2295,16 +2295,17 @@
       "forbedringsgrep": "OOS-Core:EN-LYDLEVETID-20260920-RELEASE-20261003#six-stages",
       "revidert_eksempelversjon": "OOS-Core:EN-LYDLEVETID-20260920-RELEASE-20261003#six-stages"
     },
-    "decision": "REVISE_AND_PUBLISH_REVISED_VERSION",
-    "ariadne_style_readiness": "pass_bounded_current_assistant",
-    "source_status": "SOURCE_BASIS_PRESERVED / NO_NEW_TECHNICAL_OR_ENVIRONMENTAL_CLAIMS / READER_CRAFT_REVISION",
+    "decision": "REVISE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
     "source_scope": "Article technical sources rechecked 2026-10-03; generated maps only insert approved title/deck, previous entries retained. No apparatus test or environment effect claim.",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
       "reference": "Explicit instruction in current chat, 2026-10-04: revise a published story, publish the revised version at the same canonical URL, and add first-published + last-edited date/time.",
       "sha256": "46a58479fe0ab460a32e59077d0fef169034d7b1d44d94531dc9d6aa174041e2"
-    }
+    },
+    "revision_disposition": "PUBLISH_REVISED_VERSION / SOURCE_BASIS_PRESERVED / NO_NEW_TECHNICAL_OR_ENVIRONMENTAL_CLAIMS"
   },
   "public/articles/ecotun-design-relations-2026.html": {
     "case_id": "ecotun-design-relations-2026-post-build",

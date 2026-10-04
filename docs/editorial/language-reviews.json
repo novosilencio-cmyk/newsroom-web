@@ -1396,7 +1396,8 @@
       "reference": "Current chat 2026-10-04: “DFM, la nå expNR ta neste sak i køen og bearbeid saken frem til og så publiser den.” Explicit delegated authority applied to this exact completed release; not a claim of personal review of final bytes.",
       "sha256": "a0c031693b152bd326d78d52b9fc34f31019559acc42d4a2a1a7b436363e54a4"
     },
-    "source_scope": "Bounded report of attributed proposal, dissent and ministry follow-up; dated DMP guidance. Generated discovery change inserts only the reviewed title/deck."
+    "source_scope": "Bounded report of attributed proposal, dissent and ministry follow-up; dated DMP guidance. Generated discovery change inserts only the reviewed title/deck.",
+    "revision_disposition": "Publication time bound to successful initial deployment; prose unchanged."
   },
   "public/privacy.html": {
     "case_id": "umami-privacy-review-2026-09-28-v2",
@@ -1948,7 +1949,8 @@
       "reference": "Current chat 2026-10-04: “DFM, la nå expNR ta neste sak i køen og bearbeid saken frem til og så publiser den.” Explicit delegated authority applied to this exact completed release; not a claim of personal review of final bytes.",
       "sha256": "c1cb3f838442b8878f83a8d31703bc06638932580e3c8bc86c4b1744d60c2fcd"
     },
-    "source_scope": "Bounded report of attributed proposal, dissent and ministry follow-up; dated DMP guidance. Generated discovery change inserts only the reviewed title/deck."
+    "source_scope": "Bounded report of attributed proposal, dissent and ministry follow-up; dated DMP guidance. Generated discovery change inserts only the reviewed title/deck.",
+    "revision_disposition": "Publication time bound to successful initial deployment; prose unchanged."
   },
   "public/sitemap.en.html": {
     "case_id": "NO07-RELEASE-20261004",
@@ -1993,7 +1995,8 @@
       "reference": "Current chat 2026-10-04: “DFM, la nå expNR ta neste sak i køen og bearbeid saken frem til og så publiser den.” Explicit delegated authority applied to this exact completed release; not a claim of personal review of final bytes.",
       "sha256": "c0f36a88dd0e4c8d50b1955e5f65e9a5e1945778293eef954c792d8458b54992"
     },
-    "source_scope": "Bounded report of attributed proposal, dissent and ministry follow-up; dated DMP guidance. Generated discovery change inserts only the reviewed title/deck."
+    "source_scope": "Bounded report of attributed proposal, dissent and ministry follow-up; dated DMP guidance. Generated discovery change inserts only the reviewed title/deck.",
+    "revision_disposition": "Publication time bound to successful initial deployment; prose unchanged."
   },
   "public/articles/nar-ansvaret-kommer-hjem-2026.html": {
     "case_id": "unge-hverdag-ansvar-2026-reader-opening-v2",
@@ -2640,7 +2643,7 @@
   },
   "public/articles/tidlig-legemiddeltilgang-ekspertgruppe-2026.html": {
     "case_id": "NO07-RELEASE-20261004",
-    "sha256": "5e526132867ac48edba86c8f2861f2e6ff105d7756fac9323d017618cb2d03d1",
+    "sha256": "b864c423c16b5d0f4076904d70a041730d90ec361a79a075e48fb68b05988903",
     "reviewer": "Executing assistant with loaded Ariadne competence; separate AI source review",
     "execution_context": "Language editing and final integration in primary assistant; independent AI execution context for bounded source review; no licensed medical/legal review or reader-effect claim",
     "reviewed_at": "2026-10-04",
@@ -2679,8 +2682,9 @@
       "approved": true,
       "by": "Bjørn Moe Aldema",
       "reference": "Current chat 2026-10-04: “DFM, la nå expNR ta neste sak i køen og bearbeid saken frem til og så publiser den.” Explicit delegated authority applied to this exact completed release; not a claim of personal review of final bytes.",
-      "sha256": "5e526132867ac48edba86c8f2861f2e6ff105d7756fac9323d017618cb2d03d1"
+      "sha256": "b864c423c16b5d0f4076904d70a041730d90ec361a79a075e48fb68b05988903"
     },
-    "source_scope": "Bounded report of attributed proposal, dissent and ministry follow-up; dated DMP guidance. Generated discovery change inserts only the reviewed title/deck."
+    "source_scope": "Bounded report of attributed proposal, dissent and ministry follow-up; dated DMP guidance. Generated discovery change inserts only the reviewed title/deck.",
+    "revision_disposition": "Publication time bound to successful initial deployment; prose unchanged."
   }
 }

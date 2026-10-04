@@ -2268,7 +2268,7 @@
   },
   "public/articles/mer-musikk-lengre-liv-2026.html": {
     "case_id": "EN-LYDLEVETID-20260920",
-    "sha256": "f2ac51d70cda93da21e110df8dfc532e5d40baf7dbdbbdd0792dcfff158b533e",
+    "sha256": "PR_GIT_BLOB_BOUND",
     "reviewer": "Ragna/Eira/Ariadne/Alma truth-preserving craft pass; Ada evidential negative control; integrated by executing assistant",
     "execution_context": "Current-assistant functional role lenses with source-bound exact-version review; no independent human-reader effect claimed",
     "reviewed_at": "2026-10-04",
@@ -2302,10 +2302,11 @@
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Explicit instruction in current chat, 2026-10-04: revise a published story, publish the revised version at the same canonical URL, and add first-published + last-edited date/time.",
-      "sha256": "f2ac51d70cda93da21e110df8dfc532e5d40baf7dbdbbdd0792dcfff158b533e"
+      "reference": "Current chat, 2026-10-04: user confirmed live update and requested standard photo credit for the middle photograph.",
+      "sha256": "PR_GIT_BLOB_BOUND"
     },
-    "revision_disposition": "PUBLISH_REVISED_VERSION / SOURCE_BASIS_PRESERVED / NO_NEW_TECHNICAL_OR_ENVIRONMENTAL_CLAIMS"
+    "revision_disposition": "PHOTO_CREDIT_ONLY / NO_PROSE_OR_EVIDENCE_CHANGE",
+    "git_blob_sha": "114cc9d0bee255ff2fc5b284aafa23cb39cd630b"
   },
   "public/articles/ecotun-design-relations-2026.html": {
     "case_id": "ecotun-design-relations-2026-post-build",

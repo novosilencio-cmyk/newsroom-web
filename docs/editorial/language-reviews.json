@@ -2302,11 +2302,11 @@
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: user confirmed live update and requested standard photo credit for the middle photograph.",
+      "reference": "Current chat, 2026-10-04: user clarified that both photographs in the report were taken by him; only one was AI-edited.",
       "sha256": "PR_GIT_BLOB_BOUND"
     },
-    "revision_disposition": "PHOTO_CREDIT_ONLY / NO_PROSE_OR_EVIDENCE_CHANGE",
-    "git_blob_sha": "114cc9d0bee255ff2fc5b284aafa23cb39cd630b"
+    "revision_disposition": "PHOTO_PROVENANCE_CORRECTION_ONLY / BOTH ORIGINAL PHOTOS CREDITED TO B. M. ALDEMA",
+    "git_blob_sha": "de4d3497fb31e2614ca24e543abc1946c0a68505"
   },
   "public/articles/ecotun-design-relations-2026.html": {
     "case_id": "ecotun-design-relations-2026-post-build",

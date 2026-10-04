@@ -2268,13 +2268,13 @@
   },
   "public/articles/mer-musikk-lengre-liv-2026.html": {
     "case_id": "EN-LYDLEVETID-20260920",
-    "sha256": "f8927b4de9b6a45ff6c1fc2cd3c74da6a3720416e87da5c71d58de771726fd93",
-    "reviewer": "Ariadne language pass; separate source/technical AI review; Eira/Alma integration by executing assistant",
-    "execution_context": "Separate AI source and language executions with root integration; no human-independent review claimed",
-    "reviewed_at": "2026-10-03",
-    "comparison_ref": "OOS-Core:EN-LYDLEVETID-20260920-RELEASE-20261003#comparison",
-    "reader_journey_ref": "OOS-Core:EN-LYDLEVETID-20260920-RELEASE-20261003#reader-journey",
-    "semantic_control_ref": "OOS-Core:EN-LYDLEVETID-20260920-RELEASE-20261003#semantic-control",
+    "sha256": "46a58479fe0ab460a32e59077d0fef169034d7b1d44d94531dc9d6aa174041e2",
+    "reviewer": "Ragna/Eira/Ariadne/Alma truth-preserving craft pass; Ada evidential negative control; integrated by executing assistant",
+    "execution_context": "Current-assistant functional role lenses with source-bound exact-version review; no independent human-reader effect claimed",
+    "reviewed_at": "2026-10-04",
+    "comparison_ref": "docs/editorial/mer-musikk-truth-craft-revision-2026-10-04.md#craft-changes",
+    "reader_journey_ref": "docs/editorial/mer-musikk-truth-craft-revision-2026-10-04.md#reader-hypothesis",
+    "semantic_control_ref": "docs/editorial/mer-musikk-truth-craft-revision-2026-10-04.md#frozen-evidential-invariants",
     "loaded_modules": [
       {
         "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
@@ -2295,15 +2295,15 @@
       "forbedringsgrep": "OOS-Core:EN-LYDLEVETID-20260920-RELEASE-20261003#six-stages",
       "revidert_eksempelversjon": "OOS-Core:EN-LYDLEVETID-20260920-RELEASE-20261003#six-stages"
     },
-    "decision": "REVISE",
-    "ariadne_style_readiness": "pass_complete",
-    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "decision": "REVISE_AND_PUBLISH_REVISED_VERSION",
+    "ariadne_style_readiness": "pass_bounded_current_assistant",
+    "source_status": "SOURCE_BASIS_PRESERVED / NO_NEW_TECHNICAL_OR_ENVIRONMENTAL_CLAIMS / READER_CRAFT_REVISION",
     "source_scope": "Article technical sources rechecked 2026-10-03; generated maps only insert approved title/deck, previous entries retained. No apparatus test or environment effect claim.",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Explicit object-specific completion, publication and merge instruction, 2026-10-03; final-content binding by executing editor under that mandate",
-      "sha256": "f8927b4de9b6a45ff6c1fc2cd3c74da6a3720416e87da5c71d58de771726fd93"
+      "reference": "Explicit instruction in current chat, 2026-10-04: revise a published story, publish the revised version at the same canonical URL, and add first-published + last-edited date/time.",
+      "sha256": "46a58479fe0ab460a32e59077d0fef169034d7b1d44d94531dc9d6aa174041e2"
     }
   },
   "public/articles/ecotun-design-relations-2026.html": {

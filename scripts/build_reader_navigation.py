@@ -7,7 +7,7 @@ from urllib.parse import urlsplit
 
 COUNTRY_ALIASES = {'Norway': 'Norge', 'Brazil': 'Brasil', 'Denmark': 'Danmark', 'United States': 'USA', 'United Kingdom': 'Storbritannia', 'Global economy': 'Verdensøkonomien'}
 
-LANGUAGES = {'nb': 'Norsk', 'en': 'English', 'fr': 'Français', 'de': 'Deutsch', 'ja': '日本語', 'ko': '한국어', 'zh-Hans': '简体中文', 'es': 'Español', 'pt': 'Português', 'hi': 'हिन्दी'}
+LANGUAGES = {'nb': 'Norsk', 'en': 'English', 'fr': 'Français', 'de': 'Deutsch', 'ja': '日本語', 'ko': '한국어', 'zh-Hans': '简体中文', 'es': 'Español', 'pt': 'Português', 'ar': 'العربية'}
 # Published reader destinations, deliberately excluding embedded viewers and drafts.
 SECTIONS = [
     ('start', 'Start her', 'Start here', [
@@ -152,7 +152,7 @@ def render(public, articles, lang):
 <section class="map-intro"><p class="kicker">{'Nettstedskart' if no else 'Site map'}</p><h1>{title}</h1><p class="map-deck">{intro}</p></section>
 <form class="map-search" role="search" hidden>
 <div class="map-search-field"><label for="map-query">{'Søk i oversikten' if no else 'Search this guide'}</label><input id="map-query" type="search" autocomplete="off" aria-describedby="map-help" placeholder="{'Prøv skolemat, Taiwan eller kurs' if no else 'Try school meals, Taiwan or courses'}"/></div>
-<div class="map-language-field"><label for="map-language">{'Lesespråk' if no else 'Reading language'}</label><select id="map-language"><option value="">{'Alle språk' if no else 'All languages'}</option><option value="nb">Norsk</option><option value="en">English</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="zh-Hans">简体中文</option><option value="es">Español</option><option value="pt">Português</option><option value="hi">हिन्दी</option></select></div>
+<div class="map-language-field"><label for="map-language">{'Lesespråk' if no else 'Reading language'}</label><select id="map-language"><option value="">{'Alle språk' if no else 'All languages'}</option><option value="nb">Norsk</option><option value="en">English</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="zh-Hans">简体中文</option><option value="es">Español</option><option value="pt">Português</option><option value="ar">العربية</option></select></div>
 <button type="reset">{'Vis alt' if no else 'Show all'}</button>
 <p id="map-help">{'Søker i titler, korte beskrivelser og landnavn i denne oversikten.' if no else 'Searches titles, short descriptions and country names in this guide.'}</p>
 <p id="map-results" role="status" aria-live="polite" aria-atomic="true"></p>

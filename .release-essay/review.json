@@ -1,0 +1,38 @@
+{
+  "common": {
+    "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
+    "reviewer": "ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
+    "execution_context": "Same-assistant source, semantic and production passes; no independent human native-language review",
+    "reviewed_at": "2026-10-04",
+    "loaded_modules": [{"source":"OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md","revision":"git-blob:5c026e8f16bf19697719d15416ab085429e91c30","application_ref":"docs/editorial/consciousness-essay-release-2026-10-04.md"}],
+    "stages": {
+      "helhetsinntrykk":"docs/editorial/consciousness-essay-release-2026-10-04.md#helhetsinntrykk",
+      "styrker":"docs/editorial/consciousness-essay-release-2026-10-04.md#styrker",
+      "stilprofil":"docs/editorial/consciousness-essay-release-2026-10-04.md#stilprofil",
+      "konkrete_svakheter":"docs/editorial/consciousness-essay-release-2026-10-04.md#konkrete-svakheter",
+      "forbedringsgrep":"docs/editorial/consciousness-essay-release-2026-10-04.md#forbedringsgrep",
+      "revidert_eksempelversjon":"docs/editorial/consciousness-essay-release-2026-10-04.md#revidert-eksempelversjon"
+    },
+    "comparison_ref":"docs/editorial/consciousness-essay-release-2026-10-04.md#comparison-and-semantic-control",
+    "reader_journey_ref":"docs/editorial/consciousness-essay-release-2026-10-04.md#reader-journey-and-checks",
+    "semantic_control_ref":"docs/editorial/consciousness-essay-release-2026-10-04.md#comparison-and-semantic-control",
+    "decision":"COMBINE",
+    "ariadne_style_readiness":"pass_complete",
+    "source_status":"READY_FOR_EDITORIAL_REVIEW"
+  },
+  "approval":{"approved":true,"by":"Bjørn Moe Aldema","reference":"Explicit final-review-and-publish instruction 2026-10-04; Arabic replaces Hindi by subsequent correction; docs/editorial/consciousness-essay-release-2026-10-04.md#scope-and-authority"},
+  "hashes":{
+    "public/articles/not-necessarily-an-order-2026.html":"2bfb0d2e2ba0cf0c01041346bb1afc7e6ad0d1d6d12b5906e0e1b12a835de191",
+    "public/articles/not-necessarily-an-order-2026.ar.html":"615ab2181e978bd9583a7dec0d84cb19a5a92e0c6bb80ea067c46dacc1799c7f",
+    "public/articles/not-necessarily-an-order-2026.ko.html":"65963bfd2748f4c0bc297ea909f09b9878a83a71e3ef27e816e78d209cb7648f",
+    "public/articles/not-necessarily-an-order-2026.es.html":"d8c6b80518dfc68fffc4681bf051623fbdb84999b99f1172ab9b8c975d6fecac",
+    "public/articles/not-necessarily-an-order-2026.pt.html":"ec0617067f624fdcb7bd72e53f9beaf7054d4738f698e37a3f4f77a06c3df744",
+    "public/articles/not-necessarily-an-order-2026.en.html":"1c0da6777a01523f8dbfb6623f2b3cc2bcfde90fd260c88423ff7a5150c55688",
+    "public/articles/not-necessarily-an-order-2026.de.html":"136237d40565ea7eb77f9345d837b772b3da1dc535c6e50abb0f2a7708ed64f5",
+    "public/articles/not-necessarily-an-order-2026.ja.html":"d0768e93ecc3f37ee1a382774e4c943913db279458aad6817eaf4785c481793c",
+    "public/articles/not-necessarily-an-order-2026.zh-Hans.html":"51911a135571cd8a664deb5842e960d40a433b7644c529e6ac167fa8f46d9b66",
+    "public/articles/not-necessarily-an-order-2026.fr.html":"3c7da55234473f8f36cd697ed701fee633a5402a12c866a5e2ce9443f21fe043",
+    "public/sitemap.html":"eb21242c6e1aed609ef30dc4091cc9c7839e0698bbf4d09ce05c525357c5cd71",
+    "public/sitemap.en.html":"f9668edfc0e5aadbdf174636384c1eff17cf0c28434f6a8044e43829564ce9ce"
+  }
+}

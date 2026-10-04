@@ -1,5 +1,70 @@
 [
   {
+    "id": "not-necessarily-an-order-2026",
+    "section": "World",
+    "region": "Global",
+    "country": "Global",
+    "type": "Essay",
+    "title": "Ikke nødvendigvis en ordre",
+    "summary": "KI-lederne diskuterer maskinenes bevissthet. Selskapene får oppmerksomhet. Men hva skjer i oss mens vi følger diskusjonen?",
+    "published": "2026-10-04",
+    "updated": "2026-10-04",
+    "priority": 2,
+    "url": "articles/not-necessarily-an-order-2026.html",
+    "translations": {
+      "nb": {
+        "url": "articles/not-necessarily-an-order-2026.html",
+        "title": "Ikke nødvendigvis en ordre",
+        "summary": "KI-lederne diskuterer maskinenes bevissthet. Selskapene får oppmerksomhet. Men hva skjer i oss mens vi følger diskusjonen?"
+      },
+      "en": {
+        "url": "articles/not-necessarily-an-order-2026.en.html",
+        "title": "Not necessarily an order",
+        "summary": "AI leaders are debating whether machines are conscious. Their companies are getting attention. But what happens within us as we follow the discussion?"
+      },
+      "fr": {
+        "url": "articles/not-necessarily-an-order-2026.fr.html",
+        "title": "Pas nécessairement un ordre",
+        "summary": "Les dirigeants de l’IA débattent de la conscience des machines. Leurs entreprises attirent l’attention. Mais que se passe-t-il en nous lorsque nous suivons la discussion ?"
+      },
+      "zh-Hans": {
+        "url": "articles/not-necessarily-an-order-2026.zh-Hans.html",
+        "title": "未必是一道命令",
+        "summary": "人工智能公司的领导者在讨论机器是否具有意识。他们的公司获得了关注。但当我们跟随这场讨论时，自己内心又发生了什么？"
+      },
+      "ja": {
+        "url": "articles/not-necessarily-an-order-2026.ja.html",
+        "title": "必ずしも命令ではない",
+        "summary": "AI企業のリーダーたちは、機械に意識があるかを論じている。企業には注目が集まる。だが、その議論を追う私たちの内側では、何が起きているのだろう。"
+      },
+      "es": {
+        "url": "articles/not-necessarily-an-order-2026.es.html",
+        "title": "No necesariamente una orden",
+        "summary": "Los líderes de la IA debaten sobre la conciencia de las máquinas. Sus empresas reciben atención. Pero ¿qué ocurre en nosotros mientras seguimos la discusión?"
+      },
+      "de": {
+        "url": "articles/not-necessarily-an-order-2026.de.html",
+        "title": "Nicht unbedingt ein Befehl",
+        "summary": "KI-Führungskräfte diskutieren über das Bewusstsein von Maschinen. Ihre Unternehmen bekommen Aufmerksamkeit. Doch was geschieht in uns, während wir die Diskussion verfolgen?"
+      },
+      "pt": {
+        "url": "articles/not-necessarily-an-order-2026.pt.html",
+        "title": "Não necessariamente uma ordem",
+        "summary": "Os líderes da IA discutem a consciência das máquinas. Suas empresas recebem atenção. Mas o que acontece dentro de nós enquanto acompanhamos a discussão?"
+      },
+      "ko": {
+        "url": "articles/not-necessarily-an-order-2026.ko.html",
+        "title": "반드시 명령인 것은 아니다",
+        "summary": "AI 기업의 리더들은 기계에 의식이 있는지를 논쟁한다. 그들의 회사는 관심을 얻는다. 그런데 그 논쟁을 지켜보는 우리 안에서는 무슨 일이 일어날까?"
+      },
+      "hi": {
+        "url": "articles/not-necessarily-an-order-2026.hi.html",
+        "title": "ज़रूरी नहीं कि वह कोई आदेश हो",
+        "summary": "एआई कंपनियों के प्रमुख इस बात पर बहस कर रहे हैं कि मशीनों में चेतना है या नहीं। उनकी कंपनियों को ध्यान मिल रहा है। लेकिन इस चर्चा को देखते हुए हमारे भीतर क्या होता है?"
+      }
+    }
+  },
+  {
     "id": "tidlig-legemiddeltilgang-ekspertgruppe-2026",
     "section": "News",
     "region": "Europe",

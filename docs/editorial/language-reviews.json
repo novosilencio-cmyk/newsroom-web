@@ -480,123 +480,108 @@
     }
   },
   "public/index.html": {
-    "case_id": "frontpage-ecotun-release-2026-10-03",
-    "sha256": "b81aa80c2ad79bb715791d5f83a0505b4eb4910549f3beba5fc8ae18d9a8c6d5",
-    "reviewer": "Integrating assistant, bounded page and reader-path review; earlier language receipts preserved",
-    "execution_context": "Exact post-build bytes reconstructed from current main and the reviewed Økotun PR #85; same-assistant bounded review, no independent or native-language proofreading claimed",
-    "reviewed_at": "2026-10-03",
-    "comparison_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-    "reader_journey_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#semantic-control",
+    "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
+    "sha256": "46d2fa4bdbd91eb3f03317607a01da64e82c732e512645e8fddcd475a8eabf00",
+    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
+    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewed_at": "2026-10-04",
+    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
         "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review"
+        "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "styrker": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "stilprofil": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "konkrete_svakheter": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "forbedringsgrep": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "revidert_eksempelversjon": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review"
+      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
     },
-    "decision": "REVISE",
+    "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Navigation, placement and short summaries only; Økotun article body retained from reviewed PR #85",
+    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current conversation, 2026-10-03: remove pilot story and Art, place latest stories first, publish six-language Økotun; exact page binding recorded by executing editor",
-      "sha256": "b81aa80c2ad79bb715791d5f83a0505b4eb4910549f3beba5fc8ae18d9a8c6d5"
-    },
-    "previous_review": {
-      "case_id": "EN-LYDLEVETID-20260920",
-      "sha256": "1cb579e2e9a9a4effe31fbff6e21feaf4f852849fbbcb3a507ad931b8f23daf6",
-      "reviewed_at": "2026-10-03"
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
+      "sha256": "46d2fa4bdbd91eb3f03317607a01da64e82c732e512645e8fddcd475a8eabf00"
     }
   },
   "public/nb/index.html": {
-    "case_id": "frontpage-ecotun-release-2026-10-03",
-    "sha256": "0848fe5f877bae29116605f302f2290fb2c5015fc746bed462a5faffe9c929a3",
-    "reviewer": "Integrating assistant, bounded page and reader-path review; earlier language receipts preserved",
-    "execution_context": "Exact post-build bytes reconstructed from current main and the reviewed Økotun PR #85; same-assistant bounded review, no independent or native-language proofreading claimed",
-    "reviewed_at": "2026-10-03",
-    "comparison_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-    "reader_journey_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#semantic-control",
+    "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
+    "sha256": "9e405064200eadbaf6f772477884d9712599bda474f430622f948e7cb4ea6879",
+    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
+    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewed_at": "2026-10-04",
+    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
         "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review"
+        "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "styrker": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "stilprofil": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "konkrete_svakheter": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "forbedringsgrep": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "revidert_eksempelversjon": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review"
+      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
     },
-    "decision": "REVISE",
+    "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Navigation, placement and short summaries only; Økotun article body retained from reviewed PR #85",
+    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current conversation, 2026-10-03: remove pilot story and Art, place latest stories first, publish six-language Økotun; exact page binding recorded by executing editor",
-      "sha256": "0848fe5f877bae29116605f302f2290fb2c5015fc746bed462a5faffe9c929a3"
-    },
-    "previous_review": {
-      "case_id": "EN-LYDLEVETID-20260920",
-      "sha256": "b914c5e06fd772cdf8406659800a43366d25af0c0b99b4273a86cccba196816f",
-      "reviewed_at": "2026-10-03"
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
+      "sha256": "9e405064200eadbaf6f772477884d9712599bda474f430622f948e7cb4ea6879"
     }
   },
   "public/en/index.html": {
-    "case_id": "frontpage-ecotun-release-2026-10-03",
-    "sha256": "19cfea6227454a1b1427a85a4edfa0744fb88e71ad99d49486465cc6d8ba8da5",
-    "reviewer": "Integrating assistant, bounded page and reader-path review; earlier language receipts preserved",
-    "execution_context": "Exact post-build bytes reconstructed from current main and the reviewed Økotun PR #85; same-assistant bounded review, no independent or native-language proofreading claimed",
-    "reviewed_at": "2026-10-03",
-    "comparison_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-    "reader_journey_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#semantic-control",
+    "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
+    "sha256": "0c1792fb99c41aa9963b7d537d8d1787309b481c62207053d084567546417127",
+    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
+    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewed_at": "2026-10-04",
+    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
         "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review"
+        "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "styrker": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "stilprofil": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "konkrete_svakheter": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "forbedringsgrep": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review",
-      "revidert_eksempelversjon": "docs/editorial/frontpage-ecotun-release-2026-10-03.md#six-stage-review"
+      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
     },
-    "decision": "REVISE",
+    "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Navigation, placement and short summaries only; Økotun article body retained from reviewed PR #85",
+    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current conversation, 2026-10-03: remove pilot story and Art, place latest stories first, publish six-language Økotun; exact page binding recorded by executing editor",
-      "sha256": "19cfea6227454a1b1427a85a4edfa0744fb88e71ad99d49486465cc6d8ba8da5"
-    },
-    "previous_review": {
-      "case_id": "reader-navigation-2026-09-21",
-      "sha256": "b341ddda9dcd539dee2fe6ed6c7345805bc0d765db70dbbdf8c51424a362d484",
-      "reviewed_at": "2026-09-21"
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
+      "sha256": "0c1792fb99c41aa9963b7d537d8d1787309b481c62207053d084567546417127"
     }
   },
   "public/art/love-me-to-lunch.en.html": {
@@ -1907,96 +1892,74 @@
     }
   },
   "public/sitemap.html": {
-    "case_id": "NO07-RELEASE-20261004",
-    "sha256": "c1cb3f838442b8878f83a8d31703bc06638932580e3c8bc86c4b1744d60c2fcd",
-    "reviewer": "Executing assistant with loaded Ariadne competence; separate AI source review",
-    "execution_context": "Language editing and final integration in primary assistant; independent AI execution context for bounded source review; no licensed medical/legal review or reader-effect claim",
+    "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
+    "sha256": "018fc42551dab94b517adc8e19c00163fd81be7366e285abffd02440dc655574",
+    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
+    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
     "reviewed_at": "2026-10-04",
-    "comparison_ref": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-    "reader_journey_ref": "docs/editorial/no07-release-2026-10-04.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/no07-release-2026-10-04.md#semantic-control",
+    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
-        "revision": "runtime-read-2026-10-04",
-        "application_ref": "docs/editorial/no07-release-2026-10-04.md#six-stages"
-      },
-      {
-        "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
-        "revision": "runtime-read-2026-10-04",
-        "application_ref": "docs/editorial/no07-release-2026-10-04.md#reader-journey"
-      },
-      {
-        "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
-        "revision": "runtime-read-2026-10-04",
-        "application_ref": "docs/editorial/no07-release-2026-10-04.md#semantic-control"
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-      "styrker": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-      "stilprofil": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-      "konkrete_svakheter": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-      "forbedringsgrep": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-      "revidert_eksempelversjon": "docs/editorial/no07-release-2026-10-04.md#six-stages"
+      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
     },
-    "decision": "REVISE",
+    "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat 2026-10-04: “DFM, la nå expNR ta neste sak i køen og bearbeid saken frem til og så publiser den.” Explicit delegated authority applied to this exact completed release; not a claim of personal review of final bytes.",
-      "sha256": "c1cb3f838442b8878f83a8d31703bc06638932580e3c8bc86c4b1744d60c2fcd"
-    },
-    "source_scope": "Bounded report of attributed proposal, dissent and ministry follow-up; dated DMP guidance. Generated discovery change inserts only the reviewed title/deck.",
-    "revision_disposition": "Publication time bound to successful initial deployment; prose unchanged."
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
+      "sha256": "018fc42551dab94b517adc8e19c00163fd81be7366e285abffd02440dc655574"
+    }
   },
   "public/sitemap.en.html": {
-    "case_id": "NO07-RELEASE-20261004",
-    "sha256": "c0f36a88dd0e4c8d50b1955e5f65e9a5e1945778293eef954c792d8458b54992",
-    "reviewer": "Executing assistant with loaded Ariadne competence; separate AI source review",
-    "execution_context": "Language editing and final integration in primary assistant; independent AI execution context for bounded source review; no licensed medical/legal review or reader-effect claim",
+    "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
+    "sha256": "5c60ab5963e1984e0932c95863f4c4aeafa5b5bd6861e9c1813601c634b38562",
+    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
+    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
     "reviewed_at": "2026-10-04",
-    "comparison_ref": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-    "reader_journey_ref": "docs/editorial/no07-release-2026-10-04.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/no07-release-2026-10-04.md#semantic-control",
+    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
-        "revision": "runtime-read-2026-10-04",
-        "application_ref": "docs/editorial/no07-release-2026-10-04.md#six-stages"
-      },
-      {
-        "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
-        "revision": "runtime-read-2026-10-04",
-        "application_ref": "docs/editorial/no07-release-2026-10-04.md#reader-journey"
-      },
-      {
-        "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
-        "revision": "runtime-read-2026-10-04",
-        "application_ref": "docs/editorial/no07-release-2026-10-04.md#semantic-control"
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-      "styrker": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-      "stilprofil": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-      "konkrete_svakheter": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-      "forbedringsgrep": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-      "revidert_eksempelversjon": "docs/editorial/no07-release-2026-10-04.md#six-stages"
+      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
     },
-    "decision": "REVISE",
+    "decision": "KEEP",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat 2026-10-04: “DFM, la nå expNR ta neste sak i køen og bearbeid saken frem til og så publiser den.” Explicit delegated authority applied to this exact completed release; not a claim of personal review of final bytes.",
-      "sha256": "c0f36a88dd0e4c8d50b1955e5f65e9a5e1945778293eef954c792d8458b54992"
-    },
-    "source_scope": "Bounded report of attributed proposal, dissent and ministry follow-up; dated DMP guidance. Generated discovery change inserts only the reviewed title/deck.",
-    "revision_disposition": "Publication time bound to successful initial deployment; prose unchanged."
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
+      "sha256": "5c60ab5963e1984e0932c95863f4c4aeafa5b5bd6861e9c1813601c634b38562"
+    }
   },
   "public/articles/nar-ansvaret-kommer-hjem-2026.html": {
     "case_id": "unge-hverdag-ansvar-2026-reader-opening-v2",
@@ -2286,7 +2249,7 @@
   },
   "public/articles/mer-musikk-lengre-liv-2026.html": {
     "case_id": "EN-LYDLEVETID-20260920",
-    "sha256": "PR_GIT_BLOB_BOUND",
+    "sha256": "5980407d54e4d87db5d6912a12e4c909875024cb5dd08450ab83e07ad7c26983",
     "reviewer": "Ragna/Eira/Ariadne/Alma truth-preserving craft pass; Ada evidential negative control; integrated by executing assistant",
     "execution_context": "Current-assistant functional role lenses with source-bound exact-version review; no independent human-reader effect claimed",
     "reviewed_at": "2026-10-04",
@@ -2321,10 +2284,9 @@
       "approved": true,
       "by": "Bjørn Moe Aldema",
       "reference": "Current chat, 2026-10-04: user clarified that both photographs in the report were taken by him; only one was AI-edited.",
-      "sha256": "PR_GIT_BLOB_BOUND"
+      "sha256": "5980407d54e4d87db5d6912a12e4c909875024cb5dd08450ab83e07ad7c26983"
     },
-    "revision_disposition": "PHOTO_PROVENANCE_CORRECTION_ONLY / BOTH ORIGINAL PHOTOS CREDITED TO B. M. ALDEMA",
-    "git_blob_sha": "de4d3497fb31e2614ca24e543abc1946c0a68505"
+    "revision_disposition": "Receipt normalized from prior exact Git-blob binding to the current byte-identical SHA-256; article prose and prior publication approval unchanged."
   },
   "public/articles/ecotun-design-relations-2026.html": {
     "case_id": "ecotun-design-relations-2026-post-build",
@@ -2686,5 +2648,355 @@
     },
     "source_scope": "Bounded report of attributed proposal, dissent and ministry follow-up; dated DMP guidance. Generated discovery change inserts only the reviewed title/deck.",
     "revision_disposition": "Publication time bound to successful initial deployment; prose unchanged."
+  },
+  "public/articles/not-necessarily-an-order-2026.html": {
+    "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
+    "sha256": "db7d70ee2e325fa694d06064540b3a618c7a9ee52b39ba62e109c660769d1e92",
+    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
+    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewed_at": "2026-10-04",
+    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
+      "sha256": "db7d70ee2e325fa694d06064540b3a618c7a9ee52b39ba62e109c660769d1e92"
+    }
+  },
+  "public/articles/not-necessarily-an-order-2026.en.html": {
+    "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
+    "sha256": "2a796496e7b70c3d6fc85e1bb915298b9107ad0eeed6e8ab593c9d357fe3c25f",
+    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
+    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewed_at": "2026-10-04",
+    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
+      "sha256": "2a796496e7b70c3d6fc85e1bb915298b9107ad0eeed6e8ab593c9d357fe3c25f"
+    }
+  },
+  "public/articles/not-necessarily-an-order-2026.fr.html": {
+    "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
+    "sha256": "345be836af29e72f2747a1ba61e70d6ce0c84f24932c3b23cf5549eca2733fc6",
+    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
+    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewed_at": "2026-10-04",
+    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
+      "sha256": "345be836af29e72f2747a1ba61e70d6ce0c84f24932c3b23cf5549eca2733fc6"
+    }
+  },
+  "public/articles/not-necessarily-an-order-2026.zh-Hans.html": {
+    "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
+    "sha256": "881e59c0af2ed142446546e523074d06972705a42ad47dee2b65437b5db35119",
+    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
+    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewed_at": "2026-10-04",
+    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
+      "sha256": "881e59c0af2ed142446546e523074d06972705a42ad47dee2b65437b5db35119"
+    }
+  },
+  "public/articles/not-necessarily-an-order-2026.ja.html": {
+    "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
+    "sha256": "4e8013201dd48713f980fc59c0a7d7cab883b5c90ee87790b44e25c44226de7a",
+    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
+    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewed_at": "2026-10-04",
+    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
+      "sha256": "4e8013201dd48713f980fc59c0a7d7cab883b5c90ee87790b44e25c44226de7a"
+    }
+  },
+  "public/articles/not-necessarily-an-order-2026.es.html": {
+    "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
+    "sha256": "18b35fafcb992fe98631f05a741c6310c2e20e6fda47398d15fc1bfd6ce350ab",
+    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
+    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewed_at": "2026-10-04",
+    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
+      "sha256": "18b35fafcb992fe98631f05a741c6310c2e20e6fda47398d15fc1bfd6ce350ab"
+    }
+  },
+  "public/articles/not-necessarily-an-order-2026.de.html": {
+    "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
+    "sha256": "7ab0508f77ffb01670f56ed14c3cdfadae64569d391372b1ce9002e2bd9eed02",
+    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
+    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewed_at": "2026-10-04",
+    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
+      "sha256": "7ab0508f77ffb01670f56ed14c3cdfadae64569d391372b1ce9002e2bd9eed02"
+    }
+  },
+  "public/articles/not-necessarily-an-order-2026.pt.html": {
+    "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
+    "sha256": "c51f702f94e17dde51bac59307c5df10a414cec8c63c5329398f5b607169e184",
+    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
+    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewed_at": "2026-10-04",
+    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
+      "sha256": "c51f702f94e17dde51bac59307c5df10a414cec8c63c5329398f5b607169e184"
+    }
+  },
+  "public/articles/not-necessarily-an-order-2026.ko.html": {
+    "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
+    "sha256": "fb09291a92a0a6315bb9af4c38ed8fee04afb6ee3340e17bc2d176cdba61d78b",
+    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
+    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewed_at": "2026-10-04",
+    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
+      "sha256": "fb09291a92a0a6315bb9af4c38ed8fee04afb6ee3340e17bc2d176cdba61d78b"
+    }
+  },
+  "public/articles/not-necessarily-an-order-2026.hi.html": {
+    "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
+    "sha256": "ce33ec9d52b5ec6a67e98e39940c71d63cc70a2aa24dddc6f0fdee4b1317801a",
+    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
+    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewed_at": "2026-10-04",
+    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
+    "loaded_modules": [
+      {
+        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+    },
+    "decision": "KEEP",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema",
+      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
+      "sha256": "ce33ec9d52b5ec6a67e98e39940c71d63cc70a2aa24dddc6f0fdee4b1317801a"
+    }
   }
 }

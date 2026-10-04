@@ -1,0 +1,39 @@
+{
+  "review": {
+    "case_id":"EN-AI-CONSCIOUSNESS-ESSAY-20261004",
+    "reviewer":"ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
+    "execution_context":"Same-assistant Arabic translation/RTL review and bounded language-link correction; nine published essay bodies preserved; no independent human native proofreading",
+    "reviewed_at":"2026-10-04",
+    "loaded_modules":[{"source":"OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md","revision":"git-blob:5c026e8f16bf19697719d15416ab085429e91c30","application_ref":"docs/editorial/essay-arabic-correction-2026-10-04.md"}],
+    "stages":{
+      "helhetsinntrykk":"docs/editorial/essay-arabic-correction-2026-10-04.md#helhetsinntrykk",
+      "styrker":"docs/editorial/essay-arabic-correction-2026-10-04.md#styrker",
+      "stilprofil":"docs/editorial/essay-arabic-correction-2026-10-04.md#stilprofil",
+      "konkrete_svakheter":"docs/editorial/essay-arabic-correction-2026-10-04.md#konkrete-svakheter",
+      "forbedringsgrep":"docs/editorial/essay-arabic-correction-2026-10-04.md#forbedringsgrep",
+      "revidert_eksempelversjon":"docs/editorial/essay-arabic-correction-2026-10-04.md#revidert-eksempelversjon"
+    },
+    "comparison_ref":"docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "reader_journey_ref":"docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "semantic_control_ref":"docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "decision":"REVISE","ariadne_style_readiness":"pass_complete","source_status":"READY_FOR_EDITORIAL_REVIEW"
+  },
+  "approval":{"approved":true,"by":"Bjørn Moe Aldema","reference":"Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author."},
+  "hashes":{
+    "public/sitemap.en.html":"f9668edfc0e5aadbdf174636384c1eff17cf0c28434f6a8044e43829564ce9ce",
+    "public/index.html":"7ab26e572251bd291a0555c2cc9c1a1ff12e13405e8f7b254d81d0860af58dbd",
+    "public/sitemap.html":"eb21242c6e1aed609ef30dc4091cc9c7839e0698bbf4d09ce05c525357c5cd71",
+    "public/nb/index.html":"106ce3ae827572d8ea009bf8cbae10c595c7590c153247134dfdf98f7e8129f9",
+    "public/en/index.html":"c2428d7ceb1caaadb982c11641ad5b0c1c8022d2268c8d2b82a36eb9c85c9158",
+    "public/articles/not-necessarily-an-order-2026.html":"793e18a962edfe42b7c620a98f79b9ebcf829bf14b8b4a416fc369cc0bfa7082",
+    "public/articles/not-necessarily-an-order-2026.ar.html":"f7f727c5aae8157eb7daf0a9e5d7bd3e32915b4164fdc165ef00bfbce9c48c2d",
+    "public/articles/not-necessarily-an-order-2026.ko.html":"ce7c03746b0a6f3db81a915348afd123414f994764bebd02e43d02517437ee72",
+    "public/articles/not-necessarily-an-order-2026.es.html":"03c34a80ed96699fddcf015b700f6c0a61fbd234ebd937996dfc0dee062c1e80",
+    "public/articles/not-necessarily-an-order-2026.pt.html":"2dd47fcdeb123771808c22a108c9509d449410b909addb33f0d5a9c42e980d27",
+    "public/articles/not-necessarily-an-order-2026.en.html":"771755ca98315efbc094785f60085f281700458bfb220dd34aa9bf6542f03eb4",
+    "public/articles/not-necessarily-an-order-2026.de.html":"60e618bbc72e05bc22ee5cc443aac71710ded77115e853482c7c0c5a6f1d7f27",
+    "public/articles/not-necessarily-an-order-2026.ja.html":"f285e77fa871eabf51fdcab3f87e5ad7b7a56e8848ba42059fe2d68bc783fb6a",
+    "public/articles/not-necessarily-an-order-2026.zh-Hans.html":"38db7b78ef2a3e240856b29c681bc217ddc3b504cf055319febae3ef3c39fa0e",
+    "public/articles/not-necessarily-an-order-2026.fr.html":"499f7fac21745af62fcd4b82ebab727f25596fabcd1df54f61c9f1697e2ffbc1"
+  }
+}

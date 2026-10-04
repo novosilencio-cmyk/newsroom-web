@@ -17,9 +17,20 @@ REGISTRY = PUBLIC / "content" / "articles.json"
 
 def date_only(v): return (v or "")[:10]
 def canonical(a): return BASE + urlsplit(a["url"]).path
-def modified(a): return date_only(a.get("updated") or a.get("language_updated") or a.get("published"))
+def modified(a): return date_only(a.get("updated_at") or a.get("updated") or a.get("language_updated_at") or a.get("language_updated") or a.get("published_at") or a.get("published"))
+def schema_published(a): return a.get("published_at") or date_only(a.get("published"))
+def schema_modified(a): return a.get("updated_at") or a.get("updated") or a.get("language_updated_at") or a.get("language_updated") or a.get("published_at") or date_only(a.get("published"))
+def rss_date_value(v):
+    if not v:
+        return ""
+    value = str(v)
+    if "T" in value:
+        dt = datetime.fromisoformat(value.replace("Z","+00:00"))
+    else:
+        dt = datetime.fromisoformat(date_only(value) + "T12:00:00+00:00")
+    return dt.astimezone(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
 def rss_date(d):
-    return datetime.fromisoformat(d + "T12:00:00+00:00").astimezone(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
+    return rss_date_value(d)
 
 def article_versions(article):
     """One registry story can have separately addressable language versions."""
@@ -46,7 +57,7 @@ def article_block(a, source):
     data = {
         "@context":"https://schema.org","@type":"NewsArticle",
         "headline":a["title"],"description":a["summary"],
-        "datePublished":date_only(a["published"]),"dateModified":modified(a),
+        "datePublished":schema_published(a),"dateModified":schema_modified(a),
         "mainEntityOfPage":{"@type":"WebPage","@id":canonical(a)},
         "author":{"@type":"Person","name":"Bjørn Moe Aldema"},
         "publisher":{"@type":"Organization","name":"Experimental Newsroom","url":BASE},
@@ -87,7 +98,7 @@ def build(articles):
     f=['<?xml version="1.0" encoding="UTF-8"?>','<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">','  <channel>','    <title>Experimental Newsroom</title>','    <link>'+BASE+'</link>','    <description>Careful observation, evidence and constructive criticism from Experimental Newsroom.</description>','    <language>en</language>','    <lastBuildDate>'+rss_date(latest)+'</lastBuildDate>','    <atom:link href="'+BASE+'feed.xml" rel="self" type="application/rss+xml"/>']
     for a in ordered:
         u=canonical(a)
-        f += ['    <item>','      <title>'+escape(a["title"])+'</title>','      <link>'+escape(u)+'</link>','      <guid isPermaLink="true">'+escape(u)+'</guid>','      <pubDate>'+rss_date(date_only(a["published"]))+'</pubDate>','      <description>'+escape(a["summary"])+'</description>','    </item>']
+        f += ['    <item>','      <title>'+escape(a["title"])+'</title>','      <link>'+escape(u)+'</link>','      <guid isPermaLink="true">'+escape(u)+'</guid>','      <pubDate>'+rss_date_value(a.get("published_at") or date_only(a["published"]))+'</pubDate>','      <description>'+escape(a["summary"])+'</description>','    </item>']
     f += ['  </channel>','</rss>']
     (PUBLIC/"feed.xml").write_text("\n".join(f)+"\n", encoding="utf-8")
 

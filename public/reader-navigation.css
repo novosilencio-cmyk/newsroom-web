@@ -42,3 +42,15 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,su
 @media(max-width:650px){.map-masthead{align-items:flex-start;flex-direction:column;gap:8px}.map-intro{padding-top:32px}.map-search{grid-template-columns:1fr;padding:18px}.map-search button{width:100%}.map-list{grid-template-columns:1fr}.map-jumps{gap:0 18px}.map-section{padding-top:30px}.map-page{flex-wrap:wrap;gap:4px 12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{.reader-skip,.map-search,.map-jumps{display:none!important}.map-entry[hidden],.map-section[hidden]{display:block!important}.map-list{display:block}.map-entry{break-inside:avoid}}
+
+
+/* Standing reader-depth component: optional specialist depth without interrupting the main reader path. */
+details.reader-depth,details.depth{background:#e9ede5;border:1px solid #c4cdbd;border-radius:4px;margin:36px 0;padding:0 24px}
+details.reader-depth>summary,details.depth>summary{font:700 1.05rem/1.5 Arial,sans-serif;padding:23px 0;cursor:pointer;color:#294634}
+details.reader-depth[open]>summary,details.depth[open]>summary{border-bottom:1px solid #c4cdbd;margin-bottom:22px}
+details.reader-depth h3,details.depth h3{font:700 1rem/1.4 Arial,sans-serif;margin:25px 0 12px}
+details.reader-depth p,details.reader-depth li,details.depth p,details.depth li{font-size:.95em;line-height:1.65}
+details.reader-depth table,details.depth table{border-collapse:collapse;width:100%;font:.9rem/1.5 Arial,sans-serif;margin:20px 0}
+details.reader-depth th,details.reader-depth td,details.depth th,details.depth td{text-align:left;vertical-align:top;border-bottom:1px solid #c4cdbd;padding:10px 7px}
+details.reader-depth .small,details.depth .small{font:.82rem/1.6 Arial,sans-serif}
+@media(max-width:650px){details.reader-depth,details.depth{padding:0 16px}details.reader-depth table,details.depth table{font-size:.86rem;table-layout:fixed}details.reader-depth th,details.reader-depth td,details.depth th,details.depth td{overflow-wrap:anywhere}}

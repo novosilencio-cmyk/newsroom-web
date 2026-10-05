@@ -481,107 +481,104 @@
   },
   "public/index.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "46d2fa4bdbd91eb3f03317607a01da64e82c732e512645e8fddcd475a8eabf00",
-    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
-    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewer": "ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
+    "execution_context": "Same-assistant Arabic translation/RTL review and bounded language-link correction; nine published essay bodies preserved; no independent human native proofreading",
     "reviewed_at": "2026-10-04",
-    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
         "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+        "application_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/essay-arabic-correction-2026-10-04.md#helhetsinntrykk",
+      "styrker": "docs/editorial/essay-arabic-correction-2026-10-04.md#styrker",
+      "stilprofil": "docs/editorial/essay-arabic-correction-2026-10-04.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/essay-arabic-correction-2026-10-04.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/essay-arabic-correction-2026-10-04.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/essay-arabic-correction-2026-10-04.md#revidert-eksempelversjon"
     },
-    "decision": "KEEP",
+    "comparison_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "reader_journey_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "semantic_control_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "sha256": "7ab26e572251bd291a0555c2cc9c1a1ff12e13405e8f7b254d81d0860af58dbd",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
-      "sha256": "46d2fa4bdbd91eb3f03317607a01da64e82c732e512645e8fddcd475a8eabf00"
+      "reference": "Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author.",
+      "sha256": "7ab26e572251bd291a0555c2cc9c1a1ff12e13405e8f7b254d81d0860af58dbd"
     }
   },
   "public/nb/index.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "9e405064200eadbaf6f772477884d9712599bda474f430622f948e7cb4ea6879",
-    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
-    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewer": "ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
+    "execution_context": "Same-assistant Arabic translation/RTL review and bounded language-link correction; nine published essay bodies preserved; no independent human native proofreading",
     "reviewed_at": "2026-10-04",
-    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
         "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+        "application_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/essay-arabic-correction-2026-10-04.md#helhetsinntrykk",
+      "styrker": "docs/editorial/essay-arabic-correction-2026-10-04.md#styrker",
+      "stilprofil": "docs/editorial/essay-arabic-correction-2026-10-04.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/essay-arabic-correction-2026-10-04.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/essay-arabic-correction-2026-10-04.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/essay-arabic-correction-2026-10-04.md#revidert-eksempelversjon"
     },
-    "decision": "KEEP",
+    "comparison_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "reader_journey_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "semantic_control_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "sha256": "106ce3ae827572d8ea009bf8cbae10c595c7590c153247134dfdf98f7e8129f9",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
-      "sha256": "9e405064200eadbaf6f772477884d9712599bda474f430622f948e7cb4ea6879"
+      "reference": "Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author.",
+      "sha256": "106ce3ae827572d8ea009bf8cbae10c595c7590c153247134dfdf98f7e8129f9"
     }
   },
   "public/en/index.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "0c1792fb99c41aa9963b7d537d8d1787309b481c62207053d084567546417127",
-    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
-    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewer": "ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
+    "execution_context": "Same-assistant Arabic translation/RTL review and bounded language-link correction; nine published essay bodies preserved; no independent human native proofreading",
     "reviewed_at": "2026-10-04",
-    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
         "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+        "application_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/essay-arabic-correction-2026-10-04.md#helhetsinntrykk",
+      "styrker": "docs/editorial/essay-arabic-correction-2026-10-04.md#styrker",
+      "stilprofil": "docs/editorial/essay-arabic-correction-2026-10-04.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/essay-arabic-correction-2026-10-04.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/essay-arabic-correction-2026-10-04.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/essay-arabic-correction-2026-10-04.md#revidert-eksempelversjon"
     },
-    "decision": "KEEP",
+    "comparison_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "reader_journey_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "semantic_control_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "sha256": "c2428d7ceb1caaadb982c11641ad5b0c1c8022d2268c8d2b82a36eb9c85c9158",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
-      "sha256": "0c1792fb99c41aa9963b7d537d8d1787309b481c62207053d084567546417127"
+      "reference": "Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author.",
+      "sha256": "c2428d7ceb1caaadb982c11641ad5b0c1c8022d2268c8d2b82a36eb9c85c9158"
     }
   },
   "public/art/love-me-to-lunch.en.html": {
@@ -1893,72 +1890,70 @@
   },
   "public/sitemap.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "018fc42551dab94b517adc8e19c00163fd81be7366e285abffd02440dc655574",
-    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
-    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewer": "ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
+    "execution_context": "Same-assistant Arabic translation/RTL review and bounded language-link correction; nine published essay bodies preserved; no independent human native proofreading",
     "reviewed_at": "2026-10-04",
-    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
         "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+        "application_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/essay-arabic-correction-2026-10-04.md#helhetsinntrykk",
+      "styrker": "docs/editorial/essay-arabic-correction-2026-10-04.md#styrker",
+      "stilprofil": "docs/editorial/essay-arabic-correction-2026-10-04.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/essay-arabic-correction-2026-10-04.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/essay-arabic-correction-2026-10-04.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/essay-arabic-correction-2026-10-04.md#revidert-eksempelversjon"
     },
-    "decision": "KEEP",
+    "comparison_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "reader_journey_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "semantic_control_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "sha256": "eb21242c6e1aed609ef30dc4091cc9c7839e0698bbf4d09ce05c525357c5cd71",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
-      "sha256": "018fc42551dab94b517adc8e19c00163fd81be7366e285abffd02440dc655574"
+      "reference": "Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author.",
+      "sha256": "eb21242c6e1aed609ef30dc4091cc9c7839e0698bbf4d09ce05c525357c5cd71"
     }
   },
   "public/sitemap.en.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "5c60ab5963e1984e0932c95863f4c4aeafa5b5bd6861e9c1813601c634b38562",
-    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
-    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewer": "ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
+    "execution_context": "Same-assistant Arabic translation/RTL review and bounded language-link correction; nine published essay bodies preserved; no independent human native proofreading",
     "reviewed_at": "2026-10-04",
-    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
         "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+        "application_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/essay-arabic-correction-2026-10-04.md#helhetsinntrykk",
+      "styrker": "docs/editorial/essay-arabic-correction-2026-10-04.md#styrker",
+      "stilprofil": "docs/editorial/essay-arabic-correction-2026-10-04.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/essay-arabic-correction-2026-10-04.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/essay-arabic-correction-2026-10-04.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/essay-arabic-correction-2026-10-04.md#revidert-eksempelversjon"
     },
-    "decision": "KEEP",
+    "comparison_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "reader_journey_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "semantic_control_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "sha256": "f9668edfc0e5aadbdf174636384c1eff17cf0c28434f6a8044e43829564ce9ce",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes.",
-      "sha256": "5c60ab5963e1984e0932c95863f4c4aeafa5b5bd6861e9c1813601c634b38562"
+      "reference": "Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author.",
+      "sha256": "f9668edfc0e5aadbdf174636384c1eff17cf0c28434f6a8044e43829564ce9ce"
     }
   },
   "public/articles/nar-ansvaret-kommer-hjem-2026.html": {
@@ -2604,38 +2599,38 @@
     }
   },
   "public/articles/tidlig-legemiddeltilgang-ekspertgruppe-2026.html": {
-    "case_id": "NO07-RELEASE-20261004",
-    "sha256": "b864c423c16b5d0f4076904d70a041730d90ec361a79a075e48fb68b05988903",
-    "reviewer": "Executing assistant with loaded Ariadne competence; separate AI source review",
-    "execution_context": "Language editing and final integration in primary assistant; independent AI execution context for bounded source review; no licensed medical/legal review or reader-effect claim",
-    "reviewed_at": "2026-10-04",
-    "comparison_ref": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-    "reader_journey_ref": "docs/editorial/no07-release-2026-10-04.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/no07-release-2026-10-04.md#semantic-control",
+    "case_id": "NO07-AUTHORISATION-DEPTH-20261005",
+    "sha256": "76ab3b68fcf7db09a36ae7d937b679aad7459d064609b5e98c30b2a608d22cad",
+    "reviewer": "Executing assistant applying Ariadne; separate AI editorial/source review PASS_BOUNDED",
+    "execution_context": "Bounded addition reviewed separately by an AI reviewer; final realization and six-stage review by executing assistant; no human specialist review claimed",
+    "reviewed_at": "2026-10-05",
+    "comparison_ref": "docs/editorial/no07-authorisation-depth-2026-10-05.md#six-stages",
+    "reader_journey_ref": "docs/editorial/no07-authorisation-depth-2026-10-05.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/no07-authorisation-depth-2026-10-05.md#semantic-control",
     "loaded_modules": [
       {
         "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
         "revision": "runtime-read-2026-10-04",
-        "application_ref": "docs/editorial/no07-release-2026-10-04.md#six-stages"
+        "application_ref": "docs/editorial/no07-authorisation-depth-2026-10-05.md#six-stages"
       },
       {
         "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
         "revision": "runtime-read-2026-10-04",
-        "application_ref": "docs/editorial/no07-release-2026-10-04.md#reader-journey"
+        "application_ref": "docs/editorial/no07-authorisation-depth-2026-10-05.md#six-stages"
       },
       {
         "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
         "revision": "runtime-read-2026-10-04",
-        "application_ref": "docs/editorial/no07-release-2026-10-04.md#semantic-control"
+        "application_ref": "docs/editorial/no07-authorisation-depth-2026-10-05.md#six-stages"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-      "styrker": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-      "stilprofil": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-      "konkrete_svakheter": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-      "forbedringsgrep": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-      "revidert_eksempelversjon": "docs/editorial/no07-release-2026-10-04.md#six-stages"
+      "helhetsinntrykk": "docs/editorial/no07-authorisation-depth-2026-10-05.md#six-stages",
+      "styrker": "docs/editorial/no07-authorisation-depth-2026-10-05.md#six-stages",
+      "stilprofil": "docs/editorial/no07-authorisation-depth-2026-10-05.md#six-stages",
+      "konkrete_svakheter": "docs/editorial/no07-authorisation-depth-2026-10-05.md#six-stages",
+      "forbedringsgrep": "docs/editorial/no07-authorisation-depth-2026-10-05.md#six-stages",
+      "revidert_eksempelversjon": "docs/editorial/no07-authorisation-depth-2026-10-05.md#six-stages"
     },
     "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
@@ -2643,360 +2638,350 @@
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat 2026-10-04: “DFM, la nå expNR ta neste sak i køen og bearbeid saken frem til og så publiser den.” Explicit delegated authority applied to this exact completed release; not a claim of personal review of final bytes.",
-      "sha256": "b864c423c16b5d0f4076904d70a041730d90ec361a79a075e48fb68b05988903"
+      "reference": "Current chat 2026-10-05: explicit instruction to incorporate the feedback, edit and publish; delegated authority applied to this exact final hash, not a claim of personal byte review. docs/editorial/no07-authorisation-depth-2026-10-05.md#authority-and-exact-version",
+      "sha256": "76ab3b68fcf7db09a36ae7d937b679aad7459d064609b5e98c30b2a608d22cad"
     },
-    "source_scope": "Bounded report of attributed proposal, dissent and ministry follow-up; dated DMP guidance. Generated discovery change inserts only the reviewed title/deck.",
+    "source_scope": "DMP authorisation, adverse effects and pharmacovigilance guidance; no medicine-specific benefit finding",
     "revision_disposition": "Publication time bound to successful initial deployment; prose unchanged."
   },
   "public/articles/not-necessarily-an-order-2026.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "d4527b26823236f7323afe3cd18bf9024e3ebb8fe22e82f9038c128e0e7264ad",
-    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
-    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewer": "ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
+    "execution_context": "Same-assistant Arabic translation/RTL review and bounded language-link correction; nine published essay bodies preserved; no independent human native proofreading",
     "reviewed_at": "2026-10-04",
-    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
         "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+        "application_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/essay-arabic-correction-2026-10-04.md#helhetsinntrykk",
+      "styrker": "docs/editorial/essay-arabic-correction-2026-10-04.md#styrker",
+      "stilprofil": "docs/editorial/essay-arabic-correction-2026-10-04.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/essay-arabic-correction-2026-10-04.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/essay-arabic-correction-2026-10-04.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/essay-arabic-correction-2026-10-04.md#revidert-eksempelversjon"
     },
-    "decision": "KEEP",
+    "comparison_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "reader_journey_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "semantic_control_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "sha256": "793e18a962edfe42b7c620a98f79b9ebcf829bf14b8b4a416fc369cc0bfa7082",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes. Exact first-publication time subsequently bound to the observed successful Pages deployment at 2026-10-04T21:03:47+02:00; prose unchanged.",
-      "sha256": "d4527b26823236f7323afe3cd18bf9024e3ebb8fe22e82f9038c128e0e7264ad"
+      "reference": "Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author.",
+      "sha256": "793e18a962edfe42b7c620a98f79b9ebcf829bf14b8b4a416fc369cc0bfa7082"
     }
   },
   "public/articles/not-necessarily-an-order-2026.en.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "197ef30299f3155d02ca0e79b0e088fc88b613eeaacc5251b1a4705e5f6b34ab",
-    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
-    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewer": "ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
+    "execution_context": "Same-assistant Arabic translation/RTL review and bounded language-link correction; nine published essay bodies preserved; no independent human native proofreading",
     "reviewed_at": "2026-10-04",
-    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
         "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+        "application_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/essay-arabic-correction-2026-10-04.md#helhetsinntrykk",
+      "styrker": "docs/editorial/essay-arabic-correction-2026-10-04.md#styrker",
+      "stilprofil": "docs/editorial/essay-arabic-correction-2026-10-04.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/essay-arabic-correction-2026-10-04.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/essay-arabic-correction-2026-10-04.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/essay-arabic-correction-2026-10-04.md#revidert-eksempelversjon"
     },
-    "decision": "KEEP",
+    "comparison_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "reader_journey_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "semantic_control_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "sha256": "771755ca98315efbc094785f60085f281700458bfb220dd34aa9bf6542f03eb4",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes. Exact first-publication time subsequently bound to the observed successful Pages deployment at 2026-10-04T21:03:47+02:00; prose unchanged.",
-      "sha256": "197ef30299f3155d02ca0e79b0e088fc88b613eeaacc5251b1a4705e5f6b34ab"
+      "reference": "Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author.",
+      "sha256": "771755ca98315efbc094785f60085f281700458bfb220dd34aa9bf6542f03eb4"
     }
   },
   "public/articles/not-necessarily-an-order-2026.fr.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "0aedea72999fd64968d481e7baaa854bcc81134a696202f8e8849a7032eceaf7",
-    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
-    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewer": "ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
+    "execution_context": "Same-assistant Arabic translation/RTL review and bounded language-link correction; nine published essay bodies preserved; no independent human native proofreading",
     "reviewed_at": "2026-10-04",
-    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
         "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+        "application_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/essay-arabic-correction-2026-10-04.md#helhetsinntrykk",
+      "styrker": "docs/editorial/essay-arabic-correction-2026-10-04.md#styrker",
+      "stilprofil": "docs/editorial/essay-arabic-correction-2026-10-04.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/essay-arabic-correction-2026-10-04.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/essay-arabic-correction-2026-10-04.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/essay-arabic-correction-2026-10-04.md#revidert-eksempelversjon"
     },
-    "decision": "KEEP",
+    "comparison_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "reader_journey_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "semantic_control_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "sha256": "499f7fac21745af62fcd4b82ebab727f25596fabcd1df54f61c9f1697e2ffbc1",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes. Exact first-publication time subsequently bound to the observed successful Pages deployment at 2026-10-04T21:03:47+02:00; prose unchanged.",
-      "sha256": "0aedea72999fd64968d481e7baaa854bcc81134a696202f8e8849a7032eceaf7"
+      "reference": "Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author.",
+      "sha256": "499f7fac21745af62fcd4b82ebab727f25596fabcd1df54f61c9f1697e2ffbc1"
     }
   },
   "public/articles/not-necessarily-an-order-2026.zh-Hans.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "0b3f4b50bcfa95216b9aab55cb35ca3cb5800e371035dae5b962e622c23acf37",
-    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
-    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewer": "ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
+    "execution_context": "Same-assistant Arabic translation/RTL review and bounded language-link correction; nine published essay bodies preserved; no independent human native proofreading",
     "reviewed_at": "2026-10-04",
-    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
         "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+        "application_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/essay-arabic-correction-2026-10-04.md#helhetsinntrykk",
+      "styrker": "docs/editorial/essay-arabic-correction-2026-10-04.md#styrker",
+      "stilprofil": "docs/editorial/essay-arabic-correction-2026-10-04.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/essay-arabic-correction-2026-10-04.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/essay-arabic-correction-2026-10-04.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/essay-arabic-correction-2026-10-04.md#revidert-eksempelversjon"
     },
-    "decision": "KEEP",
+    "comparison_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "reader_journey_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "semantic_control_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "sha256": "38db7b78ef2a3e240856b29c681bc217ddc3b504cf055319febae3ef3c39fa0e",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes. Exact first-publication time subsequently bound to the observed successful Pages deployment at 2026-10-04T21:03:47+02:00; prose unchanged.",
-      "sha256": "0b3f4b50bcfa95216b9aab55cb35ca3cb5800e371035dae5b962e622c23acf37"
+      "reference": "Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author.",
+      "sha256": "38db7b78ef2a3e240856b29c681bc217ddc3b504cf055319febae3ef3c39fa0e"
     }
   },
   "public/articles/not-necessarily-an-order-2026.ja.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "47701c6e391e07f54e7bed10ab4d75c0fa88a194618326cfd0994aed13f48d49",
-    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
-    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewer": "ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
+    "execution_context": "Same-assistant Arabic translation/RTL review and bounded language-link correction; nine published essay bodies preserved; no independent human native proofreading",
     "reviewed_at": "2026-10-04",
-    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
         "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+        "application_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/essay-arabic-correction-2026-10-04.md#helhetsinntrykk",
+      "styrker": "docs/editorial/essay-arabic-correction-2026-10-04.md#styrker",
+      "stilprofil": "docs/editorial/essay-arabic-correction-2026-10-04.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/essay-arabic-correction-2026-10-04.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/essay-arabic-correction-2026-10-04.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/essay-arabic-correction-2026-10-04.md#revidert-eksempelversjon"
     },
-    "decision": "KEEP",
+    "comparison_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "reader_journey_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "semantic_control_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "sha256": "f285e77fa871eabf51fdcab3f87e5ad7b7a56e8848ba42059fe2d68bc783fb6a",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes. Exact first-publication time subsequently bound to the observed successful Pages deployment at 2026-10-04T21:03:47+02:00; prose unchanged.",
-      "sha256": "47701c6e391e07f54e7bed10ab4d75c0fa88a194618326cfd0994aed13f48d49"
+      "reference": "Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author.",
+      "sha256": "f285e77fa871eabf51fdcab3f87e5ad7b7a56e8848ba42059fe2d68bc783fb6a"
     }
   },
   "public/articles/not-necessarily-an-order-2026.es.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "0578e3b24315b6db76d126f4e0497712c36cdfc6f430796ac10fcd89e9652ef8",
-    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
-    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewer": "ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
+    "execution_context": "Same-assistant Arabic translation/RTL review and bounded language-link correction; nine published essay bodies preserved; no independent human native proofreading",
     "reviewed_at": "2026-10-04",
-    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
         "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+        "application_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/essay-arabic-correction-2026-10-04.md#helhetsinntrykk",
+      "styrker": "docs/editorial/essay-arabic-correction-2026-10-04.md#styrker",
+      "stilprofil": "docs/editorial/essay-arabic-correction-2026-10-04.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/essay-arabic-correction-2026-10-04.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/essay-arabic-correction-2026-10-04.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/essay-arabic-correction-2026-10-04.md#revidert-eksempelversjon"
     },
-    "decision": "KEEP",
+    "comparison_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "reader_journey_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "semantic_control_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "sha256": "03c34a80ed96699fddcf015b700f6c0a61fbd234ebd937996dfc0dee062c1e80",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes. Exact first-publication time subsequently bound to the observed successful Pages deployment at 2026-10-04T21:03:47+02:00; prose unchanged.",
-      "sha256": "0578e3b24315b6db76d126f4e0497712c36cdfc6f430796ac10fcd89e9652ef8"
+      "reference": "Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author.",
+      "sha256": "03c34a80ed96699fddcf015b700f6c0a61fbd234ebd937996dfc0dee062c1e80"
     }
   },
   "public/articles/not-necessarily-an-order-2026.de.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "5f96fe246d396e5153c586ff7ec392d0cfff46b3beb4df7d7c22861029b65476",
-    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
-    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewer": "ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
+    "execution_context": "Same-assistant Arabic translation/RTL review and bounded language-link correction; nine published essay bodies preserved; no independent human native proofreading",
     "reviewed_at": "2026-10-04",
-    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
         "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+        "application_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/essay-arabic-correction-2026-10-04.md#helhetsinntrykk",
+      "styrker": "docs/editorial/essay-arabic-correction-2026-10-04.md#styrker",
+      "stilprofil": "docs/editorial/essay-arabic-correction-2026-10-04.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/essay-arabic-correction-2026-10-04.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/essay-arabic-correction-2026-10-04.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/essay-arabic-correction-2026-10-04.md#revidert-eksempelversjon"
     },
-    "decision": "KEEP",
+    "comparison_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "reader_journey_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "semantic_control_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "sha256": "60e618bbc72e05bc22ee5cc443aac71710ded77115e853482c7c0c5a6f1d7f27",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes. Exact first-publication time subsequently bound to the observed successful Pages deployment at 2026-10-04T21:03:47+02:00; prose unchanged.",
-      "sha256": "5f96fe246d396e5153c586ff7ec392d0cfff46b3beb4df7d7c22861029b65476"
+      "reference": "Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author.",
+      "sha256": "60e618bbc72e05bc22ee5cc443aac71710ded77115e853482c7c0c5a6f1d7f27"
     }
   },
   "public/articles/not-necessarily-an-order-2026.pt.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "74607d8f70da4cede8f138f5fcd29fec13d070a2d5f73d9e079c5c6a409fcbc9",
-    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
-    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewer": "ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
+    "execution_context": "Same-assistant Arabic translation/RTL review and bounded language-link correction; nine published essay bodies preserved; no independent human native proofreading",
     "reviewed_at": "2026-10-04",
-    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
         "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+        "application_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/essay-arabic-correction-2026-10-04.md#helhetsinntrykk",
+      "styrker": "docs/editorial/essay-arabic-correction-2026-10-04.md#styrker",
+      "stilprofil": "docs/editorial/essay-arabic-correction-2026-10-04.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/essay-arabic-correction-2026-10-04.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/essay-arabic-correction-2026-10-04.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/essay-arabic-correction-2026-10-04.md#revidert-eksempelversjon"
     },
-    "decision": "KEEP",
+    "comparison_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "reader_journey_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "semantic_control_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "sha256": "2dd47fcdeb123771808c22a108c9509d449410b909addb33f0d5a9c42e980d27",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes. Exact first-publication time subsequently bound to the observed successful Pages deployment at 2026-10-04T21:03:47+02:00; prose unchanged.",
-      "sha256": "74607d8f70da4cede8f138f5fcd29fec13d070a2d5f73d9e079c5c6a409fcbc9"
+      "reference": "Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author.",
+      "sha256": "2dd47fcdeb123771808c22a108c9509d449410b909addb33f0d5a9c42e980d27"
     }
   },
   "public/articles/not-necessarily-an-order-2026.ko.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "43874311b7644d91a816fcd839ccf61984a52b31f272c7d34a56badfbe6c0ed2",
-    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
-    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewer": "ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
+    "execution_context": "Same-assistant Arabic translation/RTL review and bounded language-link correction; nine published essay bodies preserved; no independent human native proofreading",
     "reviewed_at": "2026-10-04",
-    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
         "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+        "application_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/essay-arabic-correction-2026-10-04.md#helhetsinntrykk",
+      "styrker": "docs/editorial/essay-arabic-correction-2026-10-04.md#styrker",
+      "stilprofil": "docs/editorial/essay-arabic-correction-2026-10-04.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/essay-arabic-correction-2026-10-04.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/essay-arabic-correction-2026-10-04.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/essay-arabic-correction-2026-10-04.md#revidert-eksempelversjon"
     },
-    "decision": "KEEP",
+    "comparison_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "reader_journey_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "semantic_control_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "sha256": "ce7c03746b0a6f3db81a915348afd123414f994764bebd02e43d02517437ee72",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes. Exact first-publication time subsequently bound to the observed successful Pages deployment at 2026-10-04T21:03:47+02:00; prose unchanged.",
-      "sha256": "43874311b7644d91a816fcd839ccf61984a52b31f272c7d34a56badfbe6c0ed2"
+      "reference": "Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author.",
+      "sha256": "ce7c03746b0a6f3db81a915348afd123414f994764bebd02e43d02517437ee72"
     }
   },
-  "public/articles/not-necessarily-an-order-2026.hi.html": {
+  "public/articles/not-necessarily-an-order-2026.ar.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "sha256": "183d77421432180173a9fe7a9f560ef64612cc1cd248458090163db3ba5a65ff",
-    "reviewer": "Executing assistant using Ariadne six-stage workflow; source and multilingual semantic control integrated for Bjørn Moe Aldema",
-    "execution_context": "Same-assistant final editorial and multilingual comparison across one source-locked essay; AI-assisted translations; no separate human native-language proofreading or reader-effect claim",
+    "reviewer": "ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
+    "execution_context": "Same-assistant Arabic translation/RTL review and bounded language-link correction; nine published essay bodies preserved; no independent human native proofreading",
     "reviewed_at": "2026-10-04",
-    "comparison_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-    "reader_journey_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
         "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+        "application_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "styrker": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/not-necessarily-an-order-release-2026-10-04.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/essay-arabic-correction-2026-10-04.md#helhetsinntrykk",
+      "styrker": "docs/editorial/essay-arabic-correction-2026-10-04.md#styrker",
+      "stilprofil": "docs/editorial/essay-arabic-correction-2026-10-04.md#stilprofil",
+      "konkrete_svakheter": "docs/editorial/essay-arabic-correction-2026-10-04.md#konkrete-svakheter",
+      "forbedringsgrep": "docs/editorial/essay-arabic-correction-2026-10-04.md#forbedringsgrep",
+      "revidert_eksempelversjon": "docs/editorial/essay-arabic-correction-2026-10-04.md#revidert-eksempelversjon"
     },
-    "decision": "KEEP",
+    "comparison_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "reader_journey_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "semantic_control_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+    "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Essay and translations preserve company-position versus evidence boundaries; discovery surfaces contain only reviewed title/deck/language links/date.",
+    "sha256": "f7f727c5aae8157eb7daf0a9e5d7bd3e32915b4164fdc165ef00bfbce9c48c2d",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat, 2026-10-04: explicit instruction to perform final editorial review and then publish this essay in ten languages; delegated publication authority applied to this exact final file hash after review, not a claim of Bjørn personally checking final bytes. Exact first-publication time subsequently bound to the observed successful Pages deployment at 2026-10-04T21:03:47+02:00; prose unchanged.",
-      "sha256": "183d77421432180173a9fe7a9f560ef64612cc1cd248458090163db3ba5a65ff"
+      "reference": "Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author.",
+      "sha256": "f7f727c5aae8157eb7daf0a9e5d7bd3e32915b4164fdc165ef00bfbce9c48c2d"
     }
   }
 }

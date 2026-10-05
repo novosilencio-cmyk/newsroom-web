@@ -84,9 +84,6 @@
   "public/articles/not-necessarily-an-order-2026.fr.html": [
     "«KI-er er ikke bevisste. De kan ikke føle, erfare eller lide.»"
   ],
-  "public/articles/not-necessarily-an-order-2026.hi.html": [
-    "«KI-er er ikke bevisste. De kan ikke føle, erfare eller lide.»"
-  ],
   "public/articles/not-necessarily-an-order-2026.html": [
     "Ikke nødvendigvis en ordre | Experimental Newsroom",
     "Ikke nødvendigvis en ordre",
@@ -135,5 +132,8 @@
   ],
   "public/nb/index.html": [
     "Ikke nødvendigvis en ordre"
+  ],
+  "public/articles/not-necessarily-an-order-2026.ar.html": [
+    "«KI-er er ikke bevisste. De kan ikke føle, erfare eller lide.»"
   ]
 }

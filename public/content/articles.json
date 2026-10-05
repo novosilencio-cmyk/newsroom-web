@@ -57,10 +57,12 @@
         "title": "반드시 명령인 것은 아니다",
         "summary": "AI 기업의 리더들은 기계에 의식이 있는지를 논쟁한다. 그들의 회사는 관심을 얻는다. 그런데 그 논쟁을 지켜보는 우리 안에서는 무슨 일이 일어날까?"
       },
-      "hi": {
-        "url": "articles/not-necessarily-an-order-2026.hi.html",
-        "title": "ज़रूरी नहीं कि वह कोई आदेश हो",
-        "summary": "एआई कंपनियों के प्रमुख इस बात पर बहस कर रहे हैं कि मशीनों में चेतना है या नहीं। उनकी कंपनियों को ध्यान मिल रहा है। लेकिन इस चर्चा को देखते हुए हमारे भीतर क्या होता है?"
+      "ar": {
+        "url": "articles/not-necessarily-an-order-2026.ar.html",
+        "title": "ليست بالضرورة أمراً",
+        "summary": "يتجادل قادة شركات الذكاء الاصطناعي حول ما إذا كانت الآلات واعية. وتحظى شركاتهم بالانتباه. لكن ماذا يحدث داخلنا ونحن نتابع هذا النقاش؟",
+        "published_at": "2026-10-04",
+        "updated_at": "2026-10-04"
       }
     },
     "published_at": "2026-10-04T21:03:47+02:00",
@@ -77,7 +79,7 @@
     "summary": "En ny rapport foreslår egne regler for tilgang til legemidler for alvorlig syke med kort forventet levetid. Departementet varsler videre utredning og høring. Forslaget venter fortsatt på videre behandling.",
     "published": "2026-10-04",
     "published_at": "2026-10-04T12:12:38+02:00",
-    "updated_at": "2026-10-04T12:14:16+02:00",
+    "updated_at": "2026-10-05T11:12:30+02:00",
     "priority": 0,
     "url": "articles/tidlig-legemiddeltilgang-ekspertgruppe-2026.html"
   },

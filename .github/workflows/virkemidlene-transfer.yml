@@ -1,0 +1,79 @@
+name: Realize the exact reviewed Virkemidlene tree
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+permissions:
+  contents: read
+jobs:
+  transfer:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'work/virkemidlene-avdrag-publish-20261007'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+      - name: Verify and realize only the reviewed public tree
+        env:
+          EXPECTED_HEAD: ${{ github.event.pull_request.head.sha }}
+          BRANCH: work/virkemidlene-avdrag-publish-20261007
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE=82f5d6d5f21317bf9b75010472d2f9ea7ec96655
+          REVIEW_COMMIT=2aa092d3d1ef4466baad3093ab8adfacda5ee968
+          REVIEW_TREE=3db32c779fc5053526249ee2bc63a7b15c4f2eb2
+          test "$(git rev-parse HEAD)" = "$EXPECTED_HEAD"
+          test "$(git rev-parse origin/main)" = "$BASE"
+          python3 - <<'PY'
+          import subprocess
+          expected = {'.github/workflows/virkemidlene-transfer.yml'} | {f'.transfer/virkemidlene/part{i:02}' for i in range(8)}
+          actual = set(subprocess.check_output(['git','diff','--name-only','82f5d6d5f21317bf9b75010472d2f9ea7ec96655','HEAD'],text=True).splitlines())
+          assert actual == expected, (actual, expected)
+          PY
+          BUNDLE="$RUNNER_TEMP/reviewed-release.bundle"
+          cat .transfer/virkemidlene/part{00,01,02,03,04,05,06,07} > "$BUNDLE"
+          echo "5b6e320ab1a4e548e4799cd3f5bfff6160bde44bcc5dafda18cc866bd26a16ec  $BUNDLE" | sha256sum --check
+          git bundle verify "$BUNDLE"
+          git fetch "$BUNDLE" refs/heads/virkemidlene-reviewed-release:refs/remotes/reviewed/release
+          test "$(git rev-parse refs/remotes/reviewed/release)" = "$REVIEW_COMMIT"
+          test "$(git rev-parse "$REVIEW_COMMIT^{tree}")" = "$REVIEW_TREE"
+          test "$(git rev-parse "$REVIEW_COMMIT^")" = "$BASE"
+          python3 - <<'PY'
+          import subprocess
+          expected = set('''docs/editorial/language-reviews.json
+          docs/editorial/virkemidlene-avdrag-release-2026-10-07.md
+          public/articles/hvem-skal-betale-for-en-stabil-okonomi-2026.html
+          public/content/articles.json
+          public/feed.xml
+          public/nb/index.html
+          public/norway/index.html
+          public/series/virkemidlene/nb/index.html
+          public/sitemap.en.html
+          public/sitemap.html
+          public/sitemap.xml
+          scripts/approved_norwegian_phrases.json'''.splitlines())
+          actual = set(subprocess.check_output(['git','diff','--name-only','82f5d6d5f21317bf9b75010472d2f9ea7ec96655','2aa092d3d1ef4466baad3093ab8adfacda5ee968'],text=True).splitlines())
+          assert actual == expected, (actual, expected)
+          PY
+          git read-tree --reset -u "$REVIEW_TREE"
+          test "$(git write-tree)" = "$REVIEW_TREE"
+          test ! -e .transfer
+          test ! -e .github/workflows/virkemidlene-transfer.yml
+          python3 scripts/build_discovery.py
+          python3 scripts/check_language_review.py
+          python3 scripts/check_publication_markers.py
+          python3 scripts/check_norwegian_editorial_style.py
+          python3 scripts/check_reader_sequence_style.py
+          python3 scripts/build_static_site.py
+          python3 -m unittest discover -s tests -p 'test_*.py'
+          git diff --exit-code
+          test "$(git write-tree)" = "$REVIEW_TREE"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Realize reviewed Virkemidlene publication; remove temporary transfer'
+          test "$(git rev-parse HEAD^{tree})" = "$REVIEW_TREE"
+          git push origin "HEAD:refs/heads/$BRANCH"

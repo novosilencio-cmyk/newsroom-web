@@ -514,37 +514,42 @@
     }
   },
   "public/nb/index.html": {
-    "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "reviewer": "ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
-    "execution_context": "Same-assistant Arabic translation/RTL review and bounded language-link correction; nine published essay bodies preserved; no independent human native proofreading",
-    "reviewed_at": "2026-10-04",
+    "case_id": "VIRKEMIDLENE-AVDRAG-20261007",
+    "sha256": "8d96aa2f830ad065bde6d798b1fb9593f4e185c1f11cfddc28092e38adc3e4ce",
+    "reviewer": "Executing editorial assistant / Ariadne-method review",
+    "execution_context": "same-assistant purpose, source, language and presentation passes; not independent peer review",
+    "reviewed_at": "2026-10-07T04:24:29.908225+00:00",
     "loaded_modules": [
       {
         "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md"
+        "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
+      },
+      {
+        "source": "docs/editorial/READER_SEQUENCE_PRESENTATION_STANDARD_001.md",
+        "revision": "1a2d4dd69a057b720fa772af6f723649afd931b7",
+        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/essay-arabic-correction-2026-10-04.md#helhetsinntrykk",
-      "styrker": "docs/editorial/essay-arabic-correction-2026-10-04.md#styrker",
-      "stilprofil": "docs/editorial/essay-arabic-correction-2026-10-04.md#stilprofil",
-      "konkrete_svakheter": "docs/editorial/essay-arabic-correction-2026-10-04.md#konkrete-svakheter",
-      "forbedringsgrep": "docs/editorial/essay-arabic-correction-2026-10-04.md#forbedringsgrep",
-      "revidert_eksempelversjon": "docs/editorial/essay-arabic-correction-2026-10-04.md#revidert-eksempelversjon"
+      "helhetsinntrykk": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "styrker": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
     },
-    "comparison_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
-    "reader_journey_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
-    "semantic_control_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
-    "decision": "REVISE",
+    "comparison_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#editorial-decision-and-preservation",
+    "reader_journey_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#semantic-controls-and-permitted-exact-wording",
+    "decision": "COMBINE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "sha256": "106ce3ae827572d8ea009bf8cbae10c595c7590c153247134dfdf98f7e8129f9",
     "publication_approval": {
       "approved": true,
-      "by": "Bjørn Moe Aldema",
-      "reference": "Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author.",
-      "sha256": "106ce3ae827572d8ea009bf8cbae10c595c7590c153247134dfdf98f7e8129f9"
+      "by": "Bjørn Moe Aldema; delegated editorial realization",
+      "reference": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#authority-and-version-binding",
+      "sha256": "8d96aa2f830ad065bde6d798b1fb9593f4e185c1f11cfddc28092e38adc3e4ce"
     }
   },
   "public/en/index.html": {
@@ -1336,50 +1341,43 @@
     }
   },
   "public/norway/index.html": {
-    "case_id": "NO07-RELEASE-20261004",
-    "sha256": "a0c031693b152bd326d78d52b9fc34f31019559acc42d4a2a1a7b436363e54a4",
-    "reviewer": "Executing assistant with loaded Ariadne competence; separate AI source review",
-    "execution_context": "Language editing and final integration in primary assistant; independent AI execution context for bounded source review; no licensed medical/legal review or reader-effect claim",
-    "reviewed_at": "2026-10-04",
-    "comparison_ref": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-    "reader_journey_ref": "docs/editorial/no07-release-2026-10-04.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/no07-release-2026-10-04.md#semantic-control",
+    "case_id": "VIRKEMIDLENE-AVDRAG-20261007",
+    "sha256": "afcafcfb1e7ae80ed147e8801bffb5caabf9ba9ee7f04c3ed23ded1d732ad545",
+    "reviewer": "Executing editorial assistant / Ariadne-method review",
+    "execution_context": "same-assistant purpose, source, language and presentation passes; not independent peer review",
+    "reviewed_at": "2026-10-07T04:24:29.908283+00:00",
     "loaded_modules": [
       {
-        "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
-        "revision": "runtime-read-2026-10-04",
-        "application_ref": "docs/editorial/no07-release-2026-10-04.md#six-stages"
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
       },
       {
-        "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
-        "revision": "runtime-read-2026-10-04",
-        "application_ref": "docs/editorial/no07-release-2026-10-04.md#reader-journey"
-      },
-      {
-        "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
-        "revision": "runtime-read-2026-10-04",
-        "application_ref": "docs/editorial/no07-release-2026-10-04.md#semantic-control"
+        "source": "docs/editorial/READER_SEQUENCE_PRESENTATION_STANDARD_001.md",
+        "revision": "1a2d4dd69a057b720fa772af6f723649afd931b7",
+        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-      "styrker": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-      "stilprofil": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-      "konkrete_svakheter": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-      "forbedringsgrep": "docs/editorial/no07-release-2026-10-04.md#six-stages",
-      "revidert_eksempelversjon": "docs/editorial/no07-release-2026-10-04.md#six-stages"
+      "helhetsinntrykk": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "styrker": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
     },
-    "decision": "REVISE",
+    "comparison_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#editorial-decision-and-preservation",
+    "reader_journey_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#semantic-controls-and-permitted-exact-wording",
+    "decision": "COMBINE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
     "publication_approval": {
       "approved": true,
-      "by": "Bjørn Moe Aldema",
-      "reference": "Current chat 2026-10-04: “DFM, la nå expNR ta neste sak i køen og bearbeid saken frem til og så publiser den.” Explicit delegated authority applied to this exact completed release; not a claim of personal review of final bytes.",
-      "sha256": "a0c031693b152bd326d78d52b9fc34f31019559acc42d4a2a1a7b436363e54a4"
-    },
-    "source_scope": "Bounded report of attributed proposal, dissent and ministry follow-up; dated DMP guidance. Generated discovery change inserts only the reviewed title/deck.",
-    "revision_disposition": "Publication time bound to successful initial deployment; prose unchanged."
+      "by": "Bjørn Moe Aldema; delegated editorial realization",
+      "reference": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#authority-and-version-binding",
+      "sha256": "afcafcfb1e7ae80ed147e8801bffb5caabf9ba9ee7f04c3ed23ded1d732ad545"
+    }
   },
   "public/privacy.html": {
     "case_id": "umami-privacy-review-2026-09-28-v2",
@@ -1889,71 +1887,81 @@
     }
   },
   "public/sitemap.html": {
-    "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "reviewer": "ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
-    "execution_context": "Same-assistant Arabic translation/RTL review and bounded language-link correction; nine published essay bodies preserved; no independent human native proofreading",
-    "reviewed_at": "2026-10-04",
+    "case_id": "VIRKEMIDLENE-AVDRAG-20261007",
+    "sha256": "d88e6e592f108c1dd7a052677115f705800e66edab0c9564b3c89a37c07986f9",
+    "reviewer": "Executing editorial assistant / Ariadne-method review",
+    "execution_context": "same-assistant purpose, source, language and presentation passes; not independent peer review",
+    "reviewed_at": "2026-10-07T04:24:29.908131+00:00",
     "loaded_modules": [
       {
         "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md"
+        "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
+      },
+      {
+        "source": "docs/editorial/READER_SEQUENCE_PRESENTATION_STANDARD_001.md",
+        "revision": "1a2d4dd69a057b720fa772af6f723649afd931b7",
+        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/essay-arabic-correction-2026-10-04.md#helhetsinntrykk",
-      "styrker": "docs/editorial/essay-arabic-correction-2026-10-04.md#styrker",
-      "stilprofil": "docs/editorial/essay-arabic-correction-2026-10-04.md#stilprofil",
-      "konkrete_svakheter": "docs/editorial/essay-arabic-correction-2026-10-04.md#konkrete-svakheter",
-      "forbedringsgrep": "docs/editorial/essay-arabic-correction-2026-10-04.md#forbedringsgrep",
-      "revidert_eksempelversjon": "docs/editorial/essay-arabic-correction-2026-10-04.md#revidert-eksempelversjon"
+      "helhetsinntrykk": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "styrker": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
     },
-    "comparison_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
-    "reader_journey_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
-    "semantic_control_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
-    "decision": "REVISE",
+    "comparison_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#editorial-decision-and-preservation",
+    "reader_journey_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#semantic-controls-and-permitted-exact-wording",
+    "decision": "COMBINE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "sha256": "eb21242c6e1aed609ef30dc4091cc9c7839e0698bbf4d09ce05c525357c5cd71",
     "publication_approval": {
       "approved": true,
-      "by": "Bjørn Moe Aldema",
-      "reference": "Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author.",
-      "sha256": "eb21242c6e1aed609ef30dc4091cc9c7839e0698bbf4d09ce05c525357c5cd71"
+      "by": "Bjørn Moe Aldema; delegated editorial realization",
+      "reference": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#authority-and-version-binding",
+      "sha256": "d88e6e592f108c1dd7a052677115f705800e66edab0c9564b3c89a37c07986f9"
     }
   },
   "public/sitemap.en.html": {
-    "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-    "reviewer": "ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
-    "execution_context": "Same-assistant Arabic translation/RTL review and bounded language-link correction; nine published essay bodies preserved; no independent human native proofreading",
-    "reviewed_at": "2026-10-04",
+    "case_id": "VIRKEMIDLENE-AVDRAG-20261007",
+    "sha256": "782f4c9d4f5fa0fcd749ddfd0b3c1276932a7713f2f84b5c8bd720f59a60dd2a",
+    "reviewer": "Executing editorial assistant / Ariadne-method review",
+    "execution_context": "same-assistant purpose, source, language and presentation passes; not independent peer review",
+    "reviewed_at": "2026-10-07T04:24:29.908202+00:00",
     "loaded_modules": [
       {
         "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md"
+        "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
+      },
+      {
+        "source": "docs/editorial/READER_SEQUENCE_PRESENTATION_STANDARD_001.md",
+        "revision": "1a2d4dd69a057b720fa772af6f723649afd931b7",
+        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/essay-arabic-correction-2026-10-04.md#helhetsinntrykk",
-      "styrker": "docs/editorial/essay-arabic-correction-2026-10-04.md#styrker",
-      "stilprofil": "docs/editorial/essay-arabic-correction-2026-10-04.md#stilprofil",
-      "konkrete_svakheter": "docs/editorial/essay-arabic-correction-2026-10-04.md#konkrete-svakheter",
-      "forbedringsgrep": "docs/editorial/essay-arabic-correction-2026-10-04.md#forbedringsgrep",
-      "revidert_eksempelversjon": "docs/editorial/essay-arabic-correction-2026-10-04.md#revidert-eksempelversjon"
+      "helhetsinntrykk": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "styrker": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
     },
-    "comparison_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
-    "reader_journey_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
-    "semantic_control_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
-    "decision": "REVISE",
+    "comparison_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#editorial-decision-and-preservation",
+    "reader_journey_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#semantic-controls-and-permitted-exact-wording",
+    "decision": "COMBINE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "sha256": "f9668edfc0e5aadbdf174636384c1eff17cf0c28434f6a8044e43829564ce9ce",
     "publication_approval": {
       "approved": true,
-      "by": "Bjørn Moe Aldema",
-      "reference": "Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author.",
-      "sha256": "f9668edfc0e5aadbdf174636384c1eff17cf0c28434f6a8044e43829564ce9ce"
+      "by": "Bjørn Moe Aldema; delegated editorial realization",
+      "reference": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#authority-and-version-binding",
+      "sha256": "782f4c9d4f5fa0fcd749ddfd0b3c1276932a7713f2f84b5c8bd720f59a60dd2a"
     }
   },
   "public/articles/nar-ansvaret-kommer-hjem-2026.html": {
@@ -2099,37 +2107,42 @@
     "formatting_confirmation_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#validation-scope"
   },
   "public/series/virkemidlene/nb/index.html": {
-    "case_id": "VIRKEMIDLENE-DEL2-W-R2-20261003",
-    "sha256": "80bcea0865c2eacafcf462ee96470e9608a793d69163a0fbcb8d9307e925f900",
-    "reviewer": "Diana / same-assistant editorial and Ariadne-method review",
-    "execution_context": "Current publication conversation; same assistant, not independent review",
-    "reviewed_at": "2026-10-03",
-    "comparison_ref": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#comparison",
-    "reader_journey_ref": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#semantic-and-source-control",
+    "case_id": "VIRKEMIDLENE-AVDRAG-20261007",
+    "sha256": "e40700c245f2fb3d4eb5092c150297e95fe86797e03365b7ae6aad1f67bebb9a",
+    "reviewer": "Executing editorial assistant / Ariadne-method review",
+    "execution_context": "same-assistant purpose, source, language and presentation passes; not independent peer review",
+    "reviewed_at": "2026-10-07T04:24:29.908303+00:00",
     "loaded_modules": [
       {
-        "source": "OOS-Core/OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#method-application"
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
+      },
+      {
+        "source": "docs/editorial/READER_SEQUENCE_PRESENTATION_STANDARD_001.md",
+        "revision": "1a2d4dd69a057b720fa772af6f723649afd931b7",
+        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#helhetsinntrykk",
-      "styrker": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#styrker",
-      "stilprofil": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#stilprofil",
-      "konkrete_svakheter": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#konkrete-svakheter",
-      "forbedringsgrep": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#forbedringsgrep",
-      "revidert_eksempelversjon": "docs/editorial/virkemidlene-del2-release-2026-10-03.md#revidert-eksempelversjon"
+      "helhetsinntrykk": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "styrker": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
     },
-    "decision": "KEEP",
+    "comparison_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#editorial-decision-and-preservation",
+    "reader_journey_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#semantic-controls-and-permitted-exact-wording",
+    "decision": "COMBINE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
     "publication_approval": {
       "approved": true,
-      "by": "Bjørn Moe Aldema",
-      "reference": "https://github.com/novosilencio-cmyk/newsroom-web/pull/80#issuecomment-5973182216",
-      "sha256": "80bcea0865c2eacafcf462ee96470e9608a793d69163a0fbcb8d9307e925f900"
+      "by": "Bjørn Moe Aldema; delegated editorial realization",
+      "reference": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#authority-and-version-binding",
+      "sha256": "e40700c245f2fb3d4eb5092c150297e95fe86797e03365b7ae6aad1f67bebb9a"
     }
   },
   "public/articles/nar-minnet-blir-natid-2026.html": {
@@ -2982,6 +2995,45 @@
       "by": "Bjørn Moe Aldema",
       "reference": "Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author.",
       "sha256": "f7f727c5aae8157eb7daf0a9e5d7bd3e32915b4164fdc165ef00bfbce9c48c2d"
+    }
+  },
+  "public/articles/hvem-skal-betale-for-en-stabil-okonomi-2026.html": {
+    "case_id": "VIRKEMIDLENE-AVDRAG-20261007",
+    "sha256": "762d30fa25b3fd5b4e99d0647fc93fb7c8b59cda37848753bfa4e72ca8cd7805",
+    "reviewer": "Executing editorial assistant / Ariadne-method review",
+    "execution_context": "same-assistant purpose, source, language and presentation passes; not independent peer review",
+    "reviewed_at": "2026-10-07T04:24:29.908263+00:00",
+    "loaded_modules": [
+      {
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
+      },
+      {
+        "source": "docs/editorial/READER_SEQUENCE_PRESENTATION_STANDARD_001.md",
+        "revision": "1a2d4dd69a057b720fa772af6f723649afd931b7",
+        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "styrker": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "stilprofil": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "konkrete_svakheter": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "forbedringsgrep": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
+      "revidert_eksempelversjon": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
+    },
+    "comparison_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#editorial-decision-and-preservation",
+    "reader_journey_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey",
+    "semantic_control_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#semantic-controls-and-permitted-exact-wording",
+    "decision": "COMBINE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema; delegated editorial realization",
+      "reference": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#authority-and-version-binding",
+      "sha256": "762d30fa25b3fd5b4e99d0647fc93fb7c8b59cda37848753bfa4e72ca8cd7805"
     }
   }
 }

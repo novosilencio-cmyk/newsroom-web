@@ -23,23 +23,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Export exact public source for bounded recovery
-        if: github.event_name == 'pull_request' && github.head_ref == 'work/magnus-virkemidlene-release-20261007'
-        run: |
-          test "$(git rev-parse refs/remotes/origin/main)" = "82f5d6d5f21317bf9b75010472d2f9ea7ec96655"
-          git bundle create /tmp/newsroom-source.bundle refs/remotes/origin/main
-          git bundle verify /tmp/newsroom-source.bundle
-          sha256sum /tmp/newsroom-source.bundle
-
-      - name: Store bounded public-source handoff
-        if: github.event_name == 'pull_request' && github.head_ref == 'work/magnus-virkemidlene-release-20261007'
-        uses: actions/upload-artifact@v4
-        with:
-          name: newsroom-source-82f5d6d5
-          path: /tmp/newsroom-source.bundle
-          retention-days: 1
-          if-no-files-found: error
-
       - name: Block unresolved editorial markers
         run: |
           python3 scripts/build_discovery.py

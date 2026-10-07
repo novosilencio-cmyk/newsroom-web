@@ -1,0 +1,57 @@
+name: Verify public Virkemidlene delivery
+on:
+  pull_request:
+    types: [opened, reopened]
+permissions:
+  contents: read
+jobs:
+  public-delivery:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'work/virkemidlene-delivery-check-20261007'
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Verify the three public pages against the deployed build
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, urllib.request
+          from datetime import datetime, timezone
+          from html.parser import HTMLParser
+          from urllib.parse import urlsplit
+          base = 'https://experimentalnewsroom.org/'
+          article = 'articles/hvem-skal-betale-for-en-stabil-okonomi-2026.html'
+          expected = {
+              article: 'be695d3b47b4cbad3a4ab66325a79270ecc8662e968f8bfb7b21dc6ffdd620d9',
+              'nb/index.html': '1be38a8f38d814a124ab0e1f31d7b0c2d3270432d0532ed607f7a3603a272860',
+              'series/virkemidlene/nb/index.html': '82f8f480cd603a99ec02844338ff5f788534e251ebbee8a1e96c18908f66ca83',
+          }
+          class Structure(HTMLParser):
+              def __init__(self):
+                  super().__init__(); self.depth = 0; self.sources = 0; self.h1 = 0
+              def handle_starttag(self, tag, attrs):
+                  a = dict(attrs)
+                  if tag == 'details' and 'reader-depth' in a.get('class','').split(): self.depth += 1
+                  if a.get('id','').startswith('k') and a.get('id','')[1:].isdigit(): self.sources += 1
+                  if tag == 'h1': self.h1 += 1
+          results = []
+          for path, digest in expected.items():
+              request = urllib.request.Request(base + path, headers={'User-Agent':'ExperimentalNewsroom-DeliveryCheck/1.0'})
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  assert response.status == 200
+                  assert urlsplit(response.url).hostname == 'experimentalnewsroom.org'
+                  data = response.read(2000000)
+                  status = response.status
+              actual = hashlib.sha256(data).hexdigest()
+              result = {'url':base+path,'http_status':status,'sha256':actual,'matches_reviewed_build':actual==digest,'observed_at':datetime.now(timezone.utc).isoformat()}
+              assert actual == digest, result
+              text = data.decode('utf-8')
+              if path == article:
+                  p=Structure(); p.feed(text)
+                  result.update({'depth_sections':p.depth,'source_entries':p.sources,'h1':p.h1})
+                  assert (p.depth,p.sources,p.h1)==(9,14,1), result
+                  assert 'Hvem skal betale for en stabil økonomi?' in text
+              else:
+                  assert article in text, result
+              results.append(result)
+          print(json.dumps({'release_commit':'2451cd48e20e92ecd49cae36afa07f1a55e83f97','result':'PUBLIC_HTTPS_AND_EXACT_BYTE_MATCH_PASS','visual_browser_test':False,'pages':results},ensure_ascii=False,indent=2))
+          PY

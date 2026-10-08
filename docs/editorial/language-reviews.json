@@ -514,42 +514,37 @@
     }
   },
   "public/nb/index.html": {
-    "case_id": "VIRKEMIDLENE-AVDRAG-20261007",
-    "sha256": "8d96aa2f830ad065bde6d798b1fb9593f4e185c1f11cfddc28092e38adc3e4ce",
-    "reviewer": "Executing editorial assistant / Ariadne-method review",
-    "execution_context": "same-assistant purpose, source, language and presentation passes; not independent peer review",
-    "reviewed_at": "2026-10-07T04:24:29.908225+00:00",
+    "case_id": "NEWSROOM-MANIFEST-20261008",
+    "sha256": "840612ff07c453d3c6440504d1ea3a91afdc403c382b37ceef79059cb9796ffb",
+    "reviewer": "Executing assistant applying Ariadne editorial controls",
+    "execution_context": "Same-assistant review; no independent review or reader-effect claim",
+    "reviewed_at": "2026-10-08",
     "loaded_modules": [
       {
         "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
         "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
-      },
-      {
-        "source": "docs/editorial/READER_SEQUENCE_PRESENTATION_STANDARD_001.md",
-        "revision": "1a2d4dd69a057b720fa772af6f723649afd931b7",
-        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey"
+        "application_ref": "docs/editorial/manifest-release-2026-10-08.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "styrker": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "styrker": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "stilprofil": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "konkrete_svakheter": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "forbedringsgrep": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "revidert_eksempelversjon": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review"
     },
-    "comparison_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#editorial-decision-and-preservation",
-    "reader_journey_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#semantic-controls-and-permitted-exact-wording",
+    "comparison_ref": "docs/editorial/manifest-release-2026-10-08.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/manifest-release-2026-10-08.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/manifest-release-2026-10-08.md#semantic-control",
     "decision": "COMBINE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
     "publication_approval": {
       "approved": true,
-      "by": "Bjørn Moe Aldema; delegated editorial realization",
-      "reference": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#authority-and-version-binding",
-      "sha256": "8d96aa2f830ad065bde6d798b1fb9593f4e185c1f11cfddc28092e38adc3e4ce"
+      "by": "Bjørn Moe Aldema; delegated realization",
+      "reference": "docs/editorial/manifest-release-2026-10-08.md#authority-and-scope",
+      "sha256": "840612ff07c453d3c6440504d1ea3a91afdc403c382b37ceef79059cb9796ffb"
     }
   },
   "public/en/index.html": {
@@ -1301,43 +1296,37 @@
     }
   },
   "public/how-we-work.html": {
-    "case_id": "reader-navigation-2026-09-21",
-    "sha256": "eb864a179a4af671c9ad3f30850c4af3941daff2cfb063bb0ac78a42e5ad4227",
-    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
-    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
-    "reviewed_at": "2026-09-21",
-    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
-    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
-    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "case_id": "NEWSROOM-MANIFEST-20261008",
+    "sha256": "0a90bbe360c42800c1a74bdfeb9fa1406fe5ed26e44c4a4ce197abe92c88235d",
+    "reviewer": "Executing assistant applying Ariadne editorial controls",
+    "execution_context": "Same-assistant review; no independent review or reader-effect claim",
+    "reviewed_at": "2026-10-08",
     "loaded_modules": [
       {
-        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
-        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
-      },
-      {
-        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
-        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
-        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/manifest-release-2026-10-08.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      "helhetsinntrykk": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "styrker": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "stilprofil": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "konkrete_svakheter": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "forbedringsgrep": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "revidert_eksempelversjon": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review"
     },
-    "decision": "KEEP",
+    "comparison_ref": "docs/editorial/manifest-release-2026-10-08.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/manifest-release-2026-10-08.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/manifest-release-2026-10-08.md#semantic-control",
+    "decision": "COMBINE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
     "publication_approval": {
       "approved": true,
-      "by": "Bjørn Moe Aldema",
-      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
-      "sha256": "eb864a179a4af671c9ad3f30850c4af3941daff2cfb063bb0ac78a42e5ad4227"
+      "by": "Bjørn Moe Aldema; delegated realization",
+      "reference": "docs/editorial/manifest-release-2026-10-08.md#authority-and-scope",
+      "sha256": "0a90bbe360c42800c1a74bdfeb9fa1406fe5ed26e44c4a4ce197abe92c88235d"
     }
   },
   "public/norway/index.html": {
@@ -1652,43 +1641,37 @@
     }
   },
   "public/series/institusjon/en/index.html": {
-    "case_id": "reader-navigation-2026-09-21",
-    "sha256": "851e4bd40d80589e567c414765784cf5cb4e1ebdf9977f192c6715abad006f95",
-    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
-    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
-    "reviewed_at": "2026-09-21",
-    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
-    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
-    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "case_id": "NEWSROOM-MANIFEST-20261008",
+    "sha256": "57c089f5edd0b3479ef7219a9f49e903dd02af3be5820abfee3dc203dbb18d26",
+    "reviewer": "Executing assistant applying Ariadne editorial controls",
+    "execution_context": "Same-assistant review; no independent review or reader-effect claim",
+    "reviewed_at": "2026-10-08",
     "loaded_modules": [
       {
-        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
-        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
-      },
-      {
-        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
-        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
-        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/manifest-release-2026-10-08.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      "helhetsinntrykk": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "styrker": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "stilprofil": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "konkrete_svakheter": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "forbedringsgrep": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "revidert_eksempelversjon": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review"
     },
-    "decision": "KEEP",
+    "comparison_ref": "docs/editorial/manifest-release-2026-10-08.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/manifest-release-2026-10-08.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/manifest-release-2026-10-08.md#semantic-control",
+    "decision": "COMBINE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
     "publication_approval": {
       "approved": true,
-      "by": "Bjørn Moe Aldema",
-      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
-      "sha256": "851e4bd40d80589e567c414765784cf5cb4e1ebdf9977f192c6715abad006f95"
+      "by": "Bjørn Moe Aldema; delegated realization",
+      "reference": "docs/editorial/manifest-release-2026-10-08.md#authority-and-scope",
+      "sha256": "57c089f5edd0b3479ef7219a9f49e903dd02af3be5820abfee3dc203dbb18d26"
     }
   },
   "public/series/institusjon/index.html": {
@@ -1732,43 +1715,37 @@
     }
   },
   "public/series/institusjon/nb/index.html": {
-    "case_id": "reader-navigation-2026-09-21",
-    "sha256": "de1af0b94ab73b409c15b6c754addd7ec50b527d44ff41a784bef4f45e0cff91",
-    "reviewer": "Ariadne language review; Alma reader presentation; Magnus technical preservation; integrating assistant",
-    "execution_context": "Separate AI executions with integration; bounded navigation review, not new article fact certification",
-    "reviewed_at": "2026-09-21",
-    "comparison_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
-    "reader_journey_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#comparison-and-reader-journey",
-    "semantic_control_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation",
+    "case_id": "NEWSROOM-MANIFEST-20261008",
+    "sha256": "85f1f258ea268f6e8f546c3ef9609e4b09bb92ba35e07c18b1d1f194bab06963",
+    "reviewer": "Executing assistant applying Ariadne editorial controls",
+    "execution_context": "Same-assistant review; no independent review or reader-effect claim",
+    "reviewed_at": "2026-10-08",
     "loaded_modules": [
       {
-        "source": "OOS-Core/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001",
-        "revision": "git-blob:713f6796610652407037c7a0d69385e29d30f727",
-        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
-      },
-      {
-        "source": "oos-trained-agent-runtime/references/ariadne_norwegian_english_module.md",
-        "revision": "sha256:2c9f090bd628d2424263e4cfbd60f200f34a27e2b5828dc3c3e0d357b77ecbd8",
-        "application_ref": "docs/editorial/reader-navigation-release-2026-09-21.md#semantic-control-and-preservation"
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/manifest-release-2026-10-08.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "styrker": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "stilprofil": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "konkrete_svakheter": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "forbedringsgrep": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence",
-      "revidert_eksempelversjon": "docs/editorial/reader-navigation-release-2026-09-21.md#review-sequence"
+      "helhetsinntrykk": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "styrker": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "stilprofil": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "konkrete_svakheter": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "forbedringsgrep": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "revidert_eksempelversjon": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review"
     },
-    "decision": "KEEP",
+    "comparison_ref": "docs/editorial/manifest-release-2026-10-08.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/manifest-release-2026-10-08.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/manifest-release-2026-10-08.md#semantic-control",
+    "decision": "COMBINE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
-    "source_scope": "Navigation shell delta only; existing main content preserved, no new factual review",
     "publication_approval": {
       "approved": true,
-      "by": "Bjørn Moe Aldema",
-      "reference": "docs/editorial/reader-navigation-release-2026-09-21.md#scope-and-authority",
-      "sha256": "de1af0b94ab73b409c15b6c754addd7ec50b527d44ff41a784bef4f45e0cff91"
+      "by": "Bjørn Moe Aldema; delegated realization",
+      "reference": "docs/editorial/manifest-release-2026-10-08.md#authority-and-scope",
+      "sha256": "85f1f258ea268f6e8f546c3ef9609e4b09bb92ba35e07c18b1d1f194bab06963"
     }
   },
   "public/support-terms.html": {
@@ -1887,81 +1864,71 @@
     }
   },
   "public/sitemap.html": {
-    "case_id": "VIRKEMIDLENE-AVDRAG-20261007",
-    "sha256": "d88e6e592f108c1dd7a052677115f705800e66edab0c9564b3c89a37c07986f9",
-    "reviewer": "Executing editorial assistant / Ariadne-method review",
-    "execution_context": "same-assistant purpose, source, language and presentation passes; not independent peer review",
-    "reviewed_at": "2026-10-07T04:24:29.908131+00:00",
+    "case_id": "NEWSROOM-MANIFEST-20261008",
+    "sha256": "6dba1a6ae87c7c825a16df8a9fa9146f4f5a5107f4b7b5d751cd79513919d7ed",
+    "reviewer": "Executing assistant applying Ariadne editorial controls",
+    "execution_context": "Same-assistant review; no independent review or reader-effect claim",
+    "reviewed_at": "2026-10-08",
     "loaded_modules": [
       {
         "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
         "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
-      },
-      {
-        "source": "docs/editorial/READER_SEQUENCE_PRESENTATION_STANDARD_001.md",
-        "revision": "1a2d4dd69a057b720fa772af6f723649afd931b7",
-        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey"
+        "application_ref": "docs/editorial/manifest-release-2026-10-08.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "styrker": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "styrker": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "stilprofil": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "konkrete_svakheter": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "forbedringsgrep": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "revidert_eksempelversjon": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review"
     },
-    "comparison_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#editorial-decision-and-preservation",
-    "reader_journey_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#semantic-controls-and-permitted-exact-wording",
+    "comparison_ref": "docs/editorial/manifest-release-2026-10-08.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/manifest-release-2026-10-08.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/manifest-release-2026-10-08.md#semantic-control",
     "decision": "COMBINE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
     "publication_approval": {
       "approved": true,
-      "by": "Bjørn Moe Aldema; delegated editorial realization",
-      "reference": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#authority-and-version-binding",
-      "sha256": "d88e6e592f108c1dd7a052677115f705800e66edab0c9564b3c89a37c07986f9"
+      "by": "Bjørn Moe Aldema; delegated realization",
+      "reference": "docs/editorial/manifest-release-2026-10-08.md#authority-and-scope",
+      "sha256": "6dba1a6ae87c7c825a16df8a9fa9146f4f5a5107f4b7b5d751cd79513919d7ed"
     }
   },
   "public/sitemap.en.html": {
-    "case_id": "VIRKEMIDLENE-AVDRAG-20261007",
-    "sha256": "782f4c9d4f5fa0fcd749ddfd0b3c1276932a7713f2f84b5c8bd720f59a60dd2a",
-    "reviewer": "Executing editorial assistant / Ariadne-method review",
-    "execution_context": "same-assistant purpose, source, language and presentation passes; not independent peer review",
-    "reviewed_at": "2026-10-07T04:24:29.908202+00:00",
+    "case_id": "NEWSROOM-MANIFEST-20261008",
+    "sha256": "f81e2457f392b55075dba2e04fea4fe97b657df8cd8ffcf49854388b76a8dfb4",
+    "reviewer": "Executing assistant applying Ariadne editorial controls",
+    "execution_context": "Same-assistant review; no independent review or reader-effect claim",
+    "reviewed_at": "2026-10-08",
     "loaded_modules": [
       {
         "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
         "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
-      },
-      {
-        "source": "docs/editorial/READER_SEQUENCE_PRESENTATION_STANDARD_001.md",
-        "revision": "1a2d4dd69a057b720fa772af6f723649afd931b7",
-        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey"
+        "application_ref": "docs/editorial/manifest-release-2026-10-08.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "styrker": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "styrker": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "stilprofil": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "konkrete_svakheter": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "forbedringsgrep": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "revidert_eksempelversjon": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review"
     },
-    "comparison_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#editorial-decision-and-preservation",
-    "reader_journey_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#semantic-controls-and-permitted-exact-wording",
+    "comparison_ref": "docs/editorial/manifest-release-2026-10-08.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/manifest-release-2026-10-08.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/manifest-release-2026-10-08.md#semantic-control",
     "decision": "COMBINE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
     "publication_approval": {
       "approved": true,
-      "by": "Bjørn Moe Aldema; delegated editorial realization",
-      "reference": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#authority-and-version-binding",
-      "sha256": "782f4c9d4f5fa0fcd749ddfd0b3c1276932a7713f2f84b5c8bd720f59a60dd2a"
+      "by": "Bjørn Moe Aldema; delegated realization",
+      "reference": "docs/editorial/manifest-release-2026-10-08.md#authority-and-scope",
+      "sha256": "f81e2457f392b55075dba2e04fea4fe97b657df8cd8ffcf49854388b76a8dfb4"
     }
   },
   "public/articles/nar-ansvaret-kommer-hjem-2026.html": {
@@ -2107,42 +2074,37 @@
     "formatting_confirmation_ref": "docs/editorial/atriet-ai-release-2026-09-27.md#validation-scope"
   },
   "public/series/virkemidlene/nb/index.html": {
-    "case_id": "VIRKEMIDLENE-AVDRAG-20261007",
-    "sha256": "e40700c245f2fb3d4eb5092c150297e95fe86797e03365b7ae6aad1f67bebb9a",
-    "reviewer": "Executing editorial assistant / Ariadne-method review",
-    "execution_context": "same-assistant purpose, source, language and presentation passes; not independent peer review",
-    "reviewed_at": "2026-10-07T04:24:29.908303+00:00",
+    "case_id": "NEWSROOM-MANIFEST-20261008",
+    "sha256": "74e8aa9b51565d62bd9e1b4a9d5288abb417fca9bf844ecb1067f04a8902f666",
+    "reviewer": "Executing assistant applying Ariadne editorial controls",
+    "execution_context": "Same-assistant review; no independent review or reader-effect claim",
+    "reviewed_at": "2026-10-08",
     "loaded_modules": [
       {
         "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
         "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
-      },
-      {
-        "source": "docs/editorial/READER_SEQUENCE_PRESENTATION_STANDARD_001.md",
-        "revision": "1a2d4dd69a057b720fa772af6f723649afd931b7",
-        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey"
+        "application_ref": "docs/editorial/manifest-release-2026-10-08.md"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "styrker": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "styrker": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "stilprofil": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "konkrete_svakheter": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "forbedringsgrep": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "revidert_eksempelversjon": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review"
     },
-    "comparison_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#editorial-decision-and-preservation",
-    "reader_journey_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#semantic-controls-and-permitted-exact-wording",
+    "comparison_ref": "docs/editorial/manifest-release-2026-10-08.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/manifest-release-2026-10-08.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/manifest-release-2026-10-08.md#semantic-control",
     "decision": "COMBINE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
     "publication_approval": {
       "approved": true,
-      "by": "Bjørn Moe Aldema; delegated editorial realization",
-      "reference": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#authority-and-version-binding",
-      "sha256": "e40700c245f2fb3d4eb5092c150297e95fe86797e03365b7ae6aad1f67bebb9a"
+      "by": "Bjørn Moe Aldema; delegated realization",
+      "reference": "docs/editorial/manifest-release-2026-10-08.md#authority-and-scope",
+      "sha256": "74e8aa9b51565d62bd9e1b4a9d5288abb417fca9bf844ecb1067f04a8902f666"
     }
   },
   "public/articles/nar-minnet-blir-natid-2026.html": {
@@ -3034,6 +2996,74 @@
       "by": "Bjørn Moe Aldema; delegated editorial realization",
       "reference": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#authority-and-version-binding",
       "sha256": "762d30fa25b3fd5b4e99d0647fc93fb7c8b59cda37848753bfa4e72ca8cd7805"
+    }
+  },
+  "public/manifest.html": {
+    "case_id": "NEWSROOM-MANIFEST-20261008",
+    "sha256": "65b51df9cbaf1567e6ede141252a7e4a6689602a8dcaed09f810dc3b48d5cdce",
+    "reviewer": "Executing assistant applying Ariadne editorial controls",
+    "execution_context": "Same-assistant review; no independent review or reader-effect claim",
+    "reviewed_at": "2026-10-08",
+    "loaded_modules": [
+      {
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/manifest-release-2026-10-08.md"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "styrker": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "stilprofil": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "konkrete_svakheter": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "forbedringsgrep": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "revidert_eksempelversjon": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review"
+    },
+    "comparison_ref": "docs/editorial/manifest-release-2026-10-08.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/manifest-release-2026-10-08.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/manifest-release-2026-10-08.md#semantic-control",
+    "decision": "COMBINE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema; delegated realization",
+      "reference": "docs/editorial/manifest-release-2026-10-08.md#authority-and-scope",
+      "sha256": "65b51df9cbaf1567e6ede141252a7e4a6689602a8dcaed09f810dc3b48d5cdce"
+    }
+  },
+  "public/manifest.en.html": {
+    "case_id": "NEWSROOM-MANIFEST-20261008",
+    "sha256": "f573c269138b56d6f18223473c43c52e31d8e406b8b5130dc94924d085ae7cf7",
+    "reviewer": "Executing assistant applying Ariadne editorial controls",
+    "execution_context": "Same-assistant review; no independent review or reader-effect claim",
+    "reviewed_at": "2026-10-08",
+    "loaded_modules": [
+      {
+        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+        "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
+        "application_ref": "docs/editorial/manifest-release-2026-10-08.md"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "styrker": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "stilprofil": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "konkrete_svakheter": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "forbedringsgrep": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review",
+      "revidert_eksempelversjon": "docs/editorial/manifest-release-2026-10-08.md#six-stage-review"
+    },
+    "comparison_ref": "docs/editorial/manifest-release-2026-10-08.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/manifest-release-2026-10-08.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/manifest-release-2026-10-08.md#semantic-control",
+    "decision": "COMBINE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema; delegated realization",
+      "reference": "docs/editorial/manifest-release-2026-10-08.md#authority-and-scope",
+      "sha256": "f573c269138b56d6f18223473c43c52e31d8e406b8b5130dc94924d085ae7cf7"
     }
   }
 }

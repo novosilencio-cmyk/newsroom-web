@@ -22,6 +22,7 @@ SECTIONS = [
         ('courses/course-of-the-day.html', 'Daily writing practice', 'en'),
         ('courses/write-vividly-without-inventing.html', 'Write vividly without inventing', 'en'),
         ('courses/news-entry-public-facts.html', 'News entry and public facts', 'en')]),
+    ('words', 'Ord og sammenhenger', 'Words and connections', [('ord-og-sammenhenger.html', 'Ord og sammenhenger — verdi og vurdering', 'nb')]),
     ('about', 'Om redaksjonen', 'About the newsroom', [
         ('index.html#about', 'About us', 'en'),
         ('how-we-work.html', 'How we work', 'en'),

@@ -25,6 +25,8 @@ SECTIONS = [
     ('about', 'Om redaksjonen', 'About the newsroom', [
         ('index.html#about', 'About us', 'en'),
         ('how-we-work.html', 'How we work', 'en'),
+        ('manifest.html', 'Hvorfor vi skriver — manifest', 'nb'),
+        ('manifest.en.html', 'Why we write — manifesto', 'en'),
         ('recognition/', 'Anerkjennelse', 'nb'),
         ('recognition/rcf-sci-2026-09-14.html', 'Felles innsats, synlige bidrag', 'nb')]),
     ('support', 'Støtt arbeidet', 'Support the work', [

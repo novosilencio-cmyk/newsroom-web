@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from build_reader_navigation import build_reader_navigation
+from build_reader_navigation import build_reader_navigation, SECTIONS
 from urllib.parse import urlsplit
 from xml.sax.saxutils import escape
 
@@ -64,7 +64,10 @@ def article_block(a, source):
         "publisher":{"@type":"Organization","name":"Experimental Newsroom","url":BASE},
         "articleSection":a.get("section",""),"inLanguage":langs,"isAccessibleForFree":True
     }
-    return '<!-- discovery-metadata:start -->\n<link href="../feed.xml" rel="alternate" type="application/rss+xml" title="Experimental Newsroom RSS"/>\n<script type="application/ld+json">\n' + json.dumps(data, ensure_ascii=False, separators=(",",":")) + '\n</script>\n<!-- discovery-metadata:end -->'
+    tags = a.get('tags', {})
+    topics = list(dict.fromkeys(tags.get(langs[0], tags.get('en', []))))
+    topic_meta = ''.join('\n<meta property="article:tag" content="' + html.escape(topic, quote=True) + '"/>' for topic in topics)
+    return '<!-- discovery-metadata:start -->\n<link href="../feed.xml" rel="alternate" type="application/rss+xml" title="Experimental Newsroom RSS"/>\n<script type="application/ld+json">\n' + json.dumps(data, ensure_ascii=False, separators=(",",":")) + '\n</script>' + topic_meta + '\n<!-- discovery-metadata:end -->'
 
 def update_articles(articles):
     for a in [version for article in articles for version in article_versions(article)]:
@@ -85,7 +88,16 @@ def build(articles):
     robots = "User-agent: OAI-SearchBot\nAllow: /\n\nUser-agent: ChatGPT-User\nAllow: /\n\nUser-agent: *\nAllow: /\n\nSitemap: " + BASE + "sitemap.xml\n"
     (PUBLIC/"robots.txt").write_text(robots, encoding="utf-8")
 
-    static=[("ord-og-sammenhenger.html","2026-10-08"),("manifest.html","2026-10-08"),("manifest.en.html","2026-10-08"),("sitemap.html",None),("sitemap.en.html",None),("","2026-09-18"),("how-we-work.html",None),("support.html",None),("atriet.html",None),("courses/",None),("recognition/",None),("norway/","2026-09-18"),("nb/","2026-09-18"),("en/","2026-09-18"),("series/institusjon/","2026-09-18"),("series/institusjon/nb/","2026-09-18"),("series/institusjon/en/","2026-09-18")]
+    static=[("ord-og-sammenhenger.html","2026-10-08"),("manifest.html","2026-10-08"),("manifest.en.html","2026-10-08"),("sitemap.html",None),("sitemap.en.html",None),("","2026-09-18"),("how-we-work.html",None),("support.html",None),("atriet.html",None),("courses/",None),("recognition/",None),("norway/","2026-10-12"),("nb/","2026-09-18"),("en/","2026-09-18"),("series/institusjon/","2026-09-18"),("series/institusjon/nb/","2026-09-18"),("series/institusjon/en/","2026-09-18")]
+    # Keep search-engine coverage aligned with actual published reader destinations.
+    known = {path for path, _ in static}
+    for _, _, _, entries in SECTIONS:
+        for url, _, _ in entries:
+            parsed = urlsplit(url)
+            if parsed.fragment or parsed.path in known:
+                continue
+            static.append((parsed.path, None))
+            known.add(parsed.path)
     lines=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for p,d in static:
         lines.append("  <url><loc>"+escape(BASE+p)+"</loc>"+(("<lastmod>"+d+"</lastmod>") if d else "")+"</url>")
@@ -112,7 +124,7 @@ def build(articles):
         cards.append('<article class="article-card"><p class="article-meta">'+html.escape(str(a.get("region","")))+' · '+html.escape(str(a.get("country","")))+' · '+html.escape(str(a.get("type","")))+'</p><h3><a href="../'+html.escape(a["url"])+'">'+html.escape(a["title"])+'</a></h3><p>'+html.escape(a["summary"])+'</p><p><a class="text-link" href="../'+html.escape(a["url"])+'">Les saken / Read the report →</a></p></article>')
     norway='''<!DOCTYPE html>
 <html lang="nb"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Norge | Experimental Newsroom</title><meta content="Experimental Newsrooms norske saker og saker der Norge inngår i sammenligningen." name="description"/><link href="https://experimentalnewsroom.org/norway/" rel="canonical"/><meta content="website" property="og:type"/><meta content="Norge | Experimental Newsroom" property="og:title"/><meta content="Norske saker og saker der Norge inngår i sammenligningen." property="og:description"/><meta content="https://experimentalnewsroom.org/norway/" property="og:url"/><link href="../feed.xml" rel="alternate" type="application/rss+xml" title="Experimental Newsroom RSS"/><link href="../styles.css" rel="stylesheet"/><link href="../favicon.svg" rel="icon" type="image/svg+xml"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Norge | Experimental Newsroom","url":"https://experimentalnewsroom.org/norway/","isPartOf":{"@type":"WebSite","name":"Experimental Newsroom","url":"https://experimentalnewsroom.org/"},"inLanguage":["nb","en"]}</script></head>
-<body><header class="masthead compact-masthead"><div class="edition-line"><span>Norge</span><span>Experimental Newsroom</span></div><h1>Experimental Newsroom</h1><p class="strapline">Careful observation · evidence · constructive criticism</p><nav aria-label="Hovedmeny"><a href="../">Forside / Front page</a><a href="../#world">Verden / World</a><a href="../how-we-work.html">Arbeidsmåte / How we work</a><a href="../feed.xml">RSS</a></nav></header><main><section class="lead"><p class="kicker">Norge · geografisk inngang</p><h2>Norge</h2><p class="lead-deck">Denne siden samler saker fra Norge og saker der Norge inngår i en reell sammenligning. Språk og geografi er to forskjellige ting: en norsk sak kan være publisert på norsk, engelsk eller begge språk.</p><p class="method-note"><time datetime="2026-09-18">Oppdatert 18. september 2026</time> · Leserstrukturen er revidert for tydeligere forklaring og mindre komprimert metodepresentasjon.</p></section><section class="section-block"><div class="section-heading"><h2>Saker</h2><span>Finn saker fra Norge og sammenligninger der Norge inngår</span></div><div class="article-grid">''' + "\n".join(cards) + '''</div></section></main><footer><p>Experimental Newsroom · <a href="../feed.xml">RSS</a> · <a href="../sitemap.xml">Sitemap</a></p></footer></body></html>'''
+<body><header class="masthead compact-masthead"><div class="edition-line"><span>Norge</span><span>Experimental Newsroom</span></div><h1>Experimental Newsroom</h1><p class="strapline">Careful observation · evidence · constructive criticism</p><nav aria-label="Hovedmeny"><a href="../">Forside / Front page</a><a href="../#world">Verden / World</a><a href="../how-we-work.html">Arbeidsmåte / How we work</a><a href="../feed.xml">RSS</a></nav></header><main><section class="lead"><p class="kicker">Norge · geografisk inngang</p><h2>Norge</h2><p class="lead-deck">Denne siden samler saker fra Norge og saker der Norge inngår i en reell sammenligning. Språk og geografi er to forskjellige ting: en norsk sak kan være publisert på norsk, engelsk eller begge språk.</p><p class="method-note"><time datetime="2026-09-18">Innledning revidert 18. september 2026</time> · Leserstrukturen er revidert for tydeligere forklaring og mindre komprimert metodepresentasjon.</p></section><section class="section-block"><div class="section-heading"><h2>Saker</h2><span>Finn saker fra Norge og sammenligninger der Norge inngår</span></div><div class="article-grid">''' + "\n".join(cards) + '''</div></section></main><footer><p>Experimental Newsroom · <a href="../feed.xml">RSS</a> · <a href="../sitemap.xml">Sitemap</a></p></footer></body></html>'''
     p=PUBLIC/"norway"/"index.html"; p.parent.mkdir(parents=True,exist_ok=True); p.write_text(norway,encoding="utf-8")
     update_articles(articles)
     build_reader_navigation(PUBLIC, articles)

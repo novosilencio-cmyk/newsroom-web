@@ -54,3 +54,6 @@ details.reader-depth table,details.depth table{border-collapse:collapse;width:10
 details.reader-depth th,details.reader-depth td,details.depth th,details.depth td{text-align:left;vertical-align:top;border-bottom:1px solid #c4cdbd;padding:10px 7px}
 details.reader-depth .small,details.depth .small{font:.82rem/1.6 Arial,sans-serif}
 @media(max-width:650px){details.reader-depth,details.depth{padding:0 16px}details.reader-depth table,details.depth table{font-size:.86rem;table-layout:fixed}details.reader-depth th,details.reader-depth td,details.depth th,details.depth td{overflow-wrap:anywhere}}
+
+.map-tags { font-size: .85rem; line-height: 1.7; margin: .5rem 0; }
+.map-tags a { text-underline-offset: .18em; }

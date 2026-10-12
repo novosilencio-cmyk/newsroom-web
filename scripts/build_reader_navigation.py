@@ -3,9 +3,9 @@ import html
 import re
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit, quote
 
-COUNTRY_ALIASES = {'Norway': 'Norge', 'Brazil': 'Brasil', 'Denmark': 'Danmark', 'United States': 'USA', 'United Kingdom': 'Storbritannia', 'Global economy': 'Verdensøkonomien'}
+COUNTRY_ALIASES = {'Norway': 'Norge', 'Brazil': 'Brasil', 'Denmark': 'Danmark', 'Germany': 'Tyskland', 'Japan': 'Japan', 'United States': 'USA', 'United Kingdom': 'Storbritannia England', 'Global economy': 'Verdensøkonomien'}
 
 LANGUAGES = {'nb': 'Norsk', 'en': 'English', 'fr': 'Français', 'de': 'Deutsch', 'ja': '日本語', 'ko': '한국어', 'zh-Hans': '简体中文', 'es': 'Español', 'pt': 'Português', 'ar': 'العربية'}
 # Published reader destinations, deliberately excluding embedded viewers and drafts.
@@ -14,8 +14,14 @@ SECTIONS = [
         ('nb/', 'Norsk forside', 'nb'), ('en/', 'English front page', 'en'),
         ('', 'International front page', 'en'), ('norway/', 'Norge', 'nb')]),
     ('series', 'Serier', 'Series', [
+        ('series/virkemidlene/nb/', 'Virkemidlene — økonomi, virkning og fordeling', 'nb'),
         ('series/institusjon/nb/', 'Institusjon — makt, kunnskap og staten', 'nb'),
         ('series/institusjon/en/', 'Institution — power, knowledge and the state', 'en')]),
+    ('art', 'Kunst', 'Art', [
+        ('art/skisse-2005.html', 'Skisse fra 2005', 'nb'),
+        ('art/skisse-2005.en.html', 'Sketch from 2005', 'en'),
+        ('art/love-me-to-lunch.html', 'Love me to lunch', 'nb'),
+        ('art/love-me-to-lunch.en.html', 'Love me to lunch', 'en')]),
     ('atriet', 'Atriet', 'Atriet', [('atriet.html', 'Atriet — et rom som begynner før bygningen', 'nb')]),
     ('learning', 'Kurs og deltakelse', 'Courses and participation', [
         ('courses/', 'Free writing courses', 'en'),
@@ -86,6 +92,36 @@ class StoryText(HTMLParser):
             self.panel = None
 
 
+class SearchText(HTMLParser):
+    """Index published main text, excluding code, styling and navigation."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.main = 0
+        self.excluded = 0
+        self.parts = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag == 'main': self.main += 1
+        if tag in ('script', 'style', 'nav'): self.excluded += 1
+
+    def handle_endtag(self, tag):
+        if tag == 'main': self.main = max(0, self.main - 1)
+        if tag in ('script', 'style', 'nav'): self.excluded = max(0, self.excluded - 1)
+
+    def handle_data(self, data):
+        if self.main and not self.excluded: self.parts.append(data)
+
+
+def searchable_text(public, url):
+    parser = SearchText()
+    parser.feed(local_file(public, url).read_text(encoding='utf-8'))
+    return ' '.join(' '.join(parser.parts).split())
+
+
+def topic_labels(article, lang):
+    return article.get('tags', {}).get(lang, [])
+
+
 def versions(public, article):
     if article.get('translations'):
         out = [{'language': lang, **value} for lang, value in article['translations'].items()]
@@ -110,8 +146,8 @@ def render(public, articles, lang):
     no = lang == 'nb'
     title = 'Finn frem' if no else 'Find your way'
     filename = 'sitemap.html' if no else 'sitemap.en.html'
-    intro = ('Finn saker, serier, Atriet og kurs. Språk er merket ved lenkene.' if no else
-             'Explore stories, series, Atriet and courses. Reading languages are shown beside the links.')
+    intro = ('Finn saker, serier, kunst, Atriet og kurs. Språk er merket ved lenkene.' if no else
+             'Explore stories, series, art, Atriet and courses. Reading languages are shown beside the links.')
     jump = [('stories', 'Alle saker' if no else 'All stories')] + [(s[0], s[1] if no else s[2]) for s in SECTIONS]
     groups = []
     rows = []
@@ -119,19 +155,22 @@ def render(public, articles, lang):
         vv = versions(public, a)
         chosen = next((v for v in vv if v['language'] == lang), vv[0])
         aliases = ' '.join(nb for en, nb in COUNTRY_ALIASES.items() if en in a.get('country', ''))
-        search = ' '.join([aliases, a.get('country', ''), a.get('region', '')] + [v['title'] + ' ' + v.get('summary', '') for v in vv])
+        tags = topic_labels(a, 'nb') + topic_labels(a, 'en')
+        search = ' '.join([aliases, a.get('country', ''), a.get('region', ''), ' '.join(tags)] + [v['title'] + ' ' + v.get('summary', '') + ' ' + searchable_text(public, v['url']) for v in vv])
+        tag_links = ' · '.join(f'<a href="{filename}?q={escape(quote(tag))}">{escape(tag)}</a>' for tag in topic_labels(a, lang))
         links = ' '.join(f'<a href="{escape(v["url"])}" lang="{escape(v["language"])}" hreflang="{escape(v["language"])}">{escape(LANGUAGES.get(v["language"], v["language"]))}</a>' for v in vv)
         rows.append(f'''<li class="map-entry" data-search="{escape(search)}" data-languages="{' '.join(escape(v['language']) for v in vv)}">
 <p class="map-meta"><span lang="en">{escape(a.get('country', ''))}</span> · <time datetime="{escape(a['published'][:10])}">{escape(a['published'][:10])}</time></p>
 <h3 lang="{escape(chosen['language'])}"><a href="{escape(chosen['url'])}">{escape(chosen['title'])}</a></h3>
 <p class="map-summary" lang="{escape(chosen['language'])}">{escape(chosen.get('summary', ''))}</p>
+<p class="map-tags">{tag_links}</p>
 <p class="map-languages"><span>{'Les på' if no else 'Read in'}</span> {links}</p></li>''')
     groups.append(f'<section class="map-section" id="stories" aria-labelledby="stories-heading"><h2 id="stories-heading">{jump[0][1]}</h2><ul class="map-list map-stories">' + '\n'.join(rows) + '</ul></section>')
     for key, nb, en, entries in SECTIONS:
         rows = []
         for url, label, language in entries:
             local_file(public, url)
-            rows.append(f'<li class="map-entry map-page" data-search="{escape(label + " " + nb + " " + en)}" data-languages="{language}"><a href="{escape(url or "./")}" lang="{language}" hreflang="{language}">{escape(label)}</a> <span class="map-page-language" lang="{language}">{LANGUAGES[language]}</span></li>')
+            rows.append(f'<li class="map-entry map-page" data-search="{escape(label + " " + nb + " " + en + " " + searchable_text(public, url))}" data-languages="{language}"><a href="{escape(url or "./")}" lang="{language}" hreflang="{language}">{escape(label)}</a> <span class="map-page-language" lang="{language}">{LANGUAGES[language]}</span></li>')
         groups.append(f'<section class="map-section" id="{key}" aria-labelledby="{key}-heading"><h2 id="{key}-heading">{escape(nb if no else en)}</h2><ul class="map-list">' + '\n'.join(rows) + '</ul></section>')
     jumps = ' '.join(f'<a href="#{key}">{label}</a>' for key, label in jump)
     return f'''<!DOCTYPE html>
@@ -157,7 +196,7 @@ def render(public, articles, lang):
 <div class="map-search-field"><label for="map-query">{'Søk i oversikten' if no else 'Search this guide'}</label><input id="map-query" type="search" autocomplete="off" aria-describedby="map-help" placeholder="{'Prøv skolemat, Taiwan eller kurs' if no else 'Try school meals, Taiwan or courses'}"/></div>
 <div class="map-language-field"><label for="map-language">{'Lesespråk' if no else 'Reading language'}</label><select id="map-language"><option value="">{'Alle språk' if no else 'All languages'}</option><option value="nb">Norsk</option><option value="en">English</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="zh-Hans">简体中文</option><option value="es">Español</option><option value="pt">Português</option><option value="ar">العربية</option></select></div>
 <button type="reset">{'Vis alt' if no else 'Show all'}</button>
-<p id="map-help">{'Søker i titler, korte beskrivelser og landnavn i denne oversikten.' if no else 'Searches titles, short descriptions and country names in this guide.'}</p>
+<p id="map-help">{'Søker i publiserte tekster, titler, emneord og landnavn. Velg et emneord for å finne beslektede saker.' if no else 'Searches published texts, titles, topics and country names. Choose a topic to find related stories.'}</p>
 <p id="map-results" role="status" aria-live="polite" aria-atomic="true"></p>
 </form>
 <nav class="map-jumps" aria-label="{'Deler av nettstedskartet' if no else 'Site map sections'}">{jumps}</nav>

@@ -5,9 +5,10 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit
 
+from language_registry import label as language_label, ordered_published
+
 COUNTRY_ALIASES = {'Norway': 'Norge', 'Brazil': 'Brasil', 'Denmark': 'Danmark', 'United States': 'USA', 'United Kingdom': 'Storbritannia', 'Global economy': 'Verdensøkonomien'}
 
-LANGUAGES = {'nb': 'Norsk', 'en': 'English', 'fr': 'Français', 'de': 'Deutsch', 'ja': '日本語', 'ko': '한국어', 'zh-Hans': '简体中文', 'es': 'Español', 'pt': 'Português', 'ar': 'العربية'}
 # Published reader destinations, deliberately excluding embedded viewers and drafts.
 SECTIONS = [
     ('start', 'Start her', 'Start here', [
@@ -106,6 +107,14 @@ def versions(public, article):
     return [{'language': parser.language, 'url': article['url'], 'title': article['title'], 'summary': article['summary']}]
 
 
+def published_languages(public, articles):
+    """Derive visible languages from real destinations, never metadata alone."""
+    codes = {language for _, _, _, entries in SECTIONS for _, _, language in entries}
+    for article in articles:
+        codes.update(version['language'] for version in versions(public, article))
+    return ordered_published(codes)
+
+
 def render(public, articles, lang):
     no = lang == 'nb'
     title = 'Finn frem' if no else 'Find your way'
@@ -120,7 +129,7 @@ def render(public, articles, lang):
         chosen = next((v for v in vv if v['language'] == lang), vv[0])
         aliases = ' '.join(nb for en, nb in COUNTRY_ALIASES.items() if en in a.get('country', ''))
         search = ' '.join([aliases, a.get('country', ''), a.get('region', '')] + [v['title'] + ' ' + v.get('summary', '') for v in vv])
-        links = ' '.join(f'<a href="{escape(v["url"])}" lang="{escape(v["language"])}" hreflang="{escape(v["language"])}">{escape(LANGUAGES.get(v["language"], v["language"]))}</a>' for v in vv)
+        links = ' '.join(f'<a href="{escape(v["url"])}" lang="{escape(v["language"])}" hreflang="{escape(v["language"])}">{escape(language_label(v["language"]))}</a>' for v in vv)
         rows.append(f'''<li class="map-entry" data-search="{escape(search)}" data-languages="{' '.join(escape(v['language']) for v in vv)}">
 <p class="map-meta"><span lang="en">{escape(a.get('country', ''))}</span> · <time datetime="{escape(a['published'][:10])}">{escape(a['published'][:10])}</time></p>
 <h3 lang="{escape(chosen['language'])}"><a href="{escape(chosen['url'])}">{escape(chosen['title'])}</a></h3>
@@ -131,7 +140,7 @@ def render(public, articles, lang):
         rows = []
         for url, label, language in entries:
             local_file(public, url)
-            rows.append(f'<li class="map-entry map-page" data-search="{escape(label + " " + nb + " " + en)}" data-languages="{language}"><a href="{escape(url or "./")}" lang="{language}" hreflang="{language}">{escape(label)}</a> <span class="map-page-language" lang="{language}">{LANGUAGES[language]}</span></li>')
+            rows.append(f'<li class="map-entry map-page" data-search="{escape(label + " " + nb + " " + en)}" data-languages="{language}"><a href="{escape(url or "./")}" lang="{language}" hreflang="{language}">{escape(label)}</a> <span class="map-page-language" lang="{language}">{escape(language_label(language))}</span></li>')
         groups.append(f'<section class="map-section" id="{key}" aria-labelledby="{key}-heading"><h2 id="{key}-heading">{escape(nb if no else en)}</h2><ul class="map-list">' + '\n'.join(rows) + '</ul></section>')
     jumps = ' '.join(f'<a href="#{key}">{label}</a>' for key, label in jump)
     return f'''<!DOCTYPE html>
@@ -155,7 +164,7 @@ def render(public, articles, lang):
 <section class="map-intro"><p class="kicker">{'Nettstedskart' if no else 'Site map'}</p><h1>{title}</h1><p class="map-deck">{intro}</p></section>
 <form class="map-search" role="search" hidden>
 <div class="map-search-field"><label for="map-query">{'Søk i oversikten' if no else 'Search this guide'}</label><input id="map-query" type="search" autocomplete="off" aria-describedby="map-help" placeholder="{'Prøv skolemat, Taiwan eller kurs' if no else 'Try school meals, Taiwan or courses'}"/></div>
-<div class="map-language-field"><label for="map-language">{'Lesespråk' if no else 'Reading language'}</label><select id="map-language"><option value="">{'Alle språk' if no else 'All languages'}</option><option value="nb">Norsk</option><option value="en">English</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="zh-Hans">简体中文</option><option value="es">Español</option><option value="pt">Português</option><option value="ar">العربية</option></select></div>
+<div class="map-language-field"><label for="map-language">{'Lesespråk' if no else 'Reading language'}</label><select id="map-language"><option value="">{'Alle språk' if no else 'All languages'}</option>{''.join(f'<option value="{escape(code)}">{escape(language_label(code))}</option>' for code in published_languages(public, articles))}</select></div>
 <button type="reset">{'Vis alt' if no else 'Show all'}</button>
 <p id="map-help">{'Søker i titler, korte beskrivelser og landnavn i denne oversikten.' if no else 'Searches titles, short descriptions and country names in this guide.'}</p>
 <p id="map-results" role="status" aria-live="polite" aria-atomic="true"></p>

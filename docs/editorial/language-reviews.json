@@ -1946,7 +1946,7 @@
   },
   "public/sitemap.html": {
     "case_id": "PUBLISHED-CORPUS-20261012",
-    "sha256": "5803b94f3ccbc49d374645795780d7192dc479783a48a3949f01f8db4446a9b4",
+    "sha256": "cfaea90c7fc9a6435187f3b4f541ee99205e12a13d4729ccf7d7b06411353fa7",
     "reviewer": "Executing assistant applying Ariadne; four separate AI full-text readers; separate AI final integration PASS_BOUNDED",
     "execution_context": "AI editorial and discovery revision under author instruction; no fresh corpus-wide factual or human specialist certification",
     "reviewed_at": "2026-10-12",
@@ -1985,7 +1985,7 @@
       "styrker": "Retain purpose, reading language and navigation to the published corpus.",
       "stilprofil": "Preserve existing genre and complete reader journey; docs/editorial/corpus-revision-2026-10-12.md#six-stages",
       "konkrete_svakheter": "Discovery coverage and plain-language explanation, as recorded in release reader journey.",
-      "forbedringsgrep": "Body KEEP; bounded discovery metadata change. Generated listings reflect the evaluated source texts and topic labels.",
+      "forbedringsgrep": "Body KEEP; bounded discovery metadata change. Generated listings reflect the evaluated source texts and topic labels. Versioned script URL prevents stale browser cache from ignoring topic/query links after deployment.",
       "revidert_eksempelversjon": "Exact current HTML SHA-256 above; revised output with source dates and author attribution retained."
     },
     "decision": "REVISE",
@@ -2001,12 +2001,13 @@
       "approved": true,
       "by": "Executing editor under Bjørn Moe Aldema’s explicit publication instruction",
       "reference": "docs/editorial/corpus-revision-2026-10-12.md#scope-and-authority; exact language/discovery revision cleared after separate AI integration review, not personal byte review by the author",
-      "sha256": "5803b94f3ccbc49d374645795780d7192dc479783a48a3949f01f8db4446a9b4"
-    }
+      "sha256": "cfaea90c7fc9a6435187f3b4f541ee99205e12a13d4729ccf7d7b06411353fa7"
+    },
+    "previous_map_sha256": "5803b94f3ccbc49d374645795780d7192dc479783a48a3949f01f8db4446a9b4"
   },
   "public/sitemap.en.html": {
     "case_id": "PUBLISHED-CORPUS-20261012",
-    "sha256": "0ee7cee62a5fc3cff261cd96342e7ecd5d78319ac6888dc789ae80be9c3b874e",
+    "sha256": "a201917821da7f08047ef93c9ab5d8d301d62c0a3eafe84de456357b576b5a6c",
     "reviewer": "Executing assistant applying Ariadne; four separate AI full-text readers; separate AI final integration PASS_BOUNDED",
     "execution_context": "AI editorial and discovery revision under author instruction; no fresh corpus-wide factual or human specialist certification",
     "reviewed_at": "2026-10-12",
@@ -2045,7 +2046,7 @@
       "styrker": "Retain purpose, reading language and navigation to the published corpus.",
       "stilprofil": "Preserve existing genre and complete reader journey; docs/editorial/corpus-revision-2026-10-12.md#six-stages",
       "konkrete_svakheter": "Discovery coverage and plain-language explanation, as recorded in release reader journey.",
-      "forbedringsgrep": "Body KEEP; bounded discovery metadata change. Generated listings reflect the evaluated source texts and topic labels.",
+      "forbedringsgrep": "Body KEEP; bounded discovery metadata change. Generated listings reflect the evaluated source texts and topic labels. Versioned script URL prevents stale browser cache from ignoring topic/query links after deployment.",
       "revidert_eksempelversjon": "Exact current HTML SHA-256 above; revised output with source dates and author attribution retained."
     },
     "decision": "REVISE",
@@ -2061,8 +2062,9 @@
       "approved": true,
       "by": "Executing editor under Bjørn Moe Aldema’s explicit publication instruction",
       "reference": "docs/editorial/corpus-revision-2026-10-12.md#scope-and-authority; exact language/discovery revision cleared after separate AI integration review, not personal byte review by the author",
-      "sha256": "0ee7cee62a5fc3cff261cd96342e7ecd5d78319ac6888dc789ae80be9c3b874e"
-    }
+      "sha256": "a201917821da7f08047ef93c9ab5d8d301d62c0a3eafe84de456357b576b5a6c"
+    },
+    "previous_map_sha256": "0ee7cee62a5fc3cff261cd96342e7ecd5d78319ac6888dc789ae80be9c3b874e"
   },
   "public/articles/nar-ansvaret-kommer-hjem-2026.html": {
     "case_id": "PUBLISHED-CORPUS-20261012",

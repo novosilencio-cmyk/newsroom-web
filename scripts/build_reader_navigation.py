@@ -1,5 +1,6 @@
 """Reader navigation from the existing publication registry, without network IO."""
 import html
+import hashlib
 import re
 from html.parser import HTMLParser
 from pathlib import Path
@@ -144,6 +145,7 @@ def versions(public, article):
 
 def render(public, articles, lang):
     no = lang == 'nb'
+    script_version = hashlib.sha256((public / 'reader-navigation.js').read_bytes()).hexdigest()[:12]
     title = 'Finn frem' if no else 'Find your way'
     filename = 'sitemap.html' if no else 'sitemap.en.html'
     intro = ('Finn saker, serier, kunst, Atriet og kurs. Språk er merket ved lenkene.' if no else
@@ -184,7 +186,7 @@ def render(public, articles, lang):
 <link rel="alternate" hreflang="en" href="https://experimentalnewsroom.org/sitemap.en.html"/>
 <link rel="stylesheet" href="styles.css"/><link rel="stylesheet" href="reader-navigation.css"/>
 <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
-<script src="reader-navigation.js" defer></script>
+<script src="reader-navigation.js?v={script_version}" defer></script>
 </head>
 <body class="reader-map">
 <a class="reader-skip" href="#main">{'Gå til innholdet' if no else 'Skip to content'}</a>

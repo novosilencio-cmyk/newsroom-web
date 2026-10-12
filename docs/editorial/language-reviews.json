@@ -1330,42 +1330,57 @@
     }
   },
   "public/norway/index.html": {
-    "case_id": "VIRKEMIDLENE-AVDRAG-20261007",
-    "sha256": "afcafcfb1e7ae80ed147e8801bffb5caabf9ba9ee7f04c3ed23ded1d732ad545",
-    "reviewer": "Executing editorial assistant / Ariadne-method review",
-    "execution_context": "same-assistant purpose, source, language and presentation passes; not independent peer review",
-    "reviewed_at": "2026-10-07T04:24:29.908283+00:00",
+    "case_id": "NO07-SUPPORT-ADDENDUM-20261012",
+    "sha256": "38e6e971ac97222c9c2c3e7415013925c78dfa3e0e1404da9ba4f8f092930e23",
+    "reviewer": "Executing assistant applying Ariadne; separate AI source/editorial review of addition PASS_BOUNDED",
+    "execution_context": "Separate AI addition review; executing assistant integration, six-stage language and discovery-surface review; no human specialist assessment",
+    "reviewed_at": "2026-10-12",
+    "comparison_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
+        "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+        "revision": "runtime-read-2026-10-12",
+        "application_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
       },
       {
-        "source": "docs/editorial/READER_SEQUENCE_PRESENTATION_STANDARD_001.md",
-        "revision": "1a2d4dd69a057b720fa772af6f723649afd931b7",
-        "application_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey"
+        "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
+        "revision": "runtime-read-2026-10-12",
+        "application_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
+        "revision": "runtime-read-2026-10-12",
+        "application_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+        "revision": "runtime-read-2026-10-12",
+        "application_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
+        "revision": "runtime-read-2026-10-12",
+        "application_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "styrker": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "stilprofil": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "konkrete_svakheter": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "forbedringsgrep": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review",
-      "revidert_eksempelversjon": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#six-stage-language-review"
+      "helhetsinntrykk": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages",
+      "styrker": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages",
+      "stilprofil": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages",
+      "konkrete_svakheter": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages",
+      "forbedringsgrep": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages",
+      "revidert_eksempelversjon": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
     },
-    "comparison_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#editorial-decision-and-preservation",
-    "reader_journey_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#semantic-controls-and-permitted-exact-wording",
     "decision": "COMBINE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
     "publication_approval": {
       "approved": true,
-      "by": "Bjørn Moe Aldema; delegated editorial realization",
-      "reference": "docs/editorial/virkemidlene-avdrag-release-2026-10-07.md#authority-and-version-binding",
-      "sha256": "afcafcfb1e7ae80ed147e8801bffb5caabf9ba9ee7f04c3ed23ded1d732ad545"
+      "by": "Bjørn Moe Aldema",
+      "reference": "Current chat 2026-10-12: explicit instruction to choose addition, complete publication and implement search discovery. Delegated authority applied by executing editor to this exact final hash; not personal byte review. docs/editorial/no07-support-addendum-2026-10-12.md#scope-and-authority",
+      "sha256": "38e6e971ac97222c9c2c3e7415013925c78dfa3e0e1404da9ba4f8f092930e23"
     }
   },
   "public/privacy.html": {
@@ -1864,71 +1879,111 @@
     }
   },
   "public/sitemap.html": {
-    "case_id": "WORDS-CONNECTIONS-20261008",
-    "sha256": "684061cfd677a6a344fe63293da75c9cb7bb3395dd605e7e5d85043e999fa5d4",
-    "reviewer": "Executing assistant applying Ariadne editorial controls",
-    "execution_context": "Same-assistant review; no independent review or reader-effect claim",
-    "reviewed_at": "2026-10-08",
+    "case_id": "NO07-SUPPORT-ADDENDUM-20261012",
+    "sha256": "d268b3feb0984b7bb7f70e2147de94cfd823be360619ae73f6d11d79aad58e38",
+    "reviewer": "Executing assistant applying Ariadne; separate AI source/editorial review of addition PASS_BOUNDED",
+    "execution_context": "Separate AI addition review; executing assistant integration, six-stage language and discovery-surface review; no human specialist assessment",
+    "reviewed_at": "2026-10-12",
+    "comparison_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/words-release-2026-10-08.md"
+        "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+        "revision": "runtime-read-2026-10-12",
+        "application_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
+        "revision": "runtime-read-2026-10-12",
+        "application_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
+        "revision": "runtime-read-2026-10-12",
+        "application_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+        "revision": "runtime-read-2026-10-12",
+        "application_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
+        "revision": "runtime-read-2026-10-12",
+        "application_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/words-release-2026-10-08.md#six-stage-review",
-      "styrker": "docs/editorial/words-release-2026-10-08.md#six-stage-review",
-      "stilprofil": "docs/editorial/words-release-2026-10-08.md#six-stage-review",
-      "konkrete_svakheter": "docs/editorial/words-release-2026-10-08.md#six-stage-review",
-      "forbedringsgrep": "docs/editorial/words-release-2026-10-08.md#six-stage-review",
-      "revidert_eksempelversjon": "docs/editorial/words-release-2026-10-08.md#six-stage-review"
+      "helhetsinntrykk": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages",
+      "styrker": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages",
+      "stilprofil": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages",
+      "konkrete_svakheter": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages",
+      "forbedringsgrep": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages",
+      "revidert_eksempelversjon": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
     },
-    "comparison_ref": "docs/editorial/words-release-2026-10-08.md",
-    "reader_journey_ref": "docs/editorial/words-release-2026-10-08.md",
-    "semantic_control_ref": "docs/editorial/words-release-2026-10-08.md",
     "decision": "COMBINE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
     "publication_approval": {
       "approved": true,
-      "by": "Bjørn Moe Aldema; delegated realization",
-      "reference": "docs/editorial/words-release-2026-10-08.md#authority-and-scope",
-      "sha256": "684061cfd677a6a344fe63293da75c9cb7bb3395dd605e7e5d85043e999fa5d4"
+      "by": "Bjørn Moe Aldema",
+      "reference": "Current chat 2026-10-12: explicit instruction to choose addition, complete publication and implement search discovery. Delegated authority applied by executing editor to this exact final hash; not personal byte review. docs/editorial/no07-support-addendum-2026-10-12.md#scope-and-authority",
+      "sha256": "d268b3feb0984b7bb7f70e2147de94cfd823be360619ae73f6d11d79aad58e38"
     }
   },
   "public/sitemap.en.html": {
-    "case_id": "WORDS-CONNECTIONS-20261008",
-    "sha256": "ff2c887c1cc1759a069271c1df9998ed2c664424b897068a6020ef005bcc924e",
-    "reviewer": "Executing assistant applying Ariadne editorial controls",
-    "execution_context": "Same-assistant review; no independent review or reader-effect claim",
-    "reviewed_at": "2026-10-08",
+    "case_id": "NO07-SUPPORT-ADDENDUM-20261012",
+    "sha256": "d658b045a2357a954d76f562624eab17f41cbf112b1be695a56e503bcb23baea",
+    "reviewer": "Executing assistant applying Ariadne; separate AI source/editorial review of addition PASS_BOUNDED",
+    "execution_context": "Separate AI addition review; executing assistant integration, six-stage language and discovery-surface review; no human specialist assessment",
+    "reviewed_at": "2026-10-12",
+    "comparison_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#semantic-control",
     "loaded_modules": [
       {
-        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/words-release-2026-10-08.md"
+        "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+        "revision": "runtime-read-2026-10-12",
+        "application_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
+        "revision": "runtime-read-2026-10-12",
+        "application_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
+        "revision": "runtime-read-2026-10-12",
+        "application_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+        "revision": "runtime-read-2026-10-12",
+        "application_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
+        "revision": "runtime-read-2026-10-12",
+        "application_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/words-release-2026-10-08.md#six-stage-review",
-      "styrker": "docs/editorial/words-release-2026-10-08.md#six-stage-review",
-      "stilprofil": "docs/editorial/words-release-2026-10-08.md#six-stage-review",
-      "konkrete_svakheter": "docs/editorial/words-release-2026-10-08.md#six-stage-review",
-      "forbedringsgrep": "docs/editorial/words-release-2026-10-08.md#six-stage-review",
-      "revidert_eksempelversjon": "docs/editorial/words-release-2026-10-08.md#six-stage-review"
+      "helhetsinntrykk": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages",
+      "styrker": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages",
+      "stilprofil": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages",
+      "konkrete_svakheter": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages",
+      "forbedringsgrep": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages",
+      "revidert_eksempelversjon": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
     },
-    "comparison_ref": "docs/editorial/words-release-2026-10-08.md",
-    "reader_journey_ref": "docs/editorial/words-release-2026-10-08.md",
-    "semantic_control_ref": "docs/editorial/words-release-2026-10-08.md",
     "decision": "COMBINE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
     "publication_approval": {
       "approved": true,
-      "by": "Bjørn Moe Aldema; delegated realization",
-      "reference": "docs/editorial/words-release-2026-10-08.md#authority-and-scope",
-      "sha256": "ff2c887c1cc1759a069271c1df9998ed2c664424b897068a6020ef005bcc924e"
+      "by": "Bjørn Moe Aldema",
+      "reference": "Current chat 2026-10-12: explicit instruction to choose addition, complete publication and implement search discovery. Delegated authority applied by executing editor to this exact final hash; not personal byte review. docs/editorial/no07-support-addendum-2026-10-12.md#scope-and-authority",
+      "sha256": "d658b045a2357a954d76f562624eab17f41cbf112b1be695a56e503bcb23baea"
     }
   },
   "public/articles/nar-ansvaret-kommer-hjem-2026.html": {
@@ -2574,50 +2629,58 @@
     }
   },
   "public/articles/tidlig-legemiddeltilgang-ekspertgruppe-2026.html": {
-    "case_id": "NO07-AUTHORISATION-DEPTH-20261005",
-    "sha256": "76ab3b68fcf7db09a36ae7d937b679aad7459d064609b5e98c30b2a608d22cad",
-    "reviewer": "Executing assistant applying Ariadne; separate AI editorial/source review PASS_BOUNDED",
-    "execution_context": "Bounded addition reviewed separately by an AI reviewer; final realization and six-stage review by executing assistant; no human specialist review claimed",
-    "reviewed_at": "2026-10-05",
-    "comparison_ref": "docs/editorial/no07-authorisation-depth-2026-10-05.md#six-stages",
-    "reader_journey_ref": "docs/editorial/no07-authorisation-depth-2026-10-05.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/no07-authorisation-depth-2026-10-05.md#semantic-control",
+    "case_id": "NO07-SUPPORT-ADDENDUM-20261012",
+    "sha256": "d5d347840d0d207339b81425a26ac20b5cb878b3f401747da8b7d42496e0700d",
+    "reviewer": "Executing assistant applying Ariadne; separate AI source/editorial review of addition PASS_BOUNDED",
+    "execution_context": "Separate AI addition review; executing assistant integration, six-stage language and discovery-surface review; no human specialist assessment",
+    "reviewed_at": "2026-10-12",
+    "comparison_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#comparison-and-reader-journey",
+    "reader_journey_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#comparison-and-reader-journey",
+    "semantic_control_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#semantic-control",
     "loaded_modules": [
       {
         "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
-        "revision": "runtime-read-2026-10-04",
-        "application_ref": "docs/editorial/no07-authorisation-depth-2026-10-05.md#six-stages"
+        "revision": "runtime-read-2026-10-12",
+        "application_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
       },
       {
         "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
-        "revision": "runtime-read-2026-10-04",
-        "application_ref": "docs/editorial/no07-authorisation-depth-2026-10-05.md#six-stages"
+        "revision": "runtime-read-2026-10-12",
+        "application_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
+        "revision": "runtime-read-2026-10-12",
+        "application_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
       },
       {
         "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
-        "revision": "runtime-read-2026-10-04",
-        "application_ref": "docs/editorial/no07-authorisation-depth-2026-10-05.md#six-stages"
+        "revision": "runtime-read-2026-10-12",
+        "application_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
+        "revision": "runtime-read-2026-10-12",
+        "application_ref": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/no07-authorisation-depth-2026-10-05.md#six-stages",
-      "styrker": "docs/editorial/no07-authorisation-depth-2026-10-05.md#six-stages",
-      "stilprofil": "docs/editorial/no07-authorisation-depth-2026-10-05.md#six-stages",
-      "konkrete_svakheter": "docs/editorial/no07-authorisation-depth-2026-10-05.md#six-stages",
-      "forbedringsgrep": "docs/editorial/no07-authorisation-depth-2026-10-05.md#six-stages",
-      "revidert_eksempelversjon": "docs/editorial/no07-authorisation-depth-2026-10-05.md#six-stages"
+      "helhetsinntrykk": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages",
+      "styrker": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages",
+      "stilprofil": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages",
+      "konkrete_svakheter": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages",
+      "forbedringsgrep": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages",
+      "revidert_eksempelversjon": "docs/editorial/no07-support-addendum-2026-10-12.md#six-stages"
     },
-    "decision": "REVISE",
+    "decision": "COMBINE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
     "publication_approval": {
       "approved": true,
       "by": "Bjørn Moe Aldema",
-      "reference": "Current chat 2026-10-05: explicit instruction to incorporate the feedback, edit and publish; delegated authority applied to this exact final hash, not a claim of personal byte review. docs/editorial/no07-authorisation-depth-2026-10-05.md#authority-and-exact-version",
-      "sha256": "76ab3b68fcf7db09a36ae7d937b679aad7459d064609b5e98c30b2a608d22cad"
-    },
-    "source_scope": "DMP authorisation, adverse effects and pharmacovigilance guidance; no medicine-specific benefit finding",
-    "revision_disposition": "Publication time bound to successful initial deployment; prose unchanged."
+      "reference": "Current chat 2026-10-12: explicit instruction to choose addition, complete publication and implement search discovery. Delegated authority applied by executing editor to this exact final hash; not personal byte review. docs/editorial/no07-support-addendum-2026-10-12.md#scope-and-authority",
+      "sha256": "d5d347840d0d207339b81425a26ac20b5cb878b3f401747da8b7d42496e0700d"
+    }
   },
   "public/articles/not-necessarily-an-order-2026.html": {
     "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",

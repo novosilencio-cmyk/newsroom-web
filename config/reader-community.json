@@ -2,15 +2,153 @@
   "status": "INTERNAL_PROTOTYPE_NOT_ACTIVATED",
   "participation_requires_payment": false,
   "reading_requires_login": false,
-  "candidate_auth": "Supabase Auth with server-verified Turnstile",
-  "public_profile_fields": ["display_name", "preferred_language"],
-  "optional_private_fields": ["facet_interests"],
-  "private_fields": ["email", "provider_user_id"],
-  "reaction_label_nb": "Dette var nyttig",
-  "reaction_identity": "one authenticated account per canonical article across translations",
+  "candidate_auth": "NOT_SELECTED_AFTER_EXPANDED_FORUM_RESEARCH",
+  "public_profile_fields": [
+    "display_name",
+    "preferred_language"
+  ],
+  "optional_private_fields": [
+    "facet_interests"
+  ],
+  "private_fields": [
+    "email",
+    "provider_user_id"
+  ],
+  "reaction_identity": "one account per reaction kind per canonical article across translations; double thumb is an icon, not double weight",
   "comment_initial_status": "pending",
   "verified_human_claim": false,
   "verified_reading_claim": false,
-  "launch_gates": ["provider configuration and current pricing review", "server authentication and authorization", "server anti-spam validation and rate limits", "durable storage and row permissions", "moderation staffing and reporting/blocking", "escaped plain text rendering", "privacy, consent, export and erasure", "multilingual interface review"],
-  "subscription_priority": "Separate payment facet signals from reactions and comments; editorial decision remains independent"
+  "launch_gates": [
+    "provider configuration and current pricing review",
+    "server authentication and authorization",
+    "server anti-spam validation and rate limits",
+    "durable storage and row permissions",
+    "moderation staffing and reporting/blocking",
+    "escaped plain text rendering",
+    "privacy, consent, export and erasure",
+    "multilingual interface review"
+  ],
+  "subscription_priority": "Separate payment facet signals from reactions and comments; editorial decision remains independent",
+  "reactions": [
+    {
+      "id": "good_job",
+      "icon": "👍",
+      "label_nb": "Bra jobba"
+    },
+    {
+      "id": "exciting",
+      "icon": "👍👍",
+      "label_nb": "Spennende"
+    }
+  ],
+  "private_feedback": {
+    "label_nb": "Kritisk tilbakemelding",
+    "registration_required": false,
+    "name_required": false,
+    "email_required": false,
+    "public": false,
+    "delivery_status": "NOT_CONFIGURED",
+    "destination_candidate": "Existing editorial inbox after verified access and delivery test",
+    "anonymous_claim": "No registration or name required; technical anonymity is not guaranteed",
+    "assistant_handling": "During authorized inbox work; no continuous monitoring promised"
+  },
+  "interface_text_status": "CANDIDATE_TRANSLATIONS_NOT_EDITORIALLY_CERTIFIED",
+  "interface_text": {
+    "nb": [
+      "Bra jobba",
+      "Spennende",
+      "Kritisk tilbakemelding",
+      "Hva bør vi undersøke, rette eller utdype?",
+      "E-post hvis du ønsker svar (valgfritt)",
+      "Send privat til redaksjonen"
+    ],
+    "en": [
+      "Good work",
+      "Interesting",
+      "Critical feedback",
+      "What should we investigate, correct or explore further?",
+      "Email if you would like a reply (optional)",
+      "Send privately to the newsroom"
+    ],
+    "fr": [
+      "Beau travail",
+      "Intéressant",
+      "Retour critique",
+      "Que devrions-nous examiner, corriger ou approfondir ?",
+      "E-mail pour recevoir une réponse (facultatif)",
+      "Envoyer en privé à la rédaction"
+    ],
+    "es-AR": [
+      "Buen trabajo",
+      "Interesante",
+      "Devolución crítica",
+      "¿Qué deberíamos investigar, corregir o profundizar?",
+      "Correo si querés una respuesta (opcional)",
+      "Enviar en privado a la redacción"
+    ],
+    "de": [
+      "Gute Arbeit",
+      "Spannend",
+      "Kritische Rückmeldung",
+      "Was sollten wir untersuchen, korrigieren oder vertiefen?",
+      "E-Mail für eine Antwort (optional)",
+      "Privat an die Redaktion senden"
+    ],
+    "zh-Hans": [
+      "做得好",
+      "很有意思",
+      "批评反馈",
+      "我们应该调查、纠正或进一步探讨什么？",
+      "如需回复，请填写电子邮箱（可选）",
+      "私下发送给编辑部"
+    ],
+    "zh-Hant": [
+      "做得好",
+      "很有意思",
+      "批評回饋",
+      "我們應該調查、修正或進一步探討什麼？",
+      "如需回覆，請填寫電子信箱（選填）",
+      "私下傳送給編輯部"
+    ],
+    "ja": [
+      "いい仕事ですね",
+      "興味深い",
+      "批判的なフィードバック",
+      "調査、訂正、または掘り下げるべき点はありますか？",
+      "返信を希望する場合のメールアドレス（任意）",
+      "編集部に非公開で送信"
+    ],
+    "pt-BR": [
+      "Bom trabalho",
+      "Interessante",
+      "Feedback crítico",
+      "O que devemos investigar, corrigir ou aprofundar?",
+      "E-mail se quiser uma resposta (opcional)",
+      "Enviar em particular à redação"
+    ],
+    "ko": [
+      "잘했어요",
+      "흥미로워요",
+      "비판적 의견",
+      "무엇을 조사하거나 바로잡거나 더 깊이 다뤄야 할까요?",
+      "답변을 원하시면 이메일을 적어 주세요 (선택)",
+      "편집부에 비공개로 보내기"
+    ],
+    "ar": [
+      "عمل جيد",
+      "مثير للاهتمام",
+      "ملاحظات نقدية",
+      "ما الذي ينبغي أن نحققه أو نصححه أو نتناوله بمزيد من العمق؟",
+      "البريد الإلكتروني إذا رغبت في رد (اختياري)",
+      "إرسال خاص إلى هيئة التحرير"
+    ]
+  },
+  "interface_text_keys": [
+    "good_job",
+    "exciting",
+    "private_feedback",
+    "message_prompt",
+    "reply_email",
+    "private_send"
+  ]
 }

@@ -1,6 +1,6 @@
 # Leserdeltakelse i Experimental Newsroom
 
-Status: intern prototype, ikke aktivert. Bestilling: Bjørn Moe Aldema, 13. oktober 2026. Fortsett abonnementsmodellen med Nova, Sjeherasad, Orfeus fra Atriet og Nansen; undersøk tommel opp, kommentarer, menneskekontroll, enkel profil og eksisterende forum/innlogging.
+Status: intern prototype, ikke aktivert. **Senere rettelse fra Bjørn: «Dette var nyttig» er forkastet. Gjeldende kandidat er «Bra jobba» og «Spennende», med privat kritisk tilbakemelding uten registrering. Se `forum-broad-search-2026-10-13.md`. Den tidligere leverandøranbefalingen nedenfor er historikk og står nå åpen etter bredere søk.** Bestilling: Bjørn Moe Aldema, 13. oktober 2026. Fortsett abonnementsmodellen med Nova, Sjeherasad, Orfeus fra Atriet og Nansen; undersøk tommel opp, kommentarer, menneskekontroll, enkel profil og eksisterende forum/innlogging.
 
 ## Produkt og plassering
 

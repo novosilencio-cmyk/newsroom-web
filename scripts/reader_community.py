@@ -36,7 +36,10 @@ class Community:
             if article not in self.article_ids:
                 raise ValueError('unknown canonical article')
             if action.startswith('reaction.'):
-                key = (context.user_id, article)
+                kind = event.get('kind', 'good_job')
+                if kind not in ('good_job', 'exciting'):
+                    raise ValueError('unknown reaction kind')
+                key = (context.user_id, article, kind)
                 if action == 'reaction.set':
                     self.reactions.add(key)
                 else:

@@ -7,6 +7,7 @@ from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_reader_navigation import build_reader_navigation, SECTIONS
+from build_reader_support import build_reader_support
 from urllib.parse import urlsplit
 from xml.sax.saxutils import escape
 
@@ -85,6 +86,7 @@ def update_articles(articles):
         path.write_text(source, encoding="utf-8")
 
 def build(articles):
+    build_reader_support(PUBLIC)
     robots = "User-agent: OAI-SearchBot\nAllow: /\n\nUser-agent: ChatGPT-User\nAllow: /\n\nUser-agent: *\nAllow: /\n\nSitemap: " + BASE + "sitemap.xml\n"
     (PUBLIC/"robots.txt").write_text(robots, encoding="utf-8")
 

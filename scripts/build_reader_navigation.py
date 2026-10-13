@@ -2,13 +2,14 @@
 import html
 import hashlib
 import re
+from build_reader_support import support_data
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit, quote
 
 COUNTRY_ALIASES = {'Norway': 'Norge', 'Brazil': 'Brasil', 'Denmark': 'Danmark', 'Germany': 'Tyskland', 'Japan': 'Japan', 'United States': 'USA', 'United Kingdom': 'Storbritannia England', 'Global economy': 'Verdensøkonomien'}
 
-LANGUAGES = {'nb': 'Norsk', 'en': 'English', 'fr': 'Français', 'de': 'Deutsch', 'ja': '日本語', 'ko': '한국어', 'zh-Hans': '简体中文', 'es': 'Español', 'pt': 'Português', 'ar': 'العربية'}
+LANGUAGES = {'nb': 'Norsk', 'en': 'English', 'fr': 'Français', 'de': 'Deutsch', 'ja': '日本語', 'ko': '한국어', 'zh-Hans': '简体中文', 'es': 'Español', 'es-AR': 'Español (Argentina)', 'zh-Hant': '繁體中文', 'pt': 'Português', 'ar': 'العربية'}
 # Published reader destinations, deliberately excluding embedded viewers and drafts.
 SECTIONS = [
     ('start', 'Start her', 'Start here', [
@@ -38,7 +39,14 @@ SECTIONS = [
         ('recognition/', 'Anerkjennelse', 'nb'),
         ('recognition/rcf-sci-2026-09-14.html', 'Felles innsats, synlige bidrag', 'nb')]),
     ('support', 'Støtt arbeidet', 'Support the work', [
-        ('support.html', 'Support the work', 'en'),
+        ('support.html', 'Støtt journalistikken', 'nb'),
+        ('support.en.html', 'Support independent journalism', 'en'),
+        ('support.fr.html', 'Soutenir un journalisme indépendant', 'fr'),
+        ('support.es.html', 'Apoyá el periodismo independiente', 'es-AR'),
+        ('support.de.html', 'Unabhängigen Journalismus unterstützen', 'de'),
+        ('support.zh-Hans.html', '支持独立新闻报道', 'zh-Hans'),
+        ('support.zh-Hant.html', '支持獨立新聞報導', 'zh-Hant'),
+        ('support.ja.html', '独立した報道を支える', 'ja'),
         ('support-terms.html', 'Avtalevilkår for støtte', 'nb'),
         ('privacy.html', 'Personvern', 'nb')]),
 ]
@@ -196,7 +204,7 @@ def render(public, articles, lang):
 <section class="map-intro"><p class="kicker">{'Nettstedskart' if no else 'Site map'}</p><h1>{title}</h1><p class="map-deck">{intro}</p></section>
 <form class="map-search" role="search" hidden>
 <div class="map-search-field"><label for="map-query">{'Søk i oversikten' if no else 'Search this guide'}</label><input id="map-query" type="search" autocomplete="off" aria-describedby="map-help" placeholder="{'Prøv skolemat, Taiwan eller kurs' if no else 'Try school meals, Taiwan or courses'}"/></div>
-<div class="map-language-field"><label for="map-language">{'Lesespråk' if no else 'Reading language'}</label><select id="map-language"><option value="">{'Alle språk' if no else 'All languages'}</option><option value="nb">Norsk</option><option value="en">English</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="zh-Hans">简体中文</option><option value="es">Español</option><option value="pt">Português</option><option value="ar">العربية</option></select></div>
+<div class="map-language-field"><label for="map-language">{'Lesespråk' if no else 'Reading language'}</label><select id="map-language"><option value="">{'Alle språk' if no else 'All languages'}</option><option value="nb">Norsk</option><option value="en">English</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="zh-Hans">简体中文</option><option value="es-AR">Español (Argentina)</option><option value="zh-Hant">繁體中文</option><option value="pt">Português</option><option value="ar">العربية</option></select></div>
 <button type="reset">{'Vis alt' if no else 'Show all'}</button>
 <p id="map-help">{'Søker i publiserte tekster, titler, emneord og landnavn. Velg et emneord for å finne beslektede saker.' if no else 'Searches published texts, titles, topics and country names. Choose a topic to find related stories.'}</p>
 <p id="map-results" role="status" aria-live="polite" aria-atomic="true"></p>
@@ -212,6 +220,7 @@ def render(public, articles, lang):
 
 def enhance_pages(public):
     """Small idempotent shell additions; article bodies and existing anchors survive."""
+    support = support_data(public)
     for path in sorted(public.rglob('*.html')):
         source = path.read_text(encoding='utf-8')
         if 'data-visualize-standalone' in source or path.name in ('sitemap.html', 'sitemap.en.html'):
@@ -224,6 +233,10 @@ def enhance_pages(public):
         skip = 'Gå til innholdet' if no else ('Aller au contenu' if lang == 'fr' else 'Skip to content')
         label = 'Finn frem' if no else ('Plan du site (en anglais)' if lang == 'fr' else 'Find your way')
         prefix = '../' * (len(path.relative_to(public).parts) - 1)
+        support_lang = 'nb' if no else ('es-AR' if lang.startswith('es') else lang)
+        support_row = support.get(support_lang, support['en'])
+        support_target = prefix + support_row['file']
+        support_label = support_row['title']
         target = prefix + ('sitemap.html' if no else 'sitemap.en.html')
         if 'reader-navigation.css' not in source:
             source = source.replace('</head>', f'<link href="{prefix}reader-navigation.css" rel="stylesheet"/>\n</head>', 1)
@@ -252,10 +265,27 @@ def enhance_pages(public):
             nav = re.search(r'<nav\b[^>]*>.*?</nav>', source, re.S)
             if nav and target not in nav.group():
                 source = source[:nav.start()] + nav.group().replace('</nav>', f'<a href="{target}">{label}</a></nav>') + source[nav.end():]
+        rel = path.relative_to(public).as_posix()
+        if rel in ('index.html', 'nb/index.html', 'en/index.html'):
+            nav = re.search(r'<nav\b[^>]*>.*?</nav>', source, re.S)
+            if nav:
+                newnav = re.sub(r'<a href="(?:\.\./)?support(?:\.en)?\.html"[^>]*>.*?</a>', '', nav.group())
+                code = support_lang if support_lang in support else 'en'
+                newnav = newnav.replace('</nav>', f'<a href="{support_target}" lang="{code}">{escape(support_label)}</a></nav>')
+                source = source[:nav.start()] + newnav + source[nav.end():]
+        if rel.startswith('articles/'):
+            code = support_lang if support_lang in support else 'en'
+            link = f'<p class="reader-support-link"><a href="{support_target}" lang="{code}">{escape(support_label)} →</a></p>'
+            if 'reader-support-link' in source:
+                source = re.sub(r'<p class="reader-support-link">.*?</p>', link, source)
+            else:
+                source = source.replace('</main>', link + '\n</main>', 1)
+            if 'reader-support.css' not in source:
+                source = source.replace('</head>', f'<link href="{prefix}reader-support.css" rel="stylesheet"/>\n</head>', 1)
         path.write_text(source, encoding='utf-8')
 
 
 def build_reader_navigation(public, articles):
+    enhance_pages(public)
     for lang, filename in [('nb', 'sitemap.html'), ('en', 'sitemap.en.html')]:
         (public / filename).write_text(render(public, articles, lang), encoding='utf-8')
-    enhance_pages(public)

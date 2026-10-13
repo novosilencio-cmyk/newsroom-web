@@ -7,6 +7,8 @@
 .support-recipient{font:.88rem/1.6 Arial,sans-serif;overflow-wrap:anywhere}
 .reader-support-link{font:600 .95rem/1.5 Arial,sans-serif;margin-top:24px;padding-top:14px;border-top:1px solid #b5b8ae}
 .reader-support-link a{padding:10px 0;display:inline-block;text-underline-offset:.2em}
-html[lang^=zh] .measure,html[lang=ja] .measure{line-height:1.85;word-break:normal}
+html[lang^=zh] .measure,html[lang=ja] .measure,html[lang=ko] .measure{line-height:1.85;word-break:normal}
+html[dir=rtl] .measure{line-height:1.85;text-align:start}
+html[dir=rtl] .support-languages a{unicode-bidi:isolate}
 @media(max-width:650px){.support-payment{padding:20px}.support-payment .support-button{width:100%;text-align:center}}
 @media print{.support-payment .support-button,.reader-support-link{display:none}}

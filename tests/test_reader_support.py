@@ -17,7 +17,7 @@ class Page(HTMLParser):
 class ReaderSupportTests(unittest.TestCase):
     def test_explicit_languages_reciprocal_urls_and_one_payment(self):
         rows = json.loads((PUBLIC / 'content/reader-support.json').read_text())
-        self.assertEqual(set(rows), {'nb', 'en', 'fr', 'es-AR', 'de', 'zh-Hans', 'zh-Hant', 'ja'})
+        self.assertEqual(set(rows), {'nb', 'en', 'fr', 'es-AR', 'de', 'zh-Hans', 'zh-Hant', 'ja', 'pt-BR', 'ko', 'ar'})
         for lang, row in rows.items():
             page = Page(); page.feed((PUBLIC / row['file']).read_text())
             self.assertEqual(page.language, lang)
@@ -38,3 +38,13 @@ class ReaderSupportTests(unittest.TestCase):
             self.assertTrue(links, path)
             for a in links: self.assertTrue((path.parent / urlsplit(a['href']).path).resolve().is_file(), path)
             self.assertLess(source.rfind('</article>'), source.index('reader-support-link'), path)
+
+    def test_local_article_destinations_and_arabic_direction(self):
+        destinations = {'pt': 'support.pt-BR.html', 'ko': 'support.ko.html', 'ar': 'support.ar.html'}
+        for language, destination in destinations.items():
+            for path in (PUBLIC / 'articles').glob('*.' + language + '.html'):
+                source = path.read_text()
+                self.assertIn('href="../' + destination + '"', source)
+        arabic = (PUBLIC / 'support.ar.html').read_text()
+        self.assertIn('<html lang="ar" dir="rtl">', arabic)
+        self.assertIn('href="tel:+4748448958" dir="ltr"', arabic)

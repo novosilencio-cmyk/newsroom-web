@@ -9,7 +9,7 @@ from urllib.parse import urlsplit, quote
 
 COUNTRY_ALIASES = {'Norway': 'Norge', 'Brazil': 'Brasil', 'Denmark': 'Danmark', 'Germany': 'Tyskland', 'Japan': 'Japan', 'United States': 'USA', 'United Kingdom': 'Storbritannia England', 'Global economy': 'Verdensøkonomien'}
 
-LANGUAGES = {'nb': 'Norsk', 'en': 'English', 'fr': 'Français', 'de': 'Deutsch', 'ja': '日本語', 'ko': '한국어', 'zh-Hans': '简体中文', 'es': 'Español', 'es-AR': 'Español (Argentina)', 'zh-Hant': '繁體中文', 'pt': 'Português', 'ar': 'العربية'}
+LANGUAGES = {'nb': 'Norsk', 'en': 'English', 'fr': 'Français', 'de': 'Deutsch', 'ja': '日本語', 'ko': '한국어', 'zh-Hans': '简体中文', 'es': 'Español', 'es-AR': 'Español (Argentina)', 'zh-Hant': '繁體中文', 'pt': 'Português', 'pt-BR': 'Português (Brasil)', 'ar': 'العربية'}
 # Published reader destinations, deliberately excluding embedded viewers and drafts.
 SECTIONS = [
     ('start', 'Start her', 'Start here', [
@@ -47,6 +47,9 @@ SECTIONS = [
         ('support.zh-Hans.html', '支持独立新闻报道', 'zh-Hans'),
         ('support.zh-Hant.html', '支持獨立新聞報導', 'zh-Hant'),
         ('support.ja.html', '独立した報道を支える', 'ja'),
+        ('support.pt-BR.html', 'Apoie o jornalismo independente', 'pt-BR'),
+        ('support.ko.html', '독립적인 언론 활동을 후원해 주세요', 'ko'),
+        ('support.ar.html', 'ادعم الصحافة المستقلة', 'ar'),
         ('support-terms.html', 'Avtalevilkår for støtte', 'nb'),
         ('privacy.html', 'Personvern', 'nb')]),
 ]
@@ -204,7 +207,7 @@ def render(public, articles, lang):
 <section class="map-intro"><p class="kicker">{'Nettstedskart' if no else 'Site map'}</p><h1>{title}</h1><p class="map-deck">{intro}</p></section>
 <form class="map-search" role="search" hidden>
 <div class="map-search-field"><label for="map-query">{'Søk i oversikten' if no else 'Search this guide'}</label><input id="map-query" type="search" autocomplete="off" aria-describedby="map-help" placeholder="{'Prøv skolemat, Taiwan eller kurs' if no else 'Try school meals, Taiwan or courses'}"/></div>
-<div class="map-language-field"><label for="map-language">{'Lesespråk' if no else 'Reading language'}</label><select id="map-language"><option value="">{'Alle språk' if no else 'All languages'}</option><option value="nb">Norsk</option><option value="en">English</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="zh-Hans">简体中文</option><option value="es-AR">Español (Argentina)</option><option value="zh-Hant">繁體中文</option><option value="pt">Português</option><option value="ar">العربية</option></select></div>
+<div class="map-language-field"><label for="map-language">{'Lesespråk' if no else 'Reading language'}</label><select id="map-language"><option value="">{'Alle språk' if no else 'All languages'}</option><option value="nb">Norsk</option><option value="en">English</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="zh-Hans">简体中文</option><option value="es-AR">Español (Argentina)</option><option value="zh-Hant">繁體中文</option><option value="pt">Português</option><option value="pt-BR">Português (Brasil)</option><option value="ar">العربية</option></select></div>
 <button type="reset">{'Vis alt' if no else 'Show all'}</button>
 <p id="map-help">{'Søker i publiserte tekster, titler, emneord og landnavn. Velg et emneord for å finne beslektede saker.' if no else 'Searches published texts, titles, topics and country names. Choose a topic to find related stories.'}</p>
 <p id="map-results" role="status" aria-live="polite" aria-atomic="true"></p>
@@ -233,7 +236,7 @@ def enhance_pages(public):
         skip = 'Gå til innholdet' if no else ('Aller au contenu' if lang == 'fr' else 'Skip to content')
         label = 'Finn frem' if no else ('Plan du site (en anglais)' if lang == 'fr' else 'Find your way')
         prefix = '../' * (len(path.relative_to(public).parts) - 1)
-        support_lang = 'nb' if no else ('es-AR' if lang.startswith('es') else lang)
+        support_lang = 'nb' if no else ('es-AR' if lang.startswith('es') else ('pt-BR' if lang.startswith('pt') else lang))
         support_row = support.get(support_lang, support['en'])
         support_target = prefix + support_row['file']
         support_label = support_row['title']

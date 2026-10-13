@@ -124,3 +124,7 @@ Privat mottak kan testes uavhengig og komme først. Eksisterende redaksjonsinnbo
 25. https://developers.cloudflare.com/turnstile/turnstile-analytics/challenge-outcomes/
 
 Noen kilder er funksjonsgrovsortering og noen faktisk åpnede detaljkilder; ingen av dem er runtime- eller leveringsbevis. Cusdis og ønsket Hyvor-CAPTCHA ble ikke tilstrekkelig verifisert.
+
+## Senere presisering fra Bjørn — privat tilbakemelding med e-post
+
+Bjørn åpner for at leserens e-postadresse registreres dersom det gjør løsningen enklere, og at kritisk tilbakemelding ikke gjøres offentlig. Valget er derfor ikke bundet til navnløs innsendelse uten kontaktadresse. Første driftskandidat kan be om e-post og melding i et privat redaksjonsskjema, uten å kreve fullt forumabonnement eller offentlig profil. Eventuelt krav om bekreftet e-post må bestemmes av den faktiske løsningen og skilles fra ren innskriving av en adresse. E-posten og meldingen skal ikke publiseres automatisk. Tidligere støtte for valgfri adresse bevares; den interne modellen aksepterer allerede innsendelse med e-post. Dette endrer ikke faktisk status: intet skjema sender til en verifisert innboks ennå.

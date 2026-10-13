@@ -24,7 +24,7 @@ def build_reader_support(public):
         languages = ' '.join(f'<a href="{row["file"]}" lang="{code}" hreflang="{code}"' + (' aria-current="page"' if code == lang else '') + f'>{escape(row["name"])}</a>' for code, row in data.items())
         home = 'nb/' if lang == 'nb' else 'en/'
         source = f'''<!DOCTYPE html>
-<html lang="{lang}">
+<html lang="{lang}"{' dir="rtl"' if lang == 'ar' else ''}>
 <head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>{e('title')} — Experimental Newsroom</title><meta name="description" content="{e('deck')}"/>
 <link rel="canonical" href="{BASE}{s['file']}"/>
@@ -39,10 +39,10 @@ def build_reader_support(public):
 <section class="lead"><h2>{e('purposeTitle')}</h2><p class="lead-deck">{e('purpose')}</p></section>
 <section class="section-block support-payment"><h2>{e('payTitle')}</h2><p class="measure">{e('pay')}</p>
 <p><a class="support-button" href="{escape(s['url'], quote=True)}">{e('button')} →</a></p>
-<p class="support-recipient">{e('recipient')}: <strong>MOE JOE ALDEMA</strong> · 927 532 573</p></section>
+<p class="support-recipient">{e('recipient')}: <strong dir="ltr">MOE JOE ALDEMA</strong> · <bdi>927 532 573</bdi></p></section>
 <section class="section-block"><h2>{e('independenceTitle')}</h2><p class="measure">{e('independence')}</p></section>
 <section class="section-block"><h2>{e('refundTitle')}</h2><p class="measure">{e('refund')}</p>
-<p>{e('contact')}: <a href="tel:+4748448958">+47 48 44 89 58</a> · <a href="mailto:support@experimentalnewsroom.org">support@experimentalnewsroom.org</a></p>
+<p>{e('contact')}: <a href="tel:+4748448958" dir="ltr">+47 48 44 89 58</a> · <a href="mailto:support@experimentalnewsroom.org" dir="ltr">support@experimentalnewsroom.org</a></p>
 <p><a href="support-terms.html" lang="nb">{e('terms')}</a></p></section>
 <section class="section-block"><p class="measure">{e('data')}</p><p><a href="privacy.html" lang="nb">{e('privacy')}</a></p></section>
 <section class="section-block"><h2>{e('otherTitle')}</h2><p class="measure">{e('other')}</p><p><a href="atriet.html" lang="nb">Atriet</a></p></section>

@@ -27,10 +27,15 @@ class PrivateFeedback:
         if not isinstance(text, str) or not 1 <= len(text.strip()) <= 4000:
             raise ValueError('message length must be 1–4000')
         email = payload.get('reply_email', '')
-        if not isinstance(email, str) or len(email) > 254 or any(c in email for c in '\r\n'):
+        if not isinstance(email, str) or len(email) > 254 or any(ord(c) < 32 for c in email):
             raise ValueError('invalid reply email')
-        if email and ('@' not in email or any(c.isspace() for c in email)):
-            raise ValueError('invalid reply email')
+        email = email.strip()
+        if email:
+            # Basic form boundary, not full RFC validation or proof of mailbox ownership.
+            parts = email.split('@')
+            if (len(parts) != 2 or not all(parts) or any(c.isspace() for c in email)
+                    or '.' not in parts[1] or any(not label for label in parts[1].split('.'))):
+                raise ValueError('invalid reply email')
         name = payload.get('name', '')
         if not isinstance(name, str) or len(name) > 120:
             raise ValueError('optional name too long')

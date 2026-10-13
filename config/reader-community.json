@@ -4,10 +4,10 @@
   "reading_requires_login": false,
   "candidate_auth": "NOT_SELECTED_AFTER_EXPANDED_FORUM_RESEARCH",
   "public_profile_fields": [
-    "display_name",
-    "preferred_language"
+    "display_name"
   ],
   "optional_private_fields": [
+    "preferred_language",
     "facet_interests"
   ],
   "private_fields": [
@@ -50,7 +50,8 @@
     "delivery_status": "NOT_CONFIGURED",
     "destination_candidate": "Existing editorial inbox after verified access and delivery test",
     "anonymous_claim": "No registration or name required; technical anonymity is not guaranteed",
-    "assistant_handling": "During authorized inbox work; no continuous monitoring promised"
+    "assistant_handling": "During authorized inbox work; no continuous monitoring promised",
+    "email_requirement_decision": "May be required in selected intake; entered address is not verified ownership"
   },
   "interface_text_status": "CANDIDATE_TRANSLATIONS_NOT_EDITORIALLY_CERTIFIED",
   "interface_text": {
@@ -150,5 +151,11 @@
     "message_prompt",
     "reply_email",
     "private_send"
+  ],
+  "realization_sequence": [
+    "Private editorial intake and actual receipt test",
+    "Article reactions and minimal profile",
+    "Premoderated public comments if editorial capacity is demonstrated",
+    "Full forum only after reader-conversation need is observed"
   ]
 }

@@ -30,6 +30,14 @@ class PrivateFeedbackTest(unittest.TestCase):
         for change in [{'article_id':'other'},{'reply_email':'x@example.org\nBcc:y@example.org'},{'text':''}]:
             with self.assertRaises(ValueError): self.inbox.receive({**self.payload,**change},self.context)
         self.assertFalse(self.inbox.read_for_editor(authorized=True))
+    def test_reply_address_has_local_and_domain_parts(self):
+        for address in ['@', 'a@', '@example.org', 'a@@example.org', 'a@.org', 'a@example..org', 'a@example.org\x00']:
+            with self.assertRaises(ValueError):
+                self.inbox.receive({**self.payload, 'reply_email':address}, self.context)
+        self.assertFalse(self.inbox.read_for_editor(authorized=True))
+        self.inbox.receive({**self.payload, 'reply_email':' reader@example.org '}, self.context)
+        self.assertEqual(self.inbox.read_for_editor(authorized=True)[0]['reply_email'], 'reader@example.org')
+
     def test_two_reaction_meanings_are_separate_not_weighted(self):
         model=Community({'article-1'}); ctx=Context('reader',True,True)
         for n,kind in enumerate(['good_job','exciting','exciting']):

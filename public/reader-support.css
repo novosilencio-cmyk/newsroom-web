@@ -1,0 +1,12 @@
+.support-languages{display:flex;flex-wrap:wrap;gap:4px 18px;font:600 .9rem/1.5 Arial,sans-serif;margin-top:22px}
+.support-languages a{padding:8px 0;text-underline-offset:.25em}
+.support-languages [aria-current=page]{text-decoration:underline}
+.support-payment{background:#e5e9e0;padding:28px;border-top:3px solid #235c48}
+.support-payment .support-button{display:inline-block;background:#235c48;color:#fff;padding:15px 22px;text-decoration:none;font:700 1rem/1.5 Arial,sans-serif;min-height:48px;box-sizing:border-box}
+.support-payment .support-button:hover{background:#183f31}
+.support-recipient{font:.88rem/1.6 Arial,sans-serif;overflow-wrap:anywhere}
+.reader-support-link{font:600 .95rem/1.5 Arial,sans-serif;margin-top:24px;padding-top:14px;border-top:1px solid #b5b8ae}
+.reader-support-link a{padding:10px 0;display:inline-block;text-underline-offset:.2em}
+html[lang^=zh] .measure,html[lang=ja] .measure{line-height:1.85;word-break:normal}
+@media(max-width:650px){.support-payment{padding:20px}.support-payment .support-button{width:100%;text-align:center}}
+@media print{.support-payment .support-button,.reader-support-link{display:none}}

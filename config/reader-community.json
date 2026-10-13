@@ -1,0 +1,16 @@
+{
+  "status": "INTERNAL_PROTOTYPE_NOT_ACTIVATED",
+  "participation_requires_payment": false,
+  "reading_requires_login": false,
+  "candidate_auth": "Supabase Auth with server-verified Turnstile",
+  "public_profile_fields": ["display_name", "preferred_language"],
+  "optional_private_fields": ["facet_interests"],
+  "private_fields": ["email", "provider_user_id"],
+  "reaction_label_nb": "Dette var nyttig",
+  "reaction_identity": "one authenticated account per canonical article across translations",
+  "comment_initial_status": "pending",
+  "verified_human_claim": false,
+  "verified_reading_claim": false,
+  "launch_gates": ["provider configuration and current pricing review", "server authentication and authorization", "server anti-spam validation and rate limits", "durable storage and row permissions", "moderation staffing and reporting/blocking", "escaped plain text rendering", "privacy, consent, export and erasure", "multilingual interface review"],
+  "subscription_priority": "Separate payment facet signals from reactions and comments; editorial decision remains independent"
+}

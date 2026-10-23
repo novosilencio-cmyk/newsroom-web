@@ -1,0 +1,64 @@
+<!doctype html><html lang="nb"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Privat tilbakemelding — intern forhåndsvisning</title><style>body{font:18px/1.6 system-ui;margin:40px auto;padding:0 20px;max-width:680px;background:#f7f5ef;color:#172d35}label,input,textarea{display:block;box-sizing:border-box;width:100%}input,textarea,button,select{font:inherit;padding:12px;margin:8px 0 22px;border:1px solid #829196;border-radius:8px}button{background:#173d47;color:white}button:disabled{opacity:.6}label{margin-top:20px}h1{line-height:1.2}</style><h1>En beskjed til redaksjonen</h1><p>Intern forhåndsvisning. Innsending er ikke koblet til; ingenting sendes eller lagres her.</p><label for="lang">Språk</label><select id="lang"></select><main id="feedback"></main><script>/* Inactive adapter: it loads no external service until an endpoint/widget is configured. */
+(function(root) {
+  'use strict';
+  async function submit(endpoint, payload, send) {
+    const response = await send(endpoint, {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify(payload), credentials:'omit', cache:'no-store'
+    });
+    const receipt = await response.json();
+    if (!response.ok || receipt.status !== 'stored_privately' ||
+        typeof receipt.receipt_id !== 'string' || receipt.receipt_id !== payload.request_id) {
+      throw new Error('No confirmed receipt');
+    }
+    return receipt;
+  }
+  function mount(host, options) {
+    const labels = options.labels;
+    host.replaceChildren();
+    function element(tag, text) { const e=document.createElement(tag); if (text) e.textContent=text; return e; }
+    const title=element('h2',labels[2]); host.append(title);
+    const form=element('form'); host.append(form);
+    const id='private-feedback-'+crypto.randomUUID();
+    function field(tag, suffix, labelText) {
+      const label=element('label',labelText); const input=element(tag);
+      input.id=id+suffix; label.htmlFor=input.id; form.append(label,input); return input;
+    }
+    const message=field('textarea','-message',labels[3]); message.rows=6; message.required=true; message.maxLength=4000;
+    const email=field('input','-email',labels[4]); email.type='email'; email.maxLength=254;
+    const widget=element('div'); form.append(widget);
+    const button=element('button',labels[5]); button.type='submit'; form.append(button);
+    const status=element('p'); status.setAttribute('role','status'); status.setAttribute('aria-live','polite'); form.append(status);
+    const text=options.statusText;
+    const requestId=crypto.randomUUID(); let widgetId, pending=false;
+    const endpoint=options.endpoint ? new URL(options.endpoint,location.href) : null;
+    const configured=endpoint && endpoint.protocol==='https:' && options.siteKey && root.turnstile;
+    button.disabled=!configured;
+    status.textContent=configured ? text.privateNotice : text.unavailable;
+    if (configured) widgetId=root.turnstile.render(widget,{sitekey:options.siteKey,action:'private-feedback'});
+    form.addEventListener('submit',async function(event) {
+      event.preventDefault(); if (!configured || pending || !form.reportValidity()) return;
+      const token=root.turnstile.getResponse(widgetId);
+      if (!token) { status.textContent=text.verificationNeeded; return; }
+      pending=true; button.disabled=true; status.textContent=text.sending;
+      try {
+        const receipt=await submit(endpoint.href,{
+          request_id:requestId, article_id:options.articleId, text:message.value,
+          reply_email:email.value, language:options.language || 'nb', anti_spam_token:token, visibility:'private'
+        },root.fetch.bind(root));
+        status.textContent=text.received+' '+receipt.receipt_id;
+        message.value=''; email.value='';
+        // Keep successful form closed; retrying a failed request keeps the same id.
+      } catch(error) {
+        status.textContent=text.failed; button.disabled=false;
+        root.turnstile.reset(widgetId); // expired/single-use token needs refreshing
+      } finally { pending=false; }
+    });
+    return {configured:Boolean(configured)};
+  }
+  const api={submit,mount};
+  if (typeof module!=='undefined' && module.exports) module.exports=api;
+  else root.ExpNRPrivateFeedback=api;
+})(typeof window!=='undefined' ? window : globalThis);
+
+const labels={"nb": ["Bra jobba", "Spennende", "Kritisk tilbakemelding", "Hva bør vi undersøke, rette eller utdype?", "E-post hvis du ønsker svar (valgfritt)", "Send privat til redaksjonen"], "en": ["Good work", "Interesting", "Critical feedback", "What should we investigate, correct or explore further?", "Email if you would like a reply (optional)", "Send privately to the newsroom"], "fr": ["Beau travail", "Intéressant", "Retour critique", "Que devrions-nous examiner, corriger ou approfondir ?", "E-mail pour recevoir une réponse (facultatif)", "Envoyer en privé à la rédaction"], "es-AR": ["Buen trabajo", "Interesante", "Devolución crítica", "¿Qué deberíamos investigar, corregir o profundizar?", "Correo si querés una respuesta (opcional)", "Enviar en privado a la redacción"], "de": ["Gute Arbeit", "Spannend", "Kritische Rückmeldung", "Was sollten wir untersuchen, korrigieren oder vertiefen?", "E-Mail für eine Antwort (optional)", "Privat an die Redaktion senden"], "zh-Hans": ["做得好", "很有意思", "批评反馈", "我们应该调查、纠正或进一步探讨什么？", "如需回复，请填写电子邮箱（可选）", "私下发送给编辑部"], "zh-Hant": ["做得好", "很有意思", "批評回饋", "我們應該調查、修正或進一步探討什麼？", "如需回覆，請填寫電子信箱（選填）", "私下傳送給編輯部"], "ja": ["いい仕事ですね", "興味深い", "批判的なフィードバック", "調査、訂正、または掘り下げるべき点はありますか？", "返信を希望する場合のメールアドレス（任意）", "編集部に非公開で送信"], "pt-BR": ["Bom trabalho", "Interessante", "Feedback crítico", "O que devemos investigar, corrigir ou aprofundar?", "E-mail se quiser uma resposta (opcional)", "Enviar em particular à redação"], "ko": ["잘했어요", "흥미로워요", "비판적 의견", "무엇을 조사하거나 바로잡거나 더 깊이 다뤄야 할까요?", "답변을 원하시면 이메일을 적어 주세요 (선택)", "편집부에 비공개로 보내기"], "ar": ["عمل جيد", "مثير للاهتمام", "ملاحظات نقدية", "ما الذي ينبغي أن نحققه أو نصححه أو نتناوله بمزيد من العمق؟", "البريد الإلكتروني إذا رغبت في رد (اختياري)", "إرسال خاص إلى هيئة التحرير"]};const picker=document.getElementById('lang');for(const locale of Object.keys(labels)){const o=document.createElement('option');o.value=locale;o.textContent=locale;picker.append(o)}function render(){document.documentElement.lang=picker.value;document.documentElement.dir=picker.value==='ar'?'rtl':'ltr';ExpNRPrivateFeedback.mount(document.getElementById('feedback'),{labels:labels[picker.value],language:picker.value,articleId:'preview-only',endpoint:null,siteKey:null,statusText:{unavailable:'Forhåndsvisning — innsending er ikke aktivert.'}})}picker.addEventListener('change',render);render();</script></html>

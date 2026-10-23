@@ -1,0 +1,21 @@
+{
+  "schema": "EXPNR_OPEN_SUBSCRIPTIONS_PROTOTYPE_001",
+  "status": "INTERNAL_PROTOTYPE_NOT_ACTIVATED",
+  "originator": "Bjørn Moe Aldema",
+  "provider_approval": "UNRESOLVED",
+  "public_access": "OPEN",
+  "plans": [
+    {"id": "reader", "name": "Åpent leserabonnement", "price": null, "delivery": "Løpende journalistikk, analyser og essays; abonnentlevering under utvikling"},
+    {"id": "supporter", "name": "Støtteabonnement", "price": null, "delivery": "Samme publikasjon; høyere pris for større redaksjonell kapasitet"},
+    {"id": "gift", "name": "Gaveabonnement", "price": null, "delivery": "Avgrenset periode for en mottaker", "automatic_renewal": false}
+  ],
+  "facets": [
+    {"id": "society", "name": "Samfunn som virker", "purpose": "Fra behov og beslutninger til faktisk hjelp og ansvar."},
+    {"id": "nature", "name": "Natur og livsgrunnlag", "purpose": "Natur, mat, energi og bomiljø som kan bære livet over tid."},
+    {"id": "culture", "name": "Kunst, undring og refleksjon", "purpose": "Essay, filosofi, musikk og skapende perspektiver."},
+    {"id": "learning", "name": "Kunnskap som kan brukes", "purpose": "Praktiske forklaringer, læring og åpne kurstilbud."},
+    {"id": "newsroom", "name": "En åpen, flerspråklig redaksjon", "purpose": "Kildearbeid, oversettelse og større redaksjonell kapasitet."}
+  ],
+  "preference_contract": "Interessesignal, ikke øremerking eller redaksjonell bestilling",
+  "launch_gates": ["pris_og_periode", "faktisk_levering", "stripe_godkjenning", "avtalevilkår_og_skatt", "betaling_og_abonnementshendelser", "oppsigelse", "gaveflyt_og_personvern"]
+}

@@ -1,5 +1,41 @@
 [
   {
+    "id": "genmodifisert-menneske-merking-2026",
+    "section": "Analysis",
+    "region": "Global",
+    "country": "International",
+    "type": "Dokumentbasert scenarioanalyse",
+    "language": "nb",
+    "title": "Genmodifisert menneske? Når behandlingen blir en merkelapp",
+    "summary": "Hvem får definere og merke mennesker etter genetisk behandling? Om dokumentasjon, medisinsk oppfølging, personvern og menneskeverd, med tydelig merkede scenarioer.",
+    "published": "2026-10-23",
+    "updated_at": "2026-10-23",
+    "priority": 0,
+    "url": "articles/genmodifisert-menneske-merking-2026.html",
+    "tags": {
+      "nb": [
+        "mRNA",
+        "genredigering",
+        "genterapi",
+        "bioetikk",
+        "menneskeverd",
+        "genetisk diskriminering",
+        "personvern",
+        "melanom"
+      ],
+      "en": [
+        "mRNA",
+        "Genome editing",
+        "Gene therapy",
+        "Bioethics",
+        "Human dignity",
+        "Genetic discrimination",
+        "Privacy",
+        "Melanoma"
+      ]
+    }
+  },
+  {
     "id": "hvem-gir-politikeren-et-sikkerhetsnett-2026",
     "section": "Analysis",
     "region": "Europe",

@@ -765,237 +765,337 @@
     }
   },
   "public/index.html": {
-    "case_id": "EN-PARKINSON-PLANTEVERN-20261023",
-    "sha256": "b5f65bc52f6aceb491d9954cec437e9b6c2375b6e62979197b52a230532491b1",
-    "reviewer": "Executing assistant applying Ariadne and editorial source/presentation controls",
-    "execution_context": "Same-assistant review; no independent specialist review",
+    "case_id": "EN-MRNA-MERKING-20261023",
+    "sha256": "bbe73c37936cd437f523d1ce68668a5a5293cac50ebd5bfd353f2ac4ad470b0f",
+    "reviewer": "Executing assistant applying Ariadne repertoire; same-assistant review",
+    "execution_context": "Documentary scenario analysis and discovery integration; no independent medical/legal certification",
     "reviewed_at": "2026-10-23",
-    "comparison_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-    "reader_journey_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#semantic-control-and-source-clearance",
+    "comparison_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#comparison",
+    "reader_journey_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#reader-journey",
+    "semantic_control_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#source-control",
     "loaded_modules": [
       {
-        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md"
+        "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+        "revision": "runtime-read-2026-10-23",
+        "application_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#language-review"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+        "revision": "runtime-read-2026-10-23",
+        "application_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#language-review"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
+        "revision": "runtime-read-2026-10-23",
+        "application_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#language-review"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
+        "revision": "runtime-read-2026-10-23",
+        "application_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#language-review"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-      "styrker": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-      "stilprofil": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-      "konkrete_svakheter": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-      "forbedringsgrep": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-      "revidert_eksempelversjon": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages"
+      "helhetsinntrykk": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#helhetsinntrykk",
+      "styrker": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#styrker",
+      "stilprofil": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#stilprofil",
+      "konkrete_svakheter": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#konkrete_svakheter",
+      "forbedringsgrep": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#forbedringsgrep",
+      "revidert_eksempelversjon": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#revidert_eksempelversjon"
     },
     "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Documentary scenario analysis with source attribution and explicit reader-facing limitations; OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#source-control",
     "publication_approval": {
       "approved": true,
-      "by": "Bjørn Moe Aldema",
-      "reference": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#scope-and-authority — explicit instruction 23 October 2026 to adapt and publish this article; final bytes bound by executing assistant under that instruction, not personal final-byte review",
-      "sha256": "b5f65bc52f6aceb491d9954cec437e9b6c2375b6e62979197b52a230532491b1"
+      "by": "Bjørn Moe Aldema; final byte binding by executing assistant under delegated publication mandate",
+      "reference": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#publication-authority",
+      "sha256": "bbe73c37936cd437f523d1ce68668a5a5293cac50ebd5bfd353f2ac4ad470b0f"
     },
     "previous_review": {
-      "case_id": "STRIPE-READER-SUPPORT-20261013",
-      "reviewer": "Executing assistant applying loaded Ariadne repertoire; same-assistant review",
-      "execution_context": "Reader-support translation and navigation integration; no native-speaker or independent certification",
-      "reviewed_at": "2026-10-13",
+      "case_id": "EN-PARKINSON-PLANTEVERN-20261023",
+      "sha256": "b5f65bc52f6aceb491d9954cec437e9b6c2375b6e62979197b52a230532491b1",
+      "reviewer": "Executing assistant applying Ariadne and editorial source/presentation controls",
+      "execution_context": "Same-assistant review; no independent specialist review",
+      "reviewed_at": "2026-10-23",
+      "comparison_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+      "reader_journey_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#reader-journey",
+      "semantic_control_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#semantic-control-and-source-clearance",
       "loaded_modules": [
         {
-          "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
-          "revision": "runtime-read-2026-10-13",
-          "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
-        },
-        {
-          "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
-          "revision": "runtime-read-2026-10-13",
-          "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
-        },
-        {
-          "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
-          "revision": "runtime-read-2026-10-13",
-          "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
-        },
-        {
-          "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
-          "revision": "runtime-read-2026-10-13",
-          "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
+          "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+          "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
+          "application_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md"
         }
       ],
       "stages": {
-        "helhetsinntrykk": "Clear route from freely readable journalism to an optional one-time contribution.",
-        "styrker": "Preserves independent editorial decisions, voluntary amount and established refund period.",
-        "stilprofil": "Plain service copy, visible currency and recipient; Argentine Spanish uses voseo.",
-        "konkrete_svakheter": "Earlier page mixed active journalism with unready Atriet/general choices and stale payment status.",
-        "forbedringsgrep": "Separate eight language URLs and localised checkout copy; article-body prose remains unchanged.",
-        "revidert_eksempelversjon": "Exact HTML SHA-256 recorded; page checked for language, recipient, NOK, one-time contribution and 14-day refund correspondence."
+        "helhetsinntrykk": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+        "styrker": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+        "stilprofil": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+        "konkrete_svakheter": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+        "forbedringsgrep": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+        "revidert_eksempelversjon": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages"
       },
-      "comparison_ref": "docs/editorial/reader-support-release-2026-10-13.md#comparison",
-      "reader_journey_ref": "docs/editorial/reader-support-release-2026-10-13.md#reader-journey",
-      "semantic_control_ref": "docs/editorial/reader-support-release-2026-10-13.md#semantic-control",
       "decision": "REVISE",
       "ariadne_style_readiness": "pass_complete",
       "source_status": "READY_FOR_EDITORIAL_REVIEW",
-      "sha256": "ffadcfeb64dd4ccac397f0a2a2976da6884832f884e34bd1eae9e69448f5dc0b",
       "publication_approval": {
         "approved": true,
-        "by": "Executing editor under Bjørn’s explicit instruction to refine and integrate reader support on ExperimentalNewsroom.org",
-        "reference": "CURRENT_CHAT_20261013_124812_FOREDLE_OG_GJOR_DET_AND_125132_ARGENTINA_BRAZIL",
-        "sha256": "ffadcfeb64dd4ccac397f0a2a2976da6884832f884e34bd1eae9e69448f5dc0b"
+        "by": "Bjørn Moe Aldema",
+        "reference": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#scope-and-authority — explicit instruction 23 October 2026 to adapt and publish this article; final bytes bound by executing assistant under that instruction, not personal final-byte review",
+        "sha256": "b5f65bc52f6aceb491d9954cec437e9b6c2375b6e62979197b52a230532491b1"
       },
-      "source_scope": "Stripe account/link API readbacks and existing support terms; article facts and original source scope retained.",
       "previous_review": {
-        "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
-        "reviewer": "ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
-        "execution_context": "Same-assistant Arabic translation/RTL review and bounded language-link correction; nine published essay bodies preserved; no independent human native proofreading",
-        "reviewed_at": "2026-10-04",
+        "case_id": "STRIPE-READER-SUPPORT-20261013",
+        "reviewer": "Executing assistant applying loaded Ariadne repertoire; same-assistant review",
+        "execution_context": "Reader-support translation and navigation integration; no native-speaker or independent certification",
+        "reviewed_at": "2026-10-13",
         "loaded_modules": [
           {
-            "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-            "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
-            "application_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md"
+            "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+            "revision": "runtime-read-2026-10-13",
+            "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
+          },
+          {
+            "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
+            "revision": "runtime-read-2026-10-13",
+            "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
+          },
+          {
+            "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+            "revision": "runtime-read-2026-10-13",
+            "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
+          },
+          {
+            "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
+            "revision": "runtime-read-2026-10-13",
+            "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
           }
         ],
         "stages": {
-          "helhetsinntrykk": "docs/editorial/essay-arabic-correction-2026-10-04.md#helhetsinntrykk",
-          "styrker": "docs/editorial/essay-arabic-correction-2026-10-04.md#styrker",
-          "stilprofil": "docs/editorial/essay-arabic-correction-2026-10-04.md#stilprofil",
-          "konkrete_svakheter": "docs/editorial/essay-arabic-correction-2026-10-04.md#konkrete-svakheter",
-          "forbedringsgrep": "docs/editorial/essay-arabic-correction-2026-10-04.md#forbedringsgrep",
-          "revidert_eksempelversjon": "docs/editorial/essay-arabic-correction-2026-10-04.md#revidert-eksempelversjon"
+          "helhetsinntrykk": "Clear route from freely readable journalism to an optional one-time contribution.",
+          "styrker": "Preserves independent editorial decisions, voluntary amount and established refund period.",
+          "stilprofil": "Plain service copy, visible currency and recipient; Argentine Spanish uses voseo.",
+          "konkrete_svakheter": "Earlier page mixed active journalism with unready Atriet/general choices and stale payment status.",
+          "forbedringsgrep": "Separate eight language URLs and localised checkout copy; article-body prose remains unchanged.",
+          "revidert_eksempelversjon": "Exact HTML SHA-256 recorded; page checked for language, recipient, NOK, one-time contribution and 14-day refund correspondence."
         },
-        "comparison_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
-        "reader_journey_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
-        "semantic_control_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+        "comparison_ref": "docs/editorial/reader-support-release-2026-10-13.md#comparison",
+        "reader_journey_ref": "docs/editorial/reader-support-release-2026-10-13.md#reader-journey",
+        "semantic_control_ref": "docs/editorial/reader-support-release-2026-10-13.md#semantic-control",
         "decision": "REVISE",
         "ariadne_style_readiness": "pass_complete",
         "source_status": "READY_FOR_EDITORIAL_REVIEW",
-        "sha256": "7ab26e572251bd291a0555c2cc9c1a1ff12e13405e8f7b254d81d0860af58dbd",
+        "sha256": "ffadcfeb64dd4ccac397f0a2a2976da6884832f884e34bd1eae9e69448f5dc0b",
         "publication_approval": {
           "approved": true,
-          "by": "Bjørn Moe Aldema",
-          "reference": "Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author.",
-          "sha256": "7ab26e572251bd291a0555c2cc9c1a1ff12e13405e8f7b254d81d0860af58dbd"
+          "by": "Executing editor under Bjørn’s explicit instruction to refine and integrate reader support on ExperimentalNewsroom.org",
+          "reference": "CURRENT_CHAT_20261013_124812_FOREDLE_OG_GJOR_DET_AND_125132_ARGENTINA_BRAZIL",
+          "sha256": "ffadcfeb64dd4ccac397f0a2a2976da6884832f884e34bd1eae9e69448f5dc0b"
+        },
+        "source_scope": "Stripe account/link API readbacks and existing support terms; article facts and original source scope retained.",
+        "previous_review": {
+          "case_id": "EN-AI-CONSCIOUSNESS-ESSAY-20261004",
+          "reviewer": "ChatGPT applying Eira/Liv/Ada/Ariadne/Alma/Eva functions",
+          "execution_context": "Same-assistant Arabic translation/RTL review and bounded language-link correction; nine published essay bodies preserved; no independent human native proofreading",
+          "reviewed_at": "2026-10-04",
+          "loaded_modules": [
+            {
+              "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+              "revision": "git-blob:5c026e8f16bf19697719d15416ab085429e91c30",
+              "application_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md"
+            }
+          ],
+          "stages": {
+            "helhetsinntrykk": "docs/editorial/essay-arabic-correction-2026-10-04.md#helhetsinntrykk",
+            "styrker": "docs/editorial/essay-arabic-correction-2026-10-04.md#styrker",
+            "stilprofil": "docs/editorial/essay-arabic-correction-2026-10-04.md#stilprofil",
+            "konkrete_svakheter": "docs/editorial/essay-arabic-correction-2026-10-04.md#konkrete-svakheter",
+            "forbedringsgrep": "docs/editorial/essay-arabic-correction-2026-10-04.md#forbedringsgrep",
+            "revidert_eksempelversjon": "docs/editorial/essay-arabic-correction-2026-10-04.md#revidert-eksempelversjon"
+          },
+          "comparison_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+          "reader_journey_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+          "semantic_control_ref": "docs/editorial/essay-arabic-correction-2026-10-04.md",
+          "decision": "REVISE",
+          "ariadne_style_readiness": "pass_complete",
+          "source_status": "READY_FOR_EDITORIAL_REVIEW",
+          "sha256": "7ab26e572251bd291a0555c2cc9c1a1ff12e13405e8f7b254d81d0860af58dbd",
+          "publication_approval": {
+            "approved": true,
+            "by": "Bjørn Moe Aldema",
+            "reference": "Author correction 2026-10-04: Arabic instead of Hindi, within the explicitly approved ten-language essay publication; fixed resulting bytes checked by executing assistant, not personally byte-reviewed by author.",
+            "sha256": "7ab26e572251bd291a0555c2cc9c1a1ff12e13405e8f7b254d81d0860af58dbd"
+          }
         }
       }
     }
   },
   "public/nb/index.html": {
-    "case_id": "EN-PARKINSON-PLANTEVERN-20261023",
-    "sha256": "4b6303c66c7574a883e42e14abcbcad6b477e97731cc2973bffd91f3ac81700c",
-    "reviewer": "Executing assistant applying Ariadne and editorial source/presentation controls",
-    "execution_context": "Same-assistant review; no independent specialist review",
+    "case_id": "EN-MRNA-MERKING-20261023",
+    "sha256": "f16ce0762301838b267c228481e09c24d02cad6afb76637586d08bf0cfcc5e96",
+    "reviewer": "Executing assistant applying Ariadne repertoire; same-assistant review",
+    "execution_context": "Documentary scenario analysis and discovery integration; no independent medical/legal certification",
     "reviewed_at": "2026-10-23",
-    "comparison_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-    "reader_journey_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#semantic-control-and-source-clearance",
+    "comparison_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#comparison",
+    "reader_journey_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#reader-journey",
+    "semantic_control_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#source-control",
     "loaded_modules": [
       {
-        "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-        "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
-        "application_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md"
+        "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+        "revision": "runtime-read-2026-10-23",
+        "application_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#language-review"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+        "revision": "runtime-read-2026-10-23",
+        "application_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#language-review"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
+        "revision": "runtime-read-2026-10-23",
+        "application_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#language-review"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
+        "revision": "runtime-read-2026-10-23",
+        "application_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#language-review"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-      "styrker": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-      "stilprofil": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-      "konkrete_svakheter": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-      "forbedringsgrep": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-      "revidert_eksempelversjon": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages"
+      "helhetsinntrykk": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#helhetsinntrykk",
+      "styrker": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#styrker",
+      "stilprofil": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#stilprofil",
+      "konkrete_svakheter": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#konkrete_svakheter",
+      "forbedringsgrep": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#forbedringsgrep",
+      "revidert_eksempelversjon": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#revidert_eksempelversjon"
     },
     "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Documentary scenario analysis with source attribution and explicit reader-facing limitations; OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#source-control",
     "publication_approval": {
       "approved": true,
-      "by": "Bjørn Moe Aldema",
-      "reference": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#scope-and-authority — explicit instruction 23 October 2026 to adapt and publish this article; final bytes bound by executing assistant under that instruction, not personal final-byte review",
-      "sha256": "4b6303c66c7574a883e42e14abcbcad6b477e97731cc2973bffd91f3ac81700c"
+      "by": "Bjørn Moe Aldema; final byte binding by executing assistant under delegated publication mandate",
+      "reference": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#publication-authority",
+      "sha256": "f16ce0762301838b267c228481e09c24d02cad6afb76637586d08bf0cfcc5e96"
     },
     "previous_review": {
-      "case_id": "STRIPE-READER-SUPPORT-20261013",
-      "sha256": "5f3ae6d063b843bdc6cf82de3a7d9d319a3b8dee4a17ff1277b69f2a30475757",
-      "reviewer": "Executing assistant applying loaded Ariadne repertoire; same-assistant review",
-      "execution_context": "Reader-support translation and navigation integration; no native-speaker or independent certification",
-      "reviewed_at": "2026-10-13",
+      "case_id": "EN-PARKINSON-PLANTEVERN-20261023",
+      "sha256": "4b6303c66c7574a883e42e14abcbcad6b477e97731cc2973bffd91f3ac81700c",
+      "reviewer": "Executing assistant applying Ariadne and editorial source/presentation controls",
+      "execution_context": "Same-assistant review; no independent specialist review",
+      "reviewed_at": "2026-10-23",
+      "comparison_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+      "reader_journey_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#reader-journey",
+      "semantic_control_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#semantic-control-and-source-clearance",
       "loaded_modules": [
         {
-          "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
-          "revision": "runtime-read-2026-10-13",
-          "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
-        },
-        {
-          "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
-          "revision": "runtime-read-2026-10-13",
-          "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
-        },
-        {
-          "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
-          "revision": "runtime-read-2026-10-13",
-          "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
-        },
-        {
-          "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
-          "revision": "runtime-read-2026-10-13",
-          "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
+          "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+          "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
+          "application_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md"
         }
       ],
       "stages": {
-        "helhetsinntrykk": "Clear route from freely readable journalism to an optional one-time contribution.",
-        "styrker": "Preserves independent editorial decisions, voluntary amount and established refund period.",
-        "stilprofil": "Plain service copy, visible currency and recipient; Argentine Spanish uses voseo.",
-        "konkrete_svakheter": "Earlier page mixed active journalism with unready Atriet/general choices and stale payment status.",
-        "forbedringsgrep": "Separate eight language URLs and localised checkout copy; article-body prose remains unchanged.",
-        "revidert_eksempelversjon": "Exact HTML SHA-256 recorded; page checked for language, recipient, NOK, one-time contribution and 14-day refund correspondence."
+        "helhetsinntrykk": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+        "styrker": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+        "stilprofil": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+        "konkrete_svakheter": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+        "forbedringsgrep": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+        "revidert_eksempelversjon": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages"
       },
-      "comparison_ref": "docs/editorial/reader-support-release-2026-10-13.md#comparison",
-      "reader_journey_ref": "docs/editorial/reader-support-release-2026-10-13.md#reader-journey",
-      "semantic_control_ref": "docs/editorial/reader-support-release-2026-10-13.md#semantic-control",
       "decision": "REVISE",
       "ariadne_style_readiness": "pass_complete",
       "source_status": "READY_FOR_EDITORIAL_REVIEW",
       "publication_approval": {
         "approved": true,
-        "by": "Executing editor under Bjørn’s explicit instruction to refine and integrate reader support on ExperimentalNewsroom.org",
-        "reference": "CURRENT_CHAT_20261013_124812_FOREDLE_OG_GJOR_DET_AND_125132_ARGENTINA_BRAZIL",
-        "sha256": "5f3ae6d063b843bdc6cf82de3a7d9d319a3b8dee4a17ff1277b69f2a30475757"
+        "by": "Bjørn Moe Aldema",
+        "reference": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#scope-and-authority — explicit instruction 23 October 2026 to adapt and publish this article; final bytes bound by executing assistant under that instruction, not personal final-byte review",
+        "sha256": "4b6303c66c7574a883e42e14abcbcad6b477e97731cc2973bffd91f3ac81700c"
       },
-      "source_scope": "Stripe account/link API readbacks and existing support terms; article facts and original source scope retained.",
       "previous_review": {
-        "case_id": "WORDS-CONNECTIONS-20261008",
-        "sha256": "c0dcdd7105128fe70d0a788d0ca30f4f921b37d42b9045559aeb31d3c00d57ea",
-        "reviewer": "Executing assistant applying Ariadne editorial controls",
-        "execution_context": "Same-assistant review; no independent review or reader-effect claim",
-        "reviewed_at": "2026-10-08",
+        "case_id": "STRIPE-READER-SUPPORT-20261013",
+        "sha256": "5f3ae6d063b843bdc6cf82de3a7d9d319a3b8dee4a17ff1277b69f2a30475757",
+        "reviewer": "Executing assistant applying loaded Ariadne repertoire; same-assistant review",
+        "execution_context": "Reader-support translation and navigation integration; no native-speaker or independent certification",
+        "reviewed_at": "2026-10-13",
         "loaded_modules": [
           {
-            "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-            "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
-            "application_ref": "docs/editorial/words-release-2026-10-08.md"
+            "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+            "revision": "runtime-read-2026-10-13",
+            "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
+          },
+          {
+            "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
+            "revision": "runtime-read-2026-10-13",
+            "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
+          },
+          {
+            "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+            "revision": "runtime-read-2026-10-13",
+            "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
+          },
+          {
+            "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
+            "revision": "runtime-read-2026-10-13",
+            "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
           }
         ],
         "stages": {
-          "helhetsinntrykk": "docs/editorial/words-release-2026-10-08.md#six-stage-review",
-          "styrker": "docs/editorial/words-release-2026-10-08.md#six-stage-review",
-          "stilprofil": "docs/editorial/words-release-2026-10-08.md#six-stage-review",
-          "konkrete_svakheter": "docs/editorial/words-release-2026-10-08.md#six-stage-review",
-          "forbedringsgrep": "docs/editorial/words-release-2026-10-08.md#six-stage-review",
-          "revidert_eksempelversjon": "docs/editorial/words-release-2026-10-08.md#six-stage-review"
+          "helhetsinntrykk": "Clear route from freely readable journalism to an optional one-time contribution.",
+          "styrker": "Preserves independent editorial decisions, voluntary amount and established refund period.",
+          "stilprofil": "Plain service copy, visible currency and recipient; Argentine Spanish uses voseo.",
+          "konkrete_svakheter": "Earlier page mixed active journalism with unready Atriet/general choices and stale payment status.",
+          "forbedringsgrep": "Separate eight language URLs and localised checkout copy; article-body prose remains unchanged.",
+          "revidert_eksempelversjon": "Exact HTML SHA-256 recorded; page checked for language, recipient, NOK, one-time contribution and 14-day refund correspondence."
         },
-        "comparison_ref": "docs/editorial/words-release-2026-10-08.md",
-        "reader_journey_ref": "docs/editorial/words-release-2026-10-08.md",
-        "semantic_control_ref": "docs/editorial/words-release-2026-10-08.md",
-        "decision": "COMBINE",
+        "comparison_ref": "docs/editorial/reader-support-release-2026-10-13.md#comparison",
+        "reader_journey_ref": "docs/editorial/reader-support-release-2026-10-13.md#reader-journey",
+        "semantic_control_ref": "docs/editorial/reader-support-release-2026-10-13.md#semantic-control",
+        "decision": "REVISE",
         "ariadne_style_readiness": "pass_complete",
         "source_status": "READY_FOR_EDITORIAL_REVIEW",
         "publication_approval": {
           "approved": true,
-          "by": "Bjørn Moe Aldema; delegated realization",
-          "reference": "docs/editorial/words-release-2026-10-08.md#authority-and-scope",
-          "sha256": "c0dcdd7105128fe70d0a788d0ca30f4f921b37d42b9045559aeb31d3c00d57ea"
+          "by": "Executing editor under Bjørn’s explicit instruction to refine and integrate reader support on ExperimentalNewsroom.org",
+          "reference": "CURRENT_CHAT_20261013_124812_FOREDLE_OG_GJOR_DET_AND_125132_ARGENTINA_BRAZIL",
+          "sha256": "5f3ae6d063b843bdc6cf82de3a7d9d319a3b8dee4a17ff1277b69f2a30475757"
+        },
+        "source_scope": "Stripe account/link API readbacks and existing support terms; article facts and original source scope retained.",
+        "previous_review": {
+          "case_id": "WORDS-CONNECTIONS-20261008",
+          "sha256": "c0dcdd7105128fe70d0a788d0ca30f4f921b37d42b9045559aeb31d3c00d57ea",
+          "reviewer": "Executing assistant applying Ariadne editorial controls",
+          "execution_context": "Same-assistant review; no independent review or reader-effect claim",
+          "reviewed_at": "2026-10-08",
+          "loaded_modules": [
+            {
+              "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+              "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
+              "application_ref": "docs/editorial/words-release-2026-10-08.md"
+            }
+          ],
+          "stages": {
+            "helhetsinntrykk": "docs/editorial/words-release-2026-10-08.md#six-stage-review",
+            "styrker": "docs/editorial/words-release-2026-10-08.md#six-stage-review",
+            "stilprofil": "docs/editorial/words-release-2026-10-08.md#six-stage-review",
+            "konkrete_svakheter": "docs/editorial/words-release-2026-10-08.md#six-stage-review",
+            "forbedringsgrep": "docs/editorial/words-release-2026-10-08.md#six-stage-review",
+            "revidert_eksempelversjon": "docs/editorial/words-release-2026-10-08.md#six-stage-review"
+          },
+          "comparison_ref": "docs/editorial/words-release-2026-10-08.md",
+          "reader_journey_ref": "docs/editorial/words-release-2026-10-08.md",
+          "semantic_control_ref": "docs/editorial/words-release-2026-10-08.md",
+          "decision": "COMBINE",
+          "ariadne_style_readiness": "pass_complete",
+          "source_status": "READY_FOR_EDITORIAL_REVIEW",
+          "publication_approval": {
+            "approved": true,
+            "by": "Bjørn Moe Aldema; delegated realization",
+            "reference": "docs/editorial/words-release-2026-10-08.md#authority-and-scope",
+            "sha256": "c0dcdd7105128fe70d0a788d0ca30f4f921b37d42b9045559aeb31d3c00d57ea"
+          }
         }
       }
     }
@@ -3291,639 +3391,739 @@
     }
   },
   "public/sitemap.html": {
-    "case_id": "EN-WILLOCH-20261023",
-    "sha256": "b7e5807f2c41afe2c5b4bc664675ba1ec6ddc296fab470aec5035b61c0bb89bd",
-    "reviewer": "Executing assistant with separate AI mentor review",
-    "execution_context": "AI source, editorial and language review; no independent human historian review",
+    "case_id": "EN-MRNA-MERKING-20261023",
+    "sha256": "795e804a090f5d44869a7948223a941f25c6b38fcc0bd79f14964e0fa79eaa71",
+    "reviewer": "Executing assistant applying Ariadne repertoire; same-assistant review",
+    "execution_context": "Documentary scenario analysis and discovery integration; no independent medical/legal certification",
     "reviewed_at": "2026-10-23",
-    "comparison_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
-    "reader_journey_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#semantic-control",
+    "comparison_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#comparison",
+    "reader_journey_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#reader-journey",
+    "semantic_control_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#source-control",
     "loaded_modules": [
       {
         "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
         "revision": "runtime-read-2026-10-23",
-        "application_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
-      },
-      {
-        "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
-        "revision": "runtime-read-2026-10-23",
-        "application_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
-      },
-      {
-        "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
-        "revision": "runtime-read-2026-10-23",
-        "application_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
+        "application_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#language-review"
       },
       {
         "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
         "revision": "runtime-read-2026-10-23",
-        "application_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
+        "application_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#language-review"
       },
       {
-        "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
+        "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
         "revision": "runtime-read-2026-10-23",
-        "application_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
+        "application_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#language-review"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
+        "revision": "runtime-read-2026-10-23",
+        "application_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#language-review"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
-      "styrker": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
-      "stilprofil": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
-      "konkrete_svakheter": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
-      "forbedringsgrep": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
-      "revidert_eksempelversjon": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
+      "helhetsinntrykk": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#helhetsinntrykk",
+      "styrker": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#styrker",
+      "stilprofil": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#stilprofil",
+      "konkrete_svakheter": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#konkrete_svakheter",
+      "forbedringsgrep": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#forbedringsgrep",
+      "revidert_eksempelversjon": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#revidert_eksempelversjon"
     },
     "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Documentary scenario analysis with source attribution and explicit reader-facing limitations; OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#source-control",
     "publication_approval": {
       "approved": true,
-      "by": "Executing editor under Bjørn Moe Aldema’s explicit publication instruction",
-      "reference": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#scope-and-authority",
-      "sha256": "b7e5807f2c41afe2c5b4bc664675ba1ec6ddc296fab470aec5035b61c0bb89bd"
+      "by": "Bjørn Moe Aldema; final byte binding by executing assistant under delegated publication mandate",
+      "reference": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#publication-authority",
+      "sha256": "795e804a090f5d44869a7948223a941f25c6b38fcc0bd79f14964e0fa79eaa71"
     },
     "previous_review": {
-      "case_id": "EN-PARKINSON-PLANTEVERN-20261023",
-      "sha256": "45ae0c8c03cc9755ad1ccafabc4b7d939aa5428371a40f398a65fd0a3ccad963",
-      "reviewer": "Executing assistant applying Ariadne and editorial source/presentation controls",
-      "execution_context": "Same-assistant review; no independent specialist review",
+      "case_id": "EN-WILLOCH-20261023",
+      "sha256": "b7e5807f2c41afe2c5b4bc664675ba1ec6ddc296fab470aec5035b61c0bb89bd",
+      "reviewer": "Executing assistant with separate AI mentor review",
+      "execution_context": "AI source, editorial and language review; no independent human historian review",
       "reviewed_at": "2026-10-23",
-      "comparison_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-      "reader_journey_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#reader-journey",
-      "semantic_control_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#semantic-control-and-source-clearance",
+      "comparison_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
+      "reader_journey_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#reader-journey",
+      "semantic_control_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#semantic-control",
       "loaded_modules": [
         {
-          "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-          "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
-          "application_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md"
+          "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+          "revision": "runtime-read-2026-10-23",
+          "application_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
+        },
+        {
+          "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
+          "revision": "runtime-read-2026-10-23",
+          "application_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
+        },
+        {
+          "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
+          "revision": "runtime-read-2026-10-23",
+          "application_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
+        },
+        {
+          "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+          "revision": "runtime-read-2026-10-23",
+          "application_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
+        },
+        {
+          "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
+          "revision": "runtime-read-2026-10-23",
+          "application_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
         }
       ],
       "stages": {
-        "helhetsinntrykk": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-        "styrker": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-        "stilprofil": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-        "konkrete_svakheter": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-        "forbedringsgrep": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-        "revidert_eksempelversjon": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages"
+        "helhetsinntrykk": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
+        "styrker": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
+        "stilprofil": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
+        "konkrete_svakheter": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
+        "forbedringsgrep": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
+        "revidert_eksempelversjon": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
       },
       "decision": "REVISE",
       "ariadne_style_readiness": "pass_complete",
       "source_status": "READY_FOR_EDITORIAL_REVIEW",
       "publication_approval": {
         "approved": true,
-        "by": "Bjørn Moe Aldema",
-        "reference": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#scope-and-authority — explicit instruction 23 October 2026 to adapt and publish this article; final bytes bound by executing assistant under that instruction, not personal final-byte review",
-        "sha256": "45ae0c8c03cc9755ad1ccafabc4b7d939aa5428371a40f398a65fd0a3ccad963"
+        "by": "Executing editor under Bjørn Moe Aldema’s explicit publication instruction",
+        "reference": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#scope-and-authority",
+        "sha256": "b7e5807f2c41afe2c5b4bc664675ba1ec6ddc296fab470aec5035b61c0bb89bd"
       },
       "previous_review": {
-        "case_id": "CROSS-SERIES-REFINEMENT-20261017",
-        "sha256": "9fbdb20b9195cd950d1c4228a7ae3afe4423ea313e51ac0bf97d2661e7418345",
-        "reviewer": "Executing editor integrating prior separate AI Ariadne and Sjeherasad passes",
-        "execution_context": "Same-assistant final release review; no human or native-speaker certification",
-        "reviewed_at": "2026-10-17",
+        "case_id": "EN-PARKINSON-PLANTEVERN-20261023",
+        "sha256": "45ae0c8c03cc9755ad1ccafabc4b7d939aa5428371a40f398a65fd0a3ccad963",
+        "reviewer": "Executing assistant applying Ariadne and editorial source/presentation controls",
+        "execution_context": "Same-assistant review; no independent specialist review",
+        "reviewed_at": "2026-10-23",
+        "comparison_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+        "reader_journey_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#reader-journey",
+        "semantic_control_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#semantic-control-and-source-clearance",
         "loaded_modules": [
           {
             "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
             "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
-            "application_ref": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review"
+            "application_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md"
           }
         ],
         "stages": {
-          "helhetsinntrykk": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review",
-          "styrker": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review",
-          "stilprofil": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review",
-          "konkrete_svakheter": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review",
-          "forbedringsgrep": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review",
-          "revidert_eksempelversjon": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review"
+          "helhetsinntrykk": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+          "styrker": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+          "stilprofil": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+          "konkrete_svakheter": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+          "forbedringsgrep": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+          "revidert_eksempelversjon": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages"
         },
-        "comparison_ref": "docs/editorial/cross-series-refinement-2026-10-17.md#comparison-and-contributions",
-        "reader_journey_ref": "docs/editorial/cross-series-refinement-2026-10-17.md#reader-journey",
-        "semantic_control_ref": "docs/editorial/cross-series-refinement-2026-10-17.md#semantic-control",
-        "decision": "COMBINE",
+        "decision": "REVISE",
         "ariadne_style_readiness": "pass_complete",
         "source_status": "READY_FOR_EDITORIAL_REVIEW",
-        "source_scope": "Previously published historical source basis retained; new child-experience questions explicitly editorial, no new reporting claims.",
+        "publication_approval": {
+          "approved": true,
+          "by": "Bjørn Moe Aldema",
+          "reference": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#scope-and-authority — explicit instruction 23 October 2026 to adapt and publish this article; final bytes bound by executing assistant under that instruction, not personal final-byte review",
+          "sha256": "45ae0c8c03cc9755ad1ccafabc4b7d939aa5428371a40f398a65fd0a3ccad963"
+        },
         "previous_review": {
-          "case_id": "ANSVARET-PRECISION-20261016",
-          "sha256": "f5f3ad1a16082f460876dce3fe992ea66c50a4b3784590280bf1c7a1959cbf8e",
-          "reviewer": "Codex assistant; scoped editorial review, no human reader test",
-          "execution_context": "Approved precision paragraph and derived search text; existing article and sources retained",
-          "reviewed_at": "2026-10-16",
+          "case_id": "CROSS-SERIES-REFINEMENT-20261017",
+          "sha256": "9fbdb20b9195cd950d1c4228a7ae3afe4423ea313e51ac0bf97d2661e7418345",
+          "reviewer": "Executing editor integrating prior separate AI Ariadne and Sjeherasad passes",
+          "execution_context": "Same-assistant final release review; no human or native-speaker certification",
+          "reviewed_at": "2026-10-17",
           "loaded_modules": [
             {
-              "source": "docs/editorial-production-safety.md",
-              "revision": "76362a06c85158664f814cf0588522a9a2f8545f",
-              "application_ref": "docs/editorial/ansvaret-precision-release-2026-10-16.md"
+              "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+              "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
+              "application_ref": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review"
             }
           ],
-          "comparison_ref": "docs/editorial/ansvaret-precision-release-2026-10-16.md",
-          "reader_journey_ref": "docs/editorial/ansvaret-precision-release-2026-10-16.md",
-          "semantic_control_ref": "docs/editorial/ansvaret-precision-release-2026-10-16.md",
           "stages": {
-            "helhetsinntrykk": "The narrative opening remains intact; the new paragraph bounds interpretation early.",
-            "styrker": "Concrete meal illustration and participation question retained.",
-            "stilprofil": "Explanatory Norwegian; brief qualification within existing reader guide.",
-            "konkrete_svakheter": "The earlier general research boundary did not explicitly name the untested energy-drink and screen-use effects.",
-            "forbedringsgrep": "Add the approved two-sentence paragraph after the reader-guide list; mirror it only in generated search text.",
-            "revidert_eksempelversjon": "docs/editorial/ansvaret-precision-release-2026-10-16.md"
+            "helhetsinntrykk": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review",
+            "styrker": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review",
+            "stilprofil": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review",
+            "konkrete_svakheter": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review",
+            "forbedringsgrep": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review",
+            "revidert_eksempelversjon": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review"
           },
+          "comparison_ref": "docs/editorial/cross-series-refinement-2026-10-17.md#comparison-and-contributions",
+          "reader_journey_ref": "docs/editorial/cross-series-refinement-2026-10-17.md#reader-journey",
+          "semantic_control_ref": "docs/editorial/cross-series-refinement-2026-10-17.md#semantic-control",
           "decision": "COMBINE",
           "ariadne_style_readiness": "pass_complete",
           "source_status": "READY_FOR_EDITORIAL_REVIEW",
-          "publication_approval": {
-            "approved": true,
-            "by": "Bjørn Moe Aldema",
-            "reference": "docs/editorial/ansvaret-precision-release-2026-10-16.md; publication authorized 2026-10-16, executor-bound final content hash.",
-            "sha256": "f5f3ad1a16082f460876dce3fe992ea66c50a4b3784590280bf1c7a1959cbf8e"
-          },
+          "source_scope": "Previously published historical source basis retained; new child-experience questions explicitly editorial, no new reporting claims.",
           "previous_review": {
-            "case_id": "STRIPE-READER-SUPPORT-EXPANSION-20261013",
-            "sha256": "81af0d4525c51008983d2945670fe5c1959e17e68247ccfd12e7f594bf76754c",
-            "reviewer": "Executing assistant applying loaded Ariadne repertoire; same-assistant review",
-            "execution_context": "Reader-support translation and navigation integration; no native-speaker or independent certification",
-            "reviewed_at": "2026-10-13",
-            "comparison_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#comparison",
-            "reader_journey_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#reader-journey",
-            "semantic_control_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#semantic-control",
+            "case_id": "ANSVARET-PRECISION-20261016",
+            "sha256": "f5f3ad1a16082f460876dce3fe992ea66c50a4b3784590280bf1c7a1959cbf8e",
+            "reviewer": "Codex assistant; scoped editorial review, no human reader test",
+            "execution_context": "Approved precision paragraph and derived search text; existing article and sources retained",
+            "reviewed_at": "2026-10-16",
             "loaded_modules": [
               {
-                "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
-                "revision": "runtime-read-2026-10-13",
-                "application_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#six-stages"
-              },
-              {
-                "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
-                "revision": "runtime-read-2026-10-13",
-                "application_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#six-stages"
-              },
-              {
-                "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
-                "revision": "runtime-read-2026-10-13",
-                "application_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#six-stages"
-              },
-              {
-                "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
-                "revision": "runtime-read-2026-10-13",
-                "application_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#six-stages"
+                "source": "docs/editorial-production-safety.md",
+                "revision": "76362a06c85158664f814cf0588522a9a2f8545f",
+                "application_ref": "docs/editorial/ansvaret-precision-release-2026-10-16.md"
               }
             ],
+            "comparison_ref": "docs/editorial/ansvaret-precision-release-2026-10-16.md",
+            "reader_journey_ref": "docs/editorial/ansvaret-precision-release-2026-10-16.md",
+            "semantic_control_ref": "docs/editorial/ansvaret-precision-release-2026-10-16.md",
             "stages": {
-              "helhetsinntrykk": "Same optional one-time support journey in three additional existing article languages.",
-              "styrker": "Preserves voluntary amount, receiver, currency, editorial choice and established refund terms.",
-              "stilprofil": "Brazilian Portuguese você, polite Korean and plain Modern Standard Arabic.",
-              "konkrete_svakheter": "Three article languages previously fell back to English; Arabic support needed RTL and contact isolation.",
-              "forbedringsgrep": "Native support/checkout copy, eleven reciprocal alternatives, RTL with isolated telephone/name/email; Argentine Elegí.",
-              "revidert_eksempelversjon": "Generated exact HTML hashed after semantic control; unchanged article body separately checked."
+              "helhetsinntrykk": "The narrative opening remains intact; the new paragraph bounds interpretation early.",
+              "styrker": "Concrete meal illustration and participation question retained.",
+              "stilprofil": "Explanatory Norwegian; brief qualification within existing reader guide.",
+              "konkrete_svakheter": "The earlier general research boundary did not explicitly name the untested energy-drink and screen-use effects.",
+              "forbedringsgrep": "Add the approved two-sentence paragraph after the reader-guide list; mirror it only in generated search text.",
+              "revidert_eksempelversjon": "docs/editorial/ansvaret-precision-release-2026-10-16.md"
             },
-            "decision": "REVISE",
+            "decision": "COMBINE",
             "ariadne_style_readiness": "pass_complete",
             "source_status": "READY_FOR_EDITORIAL_REVIEW",
-            "source_scope": "Existing article prose retained; three support-page translations, language selector and navigation reviewed against established support meaning and Stripe readbacks.",
             "publication_approval": {
               "approved": true,
-              "by": "Executing editor under Bjørn Moe Aldema’s explicit site integration and Portuguese-now/additional-languages instruction",
-              "reference": "CURRENT_CHAT_20261013_142840_PORTUGUESE_NOW_ADDITIONAL_LANGUAGES",
-              "sha256": "81af0d4525c51008983d2945670fe5c1959e17e68247ccfd12e7f594bf76754c"
+              "by": "Bjørn Moe Aldema",
+              "reference": "docs/editorial/ansvaret-precision-release-2026-10-16.md; publication authorized 2026-10-16, executor-bound final content hash.",
+              "sha256": "f5f3ad1a16082f460876dce3fe992ea66c50a4b3784590280bf1c7a1959cbf8e"
             },
             "previous_review": {
-              "case_id": "STRIPE-READER-SUPPORT-20261013",
-              "sha256": "124ffafa385766e54aa50955b0a2453789d3c1fe3e40224f8ea16ec66a76093e",
+              "case_id": "STRIPE-READER-SUPPORT-EXPANSION-20261013",
+              "sha256": "81af0d4525c51008983d2945670fe5c1959e17e68247ccfd12e7f594bf76754c",
               "reviewer": "Executing assistant applying loaded Ariadne repertoire; same-assistant review",
               "execution_context": "Reader-support translation and navigation integration; no native-speaker or independent certification",
               "reviewed_at": "2026-10-13",
-              "comparison_ref": "docs/editorial/reader-support-release-2026-10-13.md#comparison",
-              "reader_journey_ref": "docs/editorial/reader-support-release-2026-10-13.md#reader-journey",
-              "semantic_control_ref": "docs/editorial/reader-support-release-2026-10-13.md#semantic-control",
+              "comparison_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#comparison",
+              "reader_journey_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#reader-journey",
+              "semantic_control_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#semantic-control",
               "loaded_modules": [
                 {
                   "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
                   "revision": "runtime-read-2026-10-13",
-                  "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
+                  "application_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#six-stages"
                 },
                 {
                   "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
                   "revision": "runtime-read-2026-10-13",
-                  "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
+                  "application_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#six-stages"
                 },
                 {
                   "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
                   "revision": "runtime-read-2026-10-13",
-                  "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
+                  "application_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#six-stages"
                 },
                 {
                   "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
                   "revision": "runtime-read-2026-10-13",
-                  "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
+                  "application_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#six-stages"
                 }
               ],
               "stages": {
-                "helhetsinntrykk": "Clear route from freely readable journalism to an optional one-time contribution.",
-                "styrker": "Preserves independent editorial decisions, voluntary amount and established refund period.",
-                "stilprofil": "Plain service copy, visible currency and recipient; Argentine Spanish uses voseo.",
-                "konkrete_svakheter": "Earlier page mixed active journalism with unready Atriet/general choices and stale payment status.",
-                "forbedringsgrep": "Separate eight language URLs and localised checkout copy; article-body prose remains unchanged.",
-                "revidert_eksempelversjon": "Exact HTML SHA-256 recorded; page checked for language, recipient, NOK, one-time contribution and 14-day refund correspondence."
+                "helhetsinntrykk": "Same optional one-time support journey in three additional existing article languages.",
+                "styrker": "Preserves voluntary amount, receiver, currency, editorial choice and established refund terms.",
+                "stilprofil": "Brazilian Portuguese você, polite Korean and plain Modern Standard Arabic.",
+                "konkrete_svakheter": "Three article languages previously fell back to English; Arabic support needed RTL and contact isolation.",
+                "forbedringsgrep": "Native support/checkout copy, eleven reciprocal alternatives, RTL with isolated telephone/name/email; Argentine Elegí.",
+                "revidert_eksempelversjon": "Generated exact HTML hashed after semantic control; unchanged article body separately checked."
               },
               "decision": "REVISE",
               "ariadne_style_readiness": "pass_complete",
               "source_status": "READY_FOR_EDITORIAL_REVIEW",
-              "source_scope": "Stripe account/link API readbacks and existing support terms; article facts and original source scope retained.",
+              "source_scope": "Existing article prose retained; three support-page translations, language selector and navigation reviewed against established support meaning and Stripe readbacks.",
+              "publication_approval": {
+                "approved": true,
+                "by": "Executing editor under Bjørn Moe Aldema’s explicit site integration and Portuguese-now/additional-languages instruction",
+                "reference": "CURRENT_CHAT_20261013_142840_PORTUGUESE_NOW_ADDITIONAL_LANGUAGES",
+                "sha256": "81af0d4525c51008983d2945670fe5c1959e17e68247ccfd12e7f594bf76754c"
+              },
               "previous_review": {
-                "case_id": "PUBLISHED-CORPUS-20261012",
-                "sha256": "cfaea90c7fc9a6435187f3b4f541ee99205e12a13d4729ccf7d7b06411353fa7",
-                "reviewer": "Executing assistant applying Ariadne; four separate AI full-text readers; separate AI final integration PASS_BOUNDED",
-                "execution_context": "AI editorial and discovery revision under author instruction; no fresh corpus-wide factual or human specialist certification",
-                "reviewed_at": "2026-10-12",
-                "comparison_ref": "docs/editorial/corpus-revision-2026-10-12.md#story-decisions",
-                "reader_journey_ref": "docs/editorial/corpus-revision-2026-10-12.md#other-pages-and-reader-journey",
-                "semantic_control_ref": "docs/editorial/corpus-revision-2026-10-12.md#semantic-control",
+                "case_id": "STRIPE-READER-SUPPORT-20261013",
+                "sha256": "124ffafa385766e54aa50955b0a2453789d3c1fe3e40224f8ea16ec66a76093e",
+                "reviewer": "Executing assistant applying loaded Ariadne repertoire; same-assistant review",
+                "execution_context": "Reader-support translation and navigation integration; no native-speaker or independent certification",
+                "reviewed_at": "2026-10-13",
+                "comparison_ref": "docs/editorial/reader-support-release-2026-10-13.md#comparison",
+                "reader_journey_ref": "docs/editorial/reader-support-release-2026-10-13.md#reader-journey",
+                "semantic_control_ref": "docs/editorial/reader-support-release-2026-10-13.md#semantic-control",
                 "loaded_modules": [
                   {
                     "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
-                    "revision": "runtime-read-2026-10-12",
-                    "application_ref": "docs/editorial/corpus-revision-2026-10-12.md#six-stages"
-                  },
-                  {
-                    "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
-                    "revision": "runtime-read-2026-10-12",
-                    "application_ref": "docs/editorial/corpus-revision-2026-10-12.md#six-stages"
+                    "revision": "runtime-read-2026-10-13",
+                    "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
                   },
                   {
                     "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
-                    "revision": "runtime-read-2026-10-12",
-                    "application_ref": "docs/editorial/corpus-revision-2026-10-12.md#six-stages"
+                    "revision": "runtime-read-2026-10-13",
+                    "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
                   },
                   {
                     "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
-                    "revision": "runtime-read-2026-10-12",
-                    "application_ref": "docs/editorial/corpus-revision-2026-10-12.md#six-stages"
+                    "revision": "runtime-read-2026-10-13",
+                    "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
                   },
                   {
                     "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
-                    "revision": "runtime-read-2026-10-12",
-                    "application_ref": "docs/editorial/corpus-revision-2026-10-12.md#six-stages"
+                    "revision": "runtime-read-2026-10-13",
+                    "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
                   }
                 ],
                 "stages": {
-                  "helhetsinntrykk": "Retain purpose, reading language and navigation to the published corpus.",
-                  "styrker": "Retain purpose, reading language and navigation to the published corpus.",
-                  "stilprofil": "Preserve existing genre and complete reader journey; docs/editorial/corpus-revision-2026-10-12.md#six-stages",
-                  "konkrete_svakheter": "Discovery coverage and plain-language explanation, as recorded in release reader journey.",
-                  "forbedringsgrep": "Body KEEP; bounded discovery metadata change. Generated listings reflect the evaluated source texts and topic labels. Versioned script URL prevents stale browser cache from ignoring topic/query links after deployment.",
-                  "revidert_eksempelversjon": "Exact current HTML SHA-256 above; revised output with source dates and author attribution retained."
+                  "helhetsinntrykk": "Clear route from freely readable journalism to an optional one-time contribution.",
+                  "styrker": "Preserves independent editorial decisions, voluntary amount and established refund period.",
+                  "stilprofil": "Plain service copy, visible currency and recipient; Argentine Spanish uses voseo.",
+                  "konkrete_svakheter": "Earlier page mixed active journalism with unready Atriet/general choices and stale payment status.",
+                  "forbedringsgrep": "Separate eight language URLs and localised checkout copy; article-body prose remains unchanged.",
+                  "revidert_eksempelversjon": "Exact HTML SHA-256 recorded; page checked for language, recipient, NOK, one-time contribution and 14-day refund correspondence."
                 },
                 "decision": "REVISE",
                 "ariadne_style_readiness": "pass_complete",
                 "source_status": "READY_FOR_EDITORIAL_REVIEW",
-                "source_scope": "Previously published source record retained; language/discovery clearance only. See release semantic control for source follow-ups.",
+                "source_scope": "Stripe account/link API readbacks and existing support terms; article facts and original source scope retained.",
                 "previous_review": {
-                  "case_id": "DE01-DOCUMENT-ANALYSIS-20261012",
-                  "sha256": "5d9b46be3e21a70d31cd402f381aa0fb9d03851cac302e66293ac7a74b62f77f",
-                  "baseline_commit": "0554556fe94ebfa18a3ccf319b7ae83c68aa8cdd"
+                  "case_id": "PUBLISHED-CORPUS-20261012",
+                  "sha256": "cfaea90c7fc9a6435187f3b4f541ee99205e12a13d4729ccf7d7b06411353fa7",
+                  "reviewer": "Executing assistant applying Ariadne; four separate AI full-text readers; separate AI final integration PASS_BOUNDED",
+                  "execution_context": "AI editorial and discovery revision under author instruction; no fresh corpus-wide factual or human specialist certification",
+                  "reviewed_at": "2026-10-12",
+                  "comparison_ref": "docs/editorial/corpus-revision-2026-10-12.md#story-decisions",
+                  "reader_journey_ref": "docs/editorial/corpus-revision-2026-10-12.md#other-pages-and-reader-journey",
+                  "semantic_control_ref": "docs/editorial/corpus-revision-2026-10-12.md#semantic-control",
+                  "loaded_modules": [
+                    {
+                      "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+                      "revision": "runtime-read-2026-10-12",
+                      "application_ref": "docs/editorial/corpus-revision-2026-10-12.md#six-stages"
+                    },
+                    {
+                      "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
+                      "revision": "runtime-read-2026-10-12",
+                      "application_ref": "docs/editorial/corpus-revision-2026-10-12.md#six-stages"
+                    },
+                    {
+                      "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
+                      "revision": "runtime-read-2026-10-12",
+                      "application_ref": "docs/editorial/corpus-revision-2026-10-12.md#six-stages"
+                    },
+                    {
+                      "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+                      "revision": "runtime-read-2026-10-12",
+                      "application_ref": "docs/editorial/corpus-revision-2026-10-12.md#six-stages"
+                    },
+                    {
+                      "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
+                      "revision": "runtime-read-2026-10-12",
+                      "application_ref": "docs/editorial/corpus-revision-2026-10-12.md#six-stages"
+                    }
+                  ],
+                  "stages": {
+                    "helhetsinntrykk": "Retain purpose, reading language and navigation to the published corpus.",
+                    "styrker": "Retain purpose, reading language and navigation to the published corpus.",
+                    "stilprofil": "Preserve existing genre and complete reader journey; docs/editorial/corpus-revision-2026-10-12.md#six-stages",
+                    "konkrete_svakheter": "Discovery coverage and plain-language explanation, as recorded in release reader journey.",
+                    "forbedringsgrep": "Body KEEP; bounded discovery metadata change. Generated listings reflect the evaluated source texts and topic labels. Versioned script URL prevents stale browser cache from ignoring topic/query links after deployment.",
+                    "revidert_eksempelversjon": "Exact current HTML SHA-256 above; revised output with source dates and author attribution retained."
+                  },
+                  "decision": "REVISE",
+                  "ariadne_style_readiness": "pass_complete",
+                  "source_status": "READY_FOR_EDITORIAL_REVIEW",
+                  "source_scope": "Previously published source record retained; language/discovery clearance only. See release semantic control for source follow-ups.",
+                  "previous_review": {
+                    "case_id": "DE01-DOCUMENT-ANALYSIS-20261012",
+                    "sha256": "5d9b46be3e21a70d31cd402f381aa0fb9d03851cac302e66293ac7a74b62f77f",
+                    "baseline_commit": "0554556fe94ebfa18a3ccf319b7ae83c68aa8cdd"
+                  },
+                  "publication_approval": {
+                    "approved": true,
+                    "by": "Executing editor under Bjørn Moe Aldema’s explicit publication instruction",
+                    "reference": "docs/editorial/corpus-revision-2026-10-12.md#scope-and-authority; exact language/discovery revision cleared after separate AI integration review, not personal byte review by the author",
+                    "sha256": "cfaea90c7fc9a6435187f3b4f541ee99205e12a13d4729ccf7d7b06411353fa7"
+                  },
+                  "previous_map_sha256": "5803b94f3ccbc49d374645795780d7192dc479783a48a3949f01f8db4446a9b4"
                 },
                 "publication_approval": {
                   "approved": true,
-                  "by": "Executing editor under Bjørn Moe Aldema’s explicit publication instruction",
-                  "reference": "docs/editorial/corpus-revision-2026-10-12.md#scope-and-authority; exact language/discovery revision cleared after separate AI integration review, not personal byte review by the author",
-                  "sha256": "cfaea90c7fc9a6435187f3b4f541ee99205e12a13d4729ccf7d7b06411353fa7"
+                  "by": "Executing editor under Bjørn’s explicit instruction to refine and integrate reader support on ExperimentalNewsroom.org",
+                  "reference": "CURRENT_CHAT_20261013_124812_FOREDLE_OG_GJOR_DET_AND_125132_ARGENTINA_BRAZIL",
+                  "sha256": "124ffafa385766e54aa50955b0a2453789d3c1fe3e40224f8ea16ec66a76093e"
                 },
                 "previous_map_sha256": "5803b94f3ccbc49d374645795780d7192dc479783a48a3949f01f8db4446a9b4"
-              },
-              "publication_approval": {
-                "approved": true,
-                "by": "Executing editor under Bjørn’s explicit instruction to refine and integrate reader support on ExperimentalNewsroom.org",
-                "reference": "CURRENT_CHAT_20261013_124812_FOREDLE_OG_GJOR_DET_AND_125132_ARGENTINA_BRAZIL",
-                "sha256": "124ffafa385766e54aa50955b0a2453789d3c1fe3e40224f8ea16ec66a76093e"
-              },
-              "previous_map_sha256": "5803b94f3ccbc49d374645795780d7192dc479783a48a3949f01f8db4446a9b4"
+              }
             }
+          },
+          "publication_approval": {
+            "approved": true,
+            "by": "Executing editor under Bjørn Moe Aldema’s explicit completion and published-material update instruction",
+            "reference": "docs/editorial/cross-series-refinement-2026-10-17.md#scope-and-authority",
+            "sha256": "9fbdb20b9195cd950d1c4228a7ae3afe4423ea313e51ac0bf97d2661e7418345"
           }
-        },
-        "publication_approval": {
-          "approved": true,
-          "by": "Executing editor under Bjørn Moe Aldema’s explicit completion and published-material update instruction",
-          "reference": "docs/editorial/cross-series-refinement-2026-10-17.md#scope-and-authority",
-          "sha256": "9fbdb20b9195cd950d1c4228a7ae3afe4423ea313e51ac0bf97d2661e7418345"
         }
       }
     }
   },
   "public/sitemap.en.html": {
-    "case_id": "EN-WILLOCH-20261023",
-    "sha256": "fe530aef65f1acf3d892954d51d930e1b7506b5f2dae96d6322c5ef3c38f4fa8",
-    "reviewer": "Executing assistant with separate AI mentor review",
-    "execution_context": "AI source, editorial and language review; no independent human historian review",
+    "case_id": "EN-MRNA-MERKING-20261023",
+    "sha256": "0057306d172415dbf2e67eca8447dc103356a92a57f2495371b5e84d41c7fe6f",
+    "reviewer": "Executing assistant applying Ariadne repertoire; same-assistant review",
+    "execution_context": "Documentary scenario analysis and discovery integration; no independent medical/legal certification",
     "reviewed_at": "2026-10-23",
-    "comparison_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
-    "reader_journey_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#reader-journey",
-    "semantic_control_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#semantic-control",
+    "comparison_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#comparison",
+    "reader_journey_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#reader-journey",
+    "semantic_control_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#source-control",
     "loaded_modules": [
       {
         "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
         "revision": "runtime-read-2026-10-23",
-        "application_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
-      },
-      {
-        "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
-        "revision": "runtime-read-2026-10-23",
-        "application_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
-      },
-      {
-        "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
-        "revision": "runtime-read-2026-10-23",
-        "application_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
+        "application_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#language-review"
       },
       {
         "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
         "revision": "runtime-read-2026-10-23",
-        "application_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
+        "application_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#language-review"
       },
       {
-        "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
+        "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
         "revision": "runtime-read-2026-10-23",
-        "application_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
+        "application_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#language-review"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
+        "revision": "runtime-read-2026-10-23",
+        "application_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#language-review"
       }
     ],
     "stages": {
-      "helhetsinntrykk": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
-      "styrker": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
-      "stilprofil": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
-      "konkrete_svakheter": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
-      "forbedringsgrep": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
-      "revidert_eksempelversjon": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
+      "helhetsinntrykk": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#helhetsinntrykk",
+      "styrker": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#styrker",
+      "stilprofil": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#stilprofil",
+      "konkrete_svakheter": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#konkrete_svakheter",
+      "forbedringsgrep": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#forbedringsgrep",
+      "revidert_eksempelversjon": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#revidert_eksempelversjon"
     },
     "decision": "REVISE",
     "ariadne_style_readiness": "pass_complete",
     "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Documentary scenario analysis with source attribution and explicit reader-facing limitations; OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#source-control",
     "publication_approval": {
       "approved": true,
-      "by": "Executing editor under Bjørn Moe Aldema’s explicit publication instruction",
-      "reference": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#scope-and-authority",
-      "sha256": "fe530aef65f1acf3d892954d51d930e1b7506b5f2dae96d6322c5ef3c38f4fa8"
+      "by": "Bjørn Moe Aldema; final byte binding by executing assistant under delegated publication mandate",
+      "reference": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#publication-authority",
+      "sha256": "0057306d172415dbf2e67eca8447dc103356a92a57f2495371b5e84d41c7fe6f"
     },
     "previous_review": {
-      "case_id": "EN-PARKINSON-PLANTEVERN-20261023",
-      "sha256": "cb38d844b8e809eaebae93681e505110cbfa7bd849ce9ff4ad04f9df70f35b26",
-      "reviewer": "Executing assistant applying Ariadne and editorial source/presentation controls",
-      "execution_context": "Same-assistant review; no independent specialist review",
+      "case_id": "EN-WILLOCH-20261023",
+      "sha256": "fe530aef65f1acf3d892954d51d930e1b7506b5f2dae96d6322c5ef3c38f4fa8",
+      "reviewer": "Executing assistant with separate AI mentor review",
+      "execution_context": "AI source, editorial and language review; no independent human historian review",
       "reviewed_at": "2026-10-23",
-      "comparison_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-      "reader_journey_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#reader-journey",
-      "semantic_control_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#semantic-control-and-source-clearance",
+      "comparison_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
+      "reader_journey_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#reader-journey",
+      "semantic_control_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#semantic-control",
       "loaded_modules": [
         {
-          "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
-          "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
-          "application_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md"
+          "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+          "revision": "runtime-read-2026-10-23",
+          "application_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
+        },
+        {
+          "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
+          "revision": "runtime-read-2026-10-23",
+          "application_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
+        },
+        {
+          "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
+          "revision": "runtime-read-2026-10-23",
+          "application_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
+        },
+        {
+          "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+          "revision": "runtime-read-2026-10-23",
+          "application_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
+        },
+        {
+          "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
+          "revision": "runtime-read-2026-10-23",
+          "application_ref": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
         }
       ],
       "stages": {
-        "helhetsinntrykk": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-        "styrker": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-        "stilprofil": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-        "konkrete_svakheter": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-        "forbedringsgrep": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
-        "revidert_eksempelversjon": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages"
+        "helhetsinntrykk": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
+        "styrker": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
+        "stilprofil": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
+        "konkrete_svakheter": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
+        "forbedringsgrep": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages",
+        "revidert_eksempelversjon": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#six-stages"
       },
       "decision": "REVISE",
       "ariadne_style_readiness": "pass_complete",
       "source_status": "READY_FOR_EDITORIAL_REVIEW",
       "publication_approval": {
         "approved": true,
-        "by": "Bjørn Moe Aldema",
-        "reference": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#scope-and-authority — explicit instruction 23 October 2026 to adapt and publish this article; final bytes bound by executing assistant under that instruction, not personal final-byte review",
-        "sha256": "cb38d844b8e809eaebae93681e505110cbfa7bd849ce9ff4ad04f9df70f35b26"
+        "by": "Executing editor under Bjørn Moe Aldema’s explicit publication instruction",
+        "reference": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#scope-and-authority",
+        "sha256": "fe530aef65f1acf3d892954d51d930e1b7506b5f2dae96d6322c5ef3c38f4fa8"
       },
       "previous_review": {
-        "case_id": "CROSS-SERIES-REFINEMENT-20261017",
-        "sha256": "3b66b9e154fe047a994b6067eedc9968455188560738f132c6afc6faaff93ba7",
-        "reviewer": "Executing editor integrating prior separate AI Ariadne and Sjeherasad passes",
-        "execution_context": "Same-assistant final release review; no human or native-speaker certification",
-        "reviewed_at": "2026-10-17",
+        "case_id": "EN-PARKINSON-PLANTEVERN-20261023",
+        "sha256": "cb38d844b8e809eaebae93681e505110cbfa7bd849ce9ff4ad04f9df70f35b26",
+        "reviewer": "Executing assistant applying Ariadne and editorial source/presentation controls",
+        "execution_context": "Same-assistant review; no independent specialist review",
+        "reviewed_at": "2026-10-23",
+        "comparison_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+        "reader_journey_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#reader-journey",
+        "semantic_control_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#semantic-control-and-source-clearance",
         "loaded_modules": [
           {
             "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
             "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
-            "application_ref": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review"
+            "application_ref": "docs/editorial/parkinson-plantevern-release-2026-10-23.md"
           }
         ],
         "stages": {
-          "helhetsinntrykk": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review",
-          "styrker": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review",
-          "stilprofil": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review",
-          "konkrete_svakheter": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review",
-          "forbedringsgrep": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review",
-          "revidert_eksempelversjon": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review"
+          "helhetsinntrykk": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+          "styrker": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+          "stilprofil": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+          "konkrete_svakheter": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+          "forbedringsgrep": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages",
+          "revidert_eksempelversjon": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#comparison-and-six-stages"
         },
-        "comparison_ref": "docs/editorial/cross-series-refinement-2026-10-17.md#comparison-and-contributions",
-        "reader_journey_ref": "docs/editorial/cross-series-refinement-2026-10-17.md#reader-journey",
-        "semantic_control_ref": "docs/editorial/cross-series-refinement-2026-10-17.md#semantic-control",
-        "decision": "COMBINE",
+        "decision": "REVISE",
         "ariadne_style_readiness": "pass_complete",
         "source_status": "READY_FOR_EDITORIAL_REVIEW",
-        "source_scope": "Previously published historical source basis retained; new child-experience questions explicitly editorial, no new reporting claims.",
+        "publication_approval": {
+          "approved": true,
+          "by": "Bjørn Moe Aldema",
+          "reference": "docs/editorial/parkinson-plantevern-release-2026-10-23.md#scope-and-authority — explicit instruction 23 October 2026 to adapt and publish this article; final bytes bound by executing assistant under that instruction, not personal final-byte review",
+          "sha256": "cb38d844b8e809eaebae93681e505110cbfa7bd849ce9ff4ad04f9df70f35b26"
+        },
         "previous_review": {
-          "case_id": "ANSVARET-PRECISION-20261016",
-          "sha256": "c0913269d0eda7cbc68ee06aed549c33de612ae7c7deb8a7dc9cc0bc2c89a42b",
-          "reviewer": "Codex assistant; scoped editorial review, no human reader test",
-          "execution_context": "Approved precision paragraph and derived search text; existing article and sources retained",
-          "reviewed_at": "2026-10-16",
+          "case_id": "CROSS-SERIES-REFINEMENT-20261017",
+          "sha256": "3b66b9e154fe047a994b6067eedc9968455188560738f132c6afc6faaff93ba7",
+          "reviewer": "Executing editor integrating prior separate AI Ariadne and Sjeherasad passes",
+          "execution_context": "Same-assistant final release review; no human or native-speaker certification",
+          "reviewed_at": "2026-10-17",
           "loaded_modules": [
             {
-              "source": "docs/editorial-production-safety.md",
-              "revision": "76362a06c85158664f814cf0588522a9a2f8545f",
-              "application_ref": "docs/editorial/ansvaret-precision-release-2026-10-16.md"
+              "source": "OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/ARIADNE_LANGUAGE_COMPARISON_AND_REALIZATION_WORKFLOW_001.md",
+              "revision": "5c026e8f16bf19697719d15416ab085429e91c30",
+              "application_ref": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review"
             }
           ],
-          "comparison_ref": "docs/editorial/ansvaret-precision-release-2026-10-16.md",
-          "reader_journey_ref": "docs/editorial/ansvaret-precision-release-2026-10-16.md",
-          "semantic_control_ref": "docs/editorial/ansvaret-precision-release-2026-10-16.md",
           "stages": {
-            "helhetsinntrykk": "The narrative opening remains intact; the new paragraph bounds interpretation early.",
-            "styrker": "Concrete meal illustration and participation question retained.",
-            "stilprofil": "Explanatory Norwegian; brief qualification within existing reader guide.",
-            "konkrete_svakheter": "The earlier general research boundary did not explicitly name the untested energy-drink and screen-use effects.",
-            "forbedringsgrep": "Add the approved two-sentence paragraph after the reader-guide list; mirror it only in generated search text.",
-            "revidert_eksempelversjon": "docs/editorial/ansvaret-precision-release-2026-10-16.md"
+            "helhetsinntrykk": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review",
+            "styrker": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review",
+            "stilprofil": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review",
+            "konkrete_svakheter": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review",
+            "forbedringsgrep": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review",
+            "revidert_eksempelversjon": "docs/editorial/cross-series-refinement-2026-10-17.md#six-stage-review"
           },
+          "comparison_ref": "docs/editorial/cross-series-refinement-2026-10-17.md#comparison-and-contributions",
+          "reader_journey_ref": "docs/editorial/cross-series-refinement-2026-10-17.md#reader-journey",
+          "semantic_control_ref": "docs/editorial/cross-series-refinement-2026-10-17.md#semantic-control",
           "decision": "COMBINE",
           "ariadne_style_readiness": "pass_complete",
           "source_status": "READY_FOR_EDITORIAL_REVIEW",
-          "publication_approval": {
-            "approved": true,
-            "by": "Bjørn Moe Aldema",
-            "reference": "docs/editorial/ansvaret-precision-release-2026-10-16.md; publication authorized 2026-10-16, executor-bound final content hash.",
-            "sha256": "c0913269d0eda7cbc68ee06aed549c33de612ae7c7deb8a7dc9cc0bc2c89a42b"
-          },
+          "source_scope": "Previously published historical source basis retained; new child-experience questions explicitly editorial, no new reporting claims.",
           "previous_review": {
-            "case_id": "STRIPE-READER-SUPPORT-EXPANSION-20261013",
-            "sha256": "d26da6b83fcab23dbbf612f889b5844589fb1312c7ce8f5fb34516c681c0c038",
-            "reviewer": "Executing assistant applying loaded Ariadne repertoire; same-assistant review",
-            "execution_context": "Reader-support translation and navigation integration; no native-speaker or independent certification",
-            "reviewed_at": "2026-10-13",
-            "comparison_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#comparison",
-            "reader_journey_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#reader-journey",
-            "semantic_control_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#semantic-control",
+            "case_id": "ANSVARET-PRECISION-20261016",
+            "sha256": "c0913269d0eda7cbc68ee06aed549c33de612ae7c7deb8a7dc9cc0bc2c89a42b",
+            "reviewer": "Codex assistant; scoped editorial review, no human reader test",
+            "execution_context": "Approved precision paragraph and derived search text; existing article and sources retained",
+            "reviewed_at": "2026-10-16",
             "loaded_modules": [
               {
-                "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
-                "revision": "runtime-read-2026-10-13",
-                "application_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#six-stages"
-              },
-              {
-                "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
-                "revision": "runtime-read-2026-10-13",
-                "application_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#six-stages"
-              },
-              {
-                "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
-                "revision": "runtime-read-2026-10-13",
-                "application_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#six-stages"
-              },
-              {
-                "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
-                "revision": "runtime-read-2026-10-13",
-                "application_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#six-stages"
+                "source": "docs/editorial-production-safety.md",
+                "revision": "76362a06c85158664f814cf0588522a9a2f8545f",
+                "application_ref": "docs/editorial/ansvaret-precision-release-2026-10-16.md"
               }
             ],
+            "comparison_ref": "docs/editorial/ansvaret-precision-release-2026-10-16.md",
+            "reader_journey_ref": "docs/editorial/ansvaret-precision-release-2026-10-16.md",
+            "semantic_control_ref": "docs/editorial/ansvaret-precision-release-2026-10-16.md",
             "stages": {
-              "helhetsinntrykk": "Same optional one-time support journey in three additional existing article languages.",
-              "styrker": "Preserves voluntary amount, receiver, currency, editorial choice and established refund terms.",
-              "stilprofil": "Brazilian Portuguese você, polite Korean and plain Modern Standard Arabic.",
-              "konkrete_svakheter": "Three article languages previously fell back to English; Arabic support needed RTL and contact isolation.",
-              "forbedringsgrep": "Native support/checkout copy, eleven reciprocal alternatives, RTL with isolated telephone/name/email; Argentine Elegí.",
-              "revidert_eksempelversjon": "Generated exact HTML hashed after semantic control; unchanged article body separately checked."
+              "helhetsinntrykk": "The narrative opening remains intact; the new paragraph bounds interpretation early.",
+              "styrker": "Concrete meal illustration and participation question retained.",
+              "stilprofil": "Explanatory Norwegian; brief qualification within existing reader guide.",
+              "konkrete_svakheter": "The earlier general research boundary did not explicitly name the untested energy-drink and screen-use effects.",
+              "forbedringsgrep": "Add the approved two-sentence paragraph after the reader-guide list; mirror it only in generated search text.",
+              "revidert_eksempelversjon": "docs/editorial/ansvaret-precision-release-2026-10-16.md"
             },
-            "decision": "REVISE",
+            "decision": "COMBINE",
             "ariadne_style_readiness": "pass_complete",
             "source_status": "READY_FOR_EDITORIAL_REVIEW",
-            "source_scope": "Existing article prose retained; three support-page translations, language selector and navigation reviewed against established support meaning and Stripe readbacks.",
             "publication_approval": {
               "approved": true,
-              "by": "Executing editor under Bjørn Moe Aldema’s explicit site integration and Portuguese-now/additional-languages instruction",
-              "reference": "CURRENT_CHAT_20261013_142840_PORTUGUESE_NOW_ADDITIONAL_LANGUAGES",
-              "sha256": "d26da6b83fcab23dbbf612f889b5844589fb1312c7ce8f5fb34516c681c0c038"
+              "by": "Bjørn Moe Aldema",
+              "reference": "docs/editorial/ansvaret-precision-release-2026-10-16.md; publication authorized 2026-10-16, executor-bound final content hash.",
+              "sha256": "c0913269d0eda7cbc68ee06aed549c33de612ae7c7deb8a7dc9cc0bc2c89a42b"
             },
             "previous_review": {
-              "case_id": "STRIPE-READER-SUPPORT-20261013",
-              "sha256": "5e1dbb0cd521acc2f825895d3f974d5c6cdca505c277166375ca6c96bf69fa85",
+              "case_id": "STRIPE-READER-SUPPORT-EXPANSION-20261013",
+              "sha256": "d26da6b83fcab23dbbf612f889b5844589fb1312c7ce8f5fb34516c681c0c038",
               "reviewer": "Executing assistant applying loaded Ariadne repertoire; same-assistant review",
               "execution_context": "Reader-support translation and navigation integration; no native-speaker or independent certification",
               "reviewed_at": "2026-10-13",
-              "comparison_ref": "docs/editorial/reader-support-release-2026-10-13.md#comparison",
-              "reader_journey_ref": "docs/editorial/reader-support-release-2026-10-13.md#reader-journey",
-              "semantic_control_ref": "docs/editorial/reader-support-release-2026-10-13.md#semantic-control",
+              "comparison_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#comparison",
+              "reader_journey_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#reader-journey",
+              "semantic_control_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#semantic-control",
               "loaded_modules": [
                 {
                   "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
                   "revision": "runtime-read-2026-10-13",
-                  "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
+                  "application_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#six-stages"
                 },
                 {
                   "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
                   "revision": "runtime-read-2026-10-13",
-                  "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
+                  "application_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#six-stages"
                 },
                 {
                   "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
                   "revision": "runtime-read-2026-10-13",
-                  "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
+                  "application_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#six-stages"
                 },
                 {
                   "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
                   "revision": "runtime-read-2026-10-13",
-                  "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
+                  "application_ref": "docs/editorial/reader-support-expansion-2026-10-13.md#six-stages"
                 }
               ],
               "stages": {
-                "helhetsinntrykk": "Clear route from freely readable journalism to an optional one-time contribution.",
-                "styrker": "Preserves independent editorial decisions, voluntary amount and established refund period.",
-                "stilprofil": "Plain service copy, visible currency and recipient; Argentine Spanish uses voseo.",
-                "konkrete_svakheter": "Earlier page mixed active journalism with unready Atriet/general choices and stale payment status.",
-                "forbedringsgrep": "Separate eight language URLs and localised checkout copy; article-body prose remains unchanged.",
-                "revidert_eksempelversjon": "Exact HTML SHA-256 recorded; page checked for language, recipient, NOK, one-time contribution and 14-day refund correspondence."
+                "helhetsinntrykk": "Same optional one-time support journey in three additional existing article languages.",
+                "styrker": "Preserves voluntary amount, receiver, currency, editorial choice and established refund terms.",
+                "stilprofil": "Brazilian Portuguese você, polite Korean and plain Modern Standard Arabic.",
+                "konkrete_svakheter": "Three article languages previously fell back to English; Arabic support needed RTL and contact isolation.",
+                "forbedringsgrep": "Native support/checkout copy, eleven reciprocal alternatives, RTL with isolated telephone/name/email; Argentine Elegí.",
+                "revidert_eksempelversjon": "Generated exact HTML hashed after semantic control; unchanged article body separately checked."
               },
               "decision": "REVISE",
               "ariadne_style_readiness": "pass_complete",
               "source_status": "READY_FOR_EDITORIAL_REVIEW",
-              "source_scope": "Stripe account/link API readbacks and existing support terms; article facts and original source scope retained.",
+              "source_scope": "Existing article prose retained; three support-page translations, language selector and navigation reviewed against established support meaning and Stripe readbacks.",
+              "publication_approval": {
+                "approved": true,
+                "by": "Executing editor under Bjørn Moe Aldema’s explicit site integration and Portuguese-now/additional-languages instruction",
+                "reference": "CURRENT_CHAT_20261013_142840_PORTUGUESE_NOW_ADDITIONAL_LANGUAGES",
+                "sha256": "d26da6b83fcab23dbbf612f889b5844589fb1312c7ce8f5fb34516c681c0c038"
+              },
               "previous_review": {
-                "case_id": "PUBLISHED-CORPUS-20261012",
-                "sha256": "a201917821da7f08047ef93c9ab5d8d301d62c0a3eafe84de456357b576b5a6c",
-                "reviewer": "Executing assistant applying Ariadne; four separate AI full-text readers; separate AI final integration PASS_BOUNDED",
-                "execution_context": "AI editorial and discovery revision under author instruction; no fresh corpus-wide factual or human specialist certification",
-                "reviewed_at": "2026-10-12",
-                "comparison_ref": "docs/editorial/corpus-revision-2026-10-12.md#story-decisions",
-                "reader_journey_ref": "docs/editorial/corpus-revision-2026-10-12.md#other-pages-and-reader-journey",
-                "semantic_control_ref": "docs/editorial/corpus-revision-2026-10-12.md#semantic-control",
+                "case_id": "STRIPE-READER-SUPPORT-20261013",
+                "sha256": "5e1dbb0cd521acc2f825895d3f974d5c6cdca505c277166375ca6c96bf69fa85",
+                "reviewer": "Executing assistant applying loaded Ariadne repertoire; same-assistant review",
+                "execution_context": "Reader-support translation and navigation integration; no native-speaker or independent certification",
+                "reviewed_at": "2026-10-13",
+                "comparison_ref": "docs/editorial/reader-support-release-2026-10-13.md#comparison",
+                "reader_journey_ref": "docs/editorial/reader-support-release-2026-10-13.md#reader-journey",
+                "semantic_control_ref": "docs/editorial/reader-support-release-2026-10-13.md#semantic-control",
                 "loaded_modules": [
                   {
                     "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
-                    "revision": "runtime-read-2026-10-12",
-                    "application_ref": "docs/editorial/corpus-revision-2026-10-12.md#six-stages"
-                  },
-                  {
-                    "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
-                    "revision": "runtime-read-2026-10-12",
-                    "application_ref": "docs/editorial/corpus-revision-2026-10-12.md#six-stages"
+                    "revision": "runtime-read-2026-10-13",
+                    "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
                   },
                   {
                     "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
-                    "revision": "runtime-read-2026-10-12",
-                    "application_ref": "docs/editorial/corpus-revision-2026-10-12.md#six-stages"
+                    "revision": "runtime-read-2026-10-13",
+                    "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
                   },
                   {
                     "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
-                    "revision": "runtime-read-2026-10-12",
-                    "application_ref": "docs/editorial/corpus-revision-2026-10-12.md#six-stages"
+                    "revision": "runtime-read-2026-10-13",
+                    "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
                   },
                   {
                     "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
-                    "revision": "runtime-read-2026-10-12",
-                    "application_ref": "docs/editorial/corpus-revision-2026-10-12.md#six-stages"
+                    "revision": "runtime-read-2026-10-13",
+                    "application_ref": "docs/editorial/reader-support-release-2026-10-13.md#six-stages"
                   }
                 ],
                 "stages": {
-                  "helhetsinntrykk": "Retain purpose, reading language and navigation to the published corpus.",
-                  "styrker": "Retain purpose, reading language and navigation to the published corpus.",
-                  "stilprofil": "Preserve existing genre and complete reader journey; docs/editorial/corpus-revision-2026-10-12.md#six-stages",
-                  "konkrete_svakheter": "Discovery coverage and plain-language explanation, as recorded in release reader journey.",
-                  "forbedringsgrep": "Body KEEP; bounded discovery metadata change. Generated listings reflect the evaluated source texts and topic labels. Versioned script URL prevents stale browser cache from ignoring topic/query links after deployment.",
-                  "revidert_eksempelversjon": "Exact current HTML SHA-256 above; revised output with source dates and author attribution retained."
+                  "helhetsinntrykk": "Clear route from freely readable journalism to an optional one-time contribution.",
+                  "styrker": "Preserves independent editorial decisions, voluntary amount and established refund period.",
+                  "stilprofil": "Plain service copy, visible currency and recipient; Argentine Spanish uses voseo.",
+                  "konkrete_svakheter": "Earlier page mixed active journalism with unready Atriet/general choices and stale payment status.",
+                  "forbedringsgrep": "Separate eight language URLs and localised checkout copy; article-body prose remains unchanged.",
+                  "revidert_eksempelversjon": "Exact HTML SHA-256 recorded; page checked for language, recipient, NOK, one-time contribution and 14-day refund correspondence."
                 },
                 "decision": "REVISE",
                 "ariadne_style_readiness": "pass_complete",
                 "source_status": "READY_FOR_EDITORIAL_REVIEW",
-                "source_scope": "Previously published source record retained; language/discovery clearance only. See release semantic control for source follow-ups.",
+                "source_scope": "Stripe account/link API readbacks and existing support terms; article facts and original source scope retained.",
                 "previous_review": {
-                  "case_id": "DE01-DOCUMENT-ANALYSIS-20261012",
-                  "sha256": "af90ee0d0bd295ceb745229a3563c14d40d0ce7eead664394a98ab0830b9fe54",
-                  "baseline_commit": "0554556fe94ebfa18a3ccf319b7ae83c68aa8cdd"
+                  "case_id": "PUBLISHED-CORPUS-20261012",
+                  "sha256": "a201917821da7f08047ef93c9ab5d8d301d62c0a3eafe84de456357b576b5a6c",
+                  "reviewer": "Executing assistant applying Ariadne; four separate AI full-text readers; separate AI final integration PASS_BOUNDED",
+                  "execution_context": "AI editorial and discovery revision under author instruction; no fresh corpus-wide factual or human specialist certification",
+                  "reviewed_at": "2026-10-12",
+                  "comparison_ref": "docs/editorial/corpus-revision-2026-10-12.md#story-decisions",
+                  "reader_journey_ref": "docs/editorial/corpus-revision-2026-10-12.md#other-pages-and-reader-journey",
+                  "semantic_control_ref": "docs/editorial/corpus-revision-2026-10-12.md#semantic-control",
+                  "loaded_modules": [
+                    {
+                      "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+                      "revision": "runtime-read-2026-10-12",
+                      "application_ref": "docs/editorial/corpus-revision-2026-10-12.md#six-stages"
+                    },
+                    {
+                      "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
+                      "revision": "runtime-read-2026-10-12",
+                      "application_ref": "docs/editorial/corpus-revision-2026-10-12.md#six-stages"
+                    },
+                    {
+                      "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
+                      "revision": "runtime-read-2026-10-12",
+                      "application_ref": "docs/editorial/corpus-revision-2026-10-12.md#six-stages"
+                    },
+                    {
+                      "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+                      "revision": "runtime-read-2026-10-12",
+                      "application_ref": "docs/editorial/corpus-revision-2026-10-12.md#six-stages"
+                    },
+                    {
+                      "source": "oos-trained-agent-runtime/ariadne_norwegian_english_module.md",
+                      "revision": "runtime-read-2026-10-12",
+                      "application_ref": "docs/editorial/corpus-revision-2026-10-12.md#six-stages"
+                    }
+                  ],
+                  "stages": {
+                    "helhetsinntrykk": "Retain purpose, reading language and navigation to the published corpus.",
+                    "styrker": "Retain purpose, reading language and navigation to the published corpus.",
+                    "stilprofil": "Preserve existing genre and complete reader journey; docs/editorial/corpus-revision-2026-10-12.md#six-stages",
+                    "konkrete_svakheter": "Discovery coverage and plain-language explanation, as recorded in release reader journey.",
+                    "forbedringsgrep": "Body KEEP; bounded discovery metadata change. Generated listings reflect the evaluated source texts and topic labels. Versioned script URL prevents stale browser cache from ignoring topic/query links after deployment.",
+                    "revidert_eksempelversjon": "Exact current HTML SHA-256 above; revised output with source dates and author attribution retained."
+                  },
+                  "decision": "REVISE",
+                  "ariadne_style_readiness": "pass_complete",
+                  "source_status": "READY_FOR_EDITORIAL_REVIEW",
+                  "source_scope": "Previously published source record retained; language/discovery clearance only. See release semantic control for source follow-ups.",
+                  "previous_review": {
+                    "case_id": "DE01-DOCUMENT-ANALYSIS-20261012",
+                    "sha256": "af90ee0d0bd295ceb745229a3563c14d40d0ce7eead664394a98ab0830b9fe54",
+                    "baseline_commit": "0554556fe94ebfa18a3ccf319b7ae83c68aa8cdd"
+                  },
+                  "publication_approval": {
+                    "approved": true,
+                    "by": "Executing editor under Bjørn Moe Aldema’s explicit publication instruction",
+                    "reference": "docs/editorial/corpus-revision-2026-10-12.md#scope-and-authority; exact language/discovery revision cleared after separate AI integration review, not personal byte review by the author",
+                    "sha256": "a201917821da7f08047ef93c9ab5d8d301d62c0a3eafe84de456357b576b5a6c"
+                  },
+                  "previous_map_sha256": "0ee7cee62a5fc3cff261cd96342e7ecd5d78319ac6888dc789ae80be9c3b874e"
                 },
                 "publication_approval": {
                   "approved": true,
-                  "by": "Executing editor under Bjørn Moe Aldema’s explicit publication instruction",
-                  "reference": "docs/editorial/corpus-revision-2026-10-12.md#scope-and-authority; exact language/discovery revision cleared after separate AI integration review, not personal byte review by the author",
-                  "sha256": "a201917821da7f08047ef93c9ab5d8d301d62c0a3eafe84de456357b576b5a6c"
+                  "by": "Executing editor under Bjørn’s explicit instruction to refine and integrate reader support on ExperimentalNewsroom.org",
+                  "reference": "CURRENT_CHAT_20261013_124812_FOREDLE_OG_GJOR_DET_AND_125132_ARGENTINA_BRAZIL",
+                  "sha256": "5e1dbb0cd521acc2f825895d3f974d5c6cdca505c277166375ca6c96bf69fa85"
                 },
                 "previous_map_sha256": "0ee7cee62a5fc3cff261cd96342e7ecd5d78319ac6888dc789ae80be9c3b874e"
-              },
-              "publication_approval": {
-                "approved": true,
-                "by": "Executing editor under Bjørn’s explicit instruction to refine and integrate reader support on ExperimentalNewsroom.org",
-                "reference": "CURRENT_CHAT_20261013_124812_FOREDLE_OG_GJOR_DET_AND_125132_ARGENTINA_BRAZIL",
-                "sha256": "5e1dbb0cd521acc2f825895d3f974d5c6cdca505c277166375ca6c96bf69fa85"
-              },
-              "previous_map_sha256": "0ee7cee62a5fc3cff261cd96342e7ecd5d78319ac6888dc789ae80be9c3b874e"
+              }
             }
+          },
+          "publication_approval": {
+            "approved": true,
+            "by": "Executing editor under Bjørn Moe Aldema’s explicit completion and published-material update instruction",
+            "reference": "docs/editorial/cross-series-refinement-2026-10-17.md#scope-and-authority",
+            "sha256": "3b66b9e154fe047a994b6067eedc9968455188560738f132c6afc6faaff93ba7"
           }
-        },
-        "publication_approval": {
-          "approved": true,
-          "by": "Executing editor under Bjørn Moe Aldema’s explicit completion and published-material update instruction",
-          "reference": "docs/editorial/cross-series-refinement-2026-10-17.md#scope-and-authority",
-          "sha256": "3b66b9e154fe047a994b6067eedc9968455188560738f132c6afc6faaff93ba7"
         }
       }
     }
@@ -8156,6 +8356,56 @@
       "by": "Executing editor under Bjørn Moe Aldema’s explicit publication instruction",
       "reference": "docs/editorial/willoch-sikkerhetsnett-release-2026-10-23.md#scope-and-authority",
       "sha256": "0923843fe5929e6073580497d94f383f72b3c6190f5e447ca2890bb61de2384c"
+    }
+  },
+  "public/articles/genmodifisert-menneske-merking-2026.html": {
+    "case_id": "EN-MRNA-MERKING-20261023",
+    "sha256": "09c762d2fdeb086fecdfe0fb09c79effeb5df83e5be7d9f4688d2e9ad1815d8d",
+    "reviewer": "Executing assistant applying Ariadne repertoire; same-assistant review",
+    "execution_context": "Documentary scenario analysis and discovery integration; no independent medical/legal certification",
+    "reviewed_at": "2026-10-23",
+    "comparison_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#comparison",
+    "reader_journey_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#reader-journey",
+    "semantic_control_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#source-control",
+    "loaded_modules": [
+      {
+        "source": "oos-trained-agent-runtime/ariadne_standard_repertoire.md",
+        "revision": "runtime-read-2026-10-23",
+        "application_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#language-review"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_language_harvest_module.md",
+        "revision": "runtime-read-2026-10-23",
+        "application_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#language-review"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_genre_and_craft.md",
+        "revision": "runtime-read-2026-10-23",
+        "application_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#language-review"
+      },
+      {
+        "source": "oos-trained-agent-runtime/ariadne_editorial_transfer.md",
+        "revision": "runtime-read-2026-10-23",
+        "application_ref": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#language-review"
+      }
+    ],
+    "stages": {
+      "helhetsinntrykk": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#helhetsinntrykk",
+      "styrker": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#styrker",
+      "stilprofil": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#stilprofil",
+      "konkrete_svakheter": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#konkrete_svakheter",
+      "forbedringsgrep": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#forbedringsgrep",
+      "revidert_eksempelversjon": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#revidert_eksempelversjon"
+    },
+    "decision": "COMBINE",
+    "ariadne_style_readiness": "pass_complete",
+    "source_status": "READY_FOR_EDITORIAL_REVIEW",
+    "source_scope": "Documentary scenario analysis with source attribution and explicit reader-facing limitations; OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#source-control",
+    "publication_approval": {
+      "approved": true,
+      "by": "Bjørn Moe Aldema; final byte binding by executing assistant under delegated publication mandate",
+      "reference": "OOS-Core:OOS_MASTER/PMH/PROJECTS/EXPERIMENTAL_NEWSROOM/CASE_FILES/EN_MRNA_PUBLICATION_REVIEW_20261023.md#publication-authority",
+      "sha256": "09c762d2fdeb086fecdfe0fb09c79effeb5df83e5be7d9f4688d2e9ad1815d8d"
     }
   }
 }

@@ -1,5 +1,40 @@
 [
   {
+    "id": "parkinson-plantevern-mindre-sproyting-2026",
+    "section": "Analysis",
+    "region": "Europe",
+    "country": "Norway",
+    "type": "Dokumentbasert forklaring",
+    "language": "nb",
+    "title": "Hva kan gjøre mindre sprøyting mulig?",
+    "summary": "Parkinson-debatten åpner et praktisk spørsmål om plantevern, biologiske alternativer og bondens handlingsrom. Med valgfri fordypning i forskning og nedbrytning.",
+    "published": "2026-10-23",
+    "updated_at": "2026-10-23",
+    "priority": 0,
+    "url": "articles/parkinson-plantevern-mindre-sproyting-2026.html",
+    "tags": {
+      "nb": [
+        "Parkinson",
+        "plantevernmidler",
+        "sprøytemidler",
+        "biologisk plantevern",
+        "integrert plantevern",
+        "eksponering",
+        "landbruk",
+        "PEST-TOX"
+      ],
+      "en": [
+        "Parkinson disease",
+        "Pesticides",
+        "Biological pest control",
+        "Integrated pest management",
+        "Exposure",
+        "Agriculture",
+        "PEST-TOX"
+      ]
+    }
+  },
+  {
     "id": "tysk-pleiereform-stotten-skal-bli-hjelp-2026",
     "section": "World",
     "region": "Europe",

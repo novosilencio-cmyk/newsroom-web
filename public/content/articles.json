@@ -1,5 +1,51 @@
 [
   {
+    "id": "a-life-with-room-for-your-own-voice-2026",
+    "section": "Analysis",
+    "region": "Global",
+    "country": "International",
+    "type": "Essay",
+    "language": "en",
+    "title": "A Life with Room for Your Own Voice",
+    "summary": "Some of what we call finding ourselves may begin with listening for what we miss when no one is asking anything of us.",
+    "published": "2026-10-25",
+    "updated_at": "2026-10-25",
+    "priority": 0,
+    "url": "articles/a-life-with-room-for-your-own-voice-2026.en.html",
+    "tags": {
+      "nb": [
+        "Alenetid",
+        "Ensomhet",
+        "Tilhørighet",
+        "Selvstendighet",
+        "Zhuangzi",
+        "Bhagavadgita",
+        "Eventyr"
+      ],
+      "en": [
+        "Solitude",
+        "Loneliness",
+        "Belonging",
+        "Autonomy",
+        "Zhuangzi",
+        "Bhagavad Gita",
+        "Fairy tales"
+      ]
+    },
+    "translations": {
+      "nb": {
+        "title": "Et liv med plass til din egen stemme",
+        "summary": "Noe av det vi kaller å finne oss selv, kan begynne med å lytte etter hva vi savner når ingen ber oss om noe.",
+        "url": "articles/a-life-with-room-for-your-own-voice-2026.html"
+      },
+      "en": {
+        "title": "A Life with Room for Your Own Voice",
+        "summary": "Some of what we call finding ourselves may begin with listening for what we miss when no one is asking anything of us.",
+        "url": "articles/a-life-with-room-for-your-own-voice-2026.en.html"
+      }
+    }
+  },
+  {
     "id": "genmodifisert-menneske-merking-2026",
     "section": "Analysis",
     "region": "Global",

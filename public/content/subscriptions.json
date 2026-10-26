@@ -1,0 +1,71 @@
+{
+  "currency": "nok",
+  "sales_enabled": false,
+  "lifecycle_verified": false,
+  "offers": [
+    {
+      "key": "reader-month",
+      "group": "reader",
+      "amount_nok": 79,
+      "interval": "month",
+      "price_id": "price_1UTmRwHMsapR8OabBpF2UBNC",
+      "checkout_url": null
+    },
+    {
+      "key": "reader-year",
+      "group": "reader",
+      "amount_nok": 790,
+      "interval": "year",
+      "price_id": "price_1UTmSLHMsapR8OabuZAq3fSu",
+      "checkout_url": null
+    },
+    {
+      "key": "supporter149-month",
+      "group": "supporter",
+      "amount_nok": 149,
+      "interval": "month",
+      "price_id": "price_1UTmS8HMsapR8OabltEXSs1f",
+      "checkout_url": null
+    },
+    {
+      "key": "supporter1490-year",
+      "group": "supporter",
+      "amount_nok": 1490,
+      "interval": "year",
+      "price_id": "price_1UTmSMHMsapR8Oabfjjg106q",
+      "checkout_url": null
+    },
+    {
+      "key": "supporter249-month",
+      "group": "supporter",
+      "amount_nok": 249,
+      "interval": "month",
+      "price_id": "price_1UTme8HMsapR8OabiIefBFEx",
+      "checkout_url": null
+    },
+    {
+      "key": "supporter2490-year",
+      "group": "supporter",
+      "amount_nok": 2490,
+      "interval": "year",
+      "price_id": "price_1UTme9HMsapR8OabeWEFG6iZ",
+      "checkout_url": null
+    },
+    {
+      "key": "supporter499-month",
+      "group": "supporter",
+      "amount_nok": 499,
+      "interval": "month",
+      "price_id": "price_1UTmeAHMsapR8OabTqJdxHBe",
+      "checkout_url": null
+    },
+    {
+      "key": "supporter4990-year",
+      "group": "supporter",
+      "amount_nok": 4990,
+      "interval": "year",
+      "price_id": "price_1UTmeBHMsapR8OabrZrXMfve",
+      "checkout_url": null
+    }
+  ]
+}

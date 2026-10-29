@@ -15,7 +15,7 @@ class Page(HTMLParser):
         if tag in ('a', 'link'): self.links.append((tag, attrs))
 
 class ReaderSupportTests(unittest.TestCase):
-    def test_explicit_languages_reciprocal_urls_and_one_payment(self):
+    def test_explicit_languages_reciprocal_urls_and_no_historical_donation_links(self):
         rows = json.loads((PUBLIC / 'content/reader-support.json').read_text())
         self.assertEqual(set(rows), {'nb', 'en', 'fr', 'es-AR', 'de', 'zh-Hans', 'zh-Hant', 'ja', 'pt-BR', 'ko', 'ar'})
         for lang, row in rows.items():
@@ -25,9 +25,9 @@ class ReaderSupportTests(unittest.TestCase):
             for other, target in rows.items():
                 self.assertEqual(alternates[other], 'https://experimentalnewsroom.org/' + target['file'])
             payments = [a for tag, a in page.links if tag == 'a' and urlsplit(a.get('href', '')).netloc == 'donate.stripe.com']
-            self.assertEqual(len(payments), 1)
-            self.assertEqual(payments[0]['href'], row['url'])
-            self.assertNotIn('aria-disabled', payments[0])
+            self.assertEqual(payments, [])
+            self.assertNotIn('url', row)
+            self.assertIn('subscription-terms', (PUBLIC / row['file']).read_text())
 
     def test_article_links_resolve_and_are_after_article(self):
         for path in (PUBLIC / 'articles').glob('*.html'):

@@ -50,7 +50,9 @@ SECTIONS = [
         ('support.pt-BR.html', 'Apoie o jornalismo independente', 'pt-BR'),
         ('support.ko.html', '독립적인 언론 활동을 후원해 주세요', 'ko'),
         ('support.ar.html', 'ادعم الصحافة المستقلة', 'ar'),
-        ('support-terms.html', 'Avtalevilkår for støtte', 'nb'),
+        ('subscription-terms.html', 'Abonnementsvilkår og angreskjema', 'nb'),
+        ('subscription-terms.en.html', 'Subscription terms and withdrawal form', 'en'),
+        ('support-terms.html', 'Vilkår for tidligere engangsstøtte', 'nb'),
         ('privacy.html', 'Personvern', 'nb')]),
 ]
 

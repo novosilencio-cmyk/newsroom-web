@@ -20,8 +20,24 @@ def catalogue(public):
             url = urlsplit(p['checkout_url'])
             if url.scheme != 'https' or url.netloc != 'buy.stripe.com' or url.query or url.fragment:
                 raise ValueError('Expected a verified hosted Stripe subscription link')
-    if data['sales_enabled'] and (not data['lifecycle_verified'] or any(not p['checkout_url'] for p in data['offers'])):
-        raise ValueError('Opening sales requires every verified link and lifecycle verification')
+    if data['sales_enabled']:
+        verification = data.get('hosted_checkout_verification', {})
+        # This static publication has no paid access or local subscription state.
+        # Stripe Billing and its hosted portal own the recurring lifecycle.
+        # An actual paid/renewal/refund test remains separately recorded.
+        hosted_ready = (
+            verification.get('flow') == 'stripe_hosted_payment_links'
+            and verification.get('charges_enabled') is True
+            and verification.get('payouts_enabled') is True
+            and verification.get('portal_active') is True
+            and verification.get('portal_url') == PORTAL
+            and verification.get('cancellation_mode') == 'at_period_end'
+            and verification.get('verified_offer_keys') == sorted(expected)
+        )
+        if not hosted_ready or any(not p['checkout_url'] for p in data['offers']):
+            raise ValueError('Opening sales requires verified hosted links, account and cancellation portal')
+        if len({p['checkout_url'] for p in data['offers']}) != len(expected):
+            raise ValueError('Each subscription offer requires its own verified payment link')
     return data
 
 def shell(lang, filename, title, deck, body, alternates='', navigation=''):
@@ -73,14 +89,17 @@ def offer_body(data, nb):
     body += section('Pris, fornyelse og oppsigelse' if nb else 'Price, renewal and cancellation', paragraph(
         'Alle priser er sluttpriser i norske kroner (NOK). Måneds- og årsabonnement betales på forskudd og fornyes automatisk for samme periode til du sier opp. Ingen ekstra bindingstid eller oppsigelsesgebyr. Si opp før neste fornyelse; abonnementet løper ut ved slutten av den betalte perioden. Banken kan ta betalt for valutaveksling.' if nb else
         'All prices are final prices in Norwegian kroner (NOK). Monthly and annual subscriptions are paid in advance and renew automatically for the same period until cancelled. There is no additional minimum term or cancellation fee. Cancel before the next renewal; the subscription ends at the end of the paid period. Your bank may charge for currency conversion.'))
-    body += section('Administrer abonnementet' if nb else 'Manage your subscription', paragraph('Når betaling åpnes, vil du få informasjon om hvordan abonnementet administreres. Kontakt oss hvis du har spørsmål.' if nb else 'When checkout opens, you will receive information about managing your subscription. Contact us if you have questions.') + f'<p>{CONTACT}</p>')
+    management = ('Se fakturaer, oppdater betalingsmåte eller si opp før neste fornyelse på kundesiden. Oppsigelsen får virkning ved slutten av den betalte perioden.' if nb else 'View invoices, update your payment method or cancel before the next renewal in the customer portal. Cancellation takes effect at the end of the paid period.') if data['sales_enabled'] else ('Når betaling åpnes, vil du få informasjon om hvordan abonnementet administreres. Kontakt oss hvis du har spørsmål.' if nb else 'When checkout opens, you will receive information about managing your subscription. Contact us if you have questions.')
+    portal = f'<p><a href="{PORTAL}">{"Åpne kundesiden" if nb else "Open customer portal"}</a></p>' if data['sales_enabled'] else ''
+    body += section('Administrer abonnementet' if nb else 'Manage your subscription', paragraph(management) + portal + f'<p>{CONTACT}</p>')
     body += section('Angrerett, refusjon og kundeservice' if nb else 'Withdrawal, refunds and support', paragraph(
         'Du kan angre på en nettbestilling innen 14 dager etter at avtalen er inngått. I tillegg gir vi full refusjon på forespørsel innen 14 dager etter hver abonnementsbetaling. Garantien gjelder også fornyelser og begrenser ingen lovfestede rettigheter. Kontakt oss med kjøpsdato, beløp og e-postadresse brukt ved kjøpet. Kortnummer skal aldri sendes til oss.' if nb else
         'You can withdraw from an online order within 14 days of entering the agreement. We also offer a full refund on request within 14 days of each subscription payment, including renewals. This guarantee does not limit statutory rights. Contact us with the purchase date, amount and email address used at checkout. Never send us card numbers.') + f'<p>{CONTACT}</p><p><a href="subscription-terms{ "" if nb else ".en"}.html">{"Les abonnementsvilkår og angreskjema" if nb else "Read subscription terms and withdrawal form"}</a></p>')
     body += section('Dette inngår i abonnementet' if nb else 'What the subscription includes', paragraph(
         'Abonnementet gjelder nettpublikasjonen, uten eksklusiv tilgang, fast publiseringshyppighet, personlig rådgivning eller redaksjonell innflytelse. Alle artikler kan leses uten betaling. E-postutgave, full oversettelse til alle språk, Atriet og andre fysiske prosjekter ligger utenfor abonnementet. Tidligere engangsstøtte blir aldri omgjort til abonnement.' if nb else
         'The subscription covers the online publication, without exclusive access, a fixed publishing frequency, personal advice or editorial influence. All articles can be read without payment. An email edition, translation of every article into every language, Atriet and other physical projects are outside this subscription. Earlier one-time contributions are never converted into subscriptions.'))
-    body += paragraph(('Stripe er planlagt som betalingsleverandør. Les ' if nb else 'Stripe is the intended payment provider. Checkout is not open. Read our ') + '<a href="privacy.html" lang="nb">' + ('personvernerklæringen' if nb else 'privacy policy in Norwegian') + '</a>.')
+    provider = ('Betaling og løpende fakturering håndteres av Stripe. Les ' if nb else 'Payments and recurring billing are handled by Stripe. Read our ') if data['sales_enabled'] else ('Stripe er planlagt som betalingsleverandør. Les ' if nb else 'Stripe is the intended payment provider. Checkout is not open. Read our ')
+    body += paragraph(provider + '<a href="privacy.html" lang="nb">' + ('personvernerklæringen' if nb else 'privacy policy in Norwegian') + '</a>.')
     return body
 
 def terms_body(data, nb):

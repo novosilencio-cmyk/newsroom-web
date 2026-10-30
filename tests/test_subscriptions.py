@@ -21,6 +21,7 @@ class SubscriptionTests(unittest.TestCase):
 
     def test_sales_cannot_open_with_missing_links_or_unverified_lifecycle(self):
         self.data['sales_enabled']=True
+        self.data.pop('hosted_checkout_verification', None)
         with self.assertRaises(ValueError): self.check_config(self.data)
         for p in self.data['offers']: p['checkout_url']='https://buy.stripe.com/test_example'
         with self.assertRaises(ValueError): self.check_config(self.data)
@@ -45,13 +46,25 @@ class SubscriptionTests(unittest.TestCase):
 
     def test_current_build_is_truthful_and_forms_never_collect_card_details(self):
         html=offer_body(self.data,True)
-        self.assertEqual(html.count('disabled>'),8)
-        self.assertNotIn('href="https://buy.stripe.com/',html)
+        self.assertEqual(html.count('href="https://buy.stripe.com/'),8)
+        self.assertNotIn('disabled>',html)
+        self.assertNotIn('Checkout is not open',html)
+        self.assertIn('Åpne kundesiden',html)
+        self.assertFalse(self.data['lifecycle_verified'])
         self.assertNotIn('<form',html)
         for file in ['subscription-terms.html','subscription-terms.en.html']:
             source=(ROOT/'public'/file).read_text()
             self.assertIn('id="withdrawal"',source)
             self.assertIn('927 532 573',source)
             self.assertIn('support@experimentalnewsroom.org',source)
+
+    def test_activation_requires_real_scope_and_each_distinct_offer(self):
+        for field in ['charges_enabled', 'payouts_enabled', 'portal_active']:
+            changed=copy.deepcopy(self.data)
+            changed['hosted_checkout_verification'][field]=False
+            with self.assertRaises(ValueError): self.check_config(changed)
+        changed=copy.deepcopy(self.data)
+        changed['offers'][1]['checkout_url']=changed['offers'][0]['checkout_url']
+        with self.assertRaises(ValueError): self.check_config(changed)
 
 if __name__=='__main__': unittest.main()

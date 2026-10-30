@@ -1,6 +1,6 @@
 {
   "currency": "nok",
-  "sales_enabled": false,
+  "sales_enabled": true,
   "lifecycle_verified": false,
   "offers": [
     {
@@ -9,7 +9,7 @@
       "amount_nok": 79,
       "interval": "month",
       "price_id": "price_1UTmRwHMsapR8OabBpF2UBNC",
-      "checkout_url": null
+      "checkout_url": "https://buy.stripe.com/cNiaEXfQy4yt6yBdeLbEA0b"
     },
     {
       "key": "reader-year",
@@ -17,7 +17,7 @@
       "amount_nok": 790,
       "interval": "year",
       "price_id": "price_1UTmSLHMsapR8OabuZAq3fSu",
-      "checkout_url": null
+      "checkout_url": "https://buy.stripe.com/00w5kD8o62ql9KN0rZbEA0c"
     },
     {
       "key": "supporter149-month",
@@ -25,7 +25,7 @@
       "amount_nok": 149,
       "interval": "month",
       "price_id": "price_1UTmS8HMsapR8OabltEXSs1f",
-      "checkout_url": null
+      "checkout_url": "https://buy.stripe.com/28E7sLfQy6GBe137UrbEA0d"
     },
     {
       "key": "supporter1490-year",
@@ -33,7 +33,7 @@
       "amount_nok": 1490,
       "interval": "year",
       "price_id": "price_1UTmSMHMsapR8Oabfjjg106q",
-      "checkout_url": null
+      "checkout_url": "https://buy.stripe.com/14AbJ1fQyd4Ze133EbbEA0e"
     },
     {
       "key": "supporter249-month",
@@ -41,7 +41,7 @@
       "amount_nok": 249,
       "interval": "month",
       "price_id": "price_1UTme8HMsapR8OabiIefBFEx",
-      "checkout_url": null
+      "checkout_url": "https://buy.stripe.com/cNieVdeMu2qle13caHbEA0f"
     },
     {
       "key": "supporter2490-year",
@@ -49,7 +49,7 @@
       "amount_nok": 2490,
       "interval": "year",
       "price_id": "price_1UTme9HMsapR8OabeWEFG6iZ",
-      "checkout_url": null
+      "checkout_url": "https://buy.stripe.com/cNibJ16fYe937CF2A7bEA0g"
     },
     {
       "key": "supporter499-month",
@@ -57,7 +57,7 @@
       "amount_nok": 499,
       "interval": "month",
       "price_id": "price_1UTmeAHMsapR8OabTqJdxHBe",
-      "checkout_url": null
+      "checkout_url": "https://buy.stripe.com/bJe7sL6fYc0V3mpb6DbEA0h"
     },
     {
       "key": "supporter4990-year",
@@ -65,7 +65,27 @@
       "amount_nok": 4990,
       "interval": "year",
       "price_id": "price_1UTmeBHMsapR8OabrZrXMfve",
-      "checkout_url": null
+      "checkout_url": "https://buy.stripe.com/7sYeVdbAifd76yBgqXbEA0i"
     }
-  ]
+  ],
+  "hosted_checkout_verification": {
+    "flow": "stripe_hosted_payment_links",
+    "verified_at": "2026-10-30",
+    "charges_enabled": true,
+    "payouts_enabled": true,
+    "portal_active": true,
+    "portal_url": "https://billing.stripe.com/p/login/aFa14nawe6GBg9b5MjbEA00",
+    "cancellation_mode": "at_period_end",
+    "verified_offer_keys": [
+      "reader-month",
+      "reader-year",
+      "supporter149-month",
+      "supporter1490-year",
+      "supporter249-month",
+      "supporter2490-year",
+      "supporter499-month",
+      "supporter4990-year"
+    ],
+    "paid_renewal_refund_test": "NOT_PERFORMED"
+  }
 }

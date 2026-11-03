@@ -1,0 +1,19 @@
+name: Inspect one.com SSH host
+on:
+  push:
+    branches: [work/onecom-migration-20261103]
+    paths: [.github/workflows/onecom.yml]
+permissions:
+  contents: read
+jobs:
+  host-identity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Read public host key without credentials
+        run: |
+          set -euo pipefail
+          ssh-keyscan -T 15 -t ed25519 ssh.cyi2nwq1l.service.one > known_hosts
+          test -s known_hosts
+          cat known_hosts
+          ssh-keygen -lf known_hosts

@@ -19,7 +19,7 @@ MANIFEST = '.onecom-manifest.json'
 
 def safe_name(name):
     path = PurePosixPath(name)
-    if not name or path.is_absolute() or '..' in path.parts or str(path) != name:
+    if not name or name == '.' or path.is_absolute() or '..' in path.parts or str(path) != name or any(ord(c) < 32 for c in name):
         raise ValueError('Unsafe deployment path')
     return name
 

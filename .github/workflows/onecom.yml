@@ -1,4 +1,4 @@
-name: Inspect one.com SSH host
+name: Inspect one.com connection
 on:
   push:
     branches: [work/onecom-migration-20261103]
@@ -6,14 +6,18 @@ on:
 permissions:
   contents: read
 jobs:
-  host-identity:
+  inspect:
     runs-on: ubuntu-latest
-    timeout-minutes: 2
+    timeout-minutes: 3
     steps:
-      - name: Read public host key without credentials
+      - name: Install SFTP password helper
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq sshpass
+      - name: Inspect web roots over pinned SFTP
+        env:
+          SSHPASS: ${{ secrets.ONECOM_SFTP_PASSWORD }}
         run: |
           set -euo pipefail
-          ssh-keyscan -T 15 -t ed25519 ssh.cyi2nwq1l.service.one > known_hosts
-          test -s known_hosts
-          cat known_hosts
-          ssh-keygen -lf known_hosts
+          test -n "$SSHPASS"
+          printf '%s\n' 'ssh.cyi2nwq1l.service.one ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHqIQzp1R9ZzoL0Mw4ERjRBsiHP10j8LkY8ch8C/vtyt' > "$RUNNER_TEMP/onecom_known_hosts"
+          printf 'pwd\nls -la\n-ls -la /webroots\n' > "$RUNNER_TEMP/inspect.sftp"
+          sshpass -e sftp -oBatchMode=no -oStrictHostKeyChecking=yes -oUserKnownHostsFile="$RUNNER_TEMP/onecom_known_hosts" -b "$RUNNER_TEMP/inspect.sftp" cyi2nwq1l_ssh@ssh.cyi2nwq1l.service.one

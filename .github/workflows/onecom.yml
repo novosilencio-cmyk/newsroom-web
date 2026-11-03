@@ -19,5 +19,9 @@ jobs:
           set -euo pipefail
           test -n "$SSHPASS"
           printf '%s\n' 'ssh.cyi2nwq1l.service.one ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHqIQzp1R9ZzoL0Mw4ERjRBsiHP10j8LkY8ch8C/vtyt' > "$RUNNER_TEMP/onecom_known_hosts"
-          printf 'pwd\nls -la\n-ls -la /webroots\n' > "$RUNNER_TEMP/inspect.sftp"
+          printf 'ls -la /webroots/by-route\nls -la /webroots/79f29e95\nls -la /webroots/8582494d\n' > "$RUNNER_TEMP/inspect.sftp"
           sshpass -e sftp -oBatchMode=no -oStrictHostKeyChecking=yes -oUserKnownHostsFile="$RUNNER_TEMP/onecom_known_hosts" -b "$RUNNER_TEMP/inspect.sftp" cyi2nwq1l_ssh@ssh.cyi2nwq1l.service.one
+      - name: Test primary domain TLS on one.com before DNS cutover
+        run: |
+          curl --fail --silent --show-error --max-time 30 --resolve experimentalnewsroom.org:443:46.30.215.251 https://experimentalnewsroom.org/ -o /tmp/onecom-index.html
+          sha256sum /tmp/onecom-index.html

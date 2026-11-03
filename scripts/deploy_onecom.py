@@ -38,6 +38,8 @@ def payload(directory, staging=False):
         raise ValueError('Incomplete public build')
     # Hosting-only controls; preserve checked public HTML byte for byte.
     result['.htaccess'] = (b'Options -Indexes\nRewriteEngine On\n'
+        b'RewriteCond %{HTTP_HOST} ^www\\.experimentalnewsroom\\.org$ [NC]\n'
+        b'RewriteRule ^ https://experimentalnewsroom.org%{REQUEST_URI} [R=301,L]\n'
         b'RewriteCond %{HTTPS} !=on\n'
         b'RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]\n'
         b'<Files ".onecom-manifest.json">\nRequire all denied\n</Files>\n'

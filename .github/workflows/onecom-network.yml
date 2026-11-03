@@ -1,0 +1,34 @@
+name: Verify completed one.com cutover
+on:
+  push:
+    branches: [work/onecom-migration-20261103]
+    paths: [.github/workflows/onecom-network.yml]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Check authoritative web and mail records
+        run: |
+          set -euo pipefail
+          for name in experimentalnewsroom.org www.experimentalnewsroom.org; do
+            dig @ns01.one.com "$name" A +noall +answer
+            dig @ns01.one.com "$name" AAAA +noall +answer
+          done
+          dig @ns01.one.com experimentalnewsroom.org MX +noall +answer
+          dig @ns01.one.com experimentalnewsroom.org TXT +noall +answer
+          dig @ns01.one.com _github-pages-challenge-novosilencio-cmyk.experimentalnewsroom.org TXT +noall +answer
+      - name: Verify primary HTTPS and redirects at the one.com origin
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --max-time 30 --resolve experimentalnewsroom.org:443:46.30.215.251 https://experimentalnewsroom.org/ -o /tmp/index.html
+          echo '9ca62e180785b6c3ae84b7cba5976aba2bf1fe1ac88183677630643d3041c91b  /tmp/index.html' | sha256sum -c -
+          curl --silent --show-error --max-time 30 --resolve www.experimentalnewsroom.org:443:46.30.215.251 -I https://www.experimentalnewsroom.org/
+          curl --silent --show-error --max-time 30 --resolve experimentalnewsroom.org:80:46.30.215.251 -I http://experimentalnewsroom.org/
+          for path in .onecom-manifest.json expnr-complete.zip; do
+            code=$(curl --silent --show-error --max-time 30 --resolve experimentalnewsroom.org:443:46.30.215.251 -o /dev/null -w '%{http_code}' "https://experimentalnewsroom.org/$path")
+            echo "$path: $code"
+            case "$code" in 403|404) ;; *) exit 1;; esac
+          done

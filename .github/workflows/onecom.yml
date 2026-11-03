@@ -1,15 +1,22 @@
-name: Test one.com staging deployment
+name: Deploy static newsroom to one.com
 on:
   push:
-    branches: [work/onecom-migration-20261103]
-    paths: [.github/workflows/onecom.yml]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      target:
+        description: Destination
+        type: choice
+        options: [staging, production]
+        default: staging
 permissions:
   contents: read
 concurrency:
   group: onecom-deploy
   cancel-in-progress: false
 jobs:
-  stage:
+  deploy:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -28,7 +35,8 @@ jobs:
           python3 -m unittest discover -s tests -p 'test_*.py'
       - name: Install distribution SFTP library
         run: sudo apt-get update -qq && sudo apt-get install -y -qq python3-paramiko
-      - name: Deploy and read back staging
+      - name: Deploy and verify checked public build
         env:
           ONECOM_SFTP_PASSWORD: ${{ secrets.ONECOM_SFTP_PASSWORD }}
-        run: /usr/bin/python3 scripts/deploy_onecom.py staging
+          DEPLOY_TARGET: ${{ inputs.target || 'production' }}
+        run: /usr/bin/python3 scripts/deploy_onecom.py "$DEPLOY_TARGET"

@@ -25,6 +25,10 @@ class FakeSFTP:
         return '/private'
     def stat(self, path):
         return SimpleNamespace(st_mode=stat.S_IFDIR | 0o755)
+    def lstat(self, path):
+        if path not in self.files:
+            raise FileNotFoundError(2, 'absent')
+        return SimpleNamespace(st_mode=stat.S_IFREG | 0o644)
     def chmod(self, *args):
         pass
     def putfo(self, source, target, **kwargs):
@@ -39,6 +43,18 @@ class FakeSFTP:
         pass
 
 class DeploymentTests(unittest.TestCase):
+    def test_private_copy_preserves_bytes_before_source_removal(self):
+        remote = FakeSFTP()
+        module.preserve_copy(remote, '/site/index.html', '/private/index.html')
+        self.assertEqual(remote.files['/private/index.html'], b'old')
+        self.assertNotIn('/site/index.html', remote.files)
+    def test_archive_collision_preserves_both_originals(self):
+        remote = FakeSFTP()
+        remote.files['/private/index.html'] = b'different'
+        with self.assertRaises(ValueError):
+            module.preserve_copy(remote, '/site/index.html', '/private/index.html')
+        self.assertEqual(remote.files['/site/index.html'], b'old')
+        self.assertEqual(remote.files['/private/index.html'], b'different')
     def test_rejects_escaping_and_ambiguous_paths(self):
         for path in ('../x', '/x', '.', 'x/../y', 'x//y', 'x\ny'):
             with self.assertRaises(ValueError):

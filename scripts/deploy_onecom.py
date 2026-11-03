@@ -38,6 +38,8 @@ def payload(directory, staging=False):
         raise ValueError('Incomplete public build')
     # Hosting-only controls; preserve checked public HTML byte for byte.
     result['.htaccess'] = (b'Options -Indexes\nRewriteEngine On\n'
+        b'RewriteCond %{HTTP_HOST} ^www\\.experimentalnewsroom\\.org$ [NC]\n'
+        b'RewriteRule ^ https://experimentalnewsroom.org%{REQUEST_URI} [R=301,L]\n'
         b'RewriteCond %{HTTPS} !=on\n'
         b'RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]\n'
         b'<Files ".onecom-manifest.json">\nRequire all denied\n</Files>\n'
@@ -139,6 +141,32 @@ def deploy(sftp, root, files, run_id):
         sftp.rmdir(path)
     print(json.dumps({'target': root, 'verified_files': len(files), 'backup': backup_path}))
 
+def preserve_copy(sftp, source, destination):
+    """Cross-filesystem move: verify a private copy before removing its source."""
+    info = sftp.lstat(source)
+    if stat.S_ISLNK(info.st_mode):
+        raise ValueError('Refusing symlink in migration artifacts')
+    if stat.S_ISDIR(info.st_mode):
+        mkdirs(sftp, destination, 0o700)
+        for child in sftp.listdir(source):
+            safe_name(child)
+            if '/' in child:
+                raise ValueError('Invalid directory entry')
+            preserve_copy(sftp, source + '/' + child, destination + '/' + child)
+        sftp.rmdir(source)
+        return
+    if not stat.S_ISREG(info.st_mode):
+        raise ValueError('Unsupported migration artifact')
+    data = read_optional(sftp, source)
+    existing = read_optional(sftp, destination)
+    if existing is not None and existing != data:
+        raise ValueError('Existing private archive differs; preserving both')
+    if existing is None:
+        put_bytes(sftp, destination, data, 0o600)
+    if read_optional(sftp, destination) != data:
+        raise RuntimeError('Private artifact copy failed verification')
+    sftp.remove(source)
+
 def preserve_migration_artifacts(sftp, root):
     """Move only the eight known migration leftovers out of the public webroot."""
     destination = sftp.normalize('.') + '/onecom-migration-artifacts'
@@ -153,8 +181,7 @@ def preserve_migration_artifacts(sftp, root):
             if error.errno == 2:
                 continue
             raise
-        # Standard rename refuses to overwrite an existing archive.
-        sftp.rename(root + '/' + name, destination + '/' + name)
+        preserve_copy(sftp, root + '/' + name, destination + '/' + name)
         print('Preserved migration artifact outside webroot: ' + name)
 
 def main():

@@ -81,6 +81,8 @@ def deploy(sftp, root, files, run_id):
         safe_name(name)
     names = set(files) | previous_names
     originals = {name: read_optional(sftp, root + '/' + name) for name in names}
+    changed = {name: data for name, data in files.items() if originals[name] != data}
+    print('Compared existing files; changed=' + str(len(changed)), flush=True)
     home = sftp.normalize('.')
     backup_dir = home + '/onecom-deploy-backups'
     mkdirs(sftp, backup_dir, 0o700)
@@ -98,14 +100,14 @@ def deploy(sftp, root, files, run_id):
     stage = root + '/.onecom-stage-' + run_id
     mkdirs(sftp, stage)
     # Upload and verify every candidate before touching an existing public file.
-    for name, data in files.items():
+    for name, data in changed.items():
         put_bytes(sftp, stage + '/' + name, data)
         if read_optional(sftp, stage + '/' + name) != data:
             raise RuntimeError('Staged file readback failed')
     touched = []
     try:
         # Assets first, index and manifest last. Rename is atomic per file.
-        ordered = sorted(files, key=lambda n: (n == MANIFEST, n == 'index.html', n.endswith('.html'), n))
+        ordered = sorted(changed, key=lambda n: (n == MANIFEST, n == 'index.html', n.endswith('.html'), n))
         for name in ordered:
             mkdirs(sftp, str(PurePosixPath(root + '/' + name).parent))
             sftp.posix_rename(stage + '/' + name, root + '/' + name)
@@ -113,7 +115,7 @@ def deploy(sftp, root, files, run_id):
         for name in previous_names - set(files):
             sftp.remove(root + '/' + name)
             touched.append(name)
-        for name, data in files.items():
+        for name, data in changed.items():
             if read_optional(sftp, root + '/' + name) != data:
                 raise RuntimeError('Published file readback failed')
     except Exception:
@@ -126,7 +128,7 @@ def deploy(sftp, root, files, run_id):
         raise
     # Only empty staging directories are removed; private backup is retained.
     dirs = {stage}
-    for name in files:
+    for name in changed:
         parent = PurePosixPath(stage + '/' + name).parent
         while str(parent).startswith(stage):
             dirs.add(str(parent))
@@ -136,6 +138,24 @@ def deploy(sftp, root, files, run_id):
     for path in sorted(dirs, key=len, reverse=True):
         sftp.rmdir(path)
     print(json.dumps({'target': root, 'verified_files': len(files), 'backup': backup_path}))
+
+def preserve_migration_artifacts(sftp, root):
+    """Move only the eight known migration leftovers out of the public webroot."""
+    destination = sftp.normalize('.') + '/onecom-migration-artifacts'
+    mkdirs(sftp, destination, 0o700)
+    sftp.chmod(destination, 0o700)
+    for name in ('expnr-pages', 'expnr-probe', 'expnr-stage', 'expnr-complete.zip',
+                 'expnr-onecom-164dc038.zip', 'expnr-pages.zip',
+                 'expnr-portable.zip', 'expnr-probe.zip'):
+        try:
+            sftp.lstat(root + '/' + name)
+        except OSError as error:
+            if error.errno == 2:
+                continue
+            raise
+        # Standard rename refuses to overwrite an existing archive.
+        sftp.rename(root + '/' + name, destination + '/' + name)
+        print('Preserved migration artifact outside webroot: ' + name)
 
 def main():
     import paramiko
@@ -155,6 +175,8 @@ def main():
         with client.open_sftp() as sftp:
             sftp.get_channel().settimeout(60)
             deploy(sftp, ROOTS[args.target], files, run_id)
+            if args.target == 'production':
+                preserve_migration_artifacts(sftp, ROOTS[args.target])
     finally:
         client.close()
 

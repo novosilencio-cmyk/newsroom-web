@@ -7,9 +7,10 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit, quote
 
+from language_registry import label as language_label, ordered_published
+
 COUNTRY_ALIASES = {'Norway': 'Norge', 'Brazil': 'Brasil', 'Denmark': 'Danmark', 'Germany': 'Tyskland', 'Japan': 'Japan', 'United States': 'USA', 'United Kingdom': 'Storbritannia England', 'Global economy': 'Verdensøkonomien'}
 
-LANGUAGES = {'nb': 'Norsk', 'en': 'English', 'fr': 'Français', 'de': 'Deutsch', 'ja': '日本語', 'ko': '한국어', 'zh-Hans': '简体中文', 'es': 'Español', 'es-AR': 'Español (Argentina)', 'zh-Hant': '繁體中文', 'pt': 'Português', 'pt-BR': 'Português (Brasil)', 'ar': 'العربية'}
 # Published reader destinations, deliberately excluding embedded viewers and drafts.
 SECTIONS = [
     ('start', 'Start her', 'Start here', [
@@ -156,6 +157,14 @@ def versions(public, article):
     return [{'language': parser.language, 'url': article['url'], 'title': article['title'], 'summary': article['summary']}]
 
 
+
+def published_languages(public, articles):
+    """Derive visible languages from real destinations, never metadata alone."""
+    codes = {language for _, _, _, entries in SECTIONS for _, _, language in entries}
+    for article in articles:
+        codes.update(version["language"] for version in versions(public, article))
+    return ordered_published(codes)
+
 def render(public, articles, lang):
     no = lang == 'nb'
     script_version = hashlib.sha256((public / 'reader-navigation.js').read_bytes()).hexdigest()[:12]
@@ -173,7 +182,7 @@ def render(public, articles, lang):
         tags = topic_labels(a, 'nb') + topic_labels(a, 'en')
         search = ' '.join([aliases, a.get('country', ''), a.get('region', ''), ' '.join(tags)] + [v['title'] + ' ' + v.get('summary', '') + ' ' + searchable_text(public, v['url']) for v in vv])
         tag_links = ' · '.join(f'<a href="{filename}?q={escape(quote(tag))}">{escape(tag)}</a>' for tag in topic_labels(a, lang))
-        links = ' '.join(f'<a href="{escape(v["url"])}" lang="{escape(v["language"])}" hreflang="{escape(v["language"])}">{escape(LANGUAGES.get(v["language"], v["language"]))}</a>' for v in vv)
+        links = ' '.join(f'<a href="{escape(v["url"])}" lang="{escape(v["language"])}" hreflang="{escape(v["language"])}">{escape(language_label(v["language"]))}</a>' for v in vv)
         rows.append(f'''<li class="map-entry" data-search="{escape(search)}" data-languages="{' '.join(escape(v['language']) for v in vv)}">
 <p class="map-meta"><span lang="en">{escape(a.get('country', ''))}</span> · <time datetime="{escape(a['published'][:10])}">{escape(a['published'][:10])}</time></p>
 <h3 lang="{escape(chosen['language'])}"><a href="{escape(chosen['url'])}">{escape(chosen['title'])}</a></h3>
@@ -185,7 +194,7 @@ def render(public, articles, lang):
         rows = []
         for url, label, language in entries:
             local_file(public, url)
-            rows.append(f'<li class="map-entry map-page" data-search="{escape(label + " " + nb + " " + en + " " + searchable_text(public, url))}" data-languages="{language}"><a href="{escape(url or "./")}" lang="{language}" hreflang="{language}">{escape(label)}</a> <span class="map-page-language" lang="{language}">{LANGUAGES[language]}</span></li>')
+            rows.append(f'<li class="map-entry map-page" data-search="{escape(label + " " + nb + " " + en + " " + searchable_text(public, url))}" data-languages="{language}"><a href="{escape(url or "./")}" lang="{language}" hreflang="{language}">{escape(label)}</a> <span class="map-page-language" lang="{language}">{escape(language_label(language))}</span></li>')
         groups.append(f'<section class="map-section" id="{key}" aria-labelledby="{key}-heading"><h2 id="{key}-heading">{escape(nb if no else en)}</h2><ul class="map-list">' + '\n'.join(rows) + '</ul></section>')
     jumps = ' '.join(f'<a href="#{key}">{label}</a>' for key, label in jump)
     return f'''<!DOCTYPE html>
@@ -209,7 +218,7 @@ def render(public, articles, lang):
 <section class="map-intro"><p class="kicker">{'Nettstedskart' if no else 'Site map'}</p><h1>{title}</h1><p class="map-deck">{intro}</p></section>
 <form class="map-search" role="search" hidden>
 <div class="map-search-field"><label for="map-query">{'Søk i oversikten' if no else 'Search this guide'}</label><input id="map-query" type="search" autocomplete="off" aria-describedby="map-help" placeholder="{'Prøv skolemat, Taiwan eller kurs' if no else 'Try school meals, Taiwan or courses'}"/></div>
-<div class="map-language-field"><label for="map-language">{'Lesespråk' if no else 'Reading language'}</label><select id="map-language"><option value="">{'Alle språk' if no else 'All languages'}</option><option value="nb">Norsk</option><option value="en">English</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="zh-Hans">简体中文</option><option value="es-AR">Español (Argentina)</option><option value="zh-Hant">繁體中文</option><option value="pt">Português</option><option value="pt-BR">Português (Brasil)</option><option value="ar">العربية</option></select></div>
+<div class="map-language-field"><label for="map-language">{'Lesespråk' if no else 'Reading language'}</label><select id="map-language"><option value="">{'Alle språk' if no else 'All languages'}</option>{''.join(f'<option value="{escape(code)}">{escape(language_label(code))}</option>' for code in published_languages(public, articles))}</select></div>
 <button type="reset">{'Vis alt' if no else 'Show all'}</button>
 <p id="map-help">{'Søker i publiserte tekster, titler, emneord og landnavn. Velg et emneord for å finne beslektede saker.' if no else 'Searches published texts, titles, topics and country names. Choose a topic to find related stories.'}</p>
 <p id="map-results" role="status" aria-live="polite" aria-atomic="true"></p>

@@ -9,6 +9,7 @@ from urllib.parse import urlsplit, unquote
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 import build_reader_navigation as navigation
+from language_registry import LANGUAGES
 PUBLIC = ROOT / 'public'
 
 
@@ -50,6 +51,15 @@ class ReaderNavigationTests(unittest.TestCase):
                     self.assertIn(version['url'], urls)
                     link = next(x for x in parser.links if x['href'] == version['url'] and 'hreflang' in x)
                     self.assertEqual(link['hreflang'], version['language'])
+
+    def test_filter_contains_only_languages_with_published_destinations(self):
+        articles = json.loads((PUBLIC / 'content/articles.json').read_text())
+        expected = navigation.published_languages(PUBLIC, articles)
+        rendered = navigation.render(PUBLIC, articles, 'en')
+        for code in expected:
+            self.assertIn(f'<option value="{code}">', rendered)
+        for metadata_only in set(LANGUAGES).difference(expected):
+            self.assertNotIn(f'<option value="{metadata_only}">', rendered)
 
     def test_registry_missing_target_fails_closed(self):
         with self.assertRaises(ValueError):

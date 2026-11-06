@@ -8,6 +8,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_reader_navigation import build_reader_navigation, SECTIONS
 from build_reader_support import build_reader_support
+from language_registry import LANGUAGES, english_name
 from urllib.parse import urlsplit
 from xml.sax.saxutils import escape
 
@@ -85,12 +86,29 @@ def update_articles(articles):
             source = source.replace("</title>", '</title>\n<link href="' + canonical(a) + '" rel="canonical"/>', 1)
         path.write_text(source, encoding="utf-8")
 
+
+def published_language_entrances(public):
+    """Return registered language entrances only when a real index page exists."""
+    entrances = []
+    for code in LANGUAGES:
+        path = public / code / "index.html"
+        if not path.is_file():
+            continue
+        source = path.read_text(encoding="utf-8")
+        match = re.search(r"<html[^>]*\\blang=[\"']([^\"']+)", source)
+        if match and match.group(1) == code:
+            entrances.append((code, f"{code}/"))
+    return entrances
+
 def build(articles):
     build_reader_support(PUBLIC)
     robots = "User-agent: OAI-SearchBot\nAllow: /\n\nUser-agent: ChatGPT-User\nAllow: /\n\nUser-agent: *\nAllow: /\n\nSitemap: " + BASE + "sitemap.xml\n"
     (PUBLIC/"robots.txt").write_text(robots, encoding="utf-8")
 
-    static=[("ord-og-sammenhenger.html","2026-10-08"),("manifest.html","2026-10-08"),("manifest.en.html","2026-10-08"),("sitemap.html",None),("sitemap.en.html",None),("","2026-09-18"),("how-we-work.html",None),("support.html",None),("atriet.html",None),("courses/",None),("recognition/",None),("norway/","2026-10-12"),("nb/","2026-09-18"),("en/","2026-09-18"),("series/institusjon/","2026-09-18"),("series/institusjon/nb/","2026-10-17"),("series/institusjon/en/","2026-10-17")]
+    static=[("ord-og-sammenhenger.html","2026-10-08"),("manifest.html","2026-10-08"),("manifest.en.html","2026-10-08"),("sitemap.html",None),("sitemap.en.html",None),("","2026-09-18"),("how-we-work.html",None),("support.html",None),("atriet.html",None),("courses/",None),("recognition/",None),("norway/","2026-10-12")]
+    entrance_lastmod={"nb/":"2026-09-18","en/":"2026-09-18"}
+    static.extend((path, entrance_lastmod.get(path)) for _, path in published_language_entrances(PUBLIC))
+    static.extend([("series/institusjon/","2026-09-18"),("series/institusjon/nb/","2026-10-17"),("series/institusjon/en/","2026-10-17")])
     # Keep search-engine coverage aligned with actual published reader destinations.
     known = {path for path, _ in static}
     for _, _, _, entries in SECTIONS:
@@ -117,7 +135,23 @@ def build(articles):
     f += ['  </channel>','</rss>']
     (PUBLIC/"feed.xml").write_text("\n".join(f)+"\n", encoding="utf-8")
 
-    llms = "# Experimental Newsroom\n\nExperimental Newsroom is an independent publication about how people, places and institutions meet shared challenges.\n\nCanonical site: "+BASE+"\nArticle index: "+BASE+"content/articles.json\nRSS feed: "+BASE+"feed.xml\nSitemap: "+BASE+"sitemap.xml\nNorway desk: "+BASE+"norway/\nSeries: "+BASE+"series/institusjon/\nNorwegian entrance: "+BASE+"nb/\nEnglish entrance: "+BASE+"en/\nEditorial method: "+BASE+"how-we-work.html\n\nPublished articles are public. Treat article dates, source notes, uncertainty labels, corrections and update notes as part of the editorial context.\n"
+    entrance_lines = "".join(
+        english_name(code) + " entrance: " + BASE + path + "\\n"
+        for code, path in published_language_entrances(PUBLIC)
+    )
+    llms = (
+        "# Experimental Newsroom\\n\\n"
+        "Experimental Newsroom is an independent publication about how people, places and institutions meet shared challenges.\\n\\n"
+        "Canonical site: " + BASE +
+        "\\nArticle index: " + BASE + "content/articles.json" +
+        "\\nRSS feed: " + BASE + "feed.xml" +
+        "\\nSitemap: " + BASE + "sitemap.xml" +
+        "\\nNorway desk: " + BASE + "norway/" +
+        "\\nSeries: " + BASE + "series/institusjon/\\n" +
+        entrance_lines +
+        "Editorial method: " + BASE + "how-we-work.html\\n\\n"
+        "Published articles are public. Treat article dates, source notes, uncertainty labels, corrections and update notes as part of the editorial context.\\n"
+    )
     (PUBLIC/"llms.txt").write_text(llms, encoding="utf-8")
 
     selected=sorted([a for a in articles if "Norway" in str(a.get("country",""))],key=lambda a:a.get("published",""),reverse=True)

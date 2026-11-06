@@ -55,7 +55,7 @@ def apply_fixed_review():
         if rows.get(rel, {}).get('sha256') == actual:
             continue  # A separately recorded later exact review remains authoritative.
         if actual != expected:
-            raise ValueError('Arabic correction requires a new exact review: ' + rel)
+            raise ValueError('Arabic correction requires a new exact review: ' + rel + ' sha256=' + actual)
         row = copy.deepcopy(bound['review'])
         row['sha256'] = expected
         row['publication_approval'] = {**bound['approval'], 'sha256': expected}

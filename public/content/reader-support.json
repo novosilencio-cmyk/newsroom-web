@@ -1,0 +1,79 @@
+{
+  "nb": {
+    "name": "Norsk",
+    "file": "support.html",
+    "title": "Støtt journalistikken",
+    "deck": "Velg leserabonnement eller støtteabonnement. Journalistikk, analyser og essays — åpent for alle.",
+    "page_title": "Abonner på Experimental Newsroom"
+  },
+  "en": {
+    "name": "English",
+    "file": "support.en.html",
+    "title": "Support independent journalism",
+    "deck": "Choose a reader or supporter subscription. Journalism, analysis and essays — open to everyone.",
+    "page_title": "Subscribe to Experimental Newsroom"
+  },
+  "fr": {
+    "name": "Français",
+    "file": "support.fr.html",
+    "title": "Soutenir un journalisme indépendant",
+    "deck": "Abonnements : informations complètes, prix et conditions en anglais ci-dessous, et en norvégien via le sélecteur de langue.",
+    "page_title": "S’abonner à Experimental Newsroom"
+  },
+  "de": {
+    "name": "Deutsch",
+    "file": "support.de.html",
+    "title": "Unabhängigen Journalismus unterstützen",
+    "deck": "Abonnements: vollständige Informationen, Preise und Bedingungen unten auf Englisch und über die Sprachauswahl auf Norwegisch.",
+    "page_title": "Experimental Newsroom abonnieren"
+  },
+  "zh-Hans": {
+    "name": "简体中文",
+    "file": "support.zh-Hans.html",
+    "title": "支持独立新闻报道",
+    "deck": "订阅详情、价格和条款以以下英文内容为准；也可通过语言选项查看挪威文版本。",
+    "page_title": "订阅 Experimental Newsroom"
+  },
+  "zh-Hant": {
+    "name": "繁體中文",
+    "file": "support.zh-Hant.html",
+    "title": "支持獨立新聞報導",
+    "deck": "以下以英文提供完整訂閱資訊、價格和條款；也可透過語言選項查看挪威文版本。",
+    "page_title": "訂閱 Experimental Newsroom"
+  },
+  "ja": {
+    "name": "日本語",
+    "file": "support.ja.html",
+    "title": "独立した報道を支える",
+    "deck": "購読内容、料金、規約の詳細は以下の英語でご案内します。言語選択からノルウェー語版もご覧いただけます。",
+    "page_title": "Experimental Newsroom を購読する"
+  },
+  "es-AR": {
+    "name": "Español (Argentina)",
+    "file": "support.es.html",
+    "title": "Apoyá el periodismo independiente",
+    "deck": "Suscripciones: información completa, precios y condiciones en inglés a continuación, y en noruego desde el selector de idioma.",
+    "page_title": "Suscribite a Experimental Newsroom"
+  },
+  "pt-BR": {
+    "name": "Português (Brasil)",
+    "file": "support.pt-BR.html",
+    "title": "Apoie o jornalismo independente",
+    "deck": "Assinaturas: informações completas, preços e condições em inglês abaixo e em norueguês pelo seletor de idioma.",
+    "page_title": "Assine o Experimental Newsroom"
+  },
+  "ko": {
+    "name": "한국어",
+    "file": "support.ko.html",
+    "title": "독립적인 언론 활동을 후원해 주세요",
+    "deck": "구독 정보, 가격 및 약관은 아래 영어로 안내합니다. 언어 선택에서 노르웨이어 버전도 볼 수 있습니다.",
+    "page_title": "Experimental Newsroom 구독"
+  },
+  "ar": {
+    "name": "العربية",
+    "file": "support.ar.html",
+    "title": "ادعم الصحافة المستقلة",
+    "deck": "تتوفر معلومات الاشتراك الكاملة والأسعار والشروط أدناه باللغة الإنجليزية، وبالنرويجية عبر قائمة اللغات.",
+    "page_title": "اشترك في Experimental Newsroom"
+  }
+}

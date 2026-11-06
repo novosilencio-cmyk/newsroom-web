@@ -1,0 +1,7 @@
+.subscription-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,16rem),1fr));gap:1rem;margin:1.5rem 0}
+.subscription-card{border:1px solid var(--line,#999);padding:1.35rem;display:flex;flex-direction:column;align-items:flex-start;gap:.55rem}
+.subscription-card h3,.subscription-card p{margin:0}.subscription-card h3{font-size:1.1rem}.subscription-card .subscription-price{font-size:1.45rem;font-weight:700}.subscription-card .support-button,.subscription-card button{margin-top:auto}
+.subscription-card .support-button{display:inline-block;background:#235c48;color:#fff;padding:.7rem 1rem;text-decoration:none;font:700 1rem/1.5 Arial,sans-serif;min-height:48px;box-sizing:border-box}.subscription-card .support-button:hover{background:#183f31}.subscription-card a:focus-visible,.subscription-card button:focus-visible{outline:3px solid #a44c00;outline-offset:3px}
+.subscription-card button{font:inherit;padding:.7rem 1rem;border:1px solid currentColor;background:transparent;color:inherit;opacity:.7;cursor:not-allowed}
+.subscription-status{padding:1rem;border-inline-start:4px solid currentColor;max-width:70ch}.withdrawal-form{border:1px solid currentColor;padding:1.4rem;max-width:70ch}.subscription-grid+.measure{margin-top:1rem}
+@media print{nav,.support-languages,button,.reader-skip{display:none}.withdrawal-form{break-inside:avoid}a{color:inherit}}

@@ -5,21 +5,21 @@ actual published destinations before rendering a language to readers.
 """
 
 LANGUAGES = {
-    "nb": {"label": "Norsk", "direction": "ltr"},
-    "en": {"label": "English", "direction": "ltr"},
-    "fr": {"label": "Français", "direction": "ltr"},
-    "de": {"label": "Deutsch", "direction": "ltr"},
-    "ja": {"label": "日本語", "direction": "ltr"},
-    "ko": {"label": "한국어", "direction": "ltr"},
-    "zh-Hans": {"label": "简体中文", "direction": "ltr"},
-    "es": {"label": "Español", "direction": "ltr"},
-    "pt": {"label": "Português", "direction": "ltr"},
-    "ar": {"label": "العربية", "direction": "rtl"},
-    # Prepared metadata only. These remain invisible until a real published
-    # destination is present in the article/static-page registry.
-    "hi": {"label": "हिन्दी", "direction": "ltr"},
-    "he": {"label": "עברית", "direction": "rtl"},
-    "zh-Hant": {"label": "繁體中文", "direction": "ltr"},
+    "nb": {"label": "Norsk", "english_name": "Norwegian", "direction": "ltr"},
+    "en": {"label": "English", "english_name": "English", "direction": "ltr"},
+    "fr": {"label": "Français", "english_name": "French", "direction": "ltr"},
+    "de": {"label": "Deutsch", "english_name": "German", "direction": "ltr"},
+    "ja": {"label": "日本語", "english_name": "Japanese", "direction": "ltr"},
+    "ko": {"label": "한국어", "english_name": "Korean", "direction": "ltr"},
+    "zh-Hans": {"label": "简体中文", "english_name": "Simplified Chinese", "direction": "ltr"},
+    "es-AR": {"label": "Español (Argentina)", "english_name": "Spanish (Argentina)", "direction": "ltr"},
+    "zh-Hant": {"label": "繁體中文", "english_name": "Traditional Chinese", "direction": "ltr"},
+    "pt-BR": {"label": "Português (Brasil)", "english_name": "Portuguese (Brazil)", "direction": "ltr"},
+    "ar": {"label": "العربية", "english_name": "Arabic", "direction": "rtl"},
+    "es": {"label": "Español", "english_name": "Spanish", "direction": "ltr"},
+    "pt": {"label": "Português", "english_name": "Portuguese", "direction": "ltr"},
+    "hi": {"label": "हिन्दी", "english_name": "Hindi", "direction": "ltr"},
+    "he": {"label": "עברית", "english_name": "Hebrew", "direction": "rtl"},
 }
 
 RTL_BASE_LANGUAGES = {"ar", "fa", "he", "ur"}
@@ -32,12 +32,17 @@ def metadata(code):
     base = code.split("-", 1)[0].lower()
     return {
         "label": code,
+        "english_name": code,
         "direction": "rtl" if base in RTL_BASE_LANGUAGES else "ltr",
     }
 
 
 def label(code):
     return metadata(code)["label"]
+
+
+def english_name(code):
+    return metadata(code)["english_name"]
 
 
 def direction(code):

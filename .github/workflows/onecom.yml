@@ -1,0 +1,42 @@
+name: Deploy static newsroom to one.com
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      target:
+        description: Destination
+        type: choice
+        options: [staging, production]
+        default: staging
+permissions:
+  contents: read
+concurrency:
+  group: onecom-deploy
+  cancel-in-progress: false
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Build and run publication gates
+        run: |
+          python3 scripts/build_discovery.py
+          python3 scripts/check_language_review.py
+          python3 scripts/check_publication_markers.py
+          python3 scripts/check_norwegian_editorial_style.py
+          python3 scripts/check_reader_sequence_style.py
+          python3 scripts/build_static_site.py
+          python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: Install distribution SFTP library
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq python3-paramiko
+      - name: Deploy and verify checked public build
+        env:
+          ONECOM_SFTP_PASSWORD: ${{ secrets.ONECOM_SFTP_PASSWORD }}
+          DEPLOY_TARGET: ${{ inputs.target || 'production' }}
+        run: /usr/bin/python3 scripts/deploy_onecom.py "$DEPLOY_TARGET"

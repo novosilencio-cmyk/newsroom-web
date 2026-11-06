@@ -13,11 +13,11 @@ LANGUAGES = {
     "ko": {"label": "한국어", "english_name": "Korean", "direction": "ltr"},
     "zh-Hans": {"label": "简体中文", "english_name": "Simplified Chinese", "direction": "ltr"},
     "es-AR": {"label": "Español (Argentina)", "english_name": "Spanish (Argentina)", "direction": "ltr"},
+    "es": {"label": "Español", "english_name": "Spanish", "direction": "ltr"},
     "zh-Hant": {"label": "繁體中文", "english_name": "Traditional Chinese", "direction": "ltr"},
+    "pt": {"label": "Português", "english_name": "Portuguese", "direction": "ltr"},
     "pt-BR": {"label": "Português (Brasil)", "english_name": "Portuguese (Brazil)", "direction": "ltr"},
     "ar": {"label": "العربية", "english_name": "Arabic", "direction": "rtl"},
-    "es": {"label": "Español", "english_name": "Spanish", "direction": "ltr"},
-    "pt": {"label": "Português", "english_name": "Portuguese", "direction": "ltr"},
     "hi": {"label": "हिन्दी", "english_name": "Hindi", "direction": "ltr"},
     "he": {"label": "עברית", "english_name": "Hebrew", "direction": "rtl"},
 }

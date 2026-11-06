@@ -3,6 +3,10 @@ import unittest
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from urllib.parse import urlsplit
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+import build_discovery as discovery
+from language_registry import LANGUAGES, english_name
 
 ROOT=Path(__file__).resolve().parents[1]
 PUBLIC=ROOT/"public"
@@ -47,6 +51,21 @@ class DiscoveryTests(unittest.TestCase):
         en=(PUBLIC/"series"/"institusjon"/"en"/"index.html").read_text(encoding="utf-8")
         self.assertIn('hreflang="en"',nb)
         self.assertIn('hreflang="nb"',en)
+
+    def test_language_entrances_follow_real_registered_pages(self):
+        entrances=discovery.published_language_entrances(PUBLIC)
+        sitemap=(PUBLIC/"sitemap.xml").read_text(encoding="utf-8")
+        llms=(PUBLIC/"llms.txt").read_text(encoding="utf-8")
+        for code,path in entrances:
+            self.assertIn(code,LANGUAGES)
+            self.assertTrue((PUBLIC/path/"index.html").is_file())
+            self.assertIn(BASE+path,sitemap)
+            self.assertIn(english_name(code)+" entrance: "+BASE+path,llms)
+        for code in LANGUAGES:
+            candidate=PUBLIC/code/"index.html"
+            if candidate.is_file():
+                continue
+            self.assertNotIn(english_name(code)+" entrance: "+BASE+code+"/",llms)
 
     def test_norway_view(self):
         text=(PUBLIC/"norway"/"index.html").read_text(encoding="utf-8")

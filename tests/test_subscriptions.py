@@ -75,6 +75,10 @@ class SubscriptionTests(unittest.TestCase):
                 self.assertIn('Andreas Nordlands veg 10', html)
                 self.assertIn('927 532 573', html)
                 self.assertIn('support@experimentalnewsroom.org', html)
+                self.assertIn('hreflang="nb"', html)
+                self.assertIn('hreflang="en"', html)
+                self.assertIn('href="contact.en.html"', html)
+                self.assertIn('href="contact.html"', html)
             for filename in ['support.html', 'support.en.html', 'subscription-terms.html', 'subscription-terms.en.html']:
                 html = (public / filename).read_text()
                 self.assertNotIn('Andreas Nordlands veg 10', html)

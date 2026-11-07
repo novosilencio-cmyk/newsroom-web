@@ -75,3 +75,27 @@ The new blobs differ from the previous generated-artifact SHA-256 listed above *
 The temporary test-only step was removed again and the original GitHub workflow blob `7e5959f5b4dbd53801db7fb79cb7e3d1bb96b412` was restored. The source and generated HTML remain on **draft branch**, not main or one.com.
 
 **Precise return:** an editor/author-approved, exact-content review record for the current two reader-map blobs (with the changed three entry texts inspected) is required under the existing publication gate; then run the full release checks. Do not backdate, inherit, automatically grant or forge a publication approval. After normal approval, merge and deployment remain separate gates.
+
+
+## ASA / Glimrende funn — exact current-source reconciliation, 2026-11-07
+
+**Observed source:** `newsroom-web/main@1d8a44b59b6c39a6581f07d71233018802b2bdda` versus the current PR128 generated map blobs `public/sitemap.html@7d06f48dbb66ddf4d71af7e3f8fd11114b3f2db9` and `public/sitemap.en.html@6d247e114dc13b67d3a71d88ae717cc00fd6584b`. Every source file was fetched and read; older artifact hashes are historical.
+
+**Exact text comparison:** Both maps have *only three changed complete HTML lines*, at human line numbers **229, 230 and 232**; all other lines compare equal as strings, not merely in length or 32-bit checksums. The changed lines are the published Norwegian subscription terms search entry, English subscription terms search entry, and privacy entry. These lines contain a computed `data-search` value based on the three actual source pages; their source sections and structural boundaries remain intact. This is stronger than the previous non-cryptographic checksum-only result. No detected article-line, reader-language option, map link or unrelated prose modification.
+
+**Source-to-summary meaning check:**
+1. Norwegian subscription terms replaces the repeated residential registration line with `Virksomhetsopplysninger og registrert adresse`, correctly referring to `contact.html`; publisher, financial terms, customer contact and withdrawal wording are preserved.
+2. English subscription terms analogously uses `Publisher details and registered address` and `contact.en.html`; publisher, billing periods, consumer remedies and refund information are preserved.
+3. Privacy search entry removes the repeated street address, names the contact page as the address source, correctly names one.com as production site host and represents the existing explicit Umami consent / Do Not Track path. No unsupported claim about the visitor's physical office is added.
+
+**Positive and negative source checks at current PR branch:** 10 of 10 direct checks PASS: neither reader map contains the residential street string; both contacts have language-switch links and self canonicals; both terms pages link to the correct publisher contact; the privacy notice links to contact; the XML sitemap contains exactly one URL for each contact page; address appears once on each contact page and zero times in terms pages; existing Stripe terms remain present; both reader maps contain the new source-aligned labels and one.com text. These are *same-assistant deterministic checks* and cannot certify independent editorial judgment.
+
+**ASA status separation:**
+- `RECORDED`: PR128 source and exact map diff reviewed here.
+- `APPLIED_ON_BRANCH`: pages, generator and XML sitemap exist on the unmerged PR branch.
+- `TEST_VERIFIED_BOUNDED`: earlier exact-head 61/61 suite PASS; direct source checks 10/10 PASS.
+- `EDITORIAL_BOUNDED_SAME_ASSISTANT_PASS`: narrow changes preserve the described meanings with no observed counterexample in the examined source.
+- `EXACT_VERSION_PUBLICATION_APPROVAL`: **NOT OBTAINED**; prior PR109 author approval is not transferred to new SHA/contents.
+- `INTEGRATED/ONECOM_DEPLOYED/PUBLIC_EFFECT`: **NOT OBSERVED**.
+
+**Release HOLD:** The required new, honest, version-bound publication approval for the two current map blobs is a legitimate decision/authority boundary. Do not set `publication_approval.approved=true`, copy signatures, modify the gate or declare CI green. After the appropriate approval, update only those two corresponding language-review receipts in the canonical registry, run full publication gates and verify exact post-state before considering release. This same-assistant pass is not a separate reviewer, and approved review does not imply deploy authority.

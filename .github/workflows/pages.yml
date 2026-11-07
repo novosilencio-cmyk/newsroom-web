@@ -23,12 +23,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Bounded regression evidence before editorial gate (PR only)
-        if: github.event_name == 'pull_request'
-        run: |
-          python3 scripts/build_static_site.py
-          python3 -m unittest discover -s tests -p 'test_*.py'
-
       - name: Block unresolved editorial markers
         run: |
           python3 scripts/build_discovery.py

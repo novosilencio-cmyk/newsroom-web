@@ -6,7 +6,11 @@ from urllib.parse import urlsplit
 BASE = 'https://experimentalnewsroom.org/'
 PORTAL = 'https://billing.stripe.com/p/login/aFa14nawe6GBg9b5MjbEA00'
 CONTACT = '<a href="mailto:support@experimentalnewsroom.org">support@experimentalnewsroom.org</a> · <a href="tel:+4748448958" dir="ltr">+47 48 44 89 58</a>'
-ADDRESS = 'MOE JOE ALDEMA · org.nr. 927 532 573<br/>c/o Bjørn Moe Aldema, Andreas Nordlands veg 10, 2819 Gjøvik, Norge'
+PUBLISHER = 'MOE JOE ALDEMA · org.nr. 927 532 573'
+REGISTERED_ADDRESS = 'c/o Bjørn Moe Aldema, Andreas Nordlands veg 10, 2819 Gjøvik, Norge'
+
+def business_link(nb):
+    return '<a href="contact.html">Virksomhetsopplysninger og registrert adresse</a>' if nb else '<a href="contact.en.html">Publisher details and registered address</a>'
 
 def catalogue(public):
     data = json.loads((public / 'content/subscriptions.json').read_text())
@@ -54,7 +58,7 @@ def shell(lang, filename, title, deck, body, alternates='', navigation=''):
 <header class="masthead compact-masthead"><div class="edition-line"><span>Experimental Newsroom</span><a href="{home}">{'Forsiden' if nb else 'Front page'}</a></div>
 <h1>{esc(title)}</h1><p class="strapline">{esc(deck)}</p>{navigation}</header>
 <main id="reader-main" tabindex="-1">{body}</main>
-<footer><p>{ADDRESS}</p><p>{CONTACT}</p><p><a href="support.html" lang="nb">Abonnement</a> · <a href="subscription-terms.html" lang="nb">Vilkår</a> · <a href="subscription-terms.en.html" lang="en">Terms</a> · <a href="privacy.html" lang="nb">Personvern</a> · <a href="{'sitemap.html' if nb else 'sitemap.en.html'}">{'Finn frem' if nb else 'Site map'}</a></p></footer></body></html>
+<footer><p>{PUBLISHER} · {business_link(nb)}</p><p>{CONTACT}</p><p><a href="support.html" lang="nb">Abonnement</a> · <a href="subscription-terms.html" lang="nb">Vilkår</a> · <a href="subscription-terms.en.html" lang="en">Terms</a> · <a href="privacy.html" lang="nb">Personvern</a> · <a href="{'sitemap.html' if nb else 'sitemap.en.html'}">{'Finn frem' if nb else 'Site map'}</a></p></footer></body></html>
 '''
 
 def section(title, text, ident=''):
@@ -104,7 +108,7 @@ def offer_body(data, nb):
 
 def terms_body(data, nb):
     groups = [
-      ('Avtalepart og kontakt' if nb else 'Publisher and contact', f'<p>{ADDRESS}</p><p>{CONTACT}</p>'),
+      ('Avtalepart og kontakt' if nb else 'Publisher and contact', f'<p>{PUBLISHER}</p><p>{business_link(nb)}</p><p>{CONTACT}</p>'),
       ('Publikasjonen' if nb else 'The publication', paragraph('Avtalen gjelder Experimental Newsrooms løpende nettpublikasjon med journalistikk, analyser og essays. Artiklene er åpne for alle. Leserabonnement og alle støttenivåer gir samme publikasjon. Betaling gir ingen redaksjonell innflytelse, eksklusiv tilgang, fast publiseringshyppighet, personlig rådgivning, e-postutgave eller garanti om full oversettelse. Atriet og andre fysiske prosjekter faller utenfor avtalen.' if nb else 'This agreement covers Experimental Newsroom’s ongoing online publication of journalism, analysis and essays. Articles are open to everyone. Reader and supporter subscriptions provide the same publication. Payment does not buy editorial influence, exclusive access, a fixed publishing frequency, personal advice, an email edition or a guarantee of full translation. Atriet and other physical projects are outside this agreement.')),
       ('Priser og betaling' if nb else 'Prices and payment', paragraph('Leser: 79 kr/måned eller 790 kr/år. Støtte: 149, 249 eller 499 kr/måned, eller 1 490, 2 490 eller 4 990 kr/år. Alle beløp er sluttpriser i NOK. Stripe viser valgt pris og betalingsperiode før du bekrefter en bestilling med betalingsplikt. Banken kan ta betalt for valutaveksling. Kvittering og avtalebekreftelse sendes til e-postadressen du oppgir.' if nb else 'Reader: NOK 79/month or NOK 790/year. Supporter: NOK 149, 249 or 499/month, or NOK 1,490, 2,490 or 4,990/year. All amounts are final prices in NOK. Stripe shows the selected price and billing period before you confirm an order with an obligation to pay. Your bank may charge for currency conversion. A receipt and agreement confirmation are sent to the email address you provide.')),
       ('Varighet, fornyelse og oppsigelse' if nb else 'Term, renewal and cancellation', paragraph('Løpende abonnement starter på kjøpsdatoen, betales på forskudd og fornyes automatisk for én måned eller ett år av gangen. Si opp før neste fornyelse via kundesiden eller kontakt oss. Oppsigelsen bekreftes og får virkning ved utløpet av den betalte perioden. Ingen ekstra bindingstid eller oppsigelsesgebyr. Endring av kort avslutter aldri abonnementet; bruk oppsigelsesvalget. Prisendringer varsles før de får virkning, slik at du kan avslutte før ny pris belastes.' if nb else 'A recurring subscription starts on the purchase date, is paid in advance and renews automatically for one month or one year at a time. Cancel before the next renewal through the customer portal or by contacting us. Cancellation is confirmed and takes effect at the end of the paid period. There is no additional minimum term or cancellation fee. Updating a card does not cancel a subscription; use the cancellation option. Price changes are notified before taking effect so you can cancel before a new price is charged.') + f'<p><a href="{PORTAL}">{"Administrer abonnementet" if nb else "Manage subscription"}</a></p>'),
@@ -114,8 +118,16 @@ def terms_body(data, nb):
     ]
     body = paragraph('Vilkårsversjon 29. oktober 2026. Gjelder nye abonnementsbestillinger fra åpningen av bestillingstjenesten.' if nb else 'Terms version 29 October 2026. Applies to new subscription orders from the opening of checkout.')
     body += ''.join(section(t,b) for t,b in groups)
-    body += section('Angreskjema' if nb else 'Withdrawal form', paragraph('Fyll ut feltene og send teksten på e-post eller per post dersom du vil angre. Du kan også sende en annen tydelig melding. Underskrift kreves bare på papir.' if nb else 'Complete the fields and send the text by email or post to withdraw. You can also send another clear statement. A signature is needed only on paper.') + f'<div class="withdrawal-form"><p>{"Til" if nb else "To"}: {ADDRESS}<br/>support@experimentalnewsroom.org</p><p>{"Jeg melder at jeg ønsker å gå fra avtalen om følgende abonnement:" if nb else "I give notice that I withdraw from the agreement for the following subscription:"}</p><p>{"Abonnement / ordrenummer" if nb else "Subscription / order number"}: ____________________</p><p>{"Bestilt dato" if nb else "Order date"}: ____________________</p><p>{"Navn" if nb else "Name"}: ____________________</p><p>{"Adresse" if nb else "Address"}: ____________________</p><p>{"E-post brukt ved kjøpet" if nb else "Email used at checkout"}: ____________________</p><p>{"Dato og eventuell underskrift" if nb else "Date and signature, if on paper"}: ____________________</p></div><p><button type="button" onclick="window.print()">{"Skriv ut eller lagre som PDF" if nb else "Print or save as PDF"}</button></p>', 'withdrawal')
+    body += section('Angreskjema' if nb else 'Withdrawal form', paragraph('Fyll ut feltene og send teksten på e-post eller per post dersom du vil angre. Du kan også sende en annen tydelig melding. Underskrift kreves bare på papir.' if nb else 'Complete the fields and send the text by email or post to withdraw. You can also send another clear statement. A signature is needed only on paper.') + f'<div class="withdrawal-form"><p>{"Til" if nb else "To"}: {PUBLISHER}<br/>support@experimentalnewsroom.org<br/>{business_link(nb)}</p><p>{"Jeg melder at jeg ønsker å gå fra avtalen om følgende abonnement:" if nb else "I give notice that I withdraw from the agreement for the following subscription:"}</p><p>{"Abonnement / ordrenummer" if nb else "Subscription / order number"}: ____________________</p><p>{"Bestilt dato" if nb else "Order date"}: ____________________</p><p>{"Navn" if nb else "Name"}: ____________________</p><p>{"Adresse" if nb else "Address"}: ____________________</p><p>{"E-post brukt ved kjøpet" if nb else "Email used at checkout"}: ____________________</p><p>{"Dato og eventuell underskrift" if nb else "Date and signature, if on paper"}: ____________________</p></div><p><button type="button" onclick="window.print()">{"Skriv ut eller lagre som PDF" if nb else "Print or save as PDF"}</button></p>', 'withdrawal')
     return body
+
+def contact_body(nb):
+    intro = ('Experimental Newsroom er en digital publikasjon uten besøkslokale. Adressen nedenfor er enkeltpersonforetakets registrerte forretningsadresse. Henvendelser mottas via e-post eller telefon.' if nb else
+             'Experimental Newsroom is a digital publication with no public office or visitor premises. The address below is the sole proprietorship’s registered business address, not a visiting address.')
+    return (section('Utgiver og kontakt' if nb else 'Publisher and contact',
+                    f'<p>{PUBLISHER}</p><p>{CONTACT}</p>' + paragraph(intro)) +
+            section('Registrert forretningsadresse' if nb else 'Registered business address',
+                    f'<p>{REGISTERED_ADDRESS}</p>'))
 
 def build(public, rows):
     data = catalogue(public)
@@ -127,6 +139,14 @@ def build(public, rows):
         if lang not in ('nb','en'):
             body = paragraph(esc(s['deck'])) + '<div lang="en" dir="ltr">' + body + '</div>'
         (public/s['file']).write_text(shell(lang,s['file'],s['page_title'],s['deck'],body,alt,navigation))
+    for nb in (True,False):
+        contact_file = 'contact.html' if nb else 'contact.en.html'
+        (public/contact_file).write_text(shell('nb' if nb else 'en', contact_file,
+            'Virksomhetsopplysninger' if nb else 'Publisher details',
+            'Utgiver, kontakt og registrert adresse.' if nb else 'Publisher, contact and registered address.',
+            contact_body(nb),
+            '<link rel="alternate" hreflang="nb" href="'+BASE+'contact.html"/><link rel="alternate" hreflang="en" href="'+BASE+'contact.en.html"/><link rel="alternate" hreflang="x-default" href="'+BASE+'contact.en.html"/>',
+            '<nav class="support-languages" aria-label="Choose a language"><a href="contact.html" lang="nb" hreflang="nb"'+(' aria-current="page"' if nb else '')+'>Norsk</a> <a href="contact.en.html" lang="en" hreflang="en"'+('' if nb else ' aria-current="page"')+'>English</a></nav>'))
     for nb in (True,False):
         file = 'subscription-terms.html' if nb else 'subscription-terms.en.html'
         (public/file).write_text(shell('nb' if nb else 'en',file,'Abonnementsvilkår' if nb else 'Subscription terms','Pris, fornyelse, oppsigelse, angrerett og kundeservice.' if nb else 'Prices, renewals, cancellation, withdrawal and support.',terms_body(data,nb),'<link rel="alternate" hreflang="nb" href="'+BASE+'subscription-terms.html"/><link rel="alternate" hreflang="en" href="'+BASE+'subscription-terms.en.html"/>'))

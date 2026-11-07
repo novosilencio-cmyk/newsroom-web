@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
-from build_subscription_pages import catalogue, offer_body
+from build_subscription_pages import build, catalogue, offer_body
 
 class SubscriptionTests(unittest.TestCase):
     def setUp(self):
@@ -57,6 +57,37 @@ class SubscriptionTests(unittest.TestCase):
             self.assertIn('id="withdrawal"',source)
             self.assertIn('927 532 573',source)
             self.assertIn('support@experimentalnewsroom.org',source)
+
+
+    def test_registered_address_only_in_dedicated_contact_pages(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            public = Path(tmp) / 'public'
+            (public / 'content').mkdir(parents=True)
+            (public / 'content/subscriptions.json').write_text(
+                (ROOT / 'public/content/subscriptions.json').read_text())
+            rows = {
+                'nb': {'file': 'support.html', 'name': 'Norsk', 'page_title': 'Abonnement', 'deck': 'Støtt arbeidet'},
+                'en': {'file': 'support.en.html', 'name': 'English', 'page_title': 'Subscribe', 'deck': 'Support journalism'},
+            }
+            build(public, rows)
+            for filename in ['contact.html', 'contact.en.html']:
+                html = (public / filename).read_text()
+                self.assertIn('Andreas Nordlands veg 10', html)
+                self.assertIn('927 532 573', html)
+                self.assertIn('support@experimentalnewsroom.org', html)
+                self.assertIn('hreflang="nb"', html)
+                self.assertIn('hreflang="en"', html)
+                self.assertIn('href="contact.en.html"', html)
+                self.assertIn('href="contact.html"', html)
+            for filename in ['support.html', 'support.en.html', 'subscription-terms.html', 'subscription-terms.en.html']:
+                html = (public / filename).read_text()
+                self.assertNotIn('Andreas Nordlands veg 10', html)
+                self.assertIn('927 532 573', html)
+                self.assertIn('contact.html' if filename in ('support.html', 'subscription-terms.html') else 'contact.en.html', html)
+            privacy = (ROOT / 'public/privacy.html').read_text()
+            self.assertNotIn('Andreas Nordlands veg 10', privacy)
+            self.assertNotIn('GitHub Pages', privacy)
+            self.assertIn('one.com', privacy)
 
     def test_activation_requires_real_scope_and_each_distinct_offer(self):
         for field in ['charges_enabled', 'payouts_enabled', 'portal_active']:

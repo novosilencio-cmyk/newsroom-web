@@ -105,7 +105,7 @@ def build(articles):
     robots = "User-agent: OAI-SearchBot\nAllow: /\n\nUser-agent: ChatGPT-User\nAllow: /\n\nUser-agent: *\nAllow: /\n\nSitemap: " + BASE + "sitemap.xml\n"
     (PUBLIC/"robots.txt").write_text(robots, encoding="utf-8")
 
-    static=[("ord-og-sammenhenger.html","2026-10-08"),("manifest.html","2026-10-08"),("manifest.en.html","2026-10-08"),("sitemap.html",None),("sitemap.en.html",None),("","2026-09-18"),("how-we-work.html",None),("support.html",None),("atriet.html",None),("courses/",None),("recognition/",None),("norway/","2026-10-12")]
+    static=[("ord-og-sammenhenger.html","2026-10-08"),("manifest.html","2026-10-08"),("manifest.en.html","2026-10-08"),("sitemap.html",None),("sitemap.en.html",None),("","2026-09-18"),("how-we-work.html",None),("support.html",None),("contact.html",None),("contact.en.html",None),("atriet.html",None),("courses/",None),("recognition/",None),("norway/","2026-10-12")]
     entrance_lastmod={"nb/":"2026-09-18","en/":"2026-09-18"}
     static.extend((path, entrance_lastmod.get(path)) for _, path in published_language_entrances(PUBLIC))
     static.extend([("series/institusjon/","2026-09-18"),("series/institusjon/nb/","2026-10-17"),("series/institusjon/en/","2026-10-17")])

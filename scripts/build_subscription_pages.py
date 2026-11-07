@@ -144,7 +144,9 @@ def build(public, rows):
         (public/contact_file).write_text(shell('nb' if nb else 'en', contact_file,
             'Virksomhetsopplysninger' if nb else 'Publisher details',
             'Utgiver, kontakt og registrert adresse.' if nb else 'Publisher, contact and registered address.',
-            contact_body(nb)))
+            contact_body(nb),
+            '<link rel="alternate" hreflang="nb" href="'+BASE+'contact.html"/><link rel="alternate" hreflang="en" href="'+BASE+'contact.en.html"/><link rel="alternate" hreflang="x-default" href="'+BASE+'contact.en.html"/>',
+            '<nav class="support-languages" aria-label="Choose a language"><a href="contact.html" lang="nb" hreflang="nb"'+(' aria-current="page"' if nb else '')+'>Norsk</a> <a href="contact.en.html" lang="en" hreflang="en"'+('' if nb else ' aria-current="page"')+'>English</a></nav>'))
     for nb in (True,False):
         file = 'subscription-terms.html' if nb else 'subscription-terms.en.html'
         (public/file).write_text(shell('nb' if nb else 'en',file,'Abonnementsvilkår' if nb else 'Subscription terms','Pris, fornyelse, oppsigelse, angrerett og kundeservice.' if nb else 'Prices, renewals, cancellation, withdrawal and support.',terms_body(data,nb),'<link rel="alternate" hreflang="nb" href="'+BASE+'subscription-terms.html"/><link rel="alternate" hreflang="en" href="'+BASE+'subscription-terms.en.html"/>'))

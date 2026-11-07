@@ -20,7 +20,26 @@ Source main `1d8a44b59b6c39a6581f07d71233018802b2bdda`. PR128 generated review s
 - `public/sitemap.html`: `b5c1238c052e5eb3a426dd038a2cc962649230e5b64a16f77854bec2a21dceab`
 - `public/sitemap.en.html`: `d0390636b5b9ceca3b6d65b9bc044d6ba05880f5a120cf903431335cb16115fa`
 
-These hashes cover **generated artifact bytes**, not current checked-in public HTML. Main reader-map content is materially different, much more than the removal of postal-address excerpts. Equal entry/anchor counts do **not** prove exact text, links, meaning, quality, or publication readiness. The enlarged generated reader maps therefore require their own content-bound review. The existing PR109 exact-review attestations **must not be copied** onto these new hashes.
+These hashes cover **generated artifact bytes**, not current checked-in public HTML. **Correction after same-unit measurement:** The apparent 57 kB difference came from incorrectly comparing main JavaScript character counts with generated UTF-8 byte counts. Both generated HTML maps are only **53 UTF-16 code units shorter** than main. Their structure is identical in counts, and the changed extracted-search text is concentrated in three entries. This replaces the earlier "materially enlarged" hypothesis. Equal counts alone still do not prove semantic equivalence. The existing PR109 exact-review attestations **must not be copied** onto these new hashes.
+
+## Exact affected-entry localization — same-unit control
+
+The generated files and current-main source were each split into 235 content lines, removing the trailing empty line from main for like-for-like comparison. Each line was compared by UTF-16 code-unit length and a reproducible 32-bit FNV-1a checksum (not a cryptographic or independent review). When excluding the three known changed **zero-based** line indices `228, 229, 231`, the remaining 232 lines have matching total length and checksum:
+
+| Reader map | Main and generated retained code units | Both retained-line FNV-1a |
+| --- | ---: | --- |
+| `sitemap.html` | 788217 | `48e89822` |
+| `sitemap.en.html` | 788972 | `78ec8385` |
+
+The changed entries have exactly the same position in both maps:
+
+- line index 228: Norwegian subscription terms search entry, changed from 3898 to 3856 code units (−42);
+- line index 229: English subscription terms search entry, from 4084 to 4032 (−52);
+- line index 231: privacy search entry, from 5181 to 5222 (+41).
+
+The sum is **−53** for each reader map, matching the whole-file difference. No article-entry, language-filter option, link count or other identified search entry differs in the length/checksum comparison. This narrows the exact-version editorial review to the two terms summaries and one privacy summary, but the 32-bit checksum does not independently prove every nonaffected byte unchanged. The added XML sitemap contact URLs are tracked separately.
+
+**Review question:** confirm that each updated search entry accurately represents its corresponding source page (registered address accessible through contact link, no misleading office, one.com provider and consent wording accurate), and that no stale address survives in generated search text. Existing PR109 exact-byte approval remains bound to its historical SHA; a new content-bound receipt is required before release. This is a bounded same-assistant evidence comparison, **not independent editorial acceptance or new publication approval**.
 
 ## Verified positive/negative controls
 
@@ -32,7 +51,7 @@ These hashes cover **generated artifact bytes**, not current checked-in public H
 
 ## Open evidence gate and return
 
-1. Compare the new reader-map content against old reviewed maps at **entry/text/link** level, including changed search text and any extra article material, not just item counts.
+1. Confirm the three changed reader-map search entries against the actually generated terms/privacy pages with explicit content-bound language/editorial judgement; retain unchanged-entry controls and check for collision risk in the noncryptographic checksum.
 2. Determine whether the changed result is source-aligned; classify each material change and counterexample, including whether the privacy correction eliminates address exposure throughout discovery output.
 3. Obtain truthful **new exact-version** language/editorial review and applicable publication approval through the repository's normal authority path. No same-assistant reading is called separate independent review.
 4. Only then run full publication/translation/reader/accessibility gates and consider merge and the existing one.com release path.

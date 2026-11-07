@@ -23,24 +23,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Prepare publisher contact preview (review only)
-        run: |
-          PYTHONPATH=scripts python3 -c 'from pathlib import Path; from build_reader_support import build_reader_support; build_reader_support(Path("public"))'
-          python3 -m unittest discover -s tests -p 'test_subscriptions.py'
-
-      - name: Retain generated contact pages for exact-content review
-        uses: actions/upload-artifact@v4
-        with:
-          name: publisher-contact-preview
-          path: |
-            public/contact.html
-            public/contact.en.html
-            public/support*.html
-            public/subscription-terms*.html
-            public/privacy.html
-          if-no-files-found: error
-          retention-days: 7
-
       - name: Block unresolved editorial markers
         run: |
           python3 scripts/build_discovery.py

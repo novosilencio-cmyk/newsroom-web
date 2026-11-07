@@ -122,7 +122,7 @@ def terms_body(data, nb):
     return body
 
 def contact_body(nb):
-    intro = ('Experimental Newsroom er en digital publikasjon. Virksomheten har ikke besøkslokale. Adressen nedenfor er enkeltpersonforetakets registrerte forretningsadresse, ikke en besøksadresse.' if nb else
+    intro = ('Experimental Newsroom er en digital publikasjon uten besøkslokale. Adressen nedenfor er enkeltpersonforetakets registrerte forretningsadresse. Henvendelser mottas via e-post eller telefon.' if nb else
              'Experimental Newsroom is a digital publication with no public office or visitor premises. The address below is the sole proprietorship’s registered business address, not a visiting address.')
     return (section('Utgiver og kontakt' if nb else 'Publisher and contact',
                     f'<p>{PUBLISHER}</p><p>{CONTACT}</p>' + paragraph(intro)) +

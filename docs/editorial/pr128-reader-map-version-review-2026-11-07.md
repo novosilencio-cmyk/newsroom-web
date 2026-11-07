@@ -57,3 +57,21 @@ The sum is **−53** for each reader map, matching the whole-file difference. No
 4. Only then run full publication/translation/reader/accessibility gates and consider merge and the existing one.com release path.
 
 Status: `EVIDENCE_RECORDED / STRUCTURE_CHECKED / SEMANTIC_REVIEW_PENDING / GATE_BLOCKED / NO_RELEASE`. No forced green or fabricated approval.
+
+## Exact-head continuation — revised contact wording, deterministic maps and 61-unit gate
+
+After the Norwegian contact copy and the consent/DNT notice were corrected to satisfy the established Norwegian-style rule, both reader maps were regenerated **from their source content**, not copied from older review evidence. A reconstruction of the earlier generation reproduced the exact Git blob SHA-1 of the independently captured GitHub Actions artifact, which validated the narrow three-entry regeneration algorithm against the real Python output for that snapshot.
+
+Current committed PR-head map blobs:
+- `public/sitemap.html`: `7d06f48dbb66ddf4d71af7e3f8fd11114b3f2db9`.
+- `public/sitemap.en.html`: `6d247e114dc13b67d3a71d88ae717cc00fd6584b`.
+
+The new blobs differ from the previous generated-artifact SHA-256 listed above **because the underlying consent paragraph was subsequently edited**. Do not treat the earlier SHA-256 hashes as signatures of the current files.
+
+**Direct same-assistant semantic check of affected entries**: the Norwegian and English subscription terms still state the real publisher and terms, refer to the dedicated business-address contact page, preserve withdrawal/contact instructions, and have no home street address. The privacy summary corresponds to the revised source's one.com hosting and consent/Do Not Track explanation and likewise has no home street address. Language-option and map entry counts remain constant. This review is a **bounded, non-independent preliminary semantic pass**, not an author approval, independent language certification or release clearance.
+
+**GitHub Actions test evidence:** [run 42352370006](https://github.com/novosilencio-cmyk/newsroom-web/actions/runs/42352370006), exact commit `86bcc2e599854f5f20ee819230e9de24ad762201`: **61/61 Python unit tests PASS**, including rendering determinism and Norwegian editorial style. The unchanged subsequent publication gate still stops at `build_consciousness_essay.apply_fixed_review()` for `public/sitemap.en.html`, because the prior language review belongs to earlier content bytes. This is an expected **AUTHORITY/EVIDENCE** gate, not evidence of a remaining deterministic-build failure.
+
+The temporary test-only step was removed again and the original GitHub workflow blob `7e5959f5b4dbd53801db7fb79cb7e3d1bb96b412` was restored. The source and generated HTML remain on **draft branch**, not main or one.com.
+
+**Precise return:** an editor/author-approved, exact-content review record for the current two reader-map blobs (with the changed three entry texts inspected) is required under the existing publication gate; then run the full release checks. Do not backdate, inherit, automatically grant or forge a publication approval. After normal approval, merge and deployment remain separate gates.

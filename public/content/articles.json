@@ -1,5 +1,35 @@
 [
   {
+    "id": "telefonen-kan-repareres-2026",
+    "section": "Analysis",
+    "region": "Europe",
+    "country": "EU",
+    "type": "Forklarende essay",
+    "language": "nb",
+    "title": "Telefonen kan repareres. Men kan du velge det?",
+    "summary": "Vi blir bedt om å ta ansvar for det vi kjøper. Et slitent mobilbatteri viser hvor mye som må være på plass før et ansvarlig valg blir mulig.",
+    "published": "2026-11-18",
+    "updated_at": "2026-11-18",
+    "priority": 0,
+    "url": "articles/telefonen-kan-repareres-2026.html",
+    "tags": {
+      "nb": [
+        "reparasjon",
+        "telefon",
+        "ansvar",
+        "etymologi",
+        "handlingsrom"
+      ],
+      "en": [
+        "Repair",
+        "Smartphone",
+        "Responsibility",
+        "Etymology",
+        "Agency"
+      ]
+    }
+  },
+  {
     "id": "a-life-with-room-for-your-own-voice-2026",
     "section": "Analysis",
     "region": "Global",

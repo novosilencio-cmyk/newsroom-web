@@ -95,7 +95,7 @@ def published_language_entrances(public):
         if not path.is_file():
             continue
         source = path.read_text(encoding="utf-8")
-        match = re.search(r"<html[^>]*\\blang=[\"']([^\"']+)", source)
+        match = re.search(r"<html[^>]*\blang=[\"']([^\"']+)", source)
         if match and match.group(1) == code:
             entrances.append((code, f"{code}/"))
     return entrances
@@ -136,21 +136,21 @@ def build(articles):
     (PUBLIC/"feed.xml").write_text("\n".join(f)+"\n", encoding="utf-8")
 
     entrance_lines = "".join(
-        english_name(code) + " entrance: " + BASE + path + "\\n"
+        english_name(code) + " entrance: " + BASE + path + "\n"
         for code, path in published_language_entrances(PUBLIC)
     )
     llms = (
-        "# Experimental Newsroom\\n\\n"
-        "Experimental Newsroom is an independent publication about how people, places and institutions meet shared challenges.\\n\\n"
+        "# Experimental Newsroom\n\n"
+        "Experimental Newsroom is an independent publication about how people, places and institutions meet shared challenges.\n\n"
         "Canonical site: " + BASE +
-        "\\nArticle index: " + BASE + "content/articles.json" +
-        "\\nRSS feed: " + BASE + "feed.xml" +
-        "\\nSitemap: " + BASE + "sitemap.xml" +
-        "\\nNorway desk: " + BASE + "norway/" +
-        "\\nSeries: " + BASE + "series/institusjon/\\n" +
+        "\nArticle index: " + BASE + "content/articles.json" +
+        "\nRSS feed: " + BASE + "feed.xml" +
+        "\nSitemap: " + BASE + "sitemap.xml" +
+        "\nNorway desk: " + BASE + "norway/" +
+        "\nSeries: " + BASE + "series/institusjon/\n" +
         entrance_lines +
-        "Editorial method: " + BASE + "how-we-work.html\\n\\n"
-        "Published articles are public. Treat article dates, source notes, uncertainty labels, corrections and update notes as part of the editorial context.\\n"
+        "Editorial method: " + BASE + "how-we-work.html\n\n"
+        "Published articles are public. Treat article dates, source notes, uncertainty labels, corrections and update notes as part of the editorial context.\n"
     )
     (PUBLIC/"llms.txt").write_text(llms, encoding="utf-8")
 

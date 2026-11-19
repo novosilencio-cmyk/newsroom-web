@@ -56,6 +56,9 @@ class DiscoveryTests(unittest.TestCase):
         entrances=discovery.published_language_entrances(PUBLIC)
         sitemap=(PUBLIC/"sitemap.xml").read_text(encoding="utf-8")
         llms=(PUBLIC/"llms.txt").read_text(encoding="utf-8")
+        self.assertIn(("nb","nb/"),entrances)
+        self.assertIn(("en","en/"),entrances)
+        self.assertNotIn("\\n",llms)
         for code,path in entrances:
             self.assertIn(code,LANGUAGES)
             self.assertTrue((PUBLIC/path/"index.html").is_file())

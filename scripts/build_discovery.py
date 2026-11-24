@@ -95,7 +95,7 @@ def published_language_entrances(public):
         if not path.is_file():
             continue
         source = path.read_text(encoding="utf-8")
-        match = re.search(r"<html[^>]*\blang=[\"']([^\"']+)", source)
+        match = re.search(r"<html\b[^>]*\s+lang\s*=\s*[\"']([^\"']+)", source, re.IGNORECASE)
         if match and match.group(1) == code:
             entrances.append((code, f"{code}/"))
     return entrances

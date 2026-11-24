@@ -84,6 +84,23 @@ class DiscoveryTests(unittest.TestCase):
             self.assertIn(("nb", "nb/"), entrances)
             self.assertNotIn(("hi", "hi/"), entrances)
 
+    def test_language_entrance_ignores_quoted_attribute_text(self):
+        from tempfile import TemporaryDirectory
+        with TemporaryDirectory() as temporary:
+            public = Path(temporary)
+            cases = {
+                "nb": '<!-- <html lang="nb"> --><html data-note=\' lang="nb"\'></html>',
+                "en": '<HTML LANG = "en" data-note=\' lang="nb"\'></HTML>',
+                "hi": '<html data-note=\' lang="hi"\'></html>',
+            }
+            for code, document in cases.items():
+                (public / code).mkdir()
+                (public / code / "index.html").write_text(document, encoding="utf-8")
+            entrances = discovery.published_language_entrances(public)
+            self.assertNotIn(("nb", "nb/"), entrances)
+            self.assertIn(("en", "en/"), entrances)
+            self.assertNotIn(("hi", "hi/"), entrances)
+
     def test_norway_view(self):
         text=(PUBLIC/"norway"/"index.html").read_text(encoding="utf-8")
         self.assertIn("<h2>Norge</h2>",text)

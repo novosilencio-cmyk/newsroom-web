@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import html
+from html.parser import HTMLParser
 import json
 import re
 from datetime import datetime, timezone
@@ -87,6 +88,20 @@ def update_articles(articles):
         path.write_text(source, encoding="utf-8")
 
 
+class _PublishedRootLanguage(HTMLParser):
+    """Read only the first actual <html> start tag, ignoring attribute-value text."""
+
+    def __init__(self):
+        super().__init__()
+        self.seen_html = False
+        self.language = None
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "html" and not self.seen_html:
+            self.seen_html = True
+            self.language = next((value for name, value in attrs if name == "lang"), None)
+
+
 def published_language_entrances(public):
     """Return registered language entrances only when a real index page exists."""
     entrances = []
@@ -94,11 +109,13 @@ def published_language_entrances(public):
         path = public / code / "index.html"
         if not path.is_file():
             continue
-        source = path.read_text(encoding="utf-8")
-        match = re.search(r"<html\b[^>]*\s+lang\s*=\s*[\"']([^\"']+)", source, re.IGNORECASE)
-        if match and match.group(1) == code:
+        reader = _PublishedRootLanguage()
+        reader.feed(path.read_text(encoding="utf-8"))
+        reader.close()
+        if reader.language == code:
             entrances.append((code, f"{code}/"))
     return entrances
+
 
 def build(articles):
     build_reader_support(PUBLIC)

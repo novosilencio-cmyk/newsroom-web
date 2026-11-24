@@ -70,6 +70,20 @@ class DiscoveryTests(unittest.TestCase):
                 continue
             self.assertNotIn(english_name(code)+" entrance: "+BASE+code+"/",llms)
 
+    def test_language_entrance_requires_actual_html_lang(self):
+        from tempfile import TemporaryDirectory
+        with TemporaryDirectory() as temporary:
+            public = Path(temporary)
+            for code, document in {
+                "nb": '<HTML data-lang="hi" LANG = "nb"></HTML>',
+                "hi": '<html data-lang="hi"></html>',
+            }.items():
+                (public / code).mkdir()
+                (public / code / "index.html").write_text(document, encoding="utf-8")
+            entrances = discovery.published_language_entrances(public)
+            self.assertIn(("nb", "nb/"), entrances)
+            self.assertNotIn(("hi", "hi/"), entrances)
+
     def test_norway_view(self):
         text=(PUBLIC/"norway"/"index.html").read_text(encoding="utf-8")
         self.assertIn("<h2>Norge</h2>",text)

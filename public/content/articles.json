@@ -1,5 +1,94 @@
 [
   {
+    "id": "det-skal-helst-ga-rundt-2026",
+    "section": "Analysis",
+    "region": "Europe",
+    "country": "Norway",
+    "type": "Dokumentbasert analyse med fordypning",
+    "language": "nb",
+    "title": "Det skal helst gå rundt. Også for folk.",
+    "summary": "Norges Banks oppgave, husholdningenes regninger og forskjellen mellom betalingsevne og et liv med handlingsrom.",
+    "published": "2026-11-27",
+    "updated_at": "2026-11-27",
+    "priority": 0,
+    "url": "articles/det-skal-helst-ga-rundt-2026.html",
+    "tags": {
+      "nb": [
+        "Norges Bank",
+        "styringsrente",
+        "husholdningsøkonomi",
+        "trivsel",
+        "økonomisk bærekraft"
+      ],
+      "en": [
+        "Norges Bank",
+        "Interest rates",
+        "Household finances",
+        "Wellbeing"
+      ]
+    }
+  },
+  {
+    "id": "staten-trenger-mer-enn-god-hukommelse-2026",
+    "section": "Analysis",
+    "region": "Europe",
+    "country": "Norway",
+    "type": "Dokumentbasert analyse med fordypning",
+    "language": "nb",
+    "title": "Staten trenger mer enn god hukommelse",
+    "summary": "Hvordan kan staten bevare kunnskap, samarbeid og handlekraft gjennom tjenestetid og personskifter? En dokumentbasert analyse med UD som holdepunkt.",
+    "published": "2026-11-27",
+    "updated_at": "2026-11-27",
+    "priority": 1,
+    "url": "articles/staten-trenger-mer-enn-god-hukommelse-2026.html",
+    "tags": {
+      "nb": [
+        "offentlig kapasitet",
+        "journalføring",
+        "UD",
+        "overlevering",
+        "institusjonell bærekraft",
+        "trivsel"
+      ],
+      "en": [
+        "Public capacity",
+        "Recordkeeping",
+        "Institutional continuity",
+        "Wellbeing"
+      ]
+    }
+  },
+  {
+    "id": "innlogging-er-bare-begynnelsen-2026",
+    "section": "Analysis",
+    "region": "Europe",
+    "country": "Norway",
+    "type": "Dokumentbasert analyse med fordypning",
+    "language": "nb",
+    "title": "Innlogging er bare begynnelsen",
+    "summary": "Felles IAM som datert eksempel på et større spørsmål: hvem definerer behovet, og hvordan undersøker vi om løsningen gjør arbeidet mulig?",
+    "published": "2026-11-27",
+    "updated_at": "2026-11-27",
+    "priority": 2,
+    "url": "articles/innlogging-er-bare-begynnelsen-2026.html",
+    "tags": {
+      "nb": [
+        "universitet",
+        "Felles IAM",
+        "Sikt",
+        "akademisk frihet",
+        "offentlig styring",
+        "trivsel"
+      ],
+      "en": [
+        "Universities",
+        "Identity and access management",
+        "Academic freedom",
+        "Wellbeing"
+      ]
+    }
+  },
+  {
     "id": "telefonen-kan-repareres-2026",
     "section": "Analysis",
     "region": "Europe",

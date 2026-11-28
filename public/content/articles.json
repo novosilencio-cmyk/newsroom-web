@@ -1,5 +1,37 @@
 [
   {
+    "id": "indre-frihet-ytre-virkelighet-2026",
+    "section": "Essay",
+    "region": "Global",
+    "country": "",
+    "type": "Filosofisk essay",
+    "language": "nb",
+    "title": "Indre frihet, ytre virkelighet",
+    "summary": "Hvor mye av friheten kan vi finne i oss selv — og hvor mye må vi gjøre mulig for hverandre? Et essay om selvbestemmelse, hjelp, ansvar og nok.",
+    "published": "2026-11-28",
+    "updated_at": "2026-11-28",
+    "priority": 0,
+    "url": "articles/indre-frihet-ytre-virkelighet-2026.html",
+    "author_name": "Moe Aldemas",
+    "tags": {
+      "nb": [
+        "frihet",
+        "selvbestemmelse",
+        "omsorg",
+        "ansvar",
+        "filosofi",
+        "fellesskap"
+      ],
+      "en": [
+        "Freedom",
+        "Autonomy",
+        "Care",
+        "Responsibility",
+        "Philosophy"
+      ]
+    }
+  },
+  {
     "id": "pengene-trygge-naturen-taper-2026",
     "section": "Analysis",
     "region": "Europe",

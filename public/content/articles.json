@@ -1,5 +1,36 @@
 [
   {
+    "id": "pengene-trygge-naturen-taper-2026",
+    "section": "Analysis",
+    "region": "Europe",
+    "country": "Norway",
+    "type": "Åpen dokumentbasert undersøkelse",
+    "language": "nb",
+    "title": "Hvem har ansvaret hvis pengene er trygge, men naturen taper?",
+    "summary": "Vi undersøker hvordan pengepolitikken og øvrig politikk ivaretar naturgrunnlaget og framtidige generasjoner. Fire myndigheter er bedt om dokumentasjon.",
+    "published": "2026-11-28",
+    "updated_at": "2026-11-28",
+    "priority": 0,
+    "url": "articles/pengene-trygge-naturen-taper-2026.html",
+    "author_name": "Moe Aldemas",
+    "tags": {
+      "nb": [
+        "Norges Bank",
+        "naturrisiko",
+        "pengepolitikk",
+        "naturgrunnlag",
+        "framtidige generasjoner",
+        "ansvarsdeling"
+      ],
+      "en": [
+        "Norges Bank",
+        "Nature-related risk",
+        "Monetary policy",
+        "Future generations"
+      ]
+    }
+  },
+  {
     "id": "det-skal-helst-ga-rundt-2026",
     "section": "Analysis",
     "region": "Europe",

@@ -17,6 +17,17 @@ class DiscoveryTests(unittest.TestCase):
     def setUpClass(cls):
         cls.articles=json.loads((PUBLIC/"content"/"articles.json").read_text(encoding="utf-8"))
 
+    def test_article_author_override_preserves_default(self):
+        article = dict(self.articles[0])
+        article.pop("author_name", None)
+        def metadata(item):
+            block = discovery.article_block(item, '<html lang="nb">')
+            return json.loads(block.split('<script type="application/ld+json">\n')[1].split('\n</script>')[0])
+        self.assertEqual(metadata(article)["author"]["name"], "Bjørn Moe Aldema")
+        article["author_name"] = "Moe Aldemas"
+        self.assertEqual(metadata(article)["author"]["name"], "Moe Aldemas")
+        self.assertEqual(metadata(article)["headline"], article["title"])
+
     def test_sitemap_and_feed_parse(self):
         ET.parse(PUBLIC/"sitemap.xml"); ET.parse(PUBLIC/"feed.xml")
 

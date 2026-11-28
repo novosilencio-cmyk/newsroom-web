@@ -62,7 +62,7 @@ def article_block(a, source):
         "headline":a["title"],"description":a["summary"],
         "datePublished":schema_published(a),"dateModified":schema_modified(a),
         "mainEntityOfPage":{"@type":"WebPage","@id":canonical(a)},
-        "author":{"@type":"Person","name":"Bjørn Moe Aldema"},
+        "author":{"@type":"Person","name":a.get("author_name", "Bjørn Moe Aldema")},
         "publisher":{"@type":"Organization","name":"Experimental Newsroom","url":BASE},
         "articleSection":a.get("section",""),"inLanguage":langs,"isAccessibleForFree":True
     }

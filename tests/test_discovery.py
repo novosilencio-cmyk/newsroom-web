@@ -56,6 +56,9 @@ class DiscoveryTests(unittest.TestCase):
         entrances=discovery.published_language_entrances(PUBLIC)
         sitemap=(PUBLIC/"sitemap.xml").read_text(encoding="utf-8")
         llms=(PUBLIC/"llms.txt").read_text(encoding="utf-8")
+        self.assertIn(("nb","nb/"),entrances)
+        self.assertIn(("en","en/"),entrances)
+        self.assertNotIn("\\n",llms)
         for code,path in entrances:
             self.assertIn(code,LANGUAGES)
             self.assertTrue((PUBLIC/path/"index.html").is_file())
@@ -66,6 +69,37 @@ class DiscoveryTests(unittest.TestCase):
             if candidate.is_file():
                 continue
             self.assertNotIn(english_name(code)+" entrance: "+BASE+code+"/",llms)
+
+    def test_language_entrance_requires_actual_html_lang(self):
+        from tempfile import TemporaryDirectory
+        with TemporaryDirectory() as temporary:
+            public = Path(temporary)
+            for code, document in {
+                "nb": '<HTML data-lang="hi" LANG = "nb"></HTML>',
+                "hi": '<html data-lang="hi"></html>',
+            }.items():
+                (public / code).mkdir()
+                (public / code / "index.html").write_text(document, encoding="utf-8")
+            entrances = discovery.published_language_entrances(public)
+            self.assertIn(("nb", "nb/"), entrances)
+            self.assertNotIn(("hi", "hi/"), entrances)
+
+    def test_language_entrance_ignores_quoted_attribute_text(self):
+        from tempfile import TemporaryDirectory
+        with TemporaryDirectory() as temporary:
+            public = Path(temporary)
+            cases = {
+                "nb": '<!-- <html lang="nb"> --><html data-note=\' lang="nb"\'></html>',
+                "en": '<HTML LANG = "en" data-note=\' lang="nb"\'></HTML>',
+                "hi": '<html data-note=\' lang="hi"\'></html>',
+            }
+            for code, document in cases.items():
+                (public / code).mkdir()
+                (public / code / "index.html").write_text(document, encoding="utf-8")
+            entrances = discovery.published_language_entrances(public)
+            self.assertNotIn(("nb", "nb/"), entrances)
+            self.assertIn(("en", "en/"), entrances)
+            self.assertNotIn(("hi", "hi/"), entrances)
 
     def test_norway_view(self):
         text=(PUBLIC/"norway"/"index.html").read_text(encoding="utf-8")

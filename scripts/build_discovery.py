@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import html
+from html.parser import HTMLParser
 import json
 import re
 from datetime import datetime, timezone
@@ -87,6 +88,20 @@ def update_articles(articles):
         path.write_text(source, encoding="utf-8")
 
 
+class _PublishedRootLanguage(HTMLParser):
+    """Read only the first actual <html> start tag, ignoring attribute-value text."""
+
+    def __init__(self):
+        super().__init__()
+        self.seen_html = False
+        self.language = None
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "html" and not self.seen_html:
+            self.seen_html = True
+            self.language = next((value for name, value in attrs if name == "lang"), None)
+
+
 def published_language_entrances(public):
     """Return registered language entrances only when a real index page exists."""
     entrances = []
@@ -94,11 +109,13 @@ def published_language_entrances(public):
         path = public / code / "index.html"
         if not path.is_file():
             continue
-        source = path.read_text(encoding="utf-8")
-        match = re.search(r"<html[^>]*\\blang=[\"']([^\"']+)", source)
-        if match and match.group(1) == code:
+        reader = _PublishedRootLanguage()
+        reader.feed(path.read_text(encoding="utf-8"))
+        reader.close()
+        if reader.language == code:
             entrances.append((code, f"{code}/"))
     return entrances
+
 
 def build(articles):
     build_reader_support(PUBLIC)
@@ -136,21 +153,21 @@ def build(articles):
     (PUBLIC/"feed.xml").write_text("\n".join(f)+"\n", encoding="utf-8")
 
     entrance_lines = "".join(
-        english_name(code) + " entrance: " + BASE + path + "\\n"
+        english_name(code) + " entrance: " + BASE + path + "\n"
         for code, path in published_language_entrances(PUBLIC)
     )
     llms = (
-        "# Experimental Newsroom\\n\\n"
-        "Experimental Newsroom is an independent publication about how people, places and institutions meet shared challenges.\\n\\n"
+        "# Experimental Newsroom\n\n"
+        "Experimental Newsroom is an independent publication about how people, places and institutions meet shared challenges.\n\n"
         "Canonical site: " + BASE +
-        "\\nArticle index: " + BASE + "content/articles.json" +
-        "\\nRSS feed: " + BASE + "feed.xml" +
-        "\\nSitemap: " + BASE + "sitemap.xml" +
-        "\\nNorway desk: " + BASE + "norway/" +
-        "\\nSeries: " + BASE + "series/institusjon/\\n" +
+        "\nArticle index: " + BASE + "content/articles.json" +
+        "\nRSS feed: " + BASE + "feed.xml" +
+        "\nSitemap: " + BASE + "sitemap.xml" +
+        "\nNorway desk: " + BASE + "norway/" +
+        "\nSeries: " + BASE + "series/institusjon/\n" +
         entrance_lines +
-        "Editorial method: " + BASE + "how-we-work.html\\n\\n"
-        "Published articles are public. Treat article dates, source notes, uncertainty labels, corrections and update notes as part of the editorial context.\\n"
+        "Editorial method: " + BASE + "how-we-work.html\n\n"
+        "Published articles are public. Treat article dates, source notes, uncertainty labels, corrections and update notes as part of the editorial context.\n"
     )
     (PUBLIC/"llms.txt").write_text(llms, encoding="utf-8")
 
